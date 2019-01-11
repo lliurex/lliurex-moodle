@@ -1,0 +1,7 @@
+[parameters]
+DB_NAME		= moodle
+DB_USER		= moodle_user
+MYSQL_DATA_FILE	= /usr/share/moodle/sql/moodle_base.sql
+INCLUDE_PATH	= /etc/moodle/
+BACKUP_PATH	= /etc/moodle/backup/
+USE_TEMPLATE	= YES
