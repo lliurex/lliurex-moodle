@@ -1,3 +1,9 @@
+lliurex-moodle (0.44) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 11 Jan 2019 13:47:55 +0100
+
 lliurex-moodle (0.34) xenial; urgency=medium
 
   * Fix some files of valencian translation
