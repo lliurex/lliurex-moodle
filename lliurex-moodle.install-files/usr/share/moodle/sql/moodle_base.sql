@@ -12185,7 +12185,7 @@ CREATE TABLE `mdl_user` (
 
 LOCK TABLES `mdl_user` WRITE;
 /*!40000 ALTER TABLE `mdl_user` DISABLE KEYS */;
-INSERT INTO `mdl_user` VALUES (1,'manual',1,0,0,0,1,'guest','$2y$10$BCls1Umt.PGgifdCxSX5bO8Arp2p2ivA9W1.EkhPdWFtb7EABHTOa','','Invitado',' ','root@localhost',0,'','','','','','','','','','','','','es','gregorian','','99',0,0,0,0,'','',0,'','Este usuario sólo tiene acceso de lectura en ciertos cursos.',1,1,0,2,1,0,0,1547050082,0,NULL,NULL,NULL,NULL,NULL),(2,'manual',1,0,0,0,1,'admin','$2y$10$Fos5UsQzitmePHgRkWXSw.iBLJLxc32rs5NeGzF619fQ9S6mHyXFG','','Admin','Usuario','va@va.com',0,'','','','','','','','','','','','','es','gregorian','','99',1547050162,1547194966,1547050162,1547194226,'10.2.1.254','',0,'','',1,1,0,1,1,0,0,1547050282,0,NULL,'','','','');
+INSERT INTO `mdl_user` VALUES (1,'manual',1,0,0,0,1,'guest','$2y$10$BCls1Umt.PGgifdCxSX5bO8Arp2p2ivA9W1.EkhPdWFtb7EABHTOa','','Invitado',' ','root@localhost',0,'','','','','','','','','','','','','ca_valencia','gregorian','','99',0,0,0,0,'','',0,'','Este usuario sólo tiene acceso de lectura en ciertos cursos.',1,1,0,2,1,0,0,1547050082,0,NULL,NULL,NULL,NULL,NULL),(2,'manual',1,0,0,0,1,'admin','$2y$10$Fos5UsQzitmePHgRkWXSw.iBLJLxc32rs5NeGzF619fQ9S6mHyXFG','','Admin','Usuario','va@va.com',0,'','','','','','','','','','','','','ca_valencia','gregorian','','99',1547050162,1547194966,1547050162,1547194226,'10.2.1.254','',0,'','',1,1,0,1,1,0,0,1547050282,0,NULL,'','','','');
 /*!40000 ALTER TABLE `mdl_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
