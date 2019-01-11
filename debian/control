@@ -2,12 +2,12 @@ Source: lliurex-moodle
 Section: web
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
-Build-Depends: debhelper (>= 7), po-debconf
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 10), po-debconf
+Standards-Version: 4.1.2
 
 Package: lliurex-moodle
 Architecture: all
-Depends: lliurex-sgbd, php7.0-cli, php7.0-xmlrpc, unzip, zip, aspell, php7.0-ldap, python-mysqldb, python-bcrypt, moodle, python, python-support (>= 0.90), ${misc:Depends}
+Depends: lliurex-sgbd, php-cli, php-xmlrpc, unzip, zip, aspell, php-ldap, python-mysqldb, python-bcrypt, moodle, python, python-support (>= 0.90), ${misc:Depends}
 Conflicts: lliurex-moodle2
 Description: LliureX moodle configurator
  This package configures moodle 
