@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e 
+
+echo " * [ lliurex-moodle ] : Notice: This postinstall script not configures Moodle anymore, see Zero Center Helper"
+
+
+#DEBHELPER#
+
+exit 0
+
+
