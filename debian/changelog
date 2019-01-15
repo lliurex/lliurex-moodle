@@ -1,3 +1,9 @@
+lliurex-moodle (0.45) bionic; urgency=medium
+
+  * Fixed database and config files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 15 Jan 2019 09:12:21 +0100
+
 lliurex-moodle (0.44) bionic; urgency=medium
 
   * Initial release for bionic
