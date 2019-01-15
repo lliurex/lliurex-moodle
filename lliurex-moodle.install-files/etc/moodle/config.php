@@ -26,6 +26,7 @@
 
  # For improved security, make sure html purifier is used.
  $CFG->enablehtmlpurifier = true;
+ $CFG->disableupdatenotifications = true;
 
         if (file_exists("$CFG->dirroot/lib/setup.php"))  {       // Do not edit
                 include_once("$CFG->dirroot/lib/setup.php");
