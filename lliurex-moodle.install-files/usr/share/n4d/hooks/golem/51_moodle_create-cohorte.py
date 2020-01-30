@@ -1,5 +1,6 @@
+
 import MySQLdb	
-import ConfigParser
+import configparser
 import time
 import os
 import subprocess
@@ -28,13 +29,13 @@ class Moodle_updater:
 			self.connection=MySQLdb.connect(host="localhost",user=self.user,passwd=self.password,db='moodle')
 			return True
 		except:
-			print "[!] Error connecting to MySQL [!]"
+			print("[!] Error connecting to MySQL [!]")
 			return False
 	#def connect
 
 	def readPassword(self):	
 		try:
-			config = ConfigParser.ConfigParser()
+			config = configparser.ConfigParser()
 			config.read('/root/.my.cnf')
 			self.user = config.get("mysql","user")
 			self.password= config.get("mysql","password")
@@ -60,10 +61,10 @@ class Moodle_updater:
 	def add_generic_group(self):
 		try:
 			self._join_group(self.args['group'],self.args['user']['uid'])
-			print "Todo va bien !!!!!!!!!!!!!!!!!"
+			print("Todo va bien !!!!!!!!!!!!!!!!!")
 		except Exception as e:
-			print "********************explotando******************"
-			print e
+			print("********************explotando******************")
+			print(e)
 
 
 	def join_group(self):
@@ -91,7 +92,7 @@ class Moodle_updater:
 						cursor.execute(sql)
 						self.connection.commit()
 					except Exception as e:
-						print e
+						print(e)
 					cursor.close()
 	#def join_group
 	
@@ -140,7 +141,7 @@ class Moodle_updater:
 	#def _add_group
 	
 	def execute(self):
-		print self.function_to_execute
+		print(self.function_to_execute)
 		if self.function_to_execute != None:
 			self.function_to_execute()
 	#def execute
