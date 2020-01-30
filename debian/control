@@ -7,7 +7,7 @@ Standards-Version: 4.1.2
 
 Package: lliurex-moodle
 Architecture: all
-Depends: lliurex-sgbd, php-cli, php-xmlrpc, unzip, zip, aspell, php-ldap, python-mysqldb, python-bcrypt, moodle, python, python-support (>= 0.90), ${misc:Depends}
+Depends: lliurex-sgbd, php-cli, php-xmlrpc, unzip, zip, aspell, php-ldap, python3-mysqldb, python3-bcrypt, moodle, python3, ${misc:Depends}
 Conflicts: lliurex-moodle2
 Description: LliureX moodle configurator
  This package configures moodle 
