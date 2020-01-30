@@ -1,7 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import MySQLdb
-import ConfigParser
+import configparser
 import time
 import os
 import subprocess as s
@@ -13,14 +13,19 @@ rc = 0
 adminpassword=""
 while (rc == 0 and adminpassword=="" ):
 	process = s.Popen(['zenity --forms --add-password="Password" --text="Introduce la contrasea para el administrador del moodle"'],shell=True,stdout=s.PIPE,stderr=s.PIPE)
-	result = process.communicate()
-	adminpassword = result[0].strip()
+	result = process.communicate()[0]
+
+	
+	if type(result) is bytes:
+		result=result.decode()
+	
+	adminpassword = result.strip()
 	rc = process.returncode
 	if rc==1:
 		sys.exit()
 
 try:
-		config = ConfigParser.ConfigParser()
+		config = configparser.ConfigParser()
 		config.read('/root/.my.cnf')
 		user = config.get("mysql","user")
 		password= config.get("mysql","password")
@@ -38,19 +43,19 @@ try:
 				sql="UPDATE `moodle`.`mdl_config_plugins` SET `value` = 'cn=teachers,ou=Profiles,ou=Groups,dc=ma5,dc=lliurex,dc=net' WHERE `mdl_config_plugins`.`name` like 'creators' and `mdl_config_plugins`.`plugin` like 'auth/ldap';"
 				cursor.execute(sql)
 				connection.commit()
-
+				adminpassword=bytes(adminpassword,encoding="utf-8")
 				passwordcrypted = bcrypt.hashpw(adminpassword,bcrypt.gensalt(10))
-				sql="UPDATE `moodle`.`mdl_user` SET `password` = '" + passwordcrypted + "' WHERE `mdl_user`.`username` = 'admin';"
+				sql="UPDATE `moodle`.`mdl_user` SET `password` = '" + passwordcrypted.decode("utf-8") + "' WHERE `mdl_user`.`username` = 'admin';"
 				cursor.execute(sql)
 				connection.commit()
 
 
 		except Exception as e:
-				print e
+				print(e)
 		cursor.close()
 
 except:
-		print "[!] Error connecting to MySQL [!]"
+		print("[!] Error connecting to MySQL [!]")
 
 os.system('sudo -u www-data php /usr/share/moodle/admin/cli/purge_caches.php')
 
