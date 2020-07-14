@@ -1,0 +1,18 @@
+{
+    "linkid":"moodle",
+    "link":"http://moodle",
+    "icon":"moodle.svg",
+    "name": {
+        "default":"moodle",
+        "valencia":"moodle",
+        "es":"moodle"
+    },
+    "description": {
+        "default":"Access to the center's moodle",
+        "valencia":"Accés al moodle del centre",
+        "es":"Acceso al moodle del centro"
+    },
+    "order":250,
+    "editable":false,
+    "visibility":true
+}
