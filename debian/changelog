@@ -1,3 +1,9 @@
+lliurex-moodle (0.48) bionic; urgency=medium
+
+  * Added site to server home page
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 14 Jul 2020 16:41:31 +0200
+
 lliurex-moodle (0.47) bionic; urgency=medium
 
   * Add server alias for lliurex domain
