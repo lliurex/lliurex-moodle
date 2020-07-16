@@ -3,9 +3,9 @@
     "link":"http://moodle",
     "icon":"moodle.svg",
     "name": {
-        "default":"moodle",
-        "valencia":"moodle",
-        "es":"moodle"
+        "default":"Moodle",
+        "valencia":"Moodle",
+        "es":"Moodle"
     },
     "description": {
         "default":"Access to the center's moodle",
