@@ -1,3 +1,10 @@
+lliurex-moodle (0.48.2) bionic; urgency=medium
+
+  * Increased default user quota to 512Mb
+  * Fixed php.ini to increase size of the uploaded files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 01 Oct 2020 11:39:53 +0200
+
 lliurex-moodle (0.48.1) bionic; urgency=medium
 
   * Fixed name in link json file
