@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_menu', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_course_menu', language 'es', version '3.9'.
  *
- * @package   block_course_menu
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_course_menu
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['activatecustomlinks'] = 'Activar Enlaces Personalizados';
 $string['allowresize'] = 'Permitir que la ventana pueda cambiar de tamaño';
 $string['allowscroll'] = 'Permitir que la ventana pueda desplazarse';
-$string['blockgeneralsettings'] = 'Ajustes generales de bloque';
+$string['blockgeneralsettings'] = 'Configuraciones Generales del Bloque';
 $string['blockname'] = 'Menú del Curso';
 $string['cannotmoveright'] = 'No puede moverse a la derecha';
+$string['cannotmovetopicdown'] = 'No puede moverse el tema a la derecha. Hay otro tema arriba de este.';
 $string['cannotmovetopicup'] = 'No puede moverse el tema de arriba. Hay otro tema arriba de este subcapítulo.';
 $string['change'] = 'Cambiar';
 $string['chapter'] = 'Capítulo';
@@ -38,7 +39,7 @@ $string['chaptering'] = 'Activar Agrupamiento Capítulo';
 $string['chapters'] = 'Capítulos';
 $string['correcturlmsg'] = '*La URL debe escribirse como una URL absoluta, que también contenga el protocolo (ejemplos de URLs correctas: http://www.moodle.org, ftp://ftp.moodle.org; Ejemplos de URLs incorrectas: www.moodle.org, moodle.org)';
 $string['courseadministration'] = 'Administración del curso';
-$string['courseduedatedesc'] = 'Este enlace le permitirá cambiar las fechas de vencimiento de las actividades que tienen fechas de vencimiento (como las tareas) y las fechas de apertura/cierre para cuestionarios y lecciones.';
+$string['coursemainpage'] = 'Página principal del curso';
 $string['customlink'] = 'Enlace Personalizado';
 $string['defaultgrouping'] = 'Agrupamiento por defecto';
 $string['defaultheight'] = 'Altura de la ventana por defecto (en pixeles)';
@@ -66,6 +67,7 @@ $string['name'] = 'Nombre';
 $string['namescorm'] = 'SCORM';
 $string['namesite'] = 'Sitio';
 $string['namesitelevel'] = 'Nombre a nivel del sitio';
+$string['namesiteleveldescription'] = 'Nombre alternativo que se mostrará en el encabezado del bloque a nivel del sitio';
 $string['namesocial'] = 'Social';
 $string['nametopics'] = 'Tema';
 $string['nameweeks'] = 'Semana';

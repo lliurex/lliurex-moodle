@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,32 +12,38 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'chat', language 'ca', version '3.9'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityoverview'] = 'Teniu sessions de xat properes';
 $string['ajax'] = 'Versió Ajax';
 $string['autoscroll'] = 'Desplaçament automàtic';
-$string['beep'] = 'bip';
+$string['beep'] = 'Fes sonar';
+$string['bubble'] = 'Bombolla';
 $string['cantlogin'] = 'No s\'ha pogut entrar a la sala de xat';
+$string['chat:addinstance'] = 'Afegeix un xat nou';
 $string['chat:chat'] = 'Accedeix a una sala de xat';
 $string['chat:deletelog'] = 'Suprimir registres de xat';
 $string['chat:exportparticipatedsession'] = 'Exporta la sessió del xat en la qual heu intervingut.';
 $string['chat:exportsession'] = 'Exporta qualsevol sessió de xat';
-$string['chatintro'] = 'Text de presentació';
-$string['chatname'] = 'Nom d\'aquesta sala de xat';
-$string['chat:readlog'] = 'Llegir registres de xat';
-$string['chatreport'] = 'Sessions de xat';
+$string['chat:readlog'] = 'Llegeix els registres de xat';
 $string['chat:talk'] = 'Participar en un xat';
+$string['chatintro'] = 'Descripció';
+$string['chatname'] = 'Nom d\'aquesta sala de xat';
+$string['chatreport'] = 'Sessions de xat';
 $string['chattime'] = 'Proper dia i hora de xat';
+$string['compact'] = 'Compacte';
+$string['composemessage'] = 'Redacta un missatge';
 $string['configmethod'] = 'El mètode normal de xat implica que els clients contactin regularment el servidor en cerca d\'actualitzacions. No necessita cap configuració i funciona enlloc, però pot crear una càrrega gran al servidor si s\'apleguen molts usuaris. Utilitzar un dimoni servidor requereix accés a l\'intèrpret d\'ordres d\'Unix, però comporta un entorn de xat ràpid i escalable.';
 $string['confignormalupdatemode'] = 'El refrescament de la sala de xat se sol realitzar d\'una manera prou eficient per mitjà de la característica <em>Keep-Alive</em> de l\'HTTP 1.1, però això és bastant pesat per al servidor. Un mètode més avançat consisteix a utilitzar l\'estratègia <em>Corrent de dades</em> per enviar les actualitzacions als usuaris. L\'estratègia <em>Corrent de dades</em> és més escalable (similar al mètode chatd) però no funciona en tots els servidors.';
 $string['configoldping'] = 'Després de quant de temps d\'estar en silenci cal considerar que un usuari ha marxat? Això és només un límit superior, ja que normalment les desconnexions es detecten de manera molt ràpida. Els valors més baixos seran més exigents en el vostre servidor. Si utilitzeu el mètode normal, no l\'establiu <strong>mai</strong> a un número inferior a 2 * chat_refresh_room.';
@@ -48,13 +53,17 @@ $string['configserverhost'] = 'El nom de l\'ordinador on hi ha el dimoni servido
 $string['configserverip'] = 'L\'adreça IP numèrica corresponent al mateix ordinador';
 $string['configservermax'] = 'Nombre màxim de clients permesos';
 $string['configserverport'] = 'Número del port que pot utilitzar el dimoni';
+$string['coursetheme'] = 'Tema del curs';
 $string['currentchats'] = 'Sessions de xat actives';
 $string['currentusers'] = 'Usuaris actuals';
 $string['deletesession'] = 'Suprimeix aquesta sessió';
 $string['deletesessionsure'] = 'Esteu segur que voleu suprimir aquesta sessió?';
 $string['donotusechattime'] = 'No publiquis el dia i hora dels xats';
 $string['enterchat'] = 'Feu clic aquí per entrar al xat';
+$string['entermessage'] = 'Escriviu el vostre missatge';
 $string['errornousers'] = 'No s\'ha pogut trobar cap usuari!';
+$string['eventmessagesent'] = 'S\'ha enviat el missatge';
+$string['eventsessionsviewed'] = 'S\'han visualitzat les sessions';
 $string['explaingeneralconfig'] = 'Aquests paràmetres s\'utilitzen <strong>sempre</strong>';
 $string['explainmethoddaemon'] = 'Aquests paràmetres <strong>només</strong> compten si heu seleccionat "Dimoni servidor de chat" en chat_method';
 $string['explainmethodnormal'] = 'Aquests paràmetres <strong>només</strong> compten si heu seleccionat "Mètode normal" en chat_method';
@@ -76,13 +85,22 @@ $string['methodajax'] = 'Mètode Ajax';
 $string['methoddaemon'] = 'Dimoni servidor de xat';
 $string['methodnormal'] = 'Mètode normal';
 $string['modulename'] = 'Xat';
-$string['modulename_help'] = 'El mòdul de xat permet que els participants mantinguin una conversa sincrònica en temps real a través del web. Aquesta és una manera útil de tenir un major coneixement dels altres i el tema en debat - la manera de
-de la utilització d\'una sala de xat és bastant diferent dels fòrums asíncrons.';
+$string['modulename_help'] = 'El mòdul d\'activitat de xat permet que els participants mantinguin una conversa escrita sincrònica, en temps real.
+
+El xat pot ser una activitat d\'una sola vegada o es pot repetir a la mateixa hora cada dia o cada setmana. Les sessions de xat es desen i es poden posar a disposició de tothom per llegir-les o es poden restringir als usuaris amb la capacitat de veure els registres de sessions de xat.
+
+Els xats són especialment útils quan el grup no es pot trobar presencialment. Exemples:
+
+* Reunions periòdiques d\'estudiants que participen en cursos en línia, de manera que puguin compartir experiències amb altres participants del mateix curs però que no resideixen al mateix lloc.
+* Un estudiant que temporalment no pot assistir en persona pot parlar així amb el professor per mantenir-se al corrent de la feina.
+* Els estudiants més joves poden utilitzar el xat des de casa fora de l\'horari escolar com una forma (controlada) d\'iniciació al món de les xarxes socials.
+* Una sessió de preguntes i respostes amb un expert convidat.
+* Sessions per a ajudar els estudiants a preparar-se per als exàmens, en les quals el professor o altres estudiants posen exemples de preguntes.';
 $string['modulenameplural'] = 'Xats';
 $string['neverdeletemessages'] = 'No suprimeixis mai els missatges';
 $string['nextsession'] = 'Propera sessió programada';
-$string['nochat'] = 'No es troba el xat';
 $string['no_complete_sessions_found'] = 'No s\'han trobat sessions completades.';
+$string['nochat'] = 'No es troba el xat';
 $string['noguests'] = 'El xat no està obert a visitants';
 $string['nomessages'] = 'No hi ha missatges encara';
 $string['nopermissiontoseethechatlog'] = 'No teniu permisos per veure el registre de xats.';
@@ -92,6 +110,7 @@ $string['noscheduledsession'] = 'No hi ha cap sessió programada';
 $string['notallowenter'] = 'No teniu permesa l\'entrada a la sala de xat.';
 $string['notlogged'] = 'No heu entrat!';
 $string['oldping'] = 'Temps límit de desconnexió';
+$string['page-mod-chat-x'] = 'Qualsevol pàgina del mòdul de xat';
 $string['pastchats'] = 'Sessions de xat anteriors';
 $string['pluginadministration'] = 'Administració del xat';
 $string['pluginname'] = 'Xat';
@@ -100,10 +119,11 @@ $string['refreshuserlist'] = 'Refresca la llista d\'usuaris';
 $string['removemessages'] = 'Suprimeix tots els missatges';
 $string['repeatdaily'] = 'A la mateixa hora cada dia';
 $string['repeatnone'] = 'No es repeteix; publica només la data i hora especificades';
-$string['repeattimes'] = 'Repeteix sessions';
+$string['repeattimes'] = 'Repeteix/publica els horaris de les sessions';
 $string['repeatweekly'] = 'El mateix dia a la mateixa hora cada setmana';
 $string['saidto'] = 'dit a';
 $string['savemessages'] = 'Desa les sessions anteriors';
+$string['search:activity'] = 'Xat: informació de l\'activitat';
 $string['seesession'] = 'Visualitza aquesta sessió';
 $string['send'] = 'Envia';
 $string['sending'] = 'S\'està enviant';
@@ -112,7 +132,7 @@ $string['serverip'] = 'Adreça IP del servidor';
 $string['servermax'] = 'Nombre màxim d\'usuaris';
 $string['serverport'] = 'Port del servidor';
 $string['sessions'] = 'Sessions de xat';
-$string['sessionstart'] = 'La sessió de xat començarà en: {$a}';
+$string['sessionstart'] = 'La propera sessió de xat començarà el: {$a->date}, (d\'aquí a {$a->fromnow})';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tothom pot veure les sessions anteriors';
 $string['studentseereports_help'] = 'Si es configura en No, només els usuaris amb la capacitat mod/chat:readlog poden veure els registres del xat';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'debug', language 'ca', version '3.9'.
  *
- * @package   debug
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     debug
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,20 +37,19 @@ $string['configmoodle'] = 'Aquest Moodle encara no ha estat configurat. Us cal e
 $string['erroroccur'] = 'S\'ha produït un error durant el procés';
 $string['invalidarraysize'] = 'Mida incorrecta de matrius en els paràmetres de: {$a}';
 $string['invalideventdata'] = 'S\'han enviat dades incorrectes de l\'esdeveniment: {$a}';
-$string['invalidparameter'] = 'S\'ha detectat un valor de paràmetre incorrecte i l\'execució no pot continuar.';
-$string['invalidresponse'] = 'S\'ha detectat un valor de resposta incorrecte i l\'execució no pot continuar.';
+$string['invalidparameter'] = 'S\'ha detectat un valor de paràmetre invàlid';
+$string['invalidresponse'] = 'S\'ha detectat un valor de resposta invàlid';
 $string['missingconfigversion'] = 'La taula de configuració no conté la versió i no es pot continuar.';
 $string['modulenotexist'] = 'El mòdul {$a} no existeix';
 $string['morethanonerecordinfetch'] = 'S\'ha trobat més d\'un registre en fetch() !';
 $string['mustbeoveride'] = 'Cal sobreescriure el mètode abstracte {$a}.';
-$string['noactivityname'] = 'Objecte de pàgina derivat de page_generic_activity però $this->activityname no està definit';
 $string['noadminrole'] = 'No s\'ha trobat el rol d\'administració';
 $string['noblocks'] = 'No hi ha blocs instal·lats!';
 $string['nocate'] = 'No hi ha categories!';
 $string['nomodules'] = 'No hi ha mòduls!';
 $string['nopageclass'] = 'S\'ha importat {$a} però no s\'han trobat classes de pàgines';
 $string['noreports'] = 'No hi ha cap informe accessible';
-$string['notables'] = 'Cap taula ';
+$string['notables'] = 'Cap taula';
 $string['phpvaroff'] = 'La variable de servidor PHP \'{$a->name}\' hauria d\'estar desactivada - {$a->link}';
 $string['phpvaron'] = 'La variable de servidor PHP \'{$a->name}\' no s\'ha activat {$a->link}';
 $string['sessionmissing'] = 'S\'ha perdut de la sessió l\'objecte {$a}';

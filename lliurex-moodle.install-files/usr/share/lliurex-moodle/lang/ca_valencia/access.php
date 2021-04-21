@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'access', language 'ca_valencia', version '3.9'.
  *
- * @package   access
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     access
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,19 +32,13 @@ $string['accessstatement'] = 'Declaració d\'accessibilitat';
 $string['activitynext'] = 'Activitat següent';
 $string['activityprev'] = 'Activitat anterior';
 $string['breadcrumb'] = 'Camí d\'engrunes';
-$string['currenttopic'] = 'Este tema';
-$string['currentweek'] = 'Esta setmana';
 $string['hideblocka'] = 'Oculta bloc {$a}';
-$string['monthnext'] = 'Mes següent';
-$string['monthprev'] = 'Mes anterior';
 $string['showblocka'] = 'Mostra bloc {$a}';
 $string['sitemap'] = 'Mapa del lloc';
 $string['skipa'] = 'Omet {$a}';
 $string['skipblock'] = 'Omet bloc';
 $string['skipnavigation'] = 'Omet navegació';
 $string['skipto'] = 'Vés a {$a}';
-$string['tabledata'] = 'Taula de dades, {$a}';
-$string['tablelayout'] = 'Taula de composició, {$a}';
 $string['tocontent'] = 'Vés al contingut principal';
 $string['tonavigation'] = 'Vés a navegació';
 $string['youarehere'] = 'Sou ací';

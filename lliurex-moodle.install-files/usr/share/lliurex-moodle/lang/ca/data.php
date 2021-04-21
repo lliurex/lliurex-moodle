@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'data', language 'ca', version '3.9'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,12 @@ $string['addcomment'] = 'Afegeix un comentari';
 $string['addentries'] = 'Afegeix entrades';
 $string['addtemplate'] = 'Plantilla d\'introducció';
 $string['advancedsearch'] = 'Cerca avançada';
+$string['allowcomments'] = 'Permeteu comentaris en les entrades?';
 $string['alttext'] = 'Text alternatiu';
+$string['approvalstatus'] = 'Estat d\'aprovació';
 $string['approve'] = 'Aprova';
 $string['approved'] = 'Acceptat';
+$string['areacontent'] = 'Camps';
 $string['ascending'] = 'Ascendent';
 $string['asearchtemplate'] = 'Plantilla de cerca avançada';
 $string['atmaxentry'] = 'Heu introduït el nombre màxim d\'entrades permès';
@@ -49,6 +52,7 @@ Els camps tenen el format [[fieldname]]. Totes les altres etiquetes tenen el for
 
 Només les etiquetes que es troben a la llista "Etiquetes disponibles" poden ser utilitzades en aquesta plantilla.';
 $string['availabletodate'] = 'Disponible fins a';
+$string['availabletodatevalidation'] = 'La data de «disponible fins a» no pot ser anterior a la data de «disponible des de».';
 $string['blank'] = 'Blanc';
 $string['buttons'] = 'Accions';
 $string['bynameondate'] = 'per {$a->name} - {$a->date}';
@@ -56,6 +60,7 @@ $string['cancel'] = 'Cancel·la';
 $string['cannotaccesspresentsother'] = 'No us està permès d\'accedir als valors predefinits d\'altres usuaris';
 $string['cannotadd'] = 'No es poden afegir entrades!';
 $string['cannotdeletepreset'] = 'Error en esborrar un valor predefinit!';
+$string['cannotoverwritepreset'] = 'Hi ha hagut un error en sobreescriure els valors predefinits';
 $string['cannotunziptopreset'] = 'No es pot descomprimir el directori predefinit';
 $string['checkbox'] = 'Casella de selecció';
 $string['chooseexportfields'] = 'Marqueu els camps que voleu exportar:';
@@ -69,9 +74,12 @@ $string['comments'] = 'Comentaris';
 $string['commentsaved'] = 'S\'ha desat el comentari';
 $string['commentsn'] = '{$a} comentari(s)';
 $string['commentsoff'] = 'No està habilitada la funció de comentaris';
+$string['completionentries'] = 'Requereix entrades';
+$string['completionentriescount'] = 'Nombre d\'entrades';
 $string['configenablerssfeeds'] = 'Aquest commutador habilita la possibilitat de canals RSS de les bases de dades. Però cal activar manualment els canals en els paràmetres de cada base de dades.';
 $string['confirmdeletefield'] = 'Segur que voleu suprimir aquest camp?';
 $string['confirmdeleterecord'] = 'Segur que voleu suprimir aquesta entrada?';
+$string['confirmdeleterecords'] = 'Segur que voleu suprimir aquestes entrades?';
 $string['csstemplate'] = 'Plantilla CSS';
 $string['csvfailed'] = 'No es poden llegir les dades del fitxer CSV';
 $string['csvfile'] = 'Fitxer CSV:';
@@ -98,11 +106,13 @@ $string['csvimport_help'] = '<p align="center"><strong>Importació d\'un fitxer 
 
 <p>Avís: potser no es podran importar tots els tipus de camps.</p>';
 $string['csvwithselecteddelimiter'] = 'Delimitador de text <acronym title="Comma Separated Values">CSV</acronym>:';
-$string['data:approve'] = 'Aprovar entrades pendents';
+$string['data:addinstance'] = 'Afegeix una nova base de dades';
+$string['data:approve'] = 'Aprovar i desfer entrades aprovades';
 $string['data:comment'] = 'Escriure comentaris';
 $string['data:exportallentries'] = 'Exporta totes les entrades de la base de dades';
 $string['data:exportentry'] = 'Exporta una entrada de la base de dades';
 $string['data:exportownentry'] = 'Exporta l\'entrada de la base de dades pròpia';
+$string['data:exportuserinfo'] = 'Exporta la informació de l\'usuari';
 $string['data:managecomments'] = 'Gestionar comentaris';
 $string['data:manageentries'] = 'Gestionar entrades';
 $string['data:managetemplates'] = 'Gestionar plantilles';
@@ -120,6 +130,7 @@ $string['dateentered'] = 'Data d\'introducció';
 $string['defaultfielddelimiter'] = '(per defecte és una coma)';
 $string['defaultfieldenclosure'] = '(per defecte no s\'utilitza)';
 $string['defaultsortfield'] = 'Camp d\'ordenació per defecte';
+$string['delcheck'] = 'Casella d\'eliminació massiva';
 $string['delete'] = 'Suprimeix';
 $string['deleteallentries'] = 'Suprimeix totes les entrades';
 $string['deletecomment'] = 'Segur que voleu suprimir aquest comentari?';
@@ -129,6 +140,7 @@ $string['deletenotenrolled'] = 'Suprimeix les entrades d\'usuaris no inscrits';
 $string['deletewarning'] = 'Segur que voleu suprimir aquest predefinit?';
 $string['descending'] = 'Descendent';
 $string['directorynotapreset'] = '{$a->directory} No és un predefinit: falten fitxers: {$a->missing_files}';
+$string['disapprove'] = 'Desfés l\'aprovació';
 $string['download'] = 'Baixa';
 $string['edit'] = 'Edita';
 $string['editcomment'] = 'Edita comentari';
@@ -143,7 +155,16 @@ $string['entrieslefttoaddtoview'] = 'Heu d\'afegir {$a->entrieslefttoview} una e
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'S\'ha desat la vostra entrada';
 $string['errormustbeteacher'] = 'Per a utilitzar aquesta pàgina heu de ser professor/a';
+$string['errormustsupplyvalue'] = 'Cal que poseu un valor aquí.';
 $string['errorpresetexists'] = 'Ja existeix un valor predefinit amb el nom que heu seleccionat';
+$string['eventfieldcreated'] = 'S\'ha creat un camp';
+$string['eventfielddeleted'] = 'S\'ha suprimit un camp';
+$string['eventfieldupdated'] = 'S\'ha actualitzat el camp';
+$string['eventrecordcreated'] = 'S\'ha creat un registre';
+$string['eventrecorddeleted'] = 'S\'ha suprimit un registre';
+$string['eventrecordupdated'] = 'S\'ha actualitzat un registre';
+$string['eventtemplateupdated'] = 'S\'ha actualitzat una plantilla';
+$string['eventtemplateviewed'] = 'S\'han visualitzat les plantilles';
 $string['example'] = 'Exemple del mòdul de bases de dades';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible';
@@ -176,6 +197,7 @@ $string['fieldwidth'] = 'Amplada';
 $string['fieldwidthlistview'] = 'Amplada en visualització de llistes';
 $string['fieldwidthsingleview'] = 'Amplada en visualització d\'una entrada';
 $string['file'] = 'Fitxer';
+$string['fileencoding'] = 'Codificació';
 $string['filesnotgenerated'] = 'No s\'han pogut generar tots els fitxers: {$a}';
 $string['filtername'] = 'Enllaços automàtics a bases de dades';
 $string['footer'] = 'Peu de pàgina';
@@ -195,8 +217,11 @@ $string['headerrsstemplate'] = 'Defineix l\'aparença de l\'entrades en els cana
 $string['headersingletemplate'] = 'Defineix la interfície de visualització d\'entrades individuals';
 $string['importentries'] = 'Importa les entrades';
 $string['importsuccess'] = 'La predefinició s\'ha aplicat amb èxit';
+$string['includeapproval'] = 'Inclou l\'estat d\'aprovació';
+$string['includetime'] = 'Inclou el temps afegit/modificat';
+$string['includeuserdetails'] = 'Inclou els detalls de l\'usuari';
 $string['insufficiententries'] = 'fan falta més entrades per veure aquesta base de dades';
-$string['intro'] = 'Introducció';
+$string['intro'] = 'Descripció';
 $string['invalidaccess'] = 'No heu accedit a aquesta pàgina correctament';
 $string['invalidfieldid'] = 'El camp ID és incorrecte';
 $string['invalidfieldname'] = 'Trieu un altre nom per a aquest camp';
@@ -208,6 +233,7 @@ $string['invalidurl'] = 'L\'URL que heu introduït no és vàlid';
 $string['jstemplate'] = 'Plantilla Javascript';
 $string['latitude'] = 'Latitud';
 $string['latlong'] = 'Latitud/longitud';
+$string['latlongboth'] = 'Cal posar tant la latitud com la longitud.';
 $string['latlongdownloadallhint'] = 'Enllaç per a baixar totes les entrades com a KML';
 $string['latlongkmllabelling'] = 'Com etiquetar els elements en fitxers KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Enllaços a serveis';
@@ -215,6 +241,8 @@ $string['latlongotherfields'] = 'Altres camps';
 $string['list'] = 'Visualitza llista';
 $string['listtemplate'] = 'Plantilla de llista';
 $string['longitude'] = 'Longitud';
+$string['manageapproved'] = 'Permet l\'edició d\'entrades aprovades';
+$string['manageapproved_help'] = 'Si es desactiva, l\'usuari que va afegir les entrades aprovades ja no podrà editar-les ni esborrar-les. Aquest paràmetre no té cap efecte, tret que estigui activat «Requereix aprovació».';
 $string['mapexistingfield'] = 'Mapa a {$a}';
 $string['mapnewfield'] = 'Crea un camp nou';
 $string['mappingwarning'] = 'Tots els camps vells que no s\'hagin pogut mapar a camps nous es perdran i totes les dades d\'aquests camps seran suprimides.';
@@ -228,7 +256,17 @@ $string['menuchoose'] = 'Trieu...';
 $string['missingdata'] = 'Cal que afegiu dades id o objecte al camp';
 $string['missingfield'] = 'Error de programació: heu d\'especicar un camp i/o dades en definir la classe de camp';
 $string['modulename'] = 'Base de dades';
-$string['modulename_help'] = 'Em mòdul d\'activitat de la base de dades permet als participants crear i mantenir un banc de registres i fer-hi cerques. El format i l\'estructura d\'aquestes entrades poden ser quasi il·limitats i incloure imatges, fitxers, URLs, números i text entre d\'altres opcions.';
+$string['modulename_help'] = 'El mòdul d\'activitat de base de dades permet als participants crear, mantenir i cercar una col·lecció d\'entrades (p. ex., registres). El professors defineix l\'estructura de les entrades com un nombre de camps. Els tipus de camps inclouen caselles de selecció, botons d\'opció, menús desplegables, àrees de text, URL, imatges i fitxers carregats.
+
+La disposició visual de la informació quan es s\'enumeren, es visualitzen o s\'editen entrades de la base de dades pot controlar-se mitjançant plantilles. Les activitats de base de dades poden compartir-se entre cursos com a predefinides i un docent també pot importar i exportar les entrades de la base de dades.
+
+Si el filtre d\'enllaços automàtics de la base de dades està activat, qualsevol entrada s\'enllaçarà automàticament quan les paraules o frases apareguin dins el curs.
+
+El professor pot permetre comentaris per a les entrades. Les entrades també poden ser valorades pels professors o els estudiants (avaluació entre iguals). Les valoracions poden agregar-se per formar una qualificació final que es registri al butlletí de qualificacions.
+
+Les activitats de base de dades tenen moltes aplicacions, com ara:
+* Una col·lecció col·laborativa d\'enllaços web, llibres, ressenyes de llibres, referències de revistes, etc.
+* Per visualitzar fotos, pòsters, llocs web o poemes creats pels estudiants i per a la revisió entre iguals';
 $string['modulenameplural'] = 'Bases de dades';
 $string['more'] = 'Més';
 $string['moreurl'] = 'Més (URL)';
@@ -236,18 +274,6 @@ $string['movezipfailed'] = 'No es pot moure el fitxer comprimit';
 $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (selecció múltiple)';
 $string['multipletags'] = 'S\'han trobat múltiples etiquetes. No s\'ha desat la plantilla.';
-$string['namecheckbox'] = 'Casella de selecció';
-$string['namedate'] = 'Data';
-$string['namefile'] = 'Camp de fitxer';
-$string['namelatlong'] = 'Camp de latitud/longitud';
-$string['namemenu'] = 'Camp de menú';
-$string['namemultimenu'] = 'Camp de menú de selecció múltiple';
-$string['namenumber'] = 'Nombre';
-$string['namepicture'] = 'Camp d\'imatge';
-$string['nameradiobutton'] = 'Botó d\'opció';
-$string['nametext'] = 'Camp de text';
-$string['nametextarea'] = 'Camp d\'àrea de text';
-$string['nameurl'] = 'Camp URL';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crea un nou camp';
 $string['newfield_help'] = '<p align="center"><strong>Camps</strong></p>
@@ -268,7 +294,7 @@ $string['notapproved'] = 'L\'entrada encara no està aprovada.';
 $string['notinjectivemap'] = 'No hi ha un mapa d\'injecció';
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['number'] = 'Nombre';
-$string['numberrssarticles'] = 'Articles RSS';
+$string['numberrssarticles'] = 'Entrades a la font RSS';
 $string['numnotapproved'] = 'Pendents';
 $string['numrecords'] = '{$a} entrades';
 $string['ods'] = '<acronym title="Full de càlcul de l\'OpenDocument ">ODS</acronym> (OpenOffice)';
@@ -278,6 +304,7 @@ $string['other'] = 'Un altre';
 $string['overrwritedesc'] = 'Sobreescriu el valor predefinit, si és que n\'hi ha';
 $string['overwrite'] = 'Sobreescriu';
 $string['overwritesettings'] = 'Sobreescriu els paràmetres actuals';
+$string['page-mod-data-x'] = 'Pàgina qualsevol del mòdul d\'activitat de la base de dades';
 $string['pagesize'] = 'Entrades per pàgina';
 $string['participants'] = 'Participants';
 $string['picture'] = 'Imatge';
@@ -290,30 +317,33 @@ $string['presets'] = 'Predefinits';
 $string['radiobutton'] = 'Botons d\'opció';
 $string['recordapproved'] = 'S\'ha aprovat l\'entrada';
 $string['recorddeleted'] = 'S\'ha suprimit l\'entrada';
+$string['recorddisapproved'] = 'Entrada no aprovada';
 $string['recordsnotsaved'] = 'No s\'ha desat cap entrada. Comproveu el format del fitxer.';
 $string['recordssaved'] = 'entrada/es';
-$string['requireapproval'] = 'Requereix aprovació?';
+$string['requireapproval'] = 'Requereix aprovació';
 $string['requireapproval_help'] = 'Si s\'habilita, caldrà que el professor aprovi les entrades abans que tothom pugui visualitzar-les.';
-$string['requiredentries'] = 'Entrades requerides';
-$string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides</strong></p>
+$string['required'] = 'Requerit';
+$string['requiredentries'] = 'Entrades requerides per a la compleció';
+$string['requiredentries_help'] = 'Si s\'estableix, es mostra un missatge que indica la quantitat d\'entrades necessàries per finalitzar l\'activitat. Tingueu en compte que aquest paràmetre no està connectat a la compleció de l\'activitat.
 
-<p>El nombre d\'entrades que cal que trameti cada participant. Als usuaris que no hagin tramès aquest nombre d\'entrades se\'ls mostrarà un recordatori quan visualitzin la base de dades.</p>
-
-<p>A més a més, no es considerarà que hagin completat aquesta activitat fins que no hagin tramès el nombre d\'entrades requerit.</p>';
+Si calen algunes entrades per a la compleció d\'activitats, s\'hauria d\'utilitzar el nou paràmetre de compleció d\'activitat «Requereix entrades». Per tal d\'eliminar completament aquest paràmetre, configureu-lo com a «cap», i després deseu els canvis.
+Utilitzeu els camps Entrades requerides a la secció de compleció d\'activitats en lloc d\'això.';
 $string['requiredentriestoview'] = 'Entrades requerides per visualitzar';
 $string['requiredentriestoview_help'] = '<p align="center"><strong>Entrades requerides per visualitzar</strong></p>
 
 <p>El nombre d\'entrades que cal que un estudiant trameti abans que pugui visualitzar entrades d\'altres estudiants.</p>
 
 Nota: Si es requereix que es trametin entrades abans de visualitzar-ne d\'altres, és recomanable inhabilitar el filtre d\'enllaços automàtics a la base de dades. Això és perquè el filtre d\'enllaços automàtics a la base de dades no pot determinar si un usuari ha tramès el nombre requerit d\'entrades.';
+$string['requiredentrieswarning'] = 'Aquest paràmetre s\'ha substituït pel paràmetre «Requereix entrades» a la compleció d\'activitat.';
+$string['requiredfield'] = 'Camp requerit';
 $string['resetsettings'] = 'Reinicialitza els filtres';
 $string['resettemplate'] = 'Reinicia la plantilla';
 $string['resizingimages'] = 'S\'estan redimensionant les miniatures...';
 $string['rows'] = 'files';
 $string['rssglobaldisabled'] = 'Inhabilitat. Vegeu les variables de configuració del lloc.';
-$string['rsshowmany'] = '(número d\'entrades recents per mostrar; 0 per inhabilitar el RSS)';
 $string['rsstemplate'] = 'Plantilla RSS';
 $string['rsstitletemplate'] = 'Plantilla títol RSS';
+$string['rsstype'] = 'Canal RSS d\'aquesta activitat';
 $string['save'] = 'Desa';
 $string['saveandadd'] = 'Desa i afegeix-ne un altre';
 $string['saveandview'] = 'Desa i visualitza';
@@ -323,10 +353,17 @@ $string['savesettings'] = 'Desa els paràmetres';
 $string['savesuccess'] = 'S\'ha desat amb èxit. El vostre predefinit estarà disponible per a tot el lloc.';
 $string['savetemplate'] = 'Desa la plantilla';
 $string['search'] = 'Cerca';
+$string['search:activity'] = 'Base de dades: informació de l\'activitat';
 $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
 $string['showall'] = 'Mostra totes les entrades';
 $string['single'] = 'Visualitza una entrada';
 $string['singletemplate'] = 'Plantilla única';
+$string['subplugintype_datafield'] = 'Tipus de camp de la base de dades';
+$string['subplugintype_datafield_plural'] = 'Els tipus de camp de la base de dades';
+$string['subplugintype_datapreset'] = 'Predefinit';
+$string['subplugintype_datapreset_plural'] = 'Predefinits';
+$string['tagarea_data_records'] = 'Entrades';
+$string['tags'] = 'Etiquetes';
 $string['teachersandstudents'] = '{$a->teachers} i {$a->students}';
 $string['templates'] = 'Plantilles';
 $string['templatesaved'] = 'S\'ha desat la plantilla';
@@ -350,8 +387,10 @@ $string['uploadrecords_help'] = 'Es poden carregar les entrades mitjançant un f
 
 El tancament és un caràcter que envolta cada camp en cada registre. Normalment es pot deixar desactivat.';
 $string['url'] = 'URL';
+$string['usedate'] = 'Inclou en la cerca.';
 $string['usestandard'] = 'Utilitza un predefinit';
 $string['usestandard_help'] = 'Per utilitzar un predefinit disponible arreu del lloc, seleccioneu-lo de la llista. (Si heu afegit un element predefinit a la llista utilitzant la funció <em>Desa com a predefinit</em>, aleshores teniu l\'opció d\'esborrar-lo.)';
 $string['viewfromdate'] = 'Només lectura des de';
 $string['viewtodate'] = 'Només lectura fins';
+$string['viewtodatevalidation'] = 'La data de «només lectura fins a» no pot ser anterior a la data de «només lectura des de».';
 $string['wrongdataid'] = 'L\'ID de dades proporcionat és erroni';

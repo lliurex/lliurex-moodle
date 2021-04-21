@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'repository_filesystem', language 'es', version '3.9'.
  *
- * @package   repository_filesystem
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_filesystem
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,3 +37,7 @@ $string['nosubdir'] = 'Necesita crear al menos una carpeta dentro del directorio
 $string['path'] = 'Seleccionar un subdirectorio';
 $string['pluginname'] = 'Sistema de archivos';
 $string['pluginname_help'] = 'Crear un repositorio desde el directorio local';
+$string['relativefiles'] = 'Permitir archivos relacionados';
+$string['relativefiles_desc'] = 'Permite acceder a todos los archivos del repositorio con los enlaces relacionados.';
+$string['root'] = 'Raíz';
+$string['searchresults'] = 'Resultados de la búsqueda';

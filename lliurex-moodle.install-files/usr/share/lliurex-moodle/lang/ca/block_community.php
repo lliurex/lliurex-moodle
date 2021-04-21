@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_community', language 'ca', version '3.9'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,6 +37,8 @@ $string['audience_help'] = 'Quina mena de curs cerqueu? De la mateixa manera que
 $string['blocks'] = 'Blocs';
 $string['cannotselecttopsubject'] = 'No es pot establir un tema al capdamunt';
 $string['comments'] = 'Comentaris ({$a})';
+$string['community:addinstance'] = 'Afegeix un bloc nou cercador de comunitat';
+$string['community:myaddinstance'] = 'Afegeix un bloc de cercador de comunitat nou a la pàgina del Tauler';
 $string['contentinfo'] = 'Tema: {$a->subject} - Audiència: {$a->audience} - Nivell educatiu: {$a->educationallevel}';
 $string['continue'] = 'Continua';
 $string['contributors'] = 'Col·laboracions: {$a}';
@@ -66,9 +68,11 @@ $string['enrollablecourses'] = 'Cursos que admeten inscripcions';
 $string['errorcourselisting'] = 'S\'ha produït un error mentre es recuperava la llista de cursos de la col·lectivitat escollida; torneu-ho a intentar més tard. ({$a})';
 $string['errorhublisting'] = 'S\'ha produït un error mentre es recuperava la llista de la col·lectivitat a Moodle.org; torneu-ho a intentar més tard. ({$a})';
 $string['fileinfo'] = 'Idioma: {$a->lang} - Llicència: {$a->license} - Darrera revisió: {$a->timeupdated}';
+$string['hideall'] = 'Amaga els hubs';
 $string['hub'] = 'col·lectivitat';
 $string['hubnottrusted'] = 'No és de confiança';
 $string['hubtrusted'] = 'Moodle.org confia en aquest concentrador (<em>hub</em>)';
+$string['install'] = 'Descarrega';
 $string['keywords'] = 'Paraules clau';
 $string['keywords_help'] = 'Podeu cercar cursos que tinguin un text específic al nom, la descripció o altres camps de la base de dades.';
 $string['langdesc'] = 'Idioma: {$a}';
@@ -84,8 +88,8 @@ $string['nocourse'] = 'No s\'ha trobat cap curs';
 $string['noratings'] = 'Sense qualificar';
 $string['operation'] = 'Operació';
 $string['orderby'] = 'Ordena per';
-$string['orderbyeldest'] = 'Més antic';
 $string['orderby_help'] = 'Ordre amb què es mostren els resultats';
+$string['orderbyeldest'] = 'Més antic';
 $string['orderbyname'] = 'Nom';
 $string['orderbynewest'] = 'Més recent';
 $string['orderbypublisher'] = 'Publicat per';
@@ -103,6 +107,7 @@ $string['searchcommunitycourse'] = 'Cerca un curs de la comunitat';
 $string['searchcourse'] = 'Cerca un curs de la comunitat';
 $string['selecthub'] = 'Trieu un hub';
 $string['selecthub_help'] = 'Trieu un hub a on cercar els cursos';
+$string['showall'] = 'Mostra tots els hubs';
 $string['sites'] = 'Llocs';
 $string['subject'] = 'Tema';
 $string['subject_help'] = 'Per limitar la vostra cerca a cursos d\'una temàtica particular, escolliu-ne una de la llista següent.';

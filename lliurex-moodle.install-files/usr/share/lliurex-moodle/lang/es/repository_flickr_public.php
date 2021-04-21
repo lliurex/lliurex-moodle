@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'repository_flickr_public', language 'es', version '3.9'.
  *
- * @package   repository_flickr_public
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_flickr_public
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,6 +49,11 @@ $string['notitle'] = 'sin título';
 $string['nullphotolist'] = 'No hay fotografías en esta cuenta';
 $string['pluginname'] = 'Flickr público';
 $string['pluginname_help'] = 'Repositorio en flickr.com';
+$string['privacy:metadata:repository_flickr_public'] = 'El plugin del repositorio público de Flickr no almacena ninguna información personal, pero transmite datos de usuario desde Moodle hacia el sistema remoto.';
+$string['privacy:metadata:repository_flickr_public:author'] = 'Autor del contenido del repositorio público Flickr.';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'Dirección de correo electrónico del repositorio público Flickr.';
+$string['privacy:metadata:repository_flickr_public:text'] = 'Texto de búsqueda del repositorio público Flickr.';
+$string['privacy:metadata:repository_flickr_public:user_id'] = 'ID de usuario del repositorio público Flickr.';
 $string['remember'] = 'Recordarme';
 $string['secret'] = 'Secreto';
 $string['sharealike'] = 'Sí, siempre y cuando otros compartan lo mismo';

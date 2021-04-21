@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'certificate', language 'es', version '3.9'.
  *
- * @package   certificate
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     certificate
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,15 @@ $string['bordergreen'] = 'Verde';
 $string['borderlines'] = 'Líneas';
 $string['borderstyle'] = 'Imagen del borde';
 $string['borderstyle_help'] = 'La opción de imagen del borde le permite elegir una imagen para el borde entre las que están en la carpeta certificate/pix/borders. Elija la imagen del borde que desee que aparezca alrededor de las orillas del certificado o seleccione sin borde.';
-$string['certificate'] = 'Verificación del código de certificado:';
-$string['certificate:manage'] = 'Gestionar Certificado';
+$string['certificate'] = 'Verificación del código de certificado::';
+$string['certificate:addinstance'] = 'Añada una instancia de certificado';
+$string['certificate:manage'] = 'Administrar una instancia de certificado';
+$string['certificate:printteacher'] = 'Figurarás como profesor en el certificado si el ajuste de impresión profesor está habilitado';
+$string['certificate:student'] = 'Recuperar un certificado';
+$string['certificate:view'] = 'Ver un certificado';
 $string['certificatename'] = 'Nombre de certificado';
-$string['certificate:printteacher'] = 'Imprimir profesor';
 $string['certificatereport'] = 'Informe de certificados';
 $string['certificatesfor'] = 'Certificados para';
-$string['certificate:student'] = 'Obtener cerficado';
 $string['certificatetype'] = 'Tipo de Certificado';
 $string['certificatetype_help'] = 'Aquí es donde usted determina el diseño del certificado. La carpeta del tipo de certificado incluye cuatro certificados por defecto:
 A4 Incrustado imprime en papel tamaño A4 con tipos de letra incrustados.
@@ -58,13 +60,14 @@ Carta no-incrustado imprime en papel tamaño carta sin tipos de letra incrustado
 Los tipos de diseño no-incrustados emplean los tipos de letra Helvetica y Times. Si usted cree que sus usuarios no tiene instalados estos tipos de letra en sus ordenadores, o si su idioma emplea caracteres y símbolos que no están incluidos en los tipos de letra Helvetica y Times, entonces debe elegir tipos incrustados. Los tipos de diseños  incrustados usan los tipos de letra Dejavusans y Dejavuserif. Esto hará que los archivos PDF sean bastante grandes; por eso no se recomienda emplear una variedad incrustada a menos que realmente la necesite.
 
 Se pueden añadir carpetas con nuevos tipos de letra en la carpeta de certificate/type. El nombre de la carpeta y cualquier cadena de idioma nueva deberán añadirse al archivo de idioma del certificado.';
-$string['certificate:view'] = 'Ver certificado';
 $string['certify'] = 'Hace constar que';
 $string['code'] = 'Código';
 $string['completiondate'] = 'Finalización del curso';
 $string['course'] = 'Para';
 $string['coursegrade'] = 'Calificación del Curso';
 $string['coursename'] = 'Curso';
+$string['coursetimereq'] = 'Minutos requeridos en el curso';
+$string['coursetimereq_help'] = 'Escriba aquí la cantidad mínima de tiempo, en minutos, que el estudiante debe mantener la sesión en el curso antes de que pueda recibir el certificado.';
 $string['credithours'] = 'Horas de crédito';
 $string['customtext'] = 'Texto personalizado';
 $string['customtext_help'] = 'Si quiere que el certificado imprima nombres diferentes para el profesor en lugar de aquellos que tienen asignado el rol de profesor, no elija \'Imprimir Profesor\' ni seleccione imagen de firma, exceptuando la imagen de línea. Introduzca los nombres de los profesores en este cuadro de texto tal como usted quiera que aparezcan. Por defecto, este texto se coloca en la parte inferior izquierda del certificado. Las siguientes marcas (tags) HTML están disponibles:<br>, <p>, <b>, <i>, <u>, <img> (src y width/height son obligatorias), <a> (href es obligatoria), <font> (los atributos posibles son: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
@@ -92,8 +95,12 @@ Usted puede verlo aquí:
  {$a->url}';
 $string['emailteachermailhtml'] = '{$a->student} ha recibido su certificado: \'<i>{$a->certificate}</i>\' de {$a->course}. Usted puede verlo aquí <a href="{$a->url}">Informe de Certificado</a>.';
 $string['emailteachers'] = 'Email a Profesores';
-$string['emailteachers_help'] = 'Si se habilita, entonces los profesores serán alertados por correo electrónico cuando los estudiantes reciban un certificado.';
+$string['emailteachers_help'] = 'Si se habilita, entonces los profesores serán alertados por correo electrónico cuando los estudiantes reciban un certificad';
 $string['entercode'] = 'Introduzca el código del certificado a verificar:';
+$string['fontsans'] = 'Fuente Sans-serif';
+$string['fontsans_desc'] = 'Fuente Sans-serif para los certificados con fuentes incrustadas';
+$string['fontserif'] = 'Fuente Serif';
+$string['fontserif_desc'] = 'Fuente Serif para los certificados con fuentes incrustadas';
 $string['getcertificate'] = 'Obtener su certificado';
 $string['grade'] = 'Calificación';
 $string['gradedate'] = 'Fecha de calificación';
@@ -102,10 +109,11 @@ $string['gradefmt_help'] = 'Hay tres opciones de formatos disponibles si usted e
 
 Calificación en porcentaje: Imprime la calificación como porcentaje.
 Calificación en puntuación: Imprime el valor en puntos de la calificación.
-Calificación en letra: Imprime el porcentaje de calificación con una letra';
+Calificación en letra: Imprime el porcentaje de calificación con una letra.';
 $string['gradeletter'] = 'Calificación en letra';
 $string['gradepercent'] = 'Calificación en porcentaje';
 $string['gradepoints'] = 'Calificación en puntuación';
+$string['imagetype'] = 'Tipo de imagen';
 $string['incompletemessage'] = 'Para descargar su certificado, usted debe primero completar todas las actividades requeridas. Por favor, vuelva al curso para completar su trabajo.';
 $string['intro'] = 'Introducción';
 $string['issued'] = 'Emitido';
@@ -116,11 +124,13 @@ $string['lastviewed'] = 'Usted recibió este certificado por última vez en:';
 $string['letter'] = 'Carta';
 $string['lockingoptions'] = 'Opciones de bloqueo';
 $string['modulename'] = 'Certificado';
+$string['modulename_help'] = 'Este módulo permite la generación dinámica de certificados basados en condiciones predefinidas configuradas por el profesor.';
 $string['modulenameplural'] = 'Certificados';
 $string['mycertificates'] = 'Mis certificados';
 $string['nocertificates'] = 'No hay certificados';
 $string['nocertificatesissued'] = 'No hay certificados emitidos';
 $string['nocertificatesreceived'] = 'no ha recibido ningún certificado de curso.';
+$string['nofileselected'] = 'Debe seleccionar un archivo a subir!';
 $string['nogrades'] = 'Sin calificaciones disponibles';
 $string['notapplicable'] = 'N/A';
 $string['notfound'] = 'El número de certificado no pudo ser validado.';
@@ -167,14 +177,20 @@ $string['printwmark'] = 'Marca de agua';
 $string['printwmark_help'] = 'Puede ponerse una marca de agua en el fondo del certificado. Una marca de agua es un gráfico desvanecido. Una marca de agua podría ser un logo, un escudo, un sello, una frase, o cualquier otro elemento que usted quiera emplear como fondo gráfico.';
 $string['receivedcerts'] = 'Certificados recibidos';
 $string['receiveddate'] = 'Fecha de recepción';
+$string['reissuecert'] = 'Re-emitir certificados';
+$string['reissuecert_help'] = 'Si elige \'Sí\', entonces este certificado será re-emitido con una nueva fecha, calificación y número clave cada vez que el usuario seleccione el enlace al certificado. Observe que a pesar que una tabla mostrará las fechas de recepción anteriores, no existirá botón disponible para que el usuario las vea. En el informe de certificado solamente aparecerá el certificado más recientemente emitido.';
 $string['removecert'] = 'Certificados emitidos eliminados';
 $string['report'] = 'Informe';
 $string['reportcert'] = 'Informe de Certificados';
 $string['reportcert_help'] = 'Si elige sí aquí, entonces la fecha de recepción, número de código y el nombre del curso para este certificado se mostrarán en los informes de certificado de usuario. Si selecciona imprimir una calificación en este certificado, entonces dicha calificación también aparecerá en el informe del certificado.';
+$string['requiredtimenotmet'] = 'Usted debe pasar al menos un mínimo de {$a->requiredtime} minutos en el curso antes de poder acceder a este certificado';
+$string['requiredtimenotvalid'] = 'El tiempo requerido debe ser un número válido mayor que 0';
 $string['reviewcertificate'] = 'Revisar su certificado';
 $string['savecert'] = 'Guardar certificados';
 $string['savecert_help'] = 'Si elige esta opción, entonces una copia de cada archivo PDF de certificado de usuario se guardará en la carpeta moddata . Se mostrará un enlace para cada certificado de usuario guardado en el informe de certificados.';
+$string['seal'] = 'Sello';
 $string['sigline'] = 'línea';
+$string['signature'] = 'Firma';
 $string['statement'] = 'ha completado el curso';
 $string['summaryofattempts'] = 'Resumen de certificados recibidos anteriormente';
 $string['textoptions'] = 'Opciones de texto';
@@ -184,9 +200,13 @@ $string['typeA4_embedded'] = 'A4 Incrustado';
 $string['typeA4_non_embedded'] = 'A4 No Incrustado';
 $string['typeletter_embedded'] = 'Carta incrustado';
 $string['typeletter_non_embedded'] = 'Carta no incrustado';
+$string['unsupportedfiletype'] = 'El archivo debe ser un archivo JPEG o PNG';
+$string['uploadimage'] = 'Subir imagen';
+$string['uploadimagedesc'] = 'Este botón le llevará a una nueva pantalla en la que podrá subir imágenes.';
 $string['userdateformat'] = 'Formato de fecha del usuario';
 $string['validate'] = 'Verificar';
 $string['verifycertificate'] = 'Verificar certificado';
 $string['viewcertificateviews'] = 'Ver {$a} certificados emitidos';
 $string['viewed'] = 'Usted recibió este certificado en:';
 $string['viewtranscript'] = 'Ver certificados';
+$string['watermark'] = 'Marca de agua';

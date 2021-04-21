@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tab', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'tab', language 'es', version '3.9'.
  *
- * @package   tab
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tab
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['pluginadministration'] = 'Administración de pestañas';
 $string['pluginname'] = 'Visualización de pestaña';
 $string['tab'] = 'Pestaña';
 $string['tab:addinstance'] = 'Agregar una nueva Visualización de Pestaña';
+$string['tab:view'] = 'Ver Pestañas';
 $string['tabadministration'] = 'Administración de Pestañas';
 $string['tabcontent'] = 'Contenido de pestaña';
 $string['tabname'] = 'Nombre de pestaña';
 $string['taborder'] = 'Orden de la actividad de visualización de pestaña en el menú';
-$string['tab:view'] = 'Ver Pestañas';
 $string['updatethis'] = 'Actualizar esta visualización de pestaña';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,76 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_tags', language 'ca', version '3.9'.
  *
- * @package   block_tags
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_tags
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add'] = 'Afegeix';
-$string['alltags'] = 'Totes les etiquetes:';
-$string['alltags1'] = 'totes les etiquetes';
-$string['alltags2'] = 'Mostra totes les etiquetes (perfil d\'usuari, bitàcoles i etiquetes de curs)';
-$string['arrowtitle'] = 'Cliqueu aquí per introduir el text suggerit (en lletres grises)';
-$string['communitytags'] = 'Etiquetes de comunitat:';
-$string['communitytags1'] = 'etiquetes de comunitat';
-$string['communitytags2'] = 'Mostra totes les etiquetes creades per l\'usuari';
-$string['coursetags'] = 'Etiquetes del curs:';
-$string['coursetags1'] = 'etiquetes del curs';
-$string['coursetags2'] = 'Mostra les etiquetes d\'aquest curs';
+$string['anycollection'] = 'Qualsevol';
+$string['anytype'] = 'Totes';
+$string['configtitle'] = 'Títol del bloc';
+$string['defaultdisplay'] = 'Mostra les etiquetes';
 $string['disabledtags'] = 'Les etiquetes estan desactivades';
-$string['edit'] = 'edita...';
-$string['editdeletemytag'] = 'Elimina l\'etiqueta d\'aquest curs:';
-$string['editmytags'] = 'Les meves etiquetes - dreceres a tots els cursos etiquetats.';
-$string['editmytagsfor'] = 'Edita les meves etiquetes per a {$a}';
-$string['editnopersonaltags'] = 'No s\'ha creat encara cap etiqueta personal.';
-$string['edittags'] = 'Edita les meves etiquetes...';
-$string['edittagthisunit'] = 'Afegeix una etiqueta en el curs:';
-$string['editthiscoursetags'] = 'Les meves etiquetes per aquest curs són {$a}';
-$string['edittitle'] = 'Les meves etiquetes';
-$string['entries'] = 'entrades';
-$string['entry'] = 'entrada';
-$string['jserror1'] = 'Les etiquetes han de contenir entre un i cinquanta caràcters. Ajusteu la vostra etiqueta.';
-$string['jserror2'] = 'Les etiquetes no poden contenir aquests caràcters especials:
-barra obliqua inversa, menor que (<) o major que (>). Ajusteu la vostra etiqueta.';
-$string['login'] = 'Inicia la sessió';
-$string['more'] = 'més...';
-$string['moreorder'] = 'Ordre:';
-$string['moreorderalpha'] = 'Alfabètic';
-$string['moreorderdate'] = 'Data de creació';
-$string['moreorderpop'] = 'Popularitat';
-$string['moreshow'] = 'Mostra:';
-$string['moreshowalltags'] = 'Totes les etiquetes';
-$string['moreshowcommtags'] = 'Etiquetes de comunitat';
-$string['moreshowcoursetags'] = 'Etquetes per \'{$a}\'';
-$string['moreshowmytags'] = 'Les meves etiquetes';
-$string['moreshowofficialtags'] = 'Etiquetes oficials';
-$string['moretags'] = 'Mostra i filtra més etiquetes';
-$string['moretitle'] = 'Més etiquetes';
-$string['morewelcome'] = 'Benvingut al núvol \'Més etiquetes\'. Les etiquetes s\'utilitzen per crear enllaços a coses.
-Les etiquetes us permeten classificar en categories i enllaçar coses com els vostres cursos favorits, els vostres blogs o el vostre perfil amb les vostres pròpies paraules.
-Es poden mostrar diferents grups d\'etiquetes amb els enllaços de la línia \'Visualitza:\' , i també podeu reordenar-los amb els enllaços de la línia \'Ordena:\'';
-$string['mycoursetag1'] = 'Mostra les etiquetes del meu curs';
-$string['mycoursetag2'] = 'les etiquetes del meu curs';
-$string['mycoursetags'] = 'Les etiquetes del meu curs:';
-$string['mytags'] = 'Les meves etiquetes:';
-$string['mytags1'] = 'les meves etiquetes';
-$string['mytags2'] = 'Mostra les meves etiquetes personals';
-$string['notagsyet'] = 'Cap etiqueta encara';
-$string['officialtags'] = 'Etiquetes oficials del curs:';
-$string['officialtags1'] = 'etiquetes oficials';
-$string['officialtags2'] = 'Mostra les etiquetes oficials';
-$string['please'] = 'Si us plau';
 $string['pluginname'] = 'Etiquetes';
-$string['select'] = 'Selecciona...';
-$string['showcoursetags'] = 'Mostra les etiquetes del curs';
-$string['showcoursetagsdef'] = 'Mostra les característiques del curs al bloc d\'etiquetes, permetent als estudiants etiquetar cursos.';
-$string['tags'] = 'etiquetes';
-$string['tagthisunit'] = 'Etiqueta aquest curs:';
-$string['tagunits'] = 'etiqueteu els vostres cursos favorits';
+$string['recursivecontext'] = 'Inclou els contexts inferiors';
+$string['recursivecontext_help'] = 'Si està desmarcada, es mostraran les etiquetes dels elements en el context especificat anteriorment, però no les etiquetes dels elements en contextos inferiors. Per exemple, les etiquetes dels cursos es podran mostrar, però no les etiquetes d\'activitats del curs.';
+$string['standardonly'] = 'Només les estàndards';
+$string['tagcollection'] = 'Col·lecció d\'etiquetes';
+$string['tagcollection_help'] = 'Seleccioneu una col·lecció de la qual mostrar les etiquetes. Si seleccioneu «Qualsevol» es mostraran les etiquetes de totes les col·leccions, excepte les marcades amb *';
+$string['taggeditemscontext'] = 'Context d\'elements etiquetats';
+$string['taggeditemscontext_help'] = 'Podeu limitar el núvol d\'etiquetes a les etiquetes que estan presents a la categoria actual del curs, al curs, o al mòdul';
+$string['tags:addinstance'] = 'Afegeix un bloc nou d\'etiquetes';
+$string['tags:myaddinstance'] = 'Afegeix un bloc nou d\'etiquetes a la pàgina del Tauler';

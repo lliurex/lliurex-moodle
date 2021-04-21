@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_presets', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_admin_presets', language 'es', version '3.9'.
  *
- * @package   block_admin_presets
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_admin_presets
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,9 @@ $string['actiondelete'] = 'Borrar preajuste';
 $string['actionexport'] = 'Exportar configuraciones';
 $string['actionimport'] = 'Importar configuraciones';
 $string['actionload'] = 'Cargar configuraciones';
+$string['actionrollback'] = 'Revertir cambios aplicados';
 $string['actualvalue'] = 'Valor actual';
+$string['admin_presets:addinstance'] = 'Añadir un nuevo bloque de preajustes';
 $string['adminsettings'] = 'Configuración de administrador';
 $string['author'] = 'Autor';
 $string['created'] = 'Creado';
@@ -42,6 +44,14 @@ $string['deleteshow'] = 'confirmar';
 $string['errordeleting'] = 'Error borrando de la BD';
 $string['errorinserting'] = 'Error insertando en la BD';
 $string['errorupgradetablenamesdebug'] = 'Los nombres de tabla exceden el límite de los carácteres permitidos, esto se soluciona utilizando las últimas versiones de Moodle 2.0, Moodle 2.1 y Moodle 2.2';
+$string['eventpresetdeleted'] = 'Preajuste borrado';
+$string['eventpresetdownloaded'] = 'Preajuste descargado';
+$string['eventpresetexported'] = 'Preajuste exportado';
+$string['eventpresetimported'] = 'Preajuste importado';
+$string['eventpresetloaded'] = 'Preajuste cargado';
+$string['eventpresetpreviewed'] = 'Preajuste previsualizado';
+$string['eventpresetreverted'] = 'Preajuste revertido';
+$string['eventpresetslisted'] = 'Los preajustes han sido listados';
 $string['exportexecute'] = 'guardando';
 $string['exportshow'] = 'seleccione configuraciones';
 $string['falseaction'] = 'Acción no soportada en esta versión';

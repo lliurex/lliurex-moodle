@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'repository_dropbox', language 'ca', version '3.9'.
  *
- * @package   repository_dropbox
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_dropbox
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Clau d\'API Dropbox';
+$string['cachelimit'] = 'Límit de la memòria cau';
+$string['cachelimit_info'] = 'Introduïu la mida màxima dels fitxers (en bytes) que s\'emmagatzemaran  en memòria cau al servidor de Dropbox. Els fitxers emmagatzemats en memòria cau s\'utilitzaran quan la font ja no estigui disponible. El valor buit o zero significa que es poden emmgatzemar en memòria cau de tots els fitxers, independentment de la seva mida.';
 $string['configplugin'] = 'Configuració de Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Mostra una carpeta de Dropbox';
-$string['instruction'] = 'Podeu obtenir la vostra clau API i secret a la pàgina de <a href="http://www.dropbox.com/developers/apps">Desenvolupadors Dropbox</a>';
+$string['instruction'] = 'Podeu obtenir la vostra clau API secreta a la pàgina de <a href="http://www.dropbox.com/developers/apps">desenvolupadors del Dropbox</a>. Quan configureu la vostra clau, seleccioneu "Dropbox complet" com a "Nivell d\'accés".';
+$string['logoutdesc'] = '(Tanqueu la sessió quan acabeu d\'utilitzar Dropbox)';
 $string['notitle'] = 'Sense títol';
+$string['oauth2redirecturi'] = 'URI per redirigir a OAuth 2';
 $string['pluginname'] = 'Dropbox';
 $string['remember'] = 'Recorda\'m';
 $string['secret'] = 'Secret Dropbox';

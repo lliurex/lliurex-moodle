@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_authorize', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_authorize', language 'ca', version '3.9'.
  *
- * @package   enrol_authorize
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_authorize
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,12 +46,12 @@ $string['approvedreview'] = 'Revisió aprovada';
 $string['authcaptured'] = 'Autoritzat/Registrat';
 $string['authcode'] = 'Codi d\'autorització';
 $string['authorize:config'] = 'Configura les instàncies d\'inscripció de Authorize.Net';
-$string['authorizedpendingcapture'] = 'Autoritzat /Registre pendent';
 $string['authorize:manage'] = 'Gestiona els usuaris inscrits';
 $string['authorize:managepayments'] = 'Gestiona pagaments';
 $string['authorize:unenrol'] = 'Suprimeix usuaris inscrits del curs';
 $string['authorize:unenrolself'] = 'Cancel·la la meva inscripció en aquest curs';
 $string['authorize:uploadcsv'] = 'Carrega fitxer CSV';
+$string['authorizedpendingcapture'] = 'Autoritzat /Registre pendent';
 $string['avsresult'] = 'Resultat AVS: {$a}';
 $string['canbecredit'] = 'És pot reemborsar a {$a->upto}';
 $string['cancelled'] = 'Cancel·lat';
@@ -99,6 +99,7 @@ $string['isbusinesschecking'] = 'És un txec de negocis ?';
 $string['lastnameoncard'] = 'Cognom a la targeta';
 $string['logindesc'] = 'Aquesta opció ha d\'estar ACTIVADA. Assegureu-vos que heu activat <a href="{$a->url}">loginhttps</a> en Administració >> Variables >> Seguretat.<br /><br />Això fa que Moodle utilitzi una connexió https segura únicament per les pàgines d\'entrada i de pagament.';
 $string['logininfo'] = 'Quan es configura el compte Authorize.Net, cal posar el nom d\'usuari i cal que poseu <strong>qualsevol</strong> clau de transacció o la contrasenya al quadre apropiat. Us recomanem que entreu la clau de transacció per raons de seguretat.';
+$string['messageprovider:authorize_enrolment'] = 'Missatges d\'inscripció Authorize.Net';
 $string['methodcc'] = 'Targeta de crèdit';
 $string['methodecheck'] = 'Txec electrònic (ACH)';
 $string['missingaba'] = 'S\'ha perdut el codi bancari d\'encaminament de transit';

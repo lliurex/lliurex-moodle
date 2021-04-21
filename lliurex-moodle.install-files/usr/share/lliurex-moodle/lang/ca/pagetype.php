@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,35 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'pagetype', language 'ca', version '3.9'.
  *
- * @package   pagetype
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     pagetype
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['page-admin-current'] = 'La pàgina actual d\'administració del lloc';
+$string['page-admin-x'] = 'Qualsevol pàgina d\'administració del lloc';
+$string['page-course-index'] = 'Pàgina de visualització de la categoria superior';
+$string['page-course-index-category'] = 'Pàgina de visualització de la categoria actual';
+$string['page-course-index-x'] = 'Pàgina de visualització de qualsevol categoria';
+$string['page-course-report-x'] = 'Qualsevol informe sobre el curs';
+$string['page-course-search'] = 'Pàgina de cerques del curs';
 $string['page-course-view-x'] = 'Qualsevol tipus de pàgina principal del curs';
 $string['page-course-x'] = 'Qualsevol pàgina del curs';
 $string['page-mod-x'] = 'Qualsevol pàgina del mòdul d\'activitats';
 $string['page-mod-x-view'] = 'Qualsevol pàgina del mòdul d\'activitats principal';
+$string['page-my-index'] = 'Tauler';
+$string['page-report-x'] = 'Qualsevol informe sobre la pàgina';
 $string['page-site-index'] = 'La primera pàgina només';
 $string['page-site-x'] = 'Qualsevol pàgina principal del lloc';
+$string['page-user-profile'] = 'Només les pàgines del perfil d\'usuari';
 $string['page-user-view'] = 'Només les pàgines de perfil d\'usuari';
 $string['page-user-x'] = 'Totes les pàgines de l\'usuari';
 $string['page-x'] = 'Qualsevol pàgina';

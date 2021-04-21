@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'auth_cas', language 'ca_valencia', version '3.9'.
  *
- * @package   auth_cas
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_cas
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['CASform'] = 'Opció d\'autenticació';
 $string['accesCAS'] = 'usuaris CAS';
 $string['accesNOCAS'] = 'altres usuaris';
 $string['auth_cas_auth_user_create'] = 'Crea usuaris externament';
@@ -39,9 +40,9 @@ $string['auth_cas_certificate_path'] = 'Camí al fitxer cadena CA (en format PEM
 $string['auth_cas_certificate_path_empty'] = 'Si habiliteu la validació del servidor, vos caldrà especificar el camí del certificat';
 $string['auth_cas_certificate_path_key'] = 'Camí del certificat';
 $string['auth_cas_changepasswordurl'] = 'URL de canvi de contrasenya';
-$string['auth_cas_create_user'] = 'Activeu esta opció si voleu inserir usuaris autenticats per CAS en la base de dades del Moodle. Si no, només podran entrar els usuaris que ja existisquen a la base de dades del Moodle.';
+$string['auth_cas_create_user'] = 'Activeu aquesta opció si voleu inserir usuaris autenticats per CAS a la base de dades de Moodle. Si no, només els usuaris que ja existisquen a la base de dades de Moodle podran iniciar sessió.';
 $string['auth_cas_create_user_key'] = 'Crea usuari';
-$string['auth_casdescription'] = 'Este mètode utilitza un servidor CAS (Central Authentication Service, Servei Central d\'Autenticació) per autenticar els usuaris en un entorn Single Sign On (SSO, inscripció única). També podeu fer servir autenticació LDAP. Si el nom d\'usuari i la contrasenya són vàlids d\'acord amb el CAS, Moodle crea un nou usuari en la seua base de dades i si escau agafa els atributs del LDAP. En les entrades següents només es verifiquen el nom d\'usuari i la contrasenya.';
+$string['auth_cas_curl_ssl_version'] = 'La versió (2 o 3) de SSL a utilitzar. Per defecte PHP tracta de determinar este paràmetre ell mateix, tot i que de vegades caldrà configurar-lo de forma manual.';
 $string['auth_cas_enabled'] = 'Activeu esta opció si voleu utilitzar autenticació CAS.';
 $string['auth_cas_hostname'] = 'Nom del servidor CAS <br />P. ex. ordinador.domini.cat';
 $string['auth_cas_hostname_key'] = 'Nom del servidor';
@@ -49,11 +50,12 @@ $string['auth_cas_invalidcaslogin'] = 'Entrada errònia. Potser no esteu autorit
 $string['auth_cas_language'] = 'Idioma seleccionat';
 $string['auth_cas_language_key'] = 'Idioma';
 $string['auth_cas_logincas'] = 'Accés a la connexió segura';
-$string['auth_cas_logoutcas'] = 'Habiliteu esta opció si voleu desconnectar-vos  de CAS quan isqueu de Moodle';
-$string['auth_cas_logoutcas_key'] = 'Ix de CAS';
-$string['auth_cas_multiauth'] = 'Activeu esta opció si voleu tindre diversos mètodes d\'autenticació (CAS + altres)';
+$string['auth_cas_logout_return_url'] = 'Proporcioneu l\'URL on es redirigiran els usuaris de CAS després de tancar la sessió. <br /> Si es deixa buit, l\'usuari serà redirigit a la ubicació que tinga Moodle per defecte';
+$string['auth_cas_logout_return_url_key'] = 'URL alternatiu per a l\'eixida de sessió';
+$string['auth_cas_logoutcas'] = 'Seleccioneu «Si» si voleu desconnectar-vos de CAS quan isqueu de Moodle';
+$string['auth_cas_logoutcas_key'] = 'Opció d\'eixida de CAS';
+$string['auth_cas_multiauth'] = 'Seleccioneu «Si» si voleu tindre diversos mètodes d\'autenticació (CAS + altres)';
 $string['auth_cas_multiauth_key'] = 'Autenticació múltiple';
-$string['auth_casnotinstalled'] = 'No es pot utilitzar l\'autenticació CAS. El mòdul PHP LDAP no està instal·lat.';
 $string['auth_cas_port'] = 'Port del servidor CAS';
 $string['auth_cas_port_key'] = 'Port';
 $string['auth_cas_proxycas'] = 'Activeu esta opció per utilitzar CAS en mode servidor intermediari';
@@ -62,6 +64,7 @@ $string['auth_cas_server_settings'] = 'Configuració del servidor CAS';
 $string['auth_cas_text'] = 'Connexió segura';
 $string['auth_cas_use_cas'] = 'Utilitza CAS';
 $string['auth_cas_version'] = 'Versió de CAS';
-$string['CASform'] = 'Opció d\'autenticació';
+$string['auth_casdescription'] = 'Aquest mètode utilitza un servidor CAS (Central Authentication Service, Servei Central d\'Autenticació) per autenticar els usuaris en un entorn Single Sign On (SSO, inscripció única). També podeu fer servir una autenticació LDAP. Si el nom d\'usuari i la contrasenya són vàlids d\'acord amb el CAS, Moodle crea un usuari nou en la seua base de dades i, si escau, agafa els atributs del LDAP. En els inicis de sessió següents només es verifiquen el nom d\'usuari i la contrasenya.';
+$string['auth_casnotinstalled'] = 'No es pot utilitzar l\'autenticació CAS. El mòdul PHP LDAP no està instal·lat.';
 $string['noldapserver'] = 'No hi ha cap servidor LDAP configurat per CAS! Sincronització deshabilitada.';
 $string['pluginname'] = 'Servidor CAS (SSO)';

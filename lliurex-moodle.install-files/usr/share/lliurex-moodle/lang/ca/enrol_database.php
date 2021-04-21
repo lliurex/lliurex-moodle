@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_database', language 'ca', version '3.9'.
  *
- * @package   enrol_database
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_database
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database:config'] = 'Configura la base de dades d\'instàncies d\'inscripció';
+$string['database:unenrol'] = 'Anul·la la inscripció dels usuaris amb la inscripció suspesa';
 $string['dbencoding'] = 'Codificació de la base de dades.';
 $string['dbhost'] = 'Servidor de la base de dades';
-$string['dbhost_desc'] = 'Escriu la IP del servidor de la base de dades o el nom del servidor';
+$string['dbhost_desc'] = 'Escriviu la IP del servidor de la base de dades o el nom del servidor. Useu un nom NFD del sistema (system DSN) si esteu utilitzant ODBC.';
 $string['dbname'] = 'Nom de la base de dades';
+$string['dbname_desc'] = 'Deixeu-ho en blanc si esteu utilitzant un nom NFD en el servidor de la base de dades.';
 $string['dbpass'] = 'Contrasenya de la base de dades';
 $string['dbsetupsql'] = 'Ordre per configurar la base de dades';
-$string['dbsetupsql_desc'] = 'Ordre SQL per configurar la base de dades, sovint utilitzada per configurar la codificació de la comunicació - exemple per MySQL i PostgreSQL: <em>SET NAMES \'utf8\'</em>';
+$string['dbsetupsql_desc'] = 'Ordre SQL per configurar la base de dades, sovint utilitzada per configurar la codificació de la comunicació; exemple per MySQL i PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['dbsybasequoting'] = 'Utilitza cometes sybase';
 $string['dbsybasequoting_desc'] = 'Les cometes d\'escapament d\'estil Sybase - s\'utilitzen a les bases de dades Oracle, MS SQL i altres bases de dades. No les utilitzeu per MySQL !';
 $string['dbtype'] = 'Controlador de base de dades';
@@ -45,6 +48,7 @@ $string['defaultrole'] = 'Rol per defecte';
 $string['defaultrole_desc'] = 'El rol que s\'assignarà per defecte si no se n\'especifica cap altre a la taula externa.';
 $string['ignorehiddencourses'] = 'Ignora cursos ocults';
 $string['ignorehiddencourses_desc'] = 'Si està habilitat els usuaris sols es podran inscriure en cursos que estiguin disponibles per als estudiants.';
+$string['localcategoryfield'] = 'Camp local de la categoria';
 $string['localcoursefield'] = 'Camp local del curs';
 $string['localrolefield'] = 'Camp local del rol';
 $string['localuserfield'] = 'Camp local de l\'usuari';
@@ -60,6 +64,8 @@ $string['remotecoursefield'] = 'Camp remot del curs';
 $string['remotecoursefield_desc'] = 'El nom del camp en la taula remota que s\'està utilitzant per concordar entrades a la taula del curs.';
 $string['remoteenroltable'] = 'Taula remota d\'inscripció d\'usuaris';
 $string['remoteenroltable_desc'] = 'Especifica el nom de la taula que conté la llista d\'usuaris inscrits. Si és buida, no s\'ha sincronitzat cap inscripció d\'usuaris.';
+$string['remoteotheruserfield'] = 'Camp remot de l\'altre usuari';
+$string['remoteotheruserfield_desc'] = 'El nom del camp en la taula remota que està usant el senyalador «Altre usuari» a les assignacions de rol.';
 $string['remoterolefield'] = 'Camp remot de rol';
 $string['remoterolefield_desc'] = 'El nom del camp a la taula remota que s\'està utilitzant per concordar entrades a la taula de rols.';
 $string['remoteuserfield'] = 'Camp remot d\'usuari';

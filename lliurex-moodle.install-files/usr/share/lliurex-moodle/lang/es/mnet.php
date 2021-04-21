@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'mnet', language 'es', version '3.9'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-firmado)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (firmado)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP no encriptado';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-firmado)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (firmado)';
 $string['aboutyourhost'] = 'Acerca de su servidor';
 $string['accesslevel'] = 'Nivel de acceso';
 $string['addhost'] = 'Agregar servidor';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'Ningún certificado fue encontrado en <br />{$a}. 
 $string['couldnotmatchcert'] = 'Esto no concuerda con el certificado actualmente publicado por el servidor web.';
 $string['courses'] = 'cursos';
 $string['courseson'] = 'cursos activados';
-$string['currentkey'] = 'Clave pública actual';
 $string['current_transport'] = 'Transporte actual';
+$string['currentkey'] = 'Clave pública actual';
 $string['databaseerror'] = 'No se pudieron escribir detalles en la base de datos.';
 $string['deleteaserver'] = 'Eliminando un servidor';
 $string['deletedhostinfo'] = 'Este host ha sido borrado.Si quiere deshacer el borrado, cambie el estado de borrado de nuevo a \'No\'.';
@@ -67,6 +72,8 @@ $string['error7023'] = 'El sitio remoto ha intentado desencriptar su mensaje con
 $string['error7024'] = 'Usted envía un mensaje no encriptado al sitio remoto, pero éste no acepta comunicación sin encriptar desde su sitio. Que ocurra esto es muy extraño, y usted probablemente debería informar sobre el error (proporcionando toda la información posible sobre la versión de la aplicación, etc.)';
 $string['error7026'] = 'La clave con la que su mensaje ha sido firmado es distinta de la consta en el servidor remoto. Es más, el servidor ha intentado comprobar la clave y no lo ha conseguido. Intente introducir manualmente la clave y pruebe de nuevo.';
 $string['error709'] = 'El sitio remoto no ha podido obtener una clave SSL para usted.';
+$string['eventaccesscontrolcreated'] = 'Control de acceso creado';
+$string['eventaccesscontrolupdated'] = 'Control de acceso actualizado';
 $string['expired'] = 'Esta clave expiró el';
 $string['expires'] = 'Válida hasta';
 $string['expireyourkey'] = 'Eliminar esta clave';
@@ -90,9 +97,9 @@ $string['hostnamehelp'] = 'El nombre completo del dominio del host remoto, por e
 $string['hostnotconfiguredforsso'] = 'Este servidor no está configurado para acceso remoto.';
 $string['hostsettings'] = 'Ajustes del host';
 $string['http_self_signed_help'] = 'Permitir conexiones usando un certificado firmado DIY SSL en el host remoto.';
+$string['http_verified_help'] = 'Permitir conexiones usando un certificado verificado SSL en PHP en el host remoto, excepto sobre http (no https).';
 $string['https_self_signed_help'] = 'Permitir conexiones usando un DIY SSL firmado en PHP en el host remoto sobre http.';
 $string['https_verified_help'] = 'Permitir conexiones usando un certificado verificado SSL en el host remoto.';
-$string['http_verified_help'] = 'Permitir conexiones usando un certificado verificado SSL en PHP en el host remoto, excepto sobre http (no https).';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Este valor es automáticamente asignado y no puede cambiarse';
 $string['importfields'] = 'Campos a importar';
@@ -128,15 +135,14 @@ $string['methodsavailableonhostinservice'] = 'Métodos disponibles para {$a->ser
 $string['methodsignature'] = 'Firma de método para {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Concatenar (hasta) 3 cadenas de texto y retornar el resultado';
+$string['mnet_session_prohibited'] = 'Usuarios de su servidor inicial no tienen actualmente permitido divagar por {$a}.';
 $string['mnetdisabled'] = 'MNet está <strong>deshabilitado</strong>.';
 $string['mnetidprovider'] = 'Provisor de ID MNET';
 $string['mnetidproviderdesc'] = 'Puede usar esta opción para recuperar un enlace en el que identificarse, en el caso de que proporcione la dirección email correcta que corresponda al nombre de usuario con el que trató de entrar.';
 $string['mnetidprovidermsg'] = 'Usted debería poder identificarse a su proveedor {$a}.';
 $string['mnetidprovidernotfound'] = 'Lo sentimos, no se ha podido encontrar más información.';
-$string['mnetlog'] = 'Registros';
 $string['mnetpeers'] = 'Iguales';
 $string['mnetservices'] = 'Servicios';
-$string['mnet_session_prohibited'] = 'Usuarios de su servidor inicial no tienen actualmente permitido divagar por {$a}.';
 $string['mnetsettings'] = 'Ajustes de MNet';
 $string['moodle_home_help'] = 'La ruta a la página de inicio de MNet en el host remoto, por ejemplo: /moodle/.';
 $string['name'] = 'Nombre';
@@ -159,11 +165,11 @@ $string['nosuchpublickey'] = 'Incapaz de obtener la clave pública para verifica
 $string['nosuchservice'] = 'El servicio RPC no está corriendo en este host.';
 $string['nosuchtransport'] = 'No existe transporte con esa identificación.';
 $string['notBASE64'] = 'Esta cadena de texto no está codificada en formato Base64. No puede ser una clave válida.';
-$string['notenoughidpinfo'] = 'Su proveedor de identidad no nos está dando suficiente información para crear o actualizar localmente su cuenta. ¡Lo sentimos!';
+$string['notPEM'] = 'Esta clave no está en formato PEM. No funcionará.';
 $string['not_in_range'] = 'La dirección IP  <code>{$a}</code>  no representa un host de confianza válido.';
+$string['notenoughidpinfo'] = 'Su proveedor de identidad no nos está dando suficiente información para crear o actualizar localmente su cuenta. ¡Lo sentimos!';
 $string['notinxmlrpcserver'] = 'Intento de acceder al cliento remoto MNet, no ducante la ejecución del servidor XMLRPC';
 $string['notmoodleapplication'] = 'ATENCIÓN: Esta no es una aplicación Moodle, por lo que algunos de los métodos de inspección pueden no funcionar adecuadamente.';
-$string['notPEM'] = 'Esta clave no está en formato PEM. No funcionará.';
 $string['notpermittedtojump'] = 'Usted no tiene permiso para iniciar una sesión remota desde este servidor Moodle.';
 $string['notpermittedtojumpas'] = 'No puede empezar una sesión remota mientras está conectado como otro usuario.';
 $string['notpermittedtoland'] = 'Usted no tiene permiso para iniciar una sesión remota.';
@@ -182,6 +188,7 @@ $string['profileimportfields'] = 'Campos a importar';
 $string['promiscuous'] = 'Promiscuo';
 $string['publickey'] = 'Clave pública';
 $string['publickey_help'] = 'La clave pública es automáticamente obtenida desde el servidor remoto.';
+$string['publickeyrequired'] = 'Debes proporcionar una clave pública';
 $string['publish'] = 'Publicar';
 $string['reallydeleteserver'] = '¿Está seguro que desea eliminar el servidor?';
 $string['receivedwarnings'] = 'Se recibieron las siguientes advertencias';
@@ -194,17 +201,13 @@ $string['registerhostson'] = 'El registro de todos los hosts está actualmente <
 $string['remotecourses'] = 'Cursos remotos';
 $string['remotehost'] = 'Host remoto';
 $string['remotehosts'] = 'Hosts remotos';
-$string['remoteuserinfo'] = 'Perfil remoto {$a->remotetype} de usuario obtenido de <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'Usuario remoto {$a->remotetype}';
+$string['remoteuserinfo'] = 'Perfil obtenido de<a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'El trabajo de red requiere la extensión OpenSSL';
 $string['restore'] = 'Restaurar';
 $string['returnvalue'] = 'Retornar valor';
 $string['reviewhostdetails'] = 'Revisar detalles del host';
 $string['reviewhostservices'] = 'Revisar servicios del host';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP no encriptado';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-firmado)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-firmado)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (firmado)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (firmado)';
 $string['selectaccesslevel'] = 'Por favor seleccione un nivel de acceso de la lista.';
 $string['selectahost'] = 'Por favor seleccione un host Moodle remoto.';
 $string['service'] = 'Nombre del servicio';
@@ -215,8 +218,14 @@ $string['serviceswesubscribeto'] = 'Servicios en {$a} a los que nos suscribimos.
 $string['settings'] = 'Ajustes';
 $string['showlocal'] = 'Mostrar usuarios locales';
 $string['showremote'] = 'Mostrar usuarios remotos';
-$string['ssl_acl_allow'] = 'SSO ACL: Permitir al usuario {$a->user} de {$a->host}';
-$string['ssl_acl_deny'] = 'SSO ACL: Denegar al usuario {$a->user} de {$a->host}';
+$string['ssl_acl_allow'] = 'SSO ACL: Permitir al usuario \'{$a->user}\' de \'{$a->host}\'';
+$string['ssl_acl_deny'] = 'SSO ACL: Denegar al usuario \'{$a->user}\' de \'{$a->host}\'';
+$string['sslverification'] = 'Verificación SSL';
+$string['sslverification_help'] = 'Esta opción permite configurar el nivel de seguridad al conectarse a pares usando HTTPS.
+
+*Ninguno: ni hay nivel de seguridad
+*Verificar solo servidor: valida el dominio del certificado SSL
+*Verificar servidor y pares (recomendado): valida el dominio y distribuidor del certificado SSL';
 $string['ssoaccesscontrol'] = 'Control de acceso SSO';
 $string['ssoacldescr'] = 'Utilice esta página para conceder/denegar acceso a determinadaos usuarios de hosts MNet remotos. Funciona cuando ofrezca servicios SSO a usuarios remotos. Para controlar los permisos <em>locales</em> de sus usuarios paranavegar por otros hosts MNet, utilice el sistema de roles para concederles el permiso <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Para que esta funcionalidad trabaje adecuadamente, debe de tener la opción \'Networking\') activada, además de el conector (\'plugin\') de identificación MNet.';
@@ -241,6 +250,8 @@ $string['userchangepasswordlink'] = '<br /> Puede cambiar su contraseña en su  
 $string['usernotfullysetup'] = 'Su cuenta de usuario está incompleta. Necesita ir <a href="{$a}">de regreso a su proveedor</a> y asegurarse de que su perfil esté complete allí. Puede que necesite salir del sitio y volver a entrar para que tenga efecto.';
 $string['usersareonline'] = 'Advertencia: {$a} usuarios de ese servidor están actualmente en su sitio.';
 $string['validated_by'] = 'Es validado por la red:  <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Verificar servidor y pares';
+$string['verifyhostonly'] = 'Sólo verificar host';
 $string['verifysignature-error'] = 'La verificación de firma falló. Un error ha ocurrido.';
 $string['verifysignature-invalid'] = 'La verifivación de firma falló. Parece que esta carga no fue firmada por usted.';
 $string['version'] = 'Versión';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_joomdle', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'auth_joomdle', language 'es', version '3.9'.
  *
- * @package   auth_joomdle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_joomdle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_joomdledescription'] = 'Este método utiliza servicios web de Joomdle para saber si un usuario tiene una sesión válida en Joomla. Versión 1.1.4';
 $string['auth_joomla_auto_mailing_lists'] = 'Listas de correo automático';
 $string['auth_joomla_auto_mailing_lists_description'] = 'Administre automáticamente las listas de correo siguiendo la configuración de Joomla';
 $string['auth_joomla_auto_sell'] = 'Venta automática de cursos <br>';
@@ -33,14 +34,30 @@ $string['auth_joomla_connection_method'] = 'Método de conexión<br>';
 $string['auth_joomla_connection_method_description'] = 'Método de conexión para usar en servicios web<br>';
 $string['auth_joomla_enrol_parents'] = 'Inscribir a los padres en cursos';
 $string['auth_joomla_enrol_parents_description'] = 'Inscripción automática de padres en cursos para niños';
+$string['auth_joomla_forward_events'] = 'Reenviar eventos de Moodle a Joomla';
+$string['auth_joomla_forward_events_description'] = 'Reenviar eventos para que los plugins de Joomla puedan reaccionar ante ellos';
 $string['auth_joomla_give_points'] = 'Dar puntos';
 $string['auth_joomla_give_points_description'] = 'Dar puntos de karma siguiendo la configuración de Joomla';
 $string['auth_joomla_group_discussion'] = 'Discusión de grupo';
 $string['auth_joomla_group_for_course'] = 'Grupo para curso';
+$string['auth_joomla_jomsocial_activities'] = 'Actividades sociales<br>';
+$string['auth_joomla_jomsocial_activities_description'] = 'Añadir actividades sociales<br>';
+$string['auth_joomla_jomsocial_groups'] = 'Crear grupos sociales<br>';
+$string['auth_joomla_jomsocial_groups_delete'] = 'Eliminar grupos sociales<br>';
+$string['auth_joomla_jomsocial_groups_delete_description'] = 'Eliminar el grupo Social al eliminar el curso <br>';
+$string['auth_joomla_jomsocial_groups_description'] = 'Crear un grupo social para cada curso <br>';
+$string['auth_joomla_joomla_auth_token'] = 'Token de autenticación Joomla de Joomdle';
+$string['auth_joomla_joomla_auth_token_description'] = 'Token de autenticación configurado en Joomdle en Joomla';
 $string['auth_joomla_joomla_lang'] = 'Idioma por defecto de Joomla';
+$string['auth_joomla_joomla_lang_description'] = 'Cadena de idioma predeterminada Joomla. Solo es necesaria cuando se habilita el idioma múltiple en Joomla';
 $string['auth_joomla_joomla_sef'] = 'Joomla SEF habilitado';
+$string['auth_joomla_joomla_sef_description'] = 'Configuración de Joomla SEF. Solo es necesario cuando se habilita el idioma múltiple en Joomla';
 $string['auth_joomla_joomla_user_groups'] = 'Usar grupos de usuarios de Joomla';
 $string['auth_joomla_joomla_user_groups_description'] = 'Crear grupos de usuarios de Joomla para estudiantes y profesores. Solo Joomla 1.6+';
+$string['auth_joomla_logout_redirect_to_joomla'] = 'Redirigir a Joomla en el cierre de sesión de Moodle';
+$string['auth_joomla_logout_redirect_to_joomla_description'] = 'Redirigir a Joomla en el cierre de sesión de Moodle';
+$string['auth_joomla_logout_with_redirect'] = 'Utilice el cierre de sesión con la redirección';
+$string['auth_joomla_logout_with_redirect_description'] = 'Necesario solo para el dominio cruzado y el ajuste "recordarme"';
 $string['auth_joomla_parent_role_id'] = 'ID de rol padre';
 $string['auth_joomla_parent_role_id_description'] = 'Rol ID del rol padre';
 $string['auth_joomla_redirectless_sso'] = 'Usar SSO sin redireccionamiento';

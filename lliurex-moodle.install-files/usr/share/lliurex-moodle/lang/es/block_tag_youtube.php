@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_tag_youtube', language 'es', version '3.9'.
  *
- * @package   block_tag_youtube
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_tag_youtube
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Cualquier categoría';
+$string['apierror'] = 'El código API de YouTube no está configurad. Póngase en contacto con su administrador.';
+$string['apikey'] = 'Clave de la API';
+$string['apikeyinfo'] = 'Consiga un <a href="https://developers.google.com/youtube/v3/getting-started">Código API de Google</a> para su portal Moodle.';
 $string['autosvehicles'] = 'Coches y vehículos';
 $string['category'] = 'Categoría';
 $string['comedy'] = 'Comedia';
@@ -41,7 +44,9 @@ $string['newspolitics'] = 'Noticias y política';
 $string['numberofvideos'] = 'Número de videos';
 $string['peopleblogs'] = 'Gente y blogs';
 $string['petsanimals'] = 'Animales';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
+$string['requesterror'] = 'No se pudo obtener la información del servidor. Póngase en contacto con su administrador si el problema persiste.';
 $string['scienceandtech'] = 'Ciencia y Tecnología';
 $string['sports'] = 'Deportes';
+$string['tag_youtube:addinstance'] = 'Añadir un nuevo bloque YouTube';
 $string['travel'] = 'Viajes y lugares';

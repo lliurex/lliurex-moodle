@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ejsappbooking', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'ejsappbooking', language 'es', version '3.9'.
  *
- * @package   ejsappbooking
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     ejsappbooking
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,10 +33,6 @@ $string['booking_rights'] = 'Permiso de reserva';
 $string['ejsappbooking'] = 'EJSAppBooking';
 $string['ejsappbookingname'] = 'Nombre del sistema de reservas EJSApp';
 $string['ejsappbookingname_help'] = 'Nombre a mostrar para el sistema de reservas EJSApp en tu curso de Moodle.';
-$string['mail_content1'] = 'Uno de tus laboratorios remotos previamente operativos (';
-$string['mail_content2'] = '- IP:';
-$string['mail_content3'] = ') ha dejado de estar accesible.';
-$string['mail_subject'] = 'Alerta de Laboratorio Inactivo';
 $string['manage_access_but'] = 'Gestionar el acceso de usuarios';
 $string['modulename'] = 'Sistema de reservas EJSApp';
 $string['modulename_help'] = 'El m&oacute;dulo de recurso EJSAppBooking permite a los usuarios de Moodle reservas franjas de tiempo para experimentaci&oacute;n real y remota usando los applets creados con Easy Java Simulations (EJS) y subidos a los cursos de Moodle mediante el m&oacute;dulo de actividad EJSApp.
@@ -52,7 +48,6 @@ $string['rem_lab_selection'] = 'Seleccione un laboratorio remoto';
 $string['save_changes'] = 'Guardar cambios';
 $string['selectRemLab_pageTitle'] = 'Selecci&oacute;n de laboratorio remoto';
 $string['select_users_but'] = 'Fijar permisos de usuarios para este laboratorio';
-$string['selectUsers_pageTitle'] = 'Selecci&oacute;n de usuarios';
 $string['sending_message'] = 'Enviando mensajes de aviso';
 $string['users_selection'] = 'Seleccione los usuarios a los que dará permisos de reserva en el laboratorio remoto seleccionado';
 $string['view_error'] = 'No se pudo abrir la aplicaci&oacute;n del sistema de reservas.';

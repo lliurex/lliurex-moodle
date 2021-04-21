@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_ejsapp_collab_session', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_ejsapp_collab_session', language 'es', version '3.9'.
  *
- * @package   block_ejsapp_collab_session
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_ejsapp_collab_session
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,20 +34,30 @@ $string['close1'] = 'La sesión colaborativa del laboratorio';
 $string['close2'] = 'ha sido cerrada.';
 $string['closeMasSessBut'] = 'Cerrar mi sesión activa';
 $string['closeStudSessBut'] = 'Abandonar esta sesión';
+$string['collaborative_port'] = 'Puerto para las sesiones colaborativas';
+$string['collaborative_port_description'] = 'Puerto usado para establecer la comunicación en las sesiones colaborativas cuando no se utiliza Sarlab';
 $string['createBut'] = 'Crear sesión colaborativa';
-$string['goodbyeStudent'] = 'Ha abandonado la sesión colaborativa.';
+$string['default_options_config'] = 'Configurar las opciones de comunicación por defecto (cuando no se usa Sarlab) para las sesiones colaborativas';
+$string['ejsapp_collab_session:addinstance'] = 'Añadir un nuevo bloque EJSApp para sesiones colaborativas';
+$string['ejsapp_collab_session:myaddinstance'] = 'Añadir un nuevo bloque EJSApp para sesiones colaborativas a Mi Área Personal';
 $string['goToMasSessBut'] = 'Ir a mi sesión activa';
 $string['goToStudSessBut'] = 'Ver mis sesiones activas';
+$string['goodbyeStudent'] = 'Ha abandonado la sesión colaborativa.';
 $string['invitationMsg1'] = 'le ha invitado al siguiente laboratorio:';
-$string['invitationMsg2'] = 'Le invit&oacute; a una sesi&oacute;n colaborativa.';
+$string['invitationMsg2'] = 'Unirse a esta sesión.';
 $string['inviteParticipants'] = 'Invitar participantes';
 $string['navBarCollaborativeSession'] = 'Sesión colaborativa';
-$string['navBarMasterUser'] = 'Seleccionando laboratorio';
 $string['navBarNonMasterUser'] = 'Aceptando invitación';
 $string['navBarShowParticipants'] = 'Selecionando invitados';
 $string['pageTitle'] = 'Sesión Colaborativa de Laboratorio';
 $string['pluginname'] = 'EJSApp colaborativo';
-$string['selectColLab'] = 'Seleccione uno de los laboratorios colaborativos s&iacute;ncronos:';
+$string['sarlab_IP'] = 'Nombre y dirección IP del servidor o servidores de Sarlab';
+$string['sarlab_header'] = 'Configurar Sarlab para la instancia de este bloque';
+$string['sarlab_header_config'] = 'Configurar Sarlab para todas las instancias de este bloque';
+$string['sarlab_port'] = 'Puerto(s) de comunicación de Sarlab';
 $string['selectInvitation'] = 'Seleccione una de las invitaciones pendientes:';
 $string['selectLabBut'] = 'Seleccionar este laboratorio';
 $string['start_collaborative_session:view'] = 'Ver Bloque para Sesiones Colaborativo';
+$string['use_sarlab'] = '¿Usar Sarlab en sesiones colaborativas?';
+$string['using_sarlab'] = '¿Permitir el uso de Sarlab en sesiones colaborativas?';
+$string['using_sarlab_help'] = 'Esta opción permite usar Sarlab para redirigir las conexiones en sesiones colaborativas.';

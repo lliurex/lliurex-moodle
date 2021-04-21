@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mrbs', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_mrbs', language 'es', version '3.9'.
  *
- * @package   block_mrbs
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_mrbs
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,6 +40,8 @@ $string['areas'] = 'Áreas';
 $string['backadmin'] = 'Volver a la administración';
 $string['bgcolor'] = 'Color de fondo';
 $string['blockname'] = 'Reservar locales';
+$string['booking_users'] = 'Los usuarios pueden reservar';
+$string['booking_users_help'] = 'Esta debería ser una lista de emails separados por una coma, de los usuarios que pueden reservar esta sala. Dejar vacío si se permite la reserva de esta sala a todos los usuarios.';
 $string['bookingmoved'] = 'Una de sus reservas ha sido movida';
 $string['bookingmovedmessage'] = 'Su reserva {$a->name} ha sido movida de sala {$a->oldroom} a la sala {$a->newroom} en {$a->area} para la asignatura {$a->date}, {$a->starttime}. La sala es solicitada por {$a->newbookingname}. ATENCIÓN: Este cambio ha sido realizado por un ordenador siguiendo las mejores posibilidades existentes. Por favor compruebe que la sala se ajusta a sus necesidades.';
 $string['bookingmovedshort'] = '{$a->name} movido a {$a->newroom}';
@@ -48,8 +50,6 @@ $string['bookingmoveerrormessage'] = 'Ha habido un error al mover {$a->name} (id
 $string['bookingmoveerrorshort'] = 'Ha ocurrido un error al mover {$a->name}. El administrador ha sido informado';
 $string['bookingsfor'] = 'Reservas para el';
 $string['bookingsforpost'] = '--cadena no usada--';
-$string['booking_users'] = 'Los usuarios pueden reservar';
-$string['booking_users_help'] = 'Esta debería ser una lista de emails separados por una coma, de los usuarios que pueden reservar esta sala. Dejar vacío si se permite la reserva de esta sala a todos los usuarios.';
 $string['both'] = 'Ambas';
 $string['brief_description'] = 'Breve descripción.';
 $string['browserlang'] = 'Su visor esta configurado para usar los siguientes idiomas:';
@@ -73,9 +73,9 @@ $string['config_area_list_format2'] = '¿Desea que las áreas se muestren como u
 $string['config_cookie_path_override'] = 'Sobreescribir la ruta de la cookie';
 $string['config_cookie_path_override2'] = 'Si se activa este valor, será utilizado por el esquema de la sesión php para sobreescribir el comportamiento del seleccionado por defecto, determinando automáticamente la cookie de la ruta que se usará.';
 $string['config_date_ddmmyy'] = '10 julio';
+$string['config_date_mmddyy'] = 'Julio 10';
 $string['config_dateformat'] = 'Formato de fecha';
 $string['config_dateformat2'] = 'Formato de fecha que se utilizará en MRBS.';
-$string['config_date_mmddyy'] = 'Julio 10';
 $string['config_default_report_days'] = 'Informe -span- (días)';
 $string['config_default_report_days2'] = 'Informe por defecto -span- (código HTML) en días';
 $string['config_default_room'] = 'Sala por defecto';
@@ -115,6 +115,7 @@ $string['config_mail_recipients2'] = 'Seleccione los destinatarios de los correo
 $string['config_mail_room_admin_on_bookings'] = 'Correo al administrador de sala';
 $string['config_mail_room_admin_on_bookings2'] = 'Enviar un correo al administrador de sala notificándolo de que hay una nueva reserva';
 $string['config_max_advance_days'] = 'Tiempo máximo de reserva anticipada';
+$string['config_max_advance_days2'] = 'Para deshabilitar el máximo de días de reserva anticipada de salas use (-1). Los usuarios con la capacidad \'mrbs:ignoremaxadvancedays\' (Por defecto el administrador del sitio y el administrador de salas MBRS) siempre podrán hacer reservas por encima de este límite.';
 $string['config_max_rep_entrys'] = 'Entradas de Rep. Máx.';
 $string['config_max_rep_entrys2'] = 'Límite máximo de entradas de repetición (máx necesario +1)';
 $string['config_monthly_view_entries_details'] = 'Ver detalles mensuales';
@@ -157,23 +158,23 @@ $string['dayafter'] = 'Día siguiente';
 $string['daybefore'] = 'Día anterior';
 $string['days'] = 'días';
 $string['delarea'] = 'Debe borrar todas las salas antes de poder borrar la zona o área<p>';
+$string['delete_user'] = 'Borrar este usuario';
 $string['deleteentry'] = 'Borrar reserva';
 $string['deletefollowing'] = 'Se borrarán las siguientes reservas';
 $string['deleteseries'] = 'Borrar serie';
-$string['delete_user'] = 'Borrar este usuario';
 $string['dontshowoccupied'] = 'No mostrar salas ocupadas';
 $string['doublebookebody'] = 'El usuario {$a->user} ha hecho doble reserva en su sala, {$a->room}, a {$a->time} en {$a->date}. Esto provoca un conflicto con sus reservas {$a->oldbooking}. El usuario ha reservado la sala para {$a->newbooking}. Si esto no supone un problema, no debe hacer nada. Sin embargo, si no esperaba esta posibilidad y es un problema, por favor contacte con el usuario para resolver el conflicto. Este mensaje ha sido automáticamente por el sistema de reserva de salas, si cree que ha recibido este mensaje por error contacte con {$a->admin}';
 $string['doublebookefailbody'] = 'El siguiente mensaje falló en el envío a {$a}:';
 $string['doublebookefailsubject'] = 'Fallo en la notificación de doble reserva de salas';
 $string['doublebookesubject'] = 'Notificación de doble reserva de salas';
 $string['duration'] = 'Duración:';
+$string['edit_user'] = 'Editar usuario';
 $string['editarea'] = 'Editar la zona o área';
 $string['editentry'] = 'Editar reserva';
 $string['editingserieswarning'] = 'Está actualmente editando un entrada simple en una serie, si quiere editar las series haga clic aquí:';
 $string['editroom'] = 'Editar sala';
 $string['editroomarea'] = 'Editar descripción de una zona o de una sala';
 $string['editseries'] = 'Editar series';
-$string['edit_user'] = 'Editar usuario';
 $string['email_failed'] = 'Fallo en el envío de email';
 $string['end_date'] = 'Fecha final:';
 $string['entries_found'] = 'reservas encontradas';
@@ -183,6 +184,8 @@ $string['entryid'] = 'Reserva nº';
 $string['error_area'] = 'Error: Área';
 $string['error_room'] = 'Error: sala';
 $string['error_send_email'] = 'Error, ha habido un problema al enviar un correo a: $a';
+$string['eventbookingcreated'] = 'Reserva creada';
+$string['eventbookingupdated'] = 'Reserva actualizada';
 $string['external'] = 'Externa';
 $string['failed_connect_db'] = 'Error grave: No se puede conectar con la base de datos';
 $string['failed_to_acquire'] = 'No ha sido posible tener acceso exclusivo a la base de datos';
@@ -236,38 +239,39 @@ $string['monthbefore'] = 'Ir al mes anterior';
 $string['movedto'] = 'Movido a';
 $string['mrbs'] = 'Gestor de Reserva de Salas';
 $string['mrbs:addinstance'] = 'Añadir bloque MBS  a my página Moodle';
-$string['mrbsadmin'] = 'Administrador MRBS';
-$string['mrbsadmin_desc'] = 'Los usuarios con ese rol (en el nivel del sitio)  puede configurar reserva de salas: crear áreas y salas, editar reservas de otras personas, forzar reservas o hacer dobles reservas';
 $string['mrbs:administermrbs'] = 'Acceso MRBS (Lectura / Escritura / Administración)';
 $string['mrbs:doublebook'] = 'Doble reserva de salas';
 $string['mrbs:editmrbs'] = 'Acceso MRBS (Lectura / Escritura)';
 $string['mrbs:editmrbsunconfirmed'] = 'Solo crear reservas sin confirmar (sobreescritas por editormrbs)';
-$string['mrbseditor'] = 'Editor MRBS';
-$string['mrbseditor_desc'] = 'Usuarios con este rol (asignados en nivel sistema) pueden hacer reservas usando MRBS y editar sus propias reservas.';
 $string['mrbs:forcebook'] = 'Forzar reserva de salas (desplaza reservas existentes)';
+$string['mrbs:ignoremaxadvancedays'] = 'Ignorar la configuración de días máximos de reserva anticipada';
 $string['mrbs:myaddinstance'] = 'Añadir nuevo bloque MRBS';
 $string['mrbs:viewalltt'] = 'Ver todos los horarios de reserva de los usuarios';
+$string['mrbs:viewmrbs'] = 'Acceso MRBS (Lectura)';
+$string['mrbsadmin'] = 'Administrador MRBS';
+$string['mrbsadmin_desc'] = 'Los usuarios con ese rol (en el nivel del sitio)  puede configurar reserva de salas: crear áreas y salas, editar reservas de otras personas, forzar reservas o hacer dobles reservas';
+$string['mrbseditor'] = 'Editor MRBS';
+$string['mrbseditor_desc'] = 'Usuarios con este rol (asignados en nivel sistema) pueden hacer reservas usando MRBS y editar sus propias reservas.';
 $string['mrbsviewer'] = 'Observador MRBS';
 $string['mrbsviewer_desc'] = 'Usuarios con este rol (asignados en nivel sistema) pueden ver las reservas de salas, pero no puede hacer cambios.';
-$string['mrbs:viewmrbs'] = 'Acceso MRBS (Lectura)';
-$string['mustlogin'] = 'Tienes que autenticarte en tu sitio Moodle antes de poder acceder al calendario';
 $string['must_set_description'] = 'Debe aportar una descripción';
 $string['must_set_name'] = 'Debe escribir un nombre';
+$string['mustlogin'] = 'Tienes que autenticarte en tu sitio Moodle antes de poder acceder al calendario';
 $string['namebooker'] = 'Reserva para';
 $string['newwindow'] = 'Nueva ventana';
+$string['no_rooms_for_area'] = 'No hay salas definidas para esta área o zona';
+$string['no_user_with_email'] = 'No se ha encontrado ningún usuario de Moodle con el correo: {$a}. Todos los correos han de estar asociados a una cuenta de usuario Moodle.';
+$string['no_users_create_first_admin'] = 'Crear un usuario con rol de administrador para que pueda a su vez crear más usuarios.';
+$string['no_users_initial'] = 'No hay ningún usuario en la base de datos, permitiendo la creación de un usuario inicial';
 $string['noarea'] = 'No se seleccionó una zona o área';
 $string['noareas'] = 'No hay áreas';
 $string['norights'] = 'No tiene permisos suficientes para modificar este dato.';
 $string['norooms'] = 'No hay salas.';
-$string['no_rooms_for_area'] = 'No hay salas definidas para esta área o zona';
 $string['noroomsfound'] = 'Lo siento, no se encuentran salas';
-$string['notallcreated'] = 'Algunas reservas están demasiado alejadas temporalmente - {$a->created} fuera de las reservas creadas {$a->requested}';
-$string['notallowedbook'] = 'No está en la lista de usuarios que pueden reservar esta sala.';
 $string['not_found'] = 'no encontrado';
 $string['not_php3'] = '<H1>ATENCIÓN: Es probable que no funcione con PHP3</H1>';
-$string['no_users_create_first_admin'] = 'Crear un usuario con rol de administrador para que pueda a su vez crear más usuarios.';
-$string['no_users_initial'] = 'No hay ningún usuario en la base de datos, permitiendo la creación de un usuario inicial';
-$string['no_user_with_email'] = 'No se ha encontrado ningún usuario de Moodle con el correo: {$a}. Todos los correos han de estar asociados a una cuenta de usuario Moodle.';
+$string['notallcreated'] = 'Algunas reservas están demasiado alejadas temporalmente - {$a->created} fuera de las reservas creadas {$a->requested}';
+$string['notallowedbook'] = 'No está en la lista de usuarios que pueden reservar esta sala.';
 $string['of'] = 'de';
 $string['pagewindow'] = 'Misma ventana';
 $string['password_twice'] = 'Si desea cambiar la contraseña, escriba la nueva contraseña dos veces';
@@ -281,17 +285,11 @@ $string['records'] = 'Registros';
 $string['rep_dsp'] = 'Mostrar en el informe:';
 $string['rep_dsp_dur'] = 'Duración';
 $string['rep_dsp_end'] = 'Hora final';
-$string['repeat_id'] = 'Repetir ID';
 $string['rep_end_date'] = 'Fecha límite de repetición:';
 $string['rep_for_nweekly'] = '(n-semanas)';
 $string['rep_for_weekly'] = '(para semanal)';
 $string['rep_freq'] = 'Frecuencia:';
 $string['rep_num_weeks'] = 'Número de semanas';
-$string['report_and_summary'] = 'Informe y Resumen';
-$string['report_end'] = 'Hasta:';
-$string['report_on'] = 'Informe de reservas:';
-$string['report_only'] = 'Sólo el Informe';
-$string['report_start'] = 'Desde:';
 $string['rep_rep_day'] = 'Día Repetición:';
 $string['rep_type'] = 'Tipo de repetición:';
 $string['rep_type_0'] = 'Ninguna';
@@ -301,6 +299,12 @@ $string['rep_type_3'] = 'Mensual';
 $string['rep_type_4'] = 'Anual';
 $string['rep_type_5'] = 'Mensual, en el mismo día';
 $string['rep_type_6'] = 'n-Semanal';
+$string['repeat_id'] = 'Repetir ID';
+$string['report_and_summary'] = 'Informe y Resumen';
+$string['report_end'] = 'Hasta:';
+$string['report_on'] = 'Informe de reservas:';
+$string['report_only'] = 'Sólo el Informe';
+$string['report_start'] = 'Desde:';
 $string['requestvacate'] = 'Solicitar que está reserva sea movida';
 $string['requestvacatemessage'] = '{$a->user} solicita que muevas {$a->description} desde la sala {$a->room}, {$a->datetime}. Por favor contacte con ellos para discutirlo. [Explicar los motivos]';
 $string['requestvacatemessage_html'] = '{$a->user} solicita que muevas {$a->description} desde la sala {$a->room}, {$a->datetime}. Por favor contacte con ellos para discutirlo. [Explicar los motivos]';
@@ -337,8 +341,8 @@ $string['sure'] = '¿Está seguro?';
 $string['system'] = 'Sistema:';
 $string['teachingroom'] = 'Solo Aulas de clase';
 $string['through'] = 'a';
-$string['toofaradvance'] = 'No puede hacer reservas anticipadas con más de {$a} días';
 $string['too_may_entrys'] = 'Las opciones seleccionadas crearán demasiadas entradas.<BR>Por favor, revise las opciones';
+$string['toofaradvance'] = 'No puede hacer reservas anticipadas con más de {$a} días';
 $string['ttfor'] = 'Horario salas para';
 $string['type'] = 'Tipo:';
 $string['typea'] = '';

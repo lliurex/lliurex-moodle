@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'survey', language 'ca', version '3.9'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -153,10 +153,15 @@ No hi ha respostes \'correctes\' o \'equivocades\', estem interessats sols en la
 Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
 Moltes gràcies.';
 $string['collesaname'] = 'COLLES (Real)';
-$string['collesapintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’aquesta unitat et va facilitar l’aprenentatge.
-Cada una de les declaracions següents et demanaran que comparis la teva experiència <b>favorita</b> (ideal) i la teva experiència <b>real</b> en aquesta unitat. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
-Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
-Moltes gràcies per la teva col·laboració.';
+$string['collesapintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’aquesta unitat us va facilitar l’aprenentatge.
+
+Cada una de les parelles de declaracions següents us demanarà que compareu la vostra experiència <b>favorita</b> (ideal) i la vostra experiència <b>real</b> en aquesta unitat.
+
+No hi ha respostes «correctes» o «incorrectes»; ens interessa sols la vostra opinió. Les vostres respostes es tractaran amb un grau de confidencialitat alt, i no afectaran la vostra avaluació.
+
+Les vostres respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
+
+Moltes gràcies per la vostra col·laboració.';
 $string['collesapname'] = 'COLLES (preferit i real)';
 $string['collesm1'] = 'Rellevància';
 $string['collesm1short'] = 'Rellevància';
@@ -177,7 +182,7 @@ No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la 
 Les teves respostes, pensades cuidadosament, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
 Moltes gràcies per la teva col·laboració.';
 $string['collespname'] = 'COLLES (preferit)';
-$string['customintro'] = 'Introducció personalitzada';
+$string['customintro'] = 'Descripció';
 $string['deleteallanswers'] = 'Suprimeix totes les respostes';
 $string['deleteanalysis'] = 'Suprimeix';
 $string['done'] = 'Fet';
@@ -187,6 +192,9 @@ $string['downloadinfo'] = 'Podeu baixar les dades crues d\'aquesta enquesta en u
 $string['downloadresults'] = 'Baixa els resultats';
 $string['downloadtext'] = 'Baixa com a text';
 $string['editingasurvey'] = 'S\'està editant la informació';
+$string['eventreportdownloaded'] = 'S\'ha descarregat l\'informe de l\'enquesta';
+$string['eventreportviewed'] = 'S\'ha mostrat l\'informe de l\'enquesta';
+$string['eventresponsesubmitted'] = 'S\'ha enviat la resposta a l\'enquesta';
 $string['guestsnotallowed'] = 'Els visitants no poden participar en les enquestes';
 $string['howlong'] = '¿Quant de temps t’ha portat completar aquest questionari?';
 $string['howlongoptions'] = 'menys de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, més de 10 minuts.';
@@ -196,7 +204,9 @@ $string['invalidsurveyid'] = 'L\'ID de l\'enquesta és incorrecte';
 $string['invalidtmptid'] = 'L\'ID de la plantilla és invàlid';
 $string['ipreferthat'] = 'Prefereixo això';
 $string['modulename'] = 'Enquesta';
-$string['modulename_help'] = 'El mòdul d\'exàmens proporciona tres tipus de instruments per determinar i estimular l\'aprenentatge en ambients en línia. El professor pot utilitzar-los per recopilar dades que poden ajudar-lo a aprendre sobre les seves classes i mostren el procés d\'aprenentatge.';
+$string['modulename_help'] = 'El mòdul d\'enquestes proporciona uns tipus d\'instruments d\'enquestes verificats que s\'han considerat útils per determinar i estimular l\'aprenentatge en entorns en línia. El professor pot utilitzar-los per recopilar dades dels estudiants que poden ajudar-lo a aprendre sobre les seves classes i reflexionar sobre la tasca docent.
+
+Noteu que aquestes eines d\'enquesta tenen les preguntes preestablertes. Els professors que vulguin crear la seva pròpia enquesta han d\'utilitzar l\'activitat de «Retroacció».';
 $string['modulenameplural'] = 'Enquestes';
 $string['name'] = 'Nombre';
 $string['newsurveyresponses'] = 'Noves respostes a l’enquesta';
@@ -205,6 +215,7 @@ $string['notdone'] = 'Encara no s’ha fet';
 $string['notes'] = 'El teu anàlisi privat i les teves notes';
 $string['notyetanswered'] = 'Encara no s\'ha contestat';
 $string['othercomments'] = 'Tens algun altre comentari?';
+$string['page-mod-survey-x'] = 'Qualsevol pàgina del mòdul d\'enquestes';
 $string['peoplecompleted'] = '{$a} persones han completat aquesta enquesta';
 $string['pluginadministration'] = 'Administració d\'exàmens';
 $string['pluginname'] = 'Enquesta';
@@ -224,12 +235,14 @@ $string['scaletimes5'] = 'Gairebé mai, Rarament, De vegades, Sovint, Gairebé s
 $string['seemoredetail'] = 'Feu clic aquí per veure més detalls';
 $string['selectedquestions'] = 'Preguntes seleccionades d’una escala, tots els estudiants';
 $string['summary'] = 'Resum';
-$string['surveycompleted'] = 'Heu completat l’enquesta. La gràfica següent resumeix els teus resultats comparats amb la mitjana de la classe.';
+$string['survey:addinstance'] = 'Afegeix una enquesta nova';
 $string['survey:download'] = 'Baixar respostes';
-$string['surveygraph'] = 'Gràfica de l\'enquesta';
-$string['surveyname'] = 'Nom de l’enquesta';
 $string['survey:participate'] = 'Respondre una enquesta';
 $string['survey:readresponses'] = 'Veure respostes';
+$string['surveycompleted'] = 'Heu completat l’enquesta. La gràfica següent resumeix els teus resultats comparats amb la mitjana de la classe.';
+$string['surveycompletednograph'] = 'Heu completat aquesta enquesta.';
+$string['surveygraph'] = 'Gràfica de l\'enquesta';
+$string['surveyname'] = 'Nom de l’enquesta';
 $string['surveysaved'] = 'S\'ha desat l\'enquesta';
 $string['surveytype'] = 'Tipus d’enquesta';
 $string['surveytype_help'] = 'Hi ha tres tipus d\'exàmens disponibles:

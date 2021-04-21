@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_ldap', language 'ca', version '3.9'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,31 +31,44 @@ $string['autocreate'] = '<p>Els cursos poden crear-se automàticament si hi ha i
 moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname i moodle/course:changesummary dels rols pertinents, per tal d\'evitar modificacions dels quatre camps de curs especificats abans (número ID, nom curt, nom complet i resum).</p>';
 $string['autocreate_key'] = 'Auto crea';
 $string['autocreation_settings'] = 'Paràmetres de creació automàtica de cursos';
+$string['autoupdate_settings'] = 'Configuració de l\'actualització automàtica dels cursos';
+$string['autoupdate_settings_desc'] = '<p>Selecció de camps que s\'actualitzen quan s\'executa l\'script de sincronització (enrol/ldap/cli/sync.php).</p><p>L\'actualització es produirà si seleccioneu almenys un camp.</p>';
 $string['bind_dn'] = 'Si voleu utilitzar el bind-user per cercar usuaris, especifiqueu-ho aquí. P. ex. \'cn=ldapuser,ou=public,o=org\'';
 $string['bind_dn_key'] = 'Nom distingit de l\'usuari a Bind';
 $string['bind_pw'] = 'Contrasenya del bind-user.';
 $string['bind_pw_key'] = 'Contrasenya';
 $string['bind_settings'] = 'Paràmetres del lligam (bind)';
 $string['cannotcreatecourse'] = 'No es pot crear el curs: Cal una dada perduda a LDAP !';
+$string['cannotupdatecourse'] = 'No s\'ha pogut actualitzar el curs: manquen dades necessàries del registre LDAP. Número ID del curs: \'{$a->idnumber}\'';
+$string['cannotupdatecourse_duplicateshortname'] = 'No s\'ha pogut actualitzar el curs: nom curt duplicat. S\'ometrà el curs amb número ID \'{$a->idnumber}\'...';
 $string['category'] = 'Categoria per als cursos creats automàticament.';
 $string['category_key'] = 'Categoria';
 $string['contexts'] = 'Contextos LDAP';
 $string['couldnotfinduser'] = 'No es pot trobar l\'usuari \'{$a}\', s\'està ometent.';
 $string['course_fullname'] = 'Opcional: camp del LDAP d\'on es pot treure el nom complet.';
 $string['course_fullname_key'] = 'Nom complet';
+$string['course_fullname_updateonsync'] = 'Actualitza el nom complet durant l\'execució de l\'script de sincronització';
+$string['course_fullname_updateonsync_key'] = 'Actualitza el nom complet';
 $string['course_idnumber'] = 'Identificador únic en el LDAP, generalment <em>cn</em> o <em>uid</em>. Es recomana blocar aquest valor si utilitzeu la creació automàtica de cursos.';
 $string['course_idnumber_key'] = 'Nombre d\'identificació';
-$string['coursenotexistskip'] = 'El curs «{$a}» no existeix, i la creació automàtica està inhabilitada. S\'ha omès.';
 $string['course_search_sub'] = 'Cerca membres del grup al subcontext';
 $string['course_search_sub_key'] = 'Cerca subcontexts';
 $string['course_settings'] = 'Paràmetres d\'inscripció de cursos';
 $string['course_shortname'] = 'Opcional: camp del LDAP d\'on es pot treure el nom curt.';
 $string['course_shortname_key'] = 'Nom curt';
+$string['course_shortname_updateonsync'] = 'Actualitza el nom curt durant l\'execució de l\'script de sincronització';
+$string['course_shortname_updateonsync_key'] = 'Actualitza el nom curt';
 $string['course_summary'] = 'Opcional: camp del LDAP d\'on es pot treure el resum.';
 $string['course_summary_key'] = 'Resum';
-$string['createcourseextid'] = 'CREA l\'usuari inscrit en un curs que no existeix \'{$a->courseextid}\'';
-$string['createnotcourseextid'] = 'Usuari inscrit en un curs que no existeix \'{$a->courseextid}\'';
+$string['course_summary_updateonsync'] = 'Actualitza el resum durant l\'execució de l\'script de sincronització';
+$string['course_summary_updateonsync_key'] = 'Actualitza el resum';
+$string['coursenotexistskip'] = 'El curs «{$a}» no existeix, i la creació automàtica està inhabilitada. S\'ha omès.';
+$string['courseupdated'] = 'S\'ha actualitzat amb èxit el curs amb número ID \'{$a->idnumber}\'';
+$string['courseupdateskipped'] = 'No cal actualitzar el curs amb número ID \'{$a->idnumber}\'. S\'ha omès.';
+$string['createcourseextid'] = 'CREA l\'usuari inscrit en un curs que no existeix «{$a->courseextid}»';
+$string['createnotcourseextid'] = 'Usuari inscrit en un curs que no existeix «{$a->courseextid}»';
 $string['creatingcourse'] = 'S\'està creant el curs \'{$a}\'...';
+$string['duplicateshortname'] = 'Error en la creació del curs. Nom curt duplicat. S\'ometrà el curs amb número ID \'{$a->idnumber}\'...';
 $string['editlock'] = 'Bloca valor';
 $string['emptyenrolment'] = 'Inscripció buida per al rol \'{$a->role_shortname}\' al curs  \'{$a->course_shortname}\'';
 $string['enrolname'] = 'LDAP';
@@ -74,9 +87,9 @@ $string['host_url'] = 'Especifiqueu el servidor LDAP en forma d\'URL, p. ex. \'l
 $string['host_url_key'] = 'URL del servidor';
 $string['idnumber_attribute'] = 'Si els membres del grup contenen noms distingits , especifiqueu el mateix atribut que heu utilitzat per al mapat  de l\'usuari «Nombre d\'identificació » als paràmetres d\'autenticació LDAP.';
 $string['idnumber_attribute_key'] = 'Atribut amb nombre ID';
+$string['ldap:manage'] = 'Gestiona les instàncies d\'inscripció LDAP';
 $string['ldap_encoding'] = 'Especifica la codificació utilitzada pel servidor LDAP. Molt probablement sigui utf-8, MS AD v2 utilitza la codificació per defecte de la plataforma, això és, cp1252, cp1250, etc.';
 $string['ldap_encoding_key'] = 'Codificació LDAP';
-$string['ldap:manage'] = 'Gestiona les instàncies d\'inscripció LDAP';
 $string['memberattribute'] = 'Atribut de membre LDAP';
 $string['memberattribute_isdn'] = 'Si el membre del grup conté noms distingits cal que ho especifiqueu aquí. Si això és així, us caldrà configurar els paràmetres que quedin en aquesta secció.';
 $string['memberattribute_isdn_key'] = 'L\'atribut del membre utilitza nom distingit';
@@ -97,11 +110,14 @@ $string['pluginname_desc'] = '<p>Podeu utilitzar un servidor LDAP per controlar 
 <p>Les inscripcions s\'actualitzen quan entra l\'usuari. També podeu executar una seqüència per mantenir sincronitzades les inscripcions. Doneu una ullada a <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Aquest connector també es pot configurar per crear automàticament nous cursos quan apareixen nous grups en el LDAP.</p>';
 $string['pluginnotenabled'] = 'Connector no habilitat!';
-$string['role_mapping'] = '<p>Per a cada rol que vulgueu assignar a LDAP us caldrà especificar la llista de contexts on el rol del curs està situat. Separeu diferents contexts amb  \';\'.</p><p>Us caldrà també especificar l\'atribut que el vostre servidor LDAP utilitza per mantindre els membre d\'un grup. Normalment  \'membre\' o \'membreUid\'</p>';
+$string['role_mapping'] = '<p>Per a cada rol que vulgueu assignar a LDAP us caldrà especificar la llista de contextos on el rol del curs està situat. Separeu diferents contextos amb  \';\'.</p><p>Us caldrà també especificar l\'atribut que el vostre servidor LDAP utilitza per mantenir els membres d\'un grup. Normalment  \'membre\' o \'membreUid\'</p>';
+$string['role_mapping_attribute'] = 'Atribut de membre de LDAP per a {$a}';
+$string['role_mapping_context'] = 'Context LDAP per a {$a}';
 $string['role_mapping_key'] = 'Fes el mapatge de rols de LDAP';
 $string['roles'] = 'Mapatge de rols';
 $string['server_settings'] = 'Configuració del servidor LDAP';
 $string['synccourserole'] = '== S\'està sincronitzant el curs \'{$a->idnumber}\' per al rol \'{$a->role_shortname}\'';
+$string['syncenrolmentstask'] = 'Tasca de sincronització d\'inscripcions';
 $string['template'] = 'Opcional: els cursos creats automàticament poden copiar els seus paràmetres d\'un curs plantilla.';
 $string['template_key'] = 'Plantilla';
 $string['unassignrole'] = 'S\'està suprimint l\'assignació del rol \'{$a->role_shortname}\' a l\'usuari \'{$a->user_username}\' del curs  \'{$a->course_shortname}\' (id {$a->course_id})';
@@ -110,7 +126,7 @@ $string['unassignroleid'] = 'S\'està suprimint l\'assignació del rol id \'{$a-
 $string['updatelocal'] = 'Actualitza dades locals';
 $string['user_attribute'] = 'Si el membre del grup conté noms distingits, especifiqueu l\'atribut utilitzat en nom/cerca d\'usuaris. Si esteu utilitzant autenticació LDAP, aquest valor sol trobar l\'atribut especificat al mapatge \'Nombre ID\' al connector d\'autenticació de LDAP.';
 $string['user_attribute_key'] = 'Atribut del número ID';
-$string['user_contexts'] = 'Si el membre del grup conté noms distingits , especifiqueu la llista de contexts on els usuaris seran situats. Separeu els diferents contexts amb \';\'. Per exemple: \'ou=usuaris,o=org; ou=altres,o=org\'';
+$string['user_contexts'] = 'Si el membre del grup conté noms distingits, especifiqueu la llista de contexts on els usuaris seran situats. Separeu els diferents contexts amb \';\'. Per exemple: \'ou=usuaris,o=org; ou=altres,o=org\'';
 $string['user_contexts_key'] = 'Contexts';
 $string['user_search_sub'] = 'Si el membre del grup conté noms distingits, especifiqueu si la cerca dels usuaris també es fa en subcontexts';
 $string['user_search_sub_key'] = 'Subcontexts de cerca';

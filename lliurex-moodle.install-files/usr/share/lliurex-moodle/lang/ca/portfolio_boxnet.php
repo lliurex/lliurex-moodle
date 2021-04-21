@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,37 +12,42 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ca', version '3.9'.
  *
- * @package   portfolio_boxnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_boxnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['apikey'] = 'Clau API';
-$string['err_noapikey'] = 'Sense clau API';
-$string['err_noapikey_help'] = 'No hi ha una clau API configurada per a aquest connector. Podeu obtenir-ne una en la pàgina de desenvolupament d\'OpenBox.';
+$string['clientid'] = 'ID del client';
+$string['clientsecret'] = 'Clau secreta del client';
 $string['existingfolder'] = 'Carpeta existent on posar el/s fitxer/s';
 $string['folderclash'] = 'La carpeta que voleu crear ja existeix';
-$string['foldercreatefailed'] = 'No s\'ha pogut crear la carpeta de destinació en box.net';
-$string['folderlistfailed'] = 'No s\'ha pogut recuperar una llista de carpetes de box.net';
+$string['foldercreatefailed'] = 'No s\'ha pogut crear la vostra carpeta de destinació a Box';
+$string['folderlistfailed'] = 'No s\'ha pogut recuperar una llista de carpetes de Box';
+$string['missinghttps'] = 'Cal HTTPS';
+$string['missinghttps_help'] = 'Box sols treballa amb webs amb HTTPS habilitat';
+$string['missingoauthkeys'] = 'S\'ha perdut la ID del client i la contrasenya secreta';
+$string['missingoauthkeys_help'] = 'No estan configurats al connector la ID del client ni la contrasenya secreta. Podeu obtenir-ne una des la pàgina de desenvolupament de Box.';
 $string['newfolder'] = 'Nova carpeta on posar el/s fitxer/s';
 $string['noauthtoken'] = 'No s\'ha pogut recuperar un testimoni d\'autenticació per utilitzar-lo en aquesta sessió';
 $string['notarget'] = 'Heu d\'especificar o una carpeta de destinació existent o una de nova';
-$string['noticket'] = 'No s\'ha pogut recuperar un tiquet de box.net per a iniciar la sessió d\'autenticació';
-$string['password'] = 'La vostra contrasenya de box.net (no és guardarà)';
-$string['pluginname'] = 'Box.net';
-$string['sendfailed'] = 'No s\'ha pogut enviar el contingut a box.net: {$a}';
+$string['noticket'] = 'No s\'ha pogut recuperar un tiquet de Box per a iniciar la sessió d\'autenticació';
+$string['password'] = 'La vostra contrasenya de Box (no és guardarà)';
+$string['pluginname'] = 'Box';
+$string['sendfailed'] = 'No s\'ha pogut enviar el contingut a Box: {$a}';
 $string['setupinfo'] = 'Instruccions de configuració';
-$string['setupinfodetails'] = 'Per a obtenir una clau API, entreu en Box.net i visiteu la <a href="{$a->servicesurl}">pàgina de desenvolupament OpenBox</a>. A \'Developer Tools\', accediu a \'Create new application\' i creeu una nova aplicació per al vostre lloc Moodle. La clau API es mostra a la secció \'Backend parameters\' al formulari d\'edició de l\'aplicació. En aquest formulari, empleneu el camp \'Redirect URL\' amb:<br /><code>{$a->callbackurl}</code><br />Si ho desitgeu, també podeu donar-hi més informació sobre el vostre lloc Moodle. Aquests valors es poden modificar més tard a la pàgina \'View my applications\'.';
+$string['setupinfodetails'] = 'Per obtenir un ID de client API, inicieu sessió a Box i visiteu la <a href="{$a->servicesurl}">pàgina de desenvolupament Box</a>. Seguiu «Create new application» i creeu una nova aplicació per al vostre lloc Moodle. L\'ID del client i la contrasenya secreta es mostren a la secció «OAuth2 parameters» del formulari d\'edició de l\'aplicació. Podeu proporcionar de forma opcional  informació sobre el vostre lloc web Moodle.';
 $string['sharedfolder'] = 'Compartit';
 $string['sharefile'] = 'Voleu compartir aquest fitxer?';
 $string['sharefolder'] = 'Voleu compartir aquesta nova carpeta?';
 $string['targetfolder'] = 'Carpeta de destinació';
 $string['tobecreated'] = 'Per crear';
-$string['username'] = 'El vostre nom d\'usuari a box.net (no es guardarà)';
+$string['username'] = 'El vostre nom d\'usuari a Box (no es desarà)';
+$string['warninghttps'] = 'Cal que el vostre lloc web utilitzi HTTPS per tal que el dossier funcioni.';

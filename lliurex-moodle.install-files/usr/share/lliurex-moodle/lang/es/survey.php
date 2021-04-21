@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'survey', language 'es', version '3.9'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['actualstudent'] = '{$a} real';
 $string['allquestionrequireanswer'] = 'Todas las preguntas son necesarias y deben ser contestadas';
 $string['allquestions'] = 'Todas las preguntas en orden, todos los estudiantes';
 $string['allscales'] = 'Todas las escalas, todos los estudiantes';
-$string['alreadysubmitted'] = 'Ya envió esta información';
+$string['alreadysubmitted'] = 'Usted ya ha enviado esta encuesta';
 $string['analysisof'] = 'Análisis de {$a}';
 $string['answers'] = 'Respuestas';
 $string['attls1'] = 'Al evaluar lo que alguien dice, me centro en lo que dice y no en quién es.';
@@ -82,7 +82,7 @@ $string['attlsm2'] = 'Aprendizaje Colaborativo';
 $string['attlsm3'] = 'Aprendizaje Individualizado';
 $string['attlsmintro'] = 'En discusión...';
 $string['attlsname'] = 'ATTLS (versión de 20 elementos)';
-$string['cannotfindanswer'] = 'Aún no hay respuestas para esta encuesta.';
+$string['cannotfindanswer'] = 'Aún no hay respuestas en esta encuesta.';
 $string['cannotfindquestion'] = 'La pregunta no existe';
 $string['cannotfindsurveytmpt'] = '¡No se han encontrado plantillas de Encuestas Predefinidas!';
 $string['ciq1'] = '¿En qué momento, durante la clase, se sintió más involucrado como estudiante?';
@@ -148,9 +148,13 @@ $string['colles8short'] = 'Soy crítico con lo que leo';
 $string['colles9'] = 'Explico mis ieas a otros estudiantes.';
 $string['colles9short'] = 'Explico mis ideas';
 $string['collesaintro'] = 'El propósito de esta encuesta es ayudarnos a entender hasta qué punto la presentación en línea de esta unidad le facilitó el aprendizaje.
-Cada una de las 24 declaraciones siguientes le interroga acerca de su experiencia en esta unidad.
-No hay respuestas \'correctas\' o \'equivocadas\', nosotros estamos interesados sólo en su opinión. Sus respuestas serán tratadas con alto grado de confidencialidad y no afectarán su evaluación.
-Sus respuestas, pensadas cuidadosamente, nos ayudarán a mejorar la manera de presentar esta unidad en el futuro.
+
+Cada una de las 24 cuestiones siguientes le preguntará sobre su experiencia en esta unidad.
+
+No hay respuestas \'correctas\' o \'erróneas\': solo queremos su opinión. Le garantizamos que sus opiniones serán tratadas con el mayor grado de confidencialidad y no afectarán a su evaluación.
+
+Sus respuestas, pensadas cuidadosamente, nos ayudarán a mejorar la manera de impartir esta unidad en el futuro.
+
 Muchas gracias.';
 $string['collesaname'] = 'COLLES (Real)';
 $string['collesapintro'] = 'El propósito de esta encuesta es ayudarnos a entender hasta qué punto la presentación en línea de esta unidad le facilitó el aprendizaje.
@@ -176,33 +180,47 @@ $string['collesm5short'] = 'Apoyo de compañeros';
 $string['collesm6'] = 'Interpretación';
 $string['collesm6short'] = 'Interpretación';
 $string['collesmintro'] = 'En esta unidad en línea...';
-$string['collespintro'] = 'El propósito de esta encuesta es ayudarnos a entender lo que usted valora en una experiencia de aprendizaje en línea.
-Cada una de las 24 declaraciones siguientes le interrogan sobre su experiencia <strong>favorita</strong> (ideal) en esta unidad.
-No existen respuestas \'correctas\' o \'equivocadas\', a nosotros nos interesa sólo su opinión. Sus respuestas serán tratadas con alto grado de confidencialidad y no afectarán su evaluación.
-Sus respuestas, pensadas cuidadosamente, nos ayudarán a mejorar la manera de presentar esta unidad en el futuro.
-Muchas gracias por su colaboración.';
+$string['collespintro'] = 'El propósito de esta encuesta es ayudarnos a entender hasta qué punto la presentación en línea de esta unidad le facilitó el aprendizaje.
+
+Cada una de las 24 cuestiones siguientes le preguntará sobre su experiencia en esta unidad.
+
+No hay respuestas \'correctas\' o \'erróneas\': solo queremos su opinión. Le garantizamos que sus opiniones serán tratadas con el mayor grado de confidencialidad y no afectarán a su evaluación.
+
+Sus respuestas, pensadas cuidadosamente, nos ayudarán a mejorar la manera de impartir esta unidad en el futuro.
+
+Muchas gracias.';
 $string['collespname'] = 'COLLES (Preferida)';
+$string['completionsubmit'] = 'El estudiante debe enviar esta actividad para completarla';
 $string['customintro'] = 'Introducción personalizada';
-$string['deleteallanswers'] = 'Eliminar todas las respuestas de encuesta';
+$string['deleteallanswers'] = 'Eliminar todas las respuestas a la encuesta';
 $string['deleteanalysis'] = 'Eliminar el análisis de las respuestas';
 $string['done'] = 'Hecho';
 $string['download'] = 'Descargar';
 $string['downloadexcel'] = 'Descargar como hoja de cálculo';
-$string['downloadinfo'] = 'Puede descargar la información completa en un formato que pueda ser analizado por un programa de hojas de cálculo';
+$string['downloadinfo'] = 'Puede descargar la información completa en un formato que pueda ser analizado por una hoja de cálculo, el paquete SPS u otro programa.';
 $string['downloadresults'] = 'Descargar resultados';
 $string['downloadtext'] = 'Descargar como texto';
-$string['editingasurvey'] = 'Editando información';
+$string['editingasurvey'] = 'Editando encuesta';
+$string['errorunabletosavenotes'] = 'Ha ocurrido un error mientras se guardaban tus notas.';
+$string['eventreportdownloaded'] = 'Informe de encuesta descargado';
+$string['eventreportviewed'] = 'Informe de encuesta visto';
+$string['eventresponsesubmitted'] = 'Respuesta a la encuesta enviada';
 $string['guestsnotallowed'] = 'Los invitados no pueden participar en las encuestas';
-$string['howlong'] = '¿Cuánto tiempo le llevó completar este cuestionario?';
+$string['howlong'] = '¿Cuánto tiempo le llevó completar esta encuesta?';
 $string['howlongoptions'] = 'menos de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, más de 10 minutos.';
 $string['ifoundthat'] = 'Encontrado:';
+$string['indicator:cognitivedepth'] = 'Encuesta predefinida cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Encuesta predefinida.';
+$string['indicator:socialbreadth'] = 'Encuesta predefinida social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Encuesta predefinida.';
 $string['introtext'] = 'Texto de introducción';
 $string['invalidsurveyid'] = 'ID de la encuesta incorrecto';
 $string['invalidtmptid'] = 'Id de plantilla no válido';
 $string['ipreferthat'] = 'Prefiero esto';
-$string['modulename'] = 'Encuesta';
-$string['modulename_help'] = '<p>El módulo de encuesta proporciona tres tipos de encuestas diferentes que permiten al profesor evaluar y estimular el aprendizaje en el entorno en línea. </p>
-<p>El profesor puede utilizarlos para recopilar información que le ayude a conocer mejor su clase y reflexionar sobre su propia enseñanza.';
+$string['modulename'] = 'Encuestas predefinidas';
+$string['modulename_help'] = 'El módulo de actividad <b>Encuestas predefinidas</b> proporciona una serie de instrumentos que se han mostrado útiles para evaluar y estimular el aprendizaje en entornos en línea. Un profesor puede usarlos para recopilar información entre sus alumnos que le ayude a conocer mejor su clase así como su propia forma de enseñar.
+
+Tenga en cuenta que estas encuestas tienen ya las preguntas previamente predefinidas. Los profesores que deseen crear sus propias encuestas debe utilizar el módulo de actividad <b>Encuesta</b>';
 $string['modulenameplural'] = 'Encuestas';
 $string['name'] = 'Nombre';
 $string['newsurveyresponses'] = 'Nuevas respuestas a la encuesta';
@@ -211,9 +229,10 @@ $string['notdone'] = 'Aún no se ha hecho';
 $string['notes'] = 'Su análisis privado y sus notas';
 $string['notyetanswered'] = 'Aún no se ha dado respuesta';
 $string['othercomments'] = '¿Tiene algún otro comentario?';
+$string['page-mod-survey-x'] = 'Cualquier página del módulo Encuesta';
 $string['peoplecompleted'] = '{$a} personas han completado esta encuesta';
-$string['pluginadministration'] = 'Administración de encuestas';
-$string['pluginname'] = 'Encuesta';
+$string['pluginadministration'] = 'Administración de Encuestas predefinidas';
+$string['pluginname'] = 'Encuesta predefinida';
 $string['preferred'] = 'Preferido';
 $string['preferredclass'] = 'Clase preferida';
 $string['preferredstudent'] = '{$a} preferido';
@@ -227,22 +246,26 @@ $string['savednotes'] = 'Sus notas se han guardado';
 $string['scaleagree5'] = 'en total desacuerdo, un poco en desacuerdo, ni de acuerdo ni en desacuerdo, un poco de acuerdo, totalmente de acuerdo';
 $string['scales'] = 'Escalas';
 $string['scaletimes5'] = 'Casi nunca, Rara vez, Alguna vez, A menudo, Casi siempre';
+$string['search:activity'] = 'Encuesta - información de actividad';
 $string['seemoredetail'] = 'Haga clic aquí para ver más detalles';
 $string['selectedquestions'] = 'Preguntas seleccionadas de una escala, todos los estudiantes';
 $string['summary'] = 'Resumen';
-$string['surveycompleted'] = 'Usted ha completado la encuesta. La gráfica siguiente muestra sus resultados comparados con el promedio de la clase.';
+$string['survey:addinstance'] = 'Añadir una nueva encuesta';
 $string['survey:download'] = 'Descargar respuestas';
-$string['surveygraph'] = 'Gráfico de la encuesta';
-$string['surveyname'] = 'Nombre de la encuesta';
 $string['survey:participate'] = 'Responder a la encuesta';
 $string['survey:readresponses'] = 'Ver respuestas';
+$string['surveycompleted'] = 'Usted ha completado esta encuesta. La gráfica inferior le muestra sus resultados comparados con el promedio de la clase.';
+$string['surveycompletednograph'] = 'Has completado esta encuesta.';
+$string['surveygraph'] = 'Gráfico de la encuesta';
+$string['surveyname'] = 'Nombre de la encuesta';
 $string['surveysaved'] = 'Encuesta guardada';
-$string['surveytype'] = 'Tipo de encuesta';
-$string['surveytype_help'] = '<p>Hay disponibles tres tipos de encuesta diferentes:</p>
-<p>* ATTLS - Attitudes to thinking and Learning Survey, o lo que es lo mimo, Actitudes de pensamiento y aprendizaje. Sirve para medir el grado en el que un alumno es un "conocedor conectado" (tiende a disfrutar más del aprendizaje, es más colaborativo y está dispuesto a aprender de las ideas de los demás), o bien un "conocedor desconectado" (tiende a tomar una actitud de aprendizaje más
-crítica y argumentativa).</P>
-<p>* Critical incidents survey, o Encuesta de Incidentes Críticos</p>
-<p>* COLLES - Constructivist on line Learning Enviroment Survey, o lo que es lo mismo, Encuesta en línea sobre el Ambiente de Aprendizaje Constructivista. Sirve para hacer el seguimiento del nivel en que la capacidad interactiva de la World Wide Web puede ser explotado para los estudiantes involucrarse en prácticas educativas dinámicas.';
+$string['surveytype'] = 'Tipo de Encuesta predefinida';
+$string['surveytype_help'] = 'Hay disponibles tres tipos de Encuesta predefinidas diferentes:
+
+* ATTLS - Attitudes to thinking and Learning Survey, o lo que es lo mimo, Actitudes de pensamiento y aprendizaje. Sirve para medir el grado en el que un alumno es un "conocedor conectado" (tiende a disfrutar más del aprendizaje, es más colaborativo y está dispuesto a aprender de las ideas de los demás), o bien un "conocedor desconectado" (tiende a tomar una actitud de aprendizaje más
+crítica y argumentativa).
+* Critical incidents survey, o Encuesta de Incidentes Críticos
+* COLLES - Constructivist on line Learning Enviroment Survey, o lo que es lo mismo, Encuesta en línea sobre el Ambiente de Aprendizaje Constructivista. Sirve para hacer el seguimiento del nivel en que la capacidad interactiva de la World Wide Web puede ser explotado para los estudiantes involucrarse en prácticas educativas dinámicas.';
 $string['thanksforanswers'] = 'Gracias por responder a esta encuesta, {$a}';
 $string['time'] = 'Tiempo';
 $string['viewsurveyresponses'] = 'Ver las respuestas a la encuesta {$a}';

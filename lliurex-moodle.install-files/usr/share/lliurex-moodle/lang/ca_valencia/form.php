@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'form', language 'ca_valencia', version '3.9'.
  *
- * @package   form
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     form
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Afig {$a} camps al formulari';
+$string['addfields'] = 'Afig {$a} camp(s) al formulari';
+$string['err_maxfiles'] = 'Ací no podeu adjuntar més de {$a} fitxers.';
+$string['err_maxlength'] = 'Ací només s\'hi admeten com a màxim {$a->format} caràcters.';
 $string['err_nonzero'] = 'Heu d\'introduir un nombre que no comence per zero.';
 $string['mustbeoverriden'] = 'Cal sobreescriure el mètode abstracte form_definition() en la classe {$a}. Per favor corregiu el codi.';
-$string['somefieldsrequired'] = 'Este formulari conté camps obligatoris';
+$string['passwordunmaskinstructions'] = 'Pitgeu la tecla de retorn per guardar els canvis';
+$string['somefieldsrequired'] = 'Este formulari conté camps obligatoris marcats amb {$a}.';

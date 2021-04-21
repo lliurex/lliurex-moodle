@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_html', language 'ca', version '3.9'.
  *
- * @package   block_html
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_html
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowadditionalcssclasses'] = 'Habilita classes addicionals CSS';
+$string['configallowadditionalcssclasses'] = 'Afegeix una opció de configuració per permetre a les instàncies de l\'HTML configurar classes addicionals CSS';
+$string['configclasses'] = 'Classes addicionals CSS';
+$string['configclasses_help'] = 'El propòsit d\'aquesta configuració és ajudar amb la tematització ajudant a distingir uns blocs HTML dels altres. Qualssevol classes de CSS que introduïu aquí (delimitades per espais) s\'afegiran a les classes per defecte.';
 $string['configcontent'] = 'Contingut';
 $string['configtitle'] = 'Títol del bloc';
-$string['leaveblanktohide'] = 'deixa en blanc per amagar el títol ';
+$string['html:addinstance'] = 'Afegir un bloc HTML nou';
+$string['html:myaddinstance'] = 'Afegeix un bloc HTML nou a la pàgina del Tauler';
 $string['newhtmlblock'] = '(nou bloc HTML)';
 $string['pluginname'] = 'HTML';

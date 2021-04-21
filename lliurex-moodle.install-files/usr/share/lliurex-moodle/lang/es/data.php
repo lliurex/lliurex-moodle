@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'data', language 'es', version '3.9'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Acción';
-$string['add'] = 'Agregar entrada';
-$string['addcomment'] = 'Agregar comentario';
-$string['addentries'] = 'Agregar entradas';
+$string['add'] = 'Añadir entrada';
+$string['addcomment'] = 'Añadir comentario';
+$string['addentries'] = 'Añadir entradas';
 $string['addtemplate'] = 'Plantilla para añadir entrada';
 $string['advancedsearch'] = 'Búsqueda avanzada';
+$string['allowcomments'] = 'Permitir comentar las entradas';
 $string['alttext'] = 'Texto alternativo';
+$string['approvalstatus'] = 'Estado de aprobación';
 $string['approve'] = 'Aprobar';
 $string['approved'] = 'Aprobado';
+$string['areacontent'] = 'Campos';
 $string['ascending'] = 'Ascendente';
 $string['asearchtemplate'] = 'Plantilla de búsqueda avanzada';
 $string['atmaxentry'] = '¡Ha introducido el número máximo de entradas permitido!';
@@ -49,13 +52,17 @@ $string['availabletags_help'] = '<p align="center"><strong>Marcas disponibles</s
 <p>Los botones tienen el siguiente formato: ##somebutton##</p>
 <p>En la plantilla actual sólo pueden usarse las marcas que están en la lista de "Marcas disponibles".</p>';
 $string['availabletodate'] = 'Disponible hasta';
+$string['availabletodatevalidation'] = 'La fecha de disponibilidad de fin no puede ser previa a la fecha de disponibilidad de comienzo.';
 $string['blank'] = 'En blanco';
 $string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
+$string['calendarend'] = 'Base de datos {$a} cerrada';
+$string['calendarstart'] = '{$a} abre';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'No se le permite acceder a los ajustes previos de otros usuarios';
-$string['cannotadd'] = 'No se pueden agregar entradas';
+$string['cannotadd'] = 'No se pueden añadir entradas';
 $string['cannotdeletepreset'] = 'Error al eliminar un ajuste previo';
+$string['cannotoverwritepreset'] = 'Error sobrescribiendo cvalor preestablecido';
 $string['cannotunziptopreset'] = 'No se ha podido descomprimir al directorio de ajustes previos';
 $string['checkbox'] = 'Caja de selección';
 $string['chooseexportfields'] = 'Seleccione los campos que desea exportar:';
@@ -69,9 +76,13 @@ $string['comments'] = 'Comentarios';
 $string['commentsaved'] = 'Comentario guardado';
 $string['commentsn'] = '{$a} comentarios';
 $string['commentsoff'] = 'La opción comentarios no está habilitada';
-$string['configenablerssfeeds'] = 'Esta opción hace posible habilitar canales RSS para todas las bases de datos. Aún así necesitará activar manualmente los canales en los ajustes de cada base de datos.';
+$string['completionentries'] = 'Entradas requeridas';
+$string['completionentriescount'] = 'Número de entradas';
+$string['completionentriesdesc'] = 'Número mínimo de entradas requeridas: {$a}';
+$string['configenablerssfeeds'] = 'Esta opción habilita la posibilidad de canales RSS para todas las bases de datos. Aún así necesitará activar manualmente los canales en los ajustes de cada base de datos.';
 $string['confirmdeletefield'] = 'Está a punto de eliminar este campo. ¿Está seguro?';
 $string['confirmdeleterecord'] = '¿Está seguro de que desea eliminar esta entrada?';
+$string['confirmdeleterecords'] = '¿Está seguro de que desea borrar estas entradas?';
 $string['csstemplate'] = 'Plantilla CSS';
 $string['csvfailed'] = 'No se pueden leer los datos del archivo CSV';
 $string['csvfile'] = 'Archivo CSV';
@@ -97,29 +108,32 @@ $string['csvimport_help'] = '<p align="center"><strong>Importar de un archivo CS
 
 <p>ADVERTENCIA: es posible que no se admitan todos los tipos de campo.</p>';
 $string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">texto</acronym> CSV con el delimitador seleccionado:';
-$string['data:approve'] = 'Aprobar entradas pendientes';
+$string['data:addinstance'] = 'Añadir una nueva base de datos';
+$string['data:approve'] = 'Aprobar y deshacer entradas aceptadas';
 $string['data:comment'] = 'Escribir comentarios';
 $string['data:exportallentries'] = 'Exportar todas las entradas de la base de datos';
 $string['data:exportentry'] = 'Exportar una entrada de la base de datos';
 $string['data:exportownentry'] = 'Exportar la propia entrada de la base de datos';
+$string['data:exportuserinfo'] = 'Exportar la información del  usuario';
 $string['data:managecomments'] = 'Gestionar comentarios';
 $string['data:manageentries'] = 'Gestionar entradas';
 $string['data:managetemplates'] = 'Gestionar plantillas';
 $string['data:manageuserpresets'] = 'Gestionar ajustes previos de plantillas';
 $string['data:rate'] = 'Calificar entradas';
 $string['data:readentry'] = 'Leer entradas';
-$string['data:viewallratings'] = 'Ver todas las calificaciones emitidas por los usuarios';
+$string['data:view'] = 'Ver actividad de la base de datos';
+$string['data:viewallratings'] = 'Ver todas las valoraciones emitidas por los usuarios';
 $string['data:viewalluserpresets'] = 'Ver ajustes previos de todos los usuarios';
-$string['data:viewanyrating'] = 'Ver el total de calificaciones que alguien recibió
-	';
+$string['data:viewanyrating'] = 'Ver el total de valoraciones que alguien recibió';
 $string['data:viewentry'] = 'Ver entradas';
-$string['data:viewrating'] = 'Ver calificación total recibida';
+$string['data:viewrating'] = 'Ver la valoración total recibida';
 $string['data:writeentry'] = 'Escribir entradas';
 $string['date'] = 'Fecha';
 $string['dateentered'] = 'Fecha introducida';
 $string['defaultfielddelimiter'] = '(el valor por defecto es la coma)';
 $string['defaultfieldenclosure'] = '(el valor por defecto es ninguno)';
 $string['defaultsortfield'] = 'Campo de ordenación por defecto';
+$string['delcheck'] = 'Checkbox de borrado masivo';
 $string['delete'] = 'Eliminar';
 $string['deleteallentries'] = 'Eliminar todas las entradas';
 $string['deletecomment'] = '¿Está seguro de que desea eliminar este comentario?';
@@ -129,21 +143,31 @@ $string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
 $string['deletewarning'] = '¿Está seguro de que desea eliminar estos ajustes previos?';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} No preset: archivos perdidos: {$a->missing_files}';
+$string['disapprove'] = 'Desaprobar';
 $string['download'] = 'Descargar';
 $string['edit'] = 'Edición';
 $string['editcomment'] = 'Editar comentario';
 $string['editentry'] = 'Editar entrada';
 $string['editordisable'] = 'Desactivar editor';
 $string['editorenable'] = 'Activar editor';
-$string['emptyadd'] = 'La plantilla Agregar está vacía, generando un formulario por defecto...';
+$string['emptyadd'] = 'La plantilla Añadir está vacía, generando un formulario por defecto...';
 $string['emptyaddform'] = '¡No ha rellenado ningún campo!';
 $string['entries'] = 'Entradas';
-$string['entrieslefttoadd'] = 'Debe agregar {$a->entriesleft} entrada(s) más para poder finalizar esta actividad';
-$string['entrieslefttoaddtoview'] = 'Debe agregar {$a->entrieslefttoview} entrada(s) antes de poder ver las entradas de otros participantes.';
+$string['entrieslefttoadd'] = 'Debe añadir {$a->entriesleft} entrada(s) más antes de poder ver las entradas de otro participante.';
+$string['entrieslefttoaddtoview'] = 'Debe añadir {$a->entrieslefttoview} entrada(s) antes de poder ver las entradas de otros participantes.';
 $string['entry'] = 'Entrada';
 $string['entrysaved'] = 'Su entrada se ha guardado';
 $string['errormustbeteacher'] = 'Necesita ser un profesor para usar esta página';
+$string['errormustsupplyvalue'] = 'Debe proporcionar un valor aquí.';
 $string['errorpresetexists'] = 'Ya existe un elemento con el nombre seleccionado';
+$string['eventfieldcreated'] = 'Campo creado';
+$string['eventfielddeleted'] = 'Campo borrado';
+$string['eventfieldupdated'] = 'Campo actualizado';
+$string['eventrecordcreated'] = 'Registro creado';
+$string['eventrecorddeleted'] = 'Registro borrado';
+$string['eventrecordupdated'] = 'Registro actualizado';
+$string['eventtemplateupdated'] = 'Plantilla actualizada';
+$string['eventtemplateviewed'] = 'Plantilla visualizada';
 $string['example'] = 'Ejemplo de módulo de base de datos';
 $string['excel'] = 'Excel';
 $string['expired'] = 'Lo sentimos, esta actividad se cerró el {$a} y ya no está disponible';
@@ -154,7 +178,7 @@ $string['exportedtozip'] = 'Exportado a un \'zip\' temporal...';
 $string['exportentries'] = 'Exportar entradas';
 $string['exportownentries'] = 'Desea exporta solo sus propias entradas? ({$a->mine} / {$a->all})';
 $string['failedpresetdelete'] = '¡Error al eliminar un ajuste previo!';
-$string['fieldadded'] = 'Campo agregado';
+$string['fieldadded'] = 'Campo añadido';
 $string['fieldallowautolink'] = 'Permitir autoenlace';
 $string['fielddeleted'] = 'Campo eliminado';
 $string['fielddelimiter'] = 'Delimitador de campo';
@@ -185,6 +209,7 @@ $string['fieldwidth'] = 'Anchura';
 $string['fieldwidthlistview'] = 'Anchura en vista de lista';
 $string['fieldwidthsingleview'] = 'Anchura en vista individual';
 $string['file'] = 'Archivo';
+$string['fileencoding'] = 'Codificación';
 $string['filesnotgenerated'] = 'No se han generado todos los archivos: {$a}';
 $string['filtername'] = 'Auto-enlace de base de datos';
 $string['footer'] = 'Pie';
@@ -204,8 +229,16 @@ $string['headerrsstemplate'] = 'Define la apariencia de las entradas en canales 
 $string['headersingletemplate'] = 'Define la interfaz de navegación para una entrada individual';
 $string['importentries'] = 'Importar entradas';
 $string['importsuccess'] = 'El ajuste previo ha sido aplicado con éxito.';
+$string['includeapproval'] = 'Incluya el estado de aprobación';
+$string['includetags'] = 'Incluir marcas';
+$string['includetime'] = 'Incluya fecha añadido / modificado';
+$string['includeuserdetails'] = 'Incluya detalles del usuario';
+$string['indicator:cognitivedepth'] = 'Base de Datos cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Base de Datos.';
+$string['indicator:socialbreadth'] = 'Base de Datos social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Base de Datos.';
 $string['insufficiententries'] = 'se necesitan más entradas para ver esta base de datos';
-$string['intro'] = 'Introducción';
+$string['intro'] = 'Descripción';
 $string['invalidaccess'] = 'No se ha accedido correctamente a esta página';
 $string['invalidfieldid'] = 'El campo ID es incorrecto';
 $string['invalidfieldname'] = 'Por favor, seleccione otro nombre para este campo';
@@ -217,6 +250,7 @@ $string['invalidurl'] = 'La URL introducida no es válida';
 $string['jstemplate'] = 'Plantilla Javascript';
 $string['latitude'] = 'Latitud';
 $string['latlong'] = 'Latitud/logitud';
+$string['latlongboth'] = 'Tanto la latitud como la longitud son necesarias.';
 $string['latlongdownloadallhint'] = 'Descargar enlace para todas las entradas como KML';
 $string['latlongkmllabelling'] = 'Cómo etiquetar ítems en archivos KML (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Conectar servicios a mostrar';
@@ -224,10 +258,12 @@ $string['latlongotherfields'] = 'Otros campos';
 $string['list'] = 'Ver lista';
 $string['listtemplate'] = 'Plantilla de lista';
 $string['longitude'] = 'Longitud';
+$string['manageapproved'] = 'Permitir editar las entradas aprobadas';
+$string['manageapproved_help'] = 'Si se deshabilita, las entradas aprobadas no pueden ser editadas o borradas por el usuario que las creó. Esta opción sólo tiene efecto si la opción "¿Se requiere aprobación?" está habilitada.';
 $string['mapexistingfield'] = 'Apunta a {$a}';
 $string['mapnewfield'] = 'Crear un nuevo campo';
 $string['mappingwarning'] = 'Todos los campos viejos no mapeados a un nuevo campo se perderán y todos los datos de dichos campos quedarán eliminados.';
-$string['maxentries'] = 'No. máximo de entradas';
+$string['maxentries'] = 'Número máximo de entradas';
 $string['maxentries_help'] = 'Número máximo de entradas que un estudiante puede enviar en esta actividad.';
 $string['maxsize'] = 'Tamaño máximo';
 $string['menu'] = 'Menú';
@@ -235,7 +271,18 @@ $string['menuchoose'] = 'Seleccionar...';
 $string['missingdata'] = 'Debe suministrarse la ID de los datos o del objeto a la clase de campo';
 $string['missingfield'] = 'Error del programador: Debe especificar el campo y/o los datos al definir la clase de campo.';
 $string['modulename'] = 'Base de datos';
-$string['modulename_help'] = 'El módulo de actividad de base de datos permite a los participantes crear, mantener y buscar información en un banco de registros. El formato y la estructura de estas entradas puede ser prácticamente ilimitado, incluyendo imágenes, archivos, URLs, números y texto, entre otras cosas.';
+$string['modulename_help'] = 'El módulo de actividad de base de datos permite a los participantes crear, mantener y buscar información en un repositorio de registros. La estructura de las entradas la define el profesor según una lista de campos. Los tipos de campo incluyen casilla de verificación, botones de radio, menú desplegable, área de texto, URL, imagen y archivo cargado.
+
+La presentación visual de la información al listar, ver o editar las entradas de la base de datos se controla mediante plantillas de base de datos. Las actividades de base de datos pueden ser compartidos entre los cursos como opción preestablecida de manera que un profesor también puede importar y exportar las entradas de base de datos.
+
+Si el filtro de base de datos "auto enlace" está activo, cualquier entrada de la base de datos  será enlazada automáticamente cuando sus palabras o frases aparezcan dentro en el curso.
+
+Un profesor puede permitir comentarios en las entradas. Las entradas también pueden se calificadas por profesores u otros estudiantes (evaluación por pares). Las calificaciones se agregarán para formar una calificación final que se registrará en el libro de calificaciones.
+
+Las actividades de base de datos tienen muchos usos, como por ejemplo:
+
+* Armar una colección colaborativa de enlaces web, libros, reseñas de libros, referencias de revistas, etc
+* Visualizar fotos, carteles, sitios web o poemas de los estudiantes, que puedan ser comentados por otros estudiantes.';
 $string['modulenameplural'] = 'Bases de datos';
 $string['more'] = 'Más';
 $string['moreurl'] = 'Más URL';
@@ -243,18 +290,6 @@ $string['movezipfailed'] = 'No se puede mover el zip';
 $string['multientry'] = 'Entrada repetida';
 $string['multimenu'] = 'Menú (selección múltiple)';
 $string['multipletags'] = 'Se han encontrado múltiples marcas. Plantilla no guardada';
-$string['namecheckbox'] = 'Campo de selección';
-$string['namedate'] = 'Campo de fecha';
-$string['namefile'] = 'Campo de archivo';
-$string['namelatlong'] = 'Campo de latitud/longitud';
-$string['namemenu'] = 'Campo de menú';
-$string['namemultimenu'] = 'Campo de menú de selección múltiple';
-$string['namenumber'] = 'Campo numérico';
-$string['namepicture'] = 'Campo de imagen';
-$string['nameradiobutton'] = 'Campo de botón de radio';
-$string['nametext'] = 'Campo de texto';
-$string['nametextarea'] = 'Campo de área de texto';
-$string['nameurl'] = 'Campo de URL';
 $string['newentry'] = 'Nueva entrada';
 $string['newfield'] = 'Crear un nuevo campo';
 $string['newfield_help'] = 'Un campo permite la entrada de datos.
@@ -275,7 +310,7 @@ $string['notapproved'] = 'La entrada aún no ha sido aprobada.';
 $string['notinjectivemap'] = 'No mapa inyectivo';
 $string['notopenyet'] = 'Lo sentimos, esta actividad no está disponible hasta {$a}';
 $string['number'] = 'Número';
-$string['numberrssarticles'] = 'Artículos RSS';
+$string['numberrssarticles'] = 'Entradas en el feed RSS';
 $string['numnotapproved'] = 'Pendiente';
 $string['numrecords'] = '{$a} entradas';
 $string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
@@ -283,8 +318,9 @@ $string['optionaldescription'] = 'Descripción corta (opcional)';
 $string['optionalfilename'] = 'Nombre de archivo (opcional)';
 $string['other'] = 'Otro';
 $string['overrwritedesc'] = 'Sobrescribir el ajuste previo si ya existe';
-$string['overwrite'] = 'Sobreescribir';
-$string['overwritesettings'] = 'Sobreescribir ajustes actuales';
+$string['overwrite'] = 'Sobrescribir';
+$string['overwritesettings'] = 'Sobrescribir ajustes actuales';
+$string['page-mod-data-x'] = 'Cualquier página del módulo actividad de Base de Datos';
 $string['pagesize'] = 'Entradas por página';
 $string['participants'] = 'Participantes';
 $string['picture'] = 'Imagen';
@@ -297,10 +333,12 @@ $string['presets'] = 'Ajustes previos';
 $string['radiobutton'] = 'Botones de radio';
 $string['recordapproved'] = 'Entrada aprobada';
 $string['recorddeleted'] = 'Entrada eliminada';
+$string['recorddisapproved'] = 'Entrada desaprobada';
 $string['recordsnotsaved'] = 'No se ha guardado ninguna entrada. Por favor, compruebe el formato del archivo subido.';
 $string['recordssaved'] = 'entradas guardadas';
-$string['requireapproval'] = '¿Se requiere aprobación?';
+$string['requireapproval'] = 'Aprobación requerida';
 $string['requireapproval_help'] = '<p>¿Debería un profesor aprobar las entradas antes de que los estudiantes puedan verlas? Esta opción es útil para moderar el contenido que potencialmente pudiera resultar ofensivo o inadecuado.</p>';
+$string['required'] = 'Obligatorio';
 $string['requiredentries'] = 'Entradas requeridas';
 $string['requiredentries_help'] = '<p>Número de entradas que se exige enviar a cada participante.
    Los usuarios verán un mensaje recordatorio que les informa si no han enviado el número de entradas exigido.</p>
@@ -308,16 +346,17 @@ $string['requiredentries_help'] = '<p>Número de entradas que se exige enviar a 
 <p>La actividad no se considerará completada hasta que el usuario no haya enviado el número de entradas exigido.</p>';
 $string['requiredentriestoview'] = 'Entradas requeridas antes de verse';
 $string['requiredentriestoview_help'] = '<p>Número de entradas que un participante debe enviar antes de que se le permita ver entradas del resto de participantes.</p>';
+$string['requiredfield'] = 'Campo obligatorio';
 $string['resetsettings'] = 'Restablecer filtros';
 $string['resettemplate'] = 'Resetear plantilla';
 $string['resizingimages'] = 'Cambiando el tamaño de las miniaturas de imagen...';
 $string['rows'] = 'filas';
 $string['rssglobaldisabled'] = 'Deshabilitado. Vea las variables de configuración';
-$string['rsshowmany'] = '(número de últimas entradas a mostrar, 0 para deshabilitar RSS)';
 $string['rsstemplate'] = 'Plantilla RSS';
 $string['rsstitletemplate'] = 'Plantilla de título RSS';
+$string['rsstype'] = 'Canal RSS para esta actividad';
 $string['save'] = 'Guardar';
-$string['saveandadd'] = 'Guardar y agregar otro';
+$string['saveandadd'] = 'Guardar y añadir otro';
 $string['saveandview'] = 'Guardar y ver';
 $string['saveaspreset'] = 'Guardar como ajuste previo';
 $string['saveaspreset_help'] = 'La opción Guardar como predeterminado publica las plantillas y los campos como un ajuste preestablecido que otros usuarios del sitio pueden utilizar. (Puede borrarla de la lista de valores predeterminados en cualquier momento.)';
@@ -325,10 +364,19 @@ $string['savesettings'] = 'Guardar ajustes';
 $string['savesuccess'] = 'Guardado con éxito. Su ajuste previo estará ahora disponible en todo el sitio.';
 $string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
+$string['search:activity'] = 'Base de datos - información de actividad';
 $string['selectedrequired'] = 'Se requieren todos los seleccionados';
 $string['showall'] = 'Mostrar todas las entradas';
 $string['single'] = 'Ver individual';
 $string['singletemplate'] = 'Plantilla Individual';
+$string['subplugintype_datafield'] = 'Tipo de campo de la base de datos';
+$string['subplugintype_datafield_plural'] = '	
+Tipos de campo de la base de datos';
+$string['subplugintype_datapreset'] = '	
+Tipos de campo de la base de datos';
+$string['subplugintype_datapreset_plural'] = 'Ajustes previos';
+$string['tagarea_data_records'] = 'Entradas de la base de datos';
+$string['tags'] = 'Marcas';
 $string['teachersandstudents'] = '{$a->teachers} y {$a->students}';
 $string['templates'] = 'Plantillas';
 $string['templatesaved'] = 'Plantilla guardada';
@@ -350,6 +398,7 @@ $string['uploadrecords_help'] = 'Las entradas pueden ser cargadas a través de u
 
 El campo enmarcado es una caracter que separa cada campo dentro de  cada registro. Normalmente se puede dejar sin definir.';
 $string['url'] = 'Url';
+$string['usedate'] = 'Incluir en la búsqueda';
 $string['usestandard'] = 'Use un ajuste previo';
 $string['usestandard_help'] = 'Para utilizar un ajuste previo disponible en todo el sitio, selecciónelo de la lista. (Si ha agregado un ajuste previo de la lista mediante la función guardar como predeterminado entonces usted tiene la opción de eliminarlo.)';
 $string['viewfromdate'] = 'Solo lectura desde';

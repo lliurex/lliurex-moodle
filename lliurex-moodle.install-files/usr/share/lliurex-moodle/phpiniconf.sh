@@ -1,6 +1,6 @@
 #!/bin/bash
 
-php_file="/etc/php/7.2/apache2/php.ini"
+php_file="/etc/php/7.4/apache2/php.ini"
 
 
 usage(){

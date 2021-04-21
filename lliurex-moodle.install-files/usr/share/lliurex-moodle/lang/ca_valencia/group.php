@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'group', language 'ca_valencia', version '3.9'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,23 +29,23 @@ $string['addgroup'] = 'Afig l\'usuari al grup';
 $string['addgroupstogrouping'] = 'Afig grups a l\'agrupament';
 $string['addgroupstogroupings'] = 'Afig/suprimeix grups';
 $string['adduserstogroup'] = 'Afig/suprimeix usuaris';
-$string['badnamingscheme'] = 'Ha de contindre exactament un caràcter \'@\' o \'#';
+$string['badnamingscheme'] = 'Ha de contindre exactament un caràcter \'@\' o \'#\\';
 $string['deletegroupingconfirm'] = 'Segur que voleu suprimir l\'agrupament \'{$a}\'? (els grups d\'este agrupament no se suprimiran)';
-$string['enrolmentkey_help'] = 'Una clau d\'inscripció obri l\'accés al curs, que qeda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, un usuari podrà inscriure\'s al curs si la coneix, i el convertirà automàticament en membre del grup.';
+$string['enrolmentkey_help'] = 'Una clau d\'inscripció obri l\'accés al curs, que queda restringit a les persones que la saben. Si s\'especifica una clau d\'inscripció, l\'usuari no només podrà inscriure\'s al curs, si la coneix, sinó que també esdevindrà automàticament membre del grup.
+
+Nota: Les claus d\'inscripció de grup s\'han d\'activar als paràmetres de l\'autoinscripció, i també s\'ha d\'especificar una clau d\'inscripció per al curs.';
+$string['enrolmentkeyalreadyinuse'] = 'Esta clau de matrícula ja l\'utilitza un altre grup.';
 $string['errorselectone'] = 'Seleccioneu un sol grup abans de triar esta opció';
 $string['errorselectsome'] = 'Seleccioneu un o més grups abans de triar esta opció';
 $string['groupingnameexists'] = 'El nom d\'agrupament \'{$a}\' ja existeix en este curs. Trieu-ne un altre.';
-$string['groupmembersonlyerror'] = 'Heu de ser membre d\'algun dels grups que tenen accés a esta activitat.';
-$string['groupmembersonly_help'] = 'Si es marca este quadre de selecció, l\'activitat (o el recurs) només queda accessible a les persones pertanyents als grups de l\'agrupament.';
-$string['groupmode_help'] = '<p>Este paràmetre té 3 opcions:
-   <ul>
-      <li>Sense grups: no hi ha subgrups, tots els participants són membres d\'una gran comunitat</li>
-      <li>Grups separats: cada membre d\'un grup veu només dins del seu grup, els altres són invisibles</li>
-      <li>Grups visibles: es treballa dins de cada grup, però es poden veure també els altres grups</li>
-   </ul>
-</p>
+$string['groupingsection_help'] = 'Un agrupament és un conjunt de grups dins d\'un curs. Si seleccioneu un agrupament ací, només l\'estudiantat assignat als grups dins d\'aquest agrupament tindrà accés a la secció.';
+$string['groupmode_help'] = 'Este paràmetre té 3 opcions:
 
-<p>El mode de grup definit a nivell de curs és el mode per defecte en totes les activitats definides dins d\'este curs. Cada activitat que admeti grups pot definir també el seu propi mode de grup, encara que si s\'imposa el mode de grup a nivell de curs, llavors s\'ignorarà el paràmetre corresponent a cada activitat.</p>';
+* Sense grups: no hi ha subgrups, tots els participants són membres d\'una gran comunitat.
+ * Grups separats: cada membre d\'un grup veu només el seu grup, els altres són invisibles.
+* Grups visibles: cada membre d\'un grup treballa dins del propi grup, però pot veure també els altres grups.
+
+El mode de grup definit a nivell de curs és el mode per defecte en totes les activitats del curs. Cada activitat que admeti grups pot definir també el seu propi mode de grup, encara que si s\'imposa el mode de grup a nivell de curs, s\'ignorarà el paràmetre de mode de grup de cada activitat.';
 $string['groupnameexists'] = 'Ja existeix un grup denominat \'{$a}\' en este curs. Trieu un altre nom.';
 $string['groupnotamember'] = 'No sou membre d\'este grup';
 $string['javascriptrequired'] = 'Esta pàgina requereix Javascript';

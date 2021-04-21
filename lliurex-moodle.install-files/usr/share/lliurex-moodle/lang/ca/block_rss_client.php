@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_rss_client', language 'ca', version '3.9'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,6 +37,7 @@ $string['clientshowchannellinklabel'] = 'S\'ha de mostrar un enllaç al lloc (ca
 $string['clientshowimagelabel'] = 'Mostra la imatge del canal (si n\'hi ha):';
 $string['configblock'] = 'Configura aquest bloc';
 $string['couldnotfindfeed'] = 'No s\'ha trobat el canal amb id';
+$string['couldnotfindloadrssfeed'] = 'No es poden trobar o carregar els canals d\'informació RSS.';
 $string['customtitlelabel'] = 'Títol personalitzat (deixeu en blanc per utilitzar el que proporciona el canal)';
 $string['deletefeedconfirm'] = 'Confirmeu que voleu suprimir aquest canal?';
 $string['disabledrssfeeds'] = 'Els canals RSS no estan habilitats.';
@@ -47,7 +48,6 @@ $string['editnewsfeeds'] = 'Edita canals d\'informació';
 $string['editrssblock'] = 'Edita bloc de titulars RSS';
 $string['enableautodiscovery'] = 'Habilitar l\'auto-descobriment de canals?';
 $string['enableautodiscovery_help'] = 'Quan s\'habilita aquesta opció, els canals RSS de les pàgines es poden detectar automàticament. Per exemple, si introduïu http://docs.moodle.org, es trobarà el canal RSS http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
-$string['errorloadingfeed'] = 'S\'ha produït un error en carregar aquest canal RSS ({$a})';
 $string['feed'] = 'Canal d\'informació';
 $string['feedadded'] = 'S\'ha afegit un canal d\'informació';
 $string['feeddeleted'] = 'S\'ha suprimit un canal d\'informació';
@@ -55,7 +55,6 @@ $string['feeds'] = 'Canals d\'informació de notícies';
 $string['feedsaddedit'] = 'Afegeix/edita canals';
 $string['feedsconfigurenewinstance'] = 'Feu clic aquí per configurar la visualització d\'RSS en aquest bloc.';
 $string['feedsconfigurenewinstance2'] = 'Feu clic a la icona d\'edició per configurar aquest bloc per visualitzar canals RSS.';
-$string['feedstitle'] = 'Canals RSS remots';
 $string['feedupdated'] = 'S\'ha actualitzat un canal d\'informació';
 $string['feedurl'] = 'URL del canal';
 $string['findmorefeeds'] = 'Cerca més canals RSS';
@@ -63,12 +62,14 @@ $string['managefeeds'] = 'Gestiona els meus canals';
 $string['nofeeds'] = 'No hi ha canals RSS definits en aquest lloc';
 $string['numentries'] = 'Entrades per canal';
 $string['pickfeed'] = 'Tria un canal d\'informació';
-$string['pluginname'] = 'Client RSS';
+$string['pluginname'] = 'Canals d\'informació RSS remots';
 $string['remotenewsfeed'] = 'Canals d\'informació remots de notícies';
+$string['rss_client:addinstance'] = 'Afegir un bloc nou de canals RSS remots';
 $string['rss_client:createprivatefeeds'] = 'Crea canals RSS privats';
 $string['rss_client:createsharedfeeds'] = 'Crea canals RSS compartits';
 $string['rss_client:manageanyfeeds'] = 'Gestiona qualsevol canal RSS';
 $string['rss_client:manageownfeeds'] = 'Gestiona canals RSS propis';
+$string['rss_client:myaddinstance'] = 'Afegeix un bloc nou de canals RSS remots a la pàgina del Tauler';
 $string['seeallfeeds'] = 'Mostra tots els canals';
 $string['sharedfeed'] = 'Canal compartit';
 $string['shownumentrieslabel'] = 'Nombre màxim d\'entrades que es pot visualitzar en un bloc';

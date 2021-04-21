@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,30 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_aigne', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'theme_aigne', language 'es', version '3.9'.
  *
- * @package   theme_aigne
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_aigne
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['accessibility'] = 'accesibilidad';
 $string['accessibilitydesc'] = 'Si activa esta opción, aparecerá un enlace en el pié de página a la información sobre accesibilidad de la plataforma';
+$string['accessibilitypage'] = '<h2 style="text-align: center">Esta es una página de muestra</h2>
+<p>&nbsp;</p>
+<h2>Accesibilidad</h2>
+<p>Aquí puede introducir las herramientas que estan instaladas en el sitio web para
+   facilitar la navegación a personas con dificultades visuales o mobilidad reducida.</p>
+<h2>Parámetros que se pasan:</h2>
+  <ul>{$a->supportemail}</ul>
+  <ul>{$a->sendadminemail}</ul>
+  <p>&nbsp;</p>';
 $string['afternoon_greeting'] = 'Buenas tardes... !';
 $string['backbody'] = 'Fondo de la página';
 $string['backbodydesc'] = 'Si lo desea puede añadir una imagen que aparecerá en el fondo de la página.<br />
@@ -47,6 +56,7 @@ $string['bcsep6'] = 'Varios dos puntos ( ::: )';
 $string['bcsep7'] = 'Espacio en blanco ( &nbsp; )';
 $string['bcsepdesc'] = 'Seleccione el tipo de separador que se debe usar en la Barra de Navegación.';
 $string['bgposition'] = 'Posición del fondo';
+$string['bgpositiondesc'] = 'Al configurar la opción anterior, dependiendo del tipo de imagen, puede configurar su comportamiento, seleccionando si se repite, y en que dirección.';
 $string['blogger'] = 'Enlace a Blogger';
 $string['bloggerdesc'] = 'Introduzca el enlace (URL) a su blog en Blogger.
 <a href="http://www.blogger.com/" target="_blank"> (www.blogger.com) .</a>';
@@ -56,6 +66,7 @@ $string['bottomphead'] = 'Configuración del Pié de Página';
 $string['breadcrumbhead'] = 'Opciones de la Barra de navegación';
 $string['choosereadme'] = '<div class="clearfix">
   <div class="theme_screenshot">
+
     <h2>aigne</h2>
     <img src="aigne/pix/screenshot.jpg" />
 
@@ -63,30 +74,32 @@ $string['choosereadme'] = '<div class="clearfix">
     <p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p>
 
     <h3>Documentación:</h3>
-    <p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p>
+    <p><a href="http://docs.moodle.org/all/es/admin/setting/themesettingaigne">Documentación oficial del tema Aigne</a></p>
 
     <h3>Para informar incidencias:</h3>
-    <p><a href="http://www.github.com/francpombal/moodle-theme_aigne/">http://www.github.com/francpombal/moodle-theme_aigne/</a></p>
+    <p>Enviar un eMail a francpombal@hotmail.com</p>
   </div>
 
   <div class="theme_description">
     <h3>Acerca de:</h3>
-    <p>Tema para Moodle 2.5.x _ Optimización del tema Afterburner. Principales características:</p>
+    <p>Tema para Moodle 2.x y 3.0 _ Principales características:</p>
     <ul>
-      <li>Diseño simple y totalmente compatible con CSS.</li>
-      <li>Solo utiliza 3 tonalidades del color principal.</li>
-      <li>Pié de página con varias secciones personalizables:</li>
-      <li>Sección NavHelp con todos los enlaces administrativos requeridos a páginas personalizables según el idioma<br />
-          (mapa web, ayuda, búsqueda, estadísticas, aviso legal, politicas del sitio, privacidad, seguridad y accesibilidad)</li>
-      <li>Sección de Contacto (con la adaptación de los enlaces sociales del tema aardvark)</li>
-      <li>Sección de Créditos</li>
-      <li>Sección de Derechos de propiedad intelectual</li>
-      <li>Una página principal (sin terminar) con zonas para banner e información de marketing.</li>
-      <li>Gran cantidad de opciones de personalización en Administración del sitio -&gt; Apariencia -&gt; Temas -&gt; AIGNE</li>
-      <li>Logotipo personalizado, lema del sitio y una imagen de fondo del logotipo.</li>
+      <li>Diseño simple, totalmente compatible con CSS y adaptativo a diversos tamaños de pantalla.
+      <li>Solo utiliza 5 tonalidades del color principal, también con esquemas predeterminados de color.
+      <li>Opciones de @font-face, para elegir entre 3 tipos de letra incluidas.
+      <li>Logotipo, lema del sitio y una imagen de fondo del logotipo.
+      <li>Nuevas opciones para las etiquetas META del header (herramientas SEO).
+      <li>Página principal con zonas para banner, información de marketing o imagenes, totalmente personalizable.
+      <li>Area de Información del Usuario, que puede ser mostrada en el encabezado o en el bloque de navegación.
+      <li>Sección NavHelp con todos los enlaces administrativos requeridos a páginas personalizables según el idioma
+      (mapa web, ayuda, búsqueda, estadísticas, aviso legal, politicas del sitio, privacidad, seguridad y accesibilidad)
+      <li>Sección de Contacto, con la adaptación de 30 enlaces a redes sociales y herramientas web.
+      <li>Sección de Derechos de propiedad intelectual y Créditos, con opciones para la validación externa en los servidores w3c
+      <br />
+      <li>Más de 100 opciones de personalización en Administración del sitio -> Apariencia -> Temas -> AIGNE.
     </ul>
     <h3>Créditos:</h3>
-    <p>This design was created by Franc Pombal (www.piratininga.tk/moodle), improving the AfterBurner Theme in the Moodle core, what was an original design by Mary Evans & Patrick Malley & Rocket Themes.</p>
+    <p>Design created by Franc Pombal (www.aigne.com), after improving the AfterBurner Theme in the Moodle core.</p>
     <h3>Licencia:</h3>
     <p>This, and all other themes included in the Moodle core, are licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.</p>
   </div>
@@ -198,6 +211,17 @@ $string['deviantartdesc'] = 'Introduzca el enlace (URL) a su cuenta en DeviantAr
 <a href="http://www.deviantart.com/" target="_blank"> (www.deviantart.com) .</a>';
 $string['disclaimer'] = 'aviso legal';
 $string['disclaimerdesc'] = 'Si activa esta opción, aparecerá un enlace en el pié de página al aviso legal obligatorio';
+$string['disclaimerpage'] = '<h2 style="text-align: center">Esta es una página de muestra</h2>
+<p>&nbsp;</p>
+<h2>Información legal:</h2>
+<p> El presente documento regula la utilización de los sitios Web adscritos al dominio de Internet
+    "{$a->sitenamelow}.com"... o algo así.</p>
+<h2>Parámetros que se pasan:</h2>
+  <ul>{$a->sitenamelow}</ul>
+  <ul>{$a->sitename}</ul>
+  <ul>{$a->supportemail}</ul>
+  <ul>{$a->sendadminemail}</ul>
+  <p>&nbsp;</p>';
 $string['dropbox'] = 'Enlace a DropBox';
 $string['dropboxdesc'] = 'Introduzca el enlace (URL) a su cuenta en DropBox.
 <a href="http://www.dropbox.com/" target="_blank"> (www.dropbox.com) .</a>';
@@ -235,6 +259,21 @@ $string['headerinfodesc'] = 'Si lo desea puede añadir una imagen fija en la cab
 Debe ser una imagen JPG/PNG/GIF con un mínimo de 775px de largo y 100px de alto.';
 $string['help'] = 'ayuda';
 $string['helpdesc'] = 'Si activa esta opción, aparecerá un enlace en el pié de página a la ayuda general de la plataforma';
+$string['helppage'] = '<h2 style="text-align: center">Esta es una página de muestra</h2>
+<p>&nbsp;</p>
+<h2>Ayuda a la navegación:</h2>
+  <p>Aquí puede introducir todas las referencias necesarias para facilitar la
+     navegación por sus cursos. Además, puede crear una sección para enlazar con
+     el "Manual del alumnado" o manuales de utilización.</p>
+<h2>Moodle:</h2>
+  <p>Nuestra plataforma de enseñanza está basada en Moodle. Si desea ampliar
+     información sobre la usabilidad de Moodle, puede acceder a los
+     <a href="http://docs.moodle.org">documentos de ayuda oficiales</a>.</p>
+<h2>Parámetros que se pasan:</h2>
+  <ul>{$a->link}</ul>
+  <ul>{$a->supportemail}</ul>
+  <ul>{$a->sendadminemail}</ul>
+  <p>&nbsp;</p>';
 $string['incfontsizetxt'] = 'Pulse para aumentar el tamaño de la fuente. (Aumentar el tamaño del texto para mejorar la accesibilidad)';
 $string['instagram'] = 'Enlace a Instagram';
 $string['instagramdesc'] = 'Introduzca el enlace (URL) a su página en Instagram.
@@ -277,6 +316,8 @@ $string['myspacedesc'] = 'Introduzca el enlace (URL) a su perfil en MySpace.
 $string['navhelp'] = 'Enlace de la ayuda a la navegación';
 $string['navhelpdesc'] = 'Dirección de la página donde están configuradas las opciones de la barra de ayuda a la navegación';
 $string['navhelphead'] = 'Opciones de ayuda a la navegación';
+$string['navhelppage'] = 'Página de ayuda';
+$string['navhelppagetitle'] = 'Ayuda a la navegación';
 $string['night_greeting'] = 'Buenas noches... !';
 $string['nocontentdrag'] = 'Debido a la protección del copyright de nuestros cursos, esta deshabilitado arrastrar (drag & drop) algunos contenidos';
 $string['nocontentprint'] = '<h2 style="text-align: center">Prevención de impresión</h2>
@@ -332,6 +373,22 @@ $string['policiespage'] = '<h2 style="text-align: center">Esta es una página de
 $string['powered'] = 'Con la potencia de:';
 $string['privacy'] = 'privacidad';
 $string['privacydesc'] = 'Si activa esta opción, aparecerá un enlace en el pié de página a la información sobre la privacidad en la navegación dentro de la plataforma';
+$string['privacypage'] = '<h2 style="text-align: center">Esta es una página de muestra</h2>
+<p>&nbsp;</p>
+<h2>Privacidad de los datos de usuario y alumnos</h2>
+<p>Aquí puede introducir la información sobre la privacidad de los datos en la navegación
+   por el sitio web, además de las diferentes clausulas legales obligatorias.</p>
+<h2>Parámetros que se pasan:</h2>
+  <ul>{$a->sitenamelow}</ul>
+  <ul>{$a->supportemail}</ul>
+  <ul>{$a->sendadminemail}</ul>
+  <ul>{$a->remoteaddr}</ul>
+  <ul>{$a->remotehost}</ul>
+  <ul>{$a->remoteuser}</ul>
+  <ul>{$a->language}</ul>
+  <ul>{$a->useragent}</ul>
+  <ul>{$a->referer}</ul>
+  <p>&nbsp;</p>';
 $string['region-side-post'] = 'Derecha';
 $string['region-side-pre'] = 'Izquierda';
 $string['reservedrights'] = 'Reservados todos los derechos';
@@ -381,7 +438,6 @@ $string['twitter'] = 'Enlace a Twitter';
 $string['twitterdesc'] = 'Introduzca el enlace (URL) a su cuenta de Twitter.
 <a href="http://twitter.com/" target="_blank"> (twitter.com) .</a>';
 $string['useraigne'] = 'En el Encabezado, al estilo aigne (login + saludo + usuario + foto + logout)';
-$string['userblock'] = 'En el bloque de Navegación, al estilo aigne (login + saludo + usuario + foto + logout)';
 $string['usermoodle'] = 'En el Encabezado, al estilo estándar de moodle (login + usuario + logout)';
 $string['usernav'] = 'Area de Información del Usuario.';
 $string['usernavdesc'] = 'Seleccione el modo que aparecerá la información del usuario en el encabezado.';

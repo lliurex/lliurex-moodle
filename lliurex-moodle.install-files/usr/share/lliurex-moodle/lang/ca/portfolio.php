@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'portfolio', language 'ca', version '3.9'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,7 +54,7 @@ $string['displayexpiry'] = 'El tems de transferència s\'ha esgotat';
 $string['displayinfo'] = 'Informació d\'exportació';
 $string['dontwait'] = 'No esperis';
 $string['enabled'] = 'Habilita els dossiers';
-$string['enableddesc'] = 'Això permet els administradors configurar serveis remots pels usuaris per exportar el contingut';
+$string['enableddesc'] = 'Si està habilitat, els usuaris poden exportar contingut, com ara els missatges als fòrums i les trameses de tasques, per exportar el contingut a <em>portfolios</em> externs o pàgines HTML.';
 $string['err_uniquename'] = 'El nom del dossier ha de ser únic (per connector)';
 $string['exportalreadyfinished'] = 'S\'ha completat l\'exportació del dossier';
 $string['exportalreadyfinisheddesc'] = 'S\'ha completat l\'exportació del dossier';
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML amb adjunts';
 $string['format_spreadsheet'] = 'Full de càlcul';
 $string['format_text'] = 'Text net';
 $string['format_video'] = 'Vídeo';
-$string['hidden'] = 'Ocult';
 $string['highdbsizethreshold'] = 'La mida de la base de dades implica una transferència alta';
 $string['highdbsizethresholddesc'] = 'Nombre de registres amb els que es calcularà la quantitat de temps de la transferència';
 $string['highfilesizethreshold'] = 'La mida del fitxer implica una transferència alta';
@@ -109,6 +108,8 @@ $string['instanceismisconfigured'] = 'La instància del dossier està mal config
 $string['instancenotdelete'] = 'No s\'ha pogut suprimir el dossier';
 $string['instancenotsaved'] = 'No s\'ha pogut desar el dossier';
 $string['instancesaved'] = 'El dossier s\'ha desat amb èxit';
+$string['intro'] = 'El contingut que heu creat, com ara les trameses de tasques, els missatges de fòrums i les entrades de blog es poden exportar a <em>portfolio</em> o descarregar. <br>
+Qualsevol <em>portfolio</em> que no vulgueu usar es pot amagar, per això no està enumerat com una opció per exportar-hi contingut.';
 $string['invalidaddformat'] = 'No és vàlid el format per afegir passat al portfolio_add_button. ({$a}) Ha de ser PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'No s\'ha pogut trobar la propietat ({$a}) de portfolio_button';
 $string['invalidconfigproperty'] = 'No s\'ha pogut trobar la propietat de configuració ({$a->property}) de {$a->class})';
@@ -145,7 +146,8 @@ $string['multipleinstancesdisallowed'] = 'S\'està intentant crear una altra ins
 $string['mustsetcallbackoptions'] = 'Cal que configureu les retrocridades ja sigui al constructor portfolio_add_button o utilitzant el mètode set_callback_options';
 $string['noavailableplugins'] = 'No hi ha dossiers disponibles per exportar-hi';
 $string['nocallbackclass'] = 'No es troba la classe de la crida de retorn a utilitzar ({$a})';
-$string['nocallbackfile'] = 'Alguna cosa en el mòdul que esteu tractant d\'exportar està trencada - no s\'ha trobat el fitxer que cal ({$a})';
+$string['nocallbackcomponent'] = 'No es pot trobar el component especificat {$a}.';
+$string['nocallbackfile'] = 'Alguna cosa en el mòdul que esteu tractant d\'exportar està trencada; no s\'ha trobat el fitxer <em>portfolio</em> que cal';
 $string['noclassbeforeformats'] = 'Us cal configurar la classe de la crida de retorn abans de cridar set_formats al portfolio_button';
 $string['nocommonformats'] = 'No hi ha cap format comú entre els connectors de dossier disponibles i el lloc interlocutor {$a->location} (l\'interlocutor admet {$a->formats})';
 $string['noinstanceyet'] = 'No han estat seleccionats';
@@ -171,6 +173,7 @@ $string['save'] = 'Desa';
 $string['selectedformat'] = 'Trieu el format d\'exportació';
 $string['selectedwait'] = 'Triat per esperar?';
 $string['selectplugin'] = 'Trieu una destinació';
+$string['showhide'] = 'Mostra / Amaga';
 $string['singleinstancenomultiallowed'] = 'Només hi ha disponible una única instància del connector de dossiers, no admet exportacions múltiples per sessió i la sessió actual ja té una exportació activa  usant aquest connector!';
 $string['somepluginsdisabled'] = 'S\'han inhabilitat  connectors sencers de dossier per estar mal configurats o perquè es basen en aquestes altres coses:';
 $string['sure'] = 'Esteu completament segurs de voler suprimir \'{$a}\'? Aquesta acció no es podrà desfer.';

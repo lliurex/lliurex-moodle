@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'notes', language 'ca', version '3.9'.
  *
- * @package   notes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     notes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addnewnote'] = 'Afegeix una anotació';
 $string['addnewnoteselect'] = 'Selecciona usuaris per fer-hi anotacions';
 $string['bynameondate'] = 'Autor: {$a->name} ({$a->date})';
-$string['cannotdeletepost'] = 'Error ocorregut en esborrar un missatge';
 $string['configenablenotes'] = 'Habilita l\'historial d\'anotacions sobre els usuaris individuals.';
 $string['content'] = 'Contingut';
 $string['course'] = 'Curs';
@@ -38,8 +37,13 @@ $string['deleteconfirm'] = 'Voleu suprimir aquesta anotació?';
 $string['deletenotes'] = 'Suprimeix totes les anotacions';
 $string['editnote'] = 'Edita anotació';
 $string['enablenotes'] = 'Habilita les anotacions';
-$string['groupaddnewnote'] = 'Afegeix una anotació per a tothom';
+$string['eventnotecreated'] = 'S\'ha creat l\'anotació';
+$string['eventnotedeleted'] = 'S\'ha suprimit l\'anotació';
+$string['eventnotesviewed'] = 'Anotacions mostrades';
+$string['eventnoteupdated'] = 'S\'ha actualitzat l\'anotació';
 $string['invalidid'] = 'S\'ha indicat una identificació d\'anotació no vàlida';
+$string['invaliduserid'] = 'Identificació d\'usuari invàlida: {$a}';
+$string['myprofileownnotes'] = 'Les meves anotacions';
 $string['nocontent'] = 'El contingut de l\'anotació no pot estar buit';
 $string['nonotes'] = 'Encara no hi ha anotacions d\'aquest tipus';
 $string['nopermissiontodelete'] = 'Podeu esborrar aquesta anotació';
@@ -48,6 +52,8 @@ $string['notes'] = 'Anotacions';
 $string['notesdisabled'] = 'Les anotacions estan inhabilitades.';
 $string['notesnotvisible'] = 'No teniu permisos per a veure les anotacions.';
 $string['nouser'] = 'Heu de seleccionar un usuari';
+$string['page-notes-index'] = 'Pàgina principal d\'anotacions';
+$string['page-notes-x'] = 'Qualsevol pàgina d\'anotacions';
 $string['personal'] = 'personal';
 $string['personalnotes'] = 'Anotacions personals';
 $string['publishstate'] = 'Context';

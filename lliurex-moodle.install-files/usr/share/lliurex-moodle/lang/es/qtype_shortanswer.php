@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,33 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'es', version '3.9'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingshortanswer'] = 'Agregando una pregunta de respuesta corta.';
 $string['addmoreanswerblanks'] = 'Espacios en blanco para {no} respuestas más';
+$string['answer'] = 'Respuesta: {$a}';
 $string['answermustbegiven'] = 'Debe escribir una respuesta si existe calificación o retroalimentación.';
 $string['answerno'] = 'Respuesta {$a}';
-$string['editingshortanswer'] = 'Editando una pregunta de respuesta corta.';
+$string['caseno'] = 'Igual mayúsculas que minúsculas';
+$string['casesensitive'] = 'Diferencia entre mayúsculas y minúsculas';
+$string['caseyes'] = 'Mayúsculas y minúsculas deben coincidir';
+$string['correctansweris'] = 'La respuesta correcta es: {$a}';
+$string['correctanswers'] = 'Respuestas correctas';
 $string['filloutoneanswer'] = 'Debe proporcionar al menos una respuesta posible. Las respuestas en blanco no se utilizarán. Se usará \'*\' como comodín para cualquier carácter. La primera  respuesta que coincida se usará para determinar la puntuación y la retroalimentación.';
-$string['shortanswer'] = 'Respuesta corta';
-$string['shortanswer_help'] = 'En respuesta a una pregunta (la cual puede incluir una imagen) el alumno escribe una palabra o frase corta. Puede haber varias respuestas correctas posibles, cada una con una calificación diferente. Si está activada la opción "Sensible a mayúsculas" entonces obtendría puntuaciones diferentes para "Palabra" o "palabra".';
-$string['shortanswersummary'] = 'Permite una respuesta de una o unas pocas palabras que se califica comparándola con distintas respuestas modelo, que pueden contener comodines.';
+$string['notenoughanswers'] = 'Este tipo de pregunta necesita al menos {$a} respuestas';
+$string['pleaseenterananswer'] = 'Por favor introduce una respuesta.';
+$string['pluginname'] = 'Respuesta corta';
+$string['pluginname_help'] = 'En respuesta a una pregunta (la cual puede incluir una imagen) el alumno escribe una palabra o frase corta. Puede haber varias respuestas correctas posibles, cada una con una calificación diferente. Si está activada la opción "Sensible a mayúsculas" entonces obtendría puntuaciones diferentes para "Palabra" o "palabra".';
+$string['pluginnameadding'] = 'Agregando una pregunta de respuesta corta.';
+$string['pluginnameediting'] = 'Editando una pregunta de respuesta corta.';
+$string['pluginnamesummary'] = 'Permite una respuesta de una o unas pocas palabras que se califica comparándola con distintas respuestas modelo, que pueden contener comodines.';

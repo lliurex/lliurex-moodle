@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'portfolio', language 'es', version '3.9'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,7 @@ $string['configure'] = 'Configurar';
 $string['confirmcancel'] = '¿Está seguro de que desea cancelar esta exportación?';
 $string['confirmexport'] = 'Por favor, confirme esta exportación';
 $string['confirmsummary'] = 'Resumen de su exportación';
-$string['continuetoportfolio'] = 'Continuar con el portafolios';
+$string['continuetoportfolio'] = 'Ir a tu portafolio';
 $string['deleteportfolio'] = 'Eliminar ejemplo de portafolios';
 $string['destination'] = 'Destino';
 $string['disabled'] = 'Lo sentimos, pero las exportaciones de portafolios están deshabilitadas en este sitio';
@@ -53,8 +53,8 @@ $string['displayarea'] = 'Área de exportación';
 $string['displayexpiry'] = 'Tiempo de expiración de la transferencia';
 $string['displayinfo'] = 'Información sobre la exportación';
 $string['dontwait'] = 'No esperar';
-$string['enabled'] = 'Portafolios disponibles';
-$string['enableddesc'] = 'Esta opción permite a los administradores configurar sistemas remotos para que los usuarios exporten contenidos a ellos';
+$string['enabled'] = 'Habilitar portafolios';
+$string['enableddesc'] = 'Al activarse los usuarios pueden exportar contenido, como entradas en foros y entrega de tareas, a portafolios externos o páginas HTML.';
 $string['err_uniquename'] = 'El nombre del portafolios debe ser único (por plugin)';
 $string['exportalreadyfinished'] = 'Se ha completado la exportación del portafolios';
 $string['exportalreadyfinisheddesc'] = 'Se ha completado la exportación del portafolios';
@@ -85,7 +85,6 @@ $string['format_richhtml'] = 'HTML con adjuntos';
 $string['format_spreadsheet'] = 'Hoja de cálculo';
 $string['format_text'] = 'Texto plano';
 $string['format_video'] = 'Video';
-$string['hidden'] = 'Oculto';
 $string['highdbsizethreshold'] = 'Dbsize de transferencia alta';
 $string['highdbsizethresholddesc'] = 'Número de registros en la base de datos por encima del cual se consiederará que la transferencia ocupa demasiado tiempo';
 $string['highfilesizethreshold'] = 'Tamaño de archivo de transferencia alto';
@@ -114,6 +113,8 @@ $string['instanceismisconfigured'] = 'El ejemplo de portafolios está mal config
 $string['instancenotdelete'] = 'Fallo al eliminar el portafolios';
 $string['instancenotsaved'] = 'Fallo al guardar el portafolios';
 $string['instancesaved'] = 'Postafolios guardado con éxito';
+$string['intro'] = 'El contenido que ha creado, como entrega de tareas, entradas en foros y blogs, pueden ser exportadas a un portafolio o descargadas.<br>
+Cualquier portafolio que no desee usar puede ser ocultado para que no aparezca como una opción a la que exportar contenido.';
 $string['invalidaddformat'] = 'Formato de agregación no válido pasado a portfolio_add_button. ({$a}) Debe ser uno de PORTFOLIO_ADD_XXX';
 $string['invalidbuttonproperty'] = 'No se ha podido encontrar esa propiedad ({$a}) del portfolio_button';
 $string['invalidconfigproperty'] = 'No se ha podido encontrar esa propiedad de la configuración ({$a->property} de {$a->class})';
@@ -135,7 +136,7 @@ $string['leap2a_invalidentryfield'] = 'Trató de configurar un campo de entrada 
 $string['leap2a_invalidentryid'] = 'Usted ha intentado acceder a una entrada con un ID que no existe ({$a})';
 $string['leap2a_missingfield'] = 'Falta Leap2A campo de entrada {$a}';
 $string['leap2a_nonexistantlink'] = 'Una entrada Leap2A  ({$a->from}) trató de ligarse a una entrada no existente  ({$a->to}) con rel {$a->rel}';
-$string['leap2a_overwritingselection'] = 'Sobreescribiendo el tipo original de una entrada ({$a}) a la selección en make_selection';
+$string['leap2a_overwritingselection'] = 'Sobrescribiendo el tipo original de una entrada ({$a}) a la selección en make_selection';
 $string['leap2a_selflink'] = 'Una entrada Leap2A ({$a->id}) trató de enlazarse a si misma con rel {$a->rel}';
 $string['logs'] = 'Transferir registros';
 $string['logsummary'] = 'Transferencias anteriores exitosas';
@@ -151,7 +152,8 @@ $string['multipleinstancesdisallowed'] = 'Tratando de crear otra instancia de un
 $string['mustsetcallbackoptions'] = 'Debe configurar las opciones de callback en el constructor portfolio_add_button o emplear el método de set_callback_options';
 $string['noavailableplugins'] = 'Disculpe, pero no hay portafolios disponibles para ser exportados';
 $string['nocallbackclass'] = 'No se pudo encontrar la clase callback para usar ({$a})';
-$string['nocallbackfile'] = 'Algo no funciona dentro del módulo que está tratando de exportar - no pudo encontrarse el archivo necesario ({$a})';
+$string['nocallbackcomponent'] = 'No se pudo encontrar el componente especificado {$a}.';
+$string['nocallbackfile'] = 'Algo está roto dentro del módulo que está tratando de exportar - no pudo encontrarse el archivo de portafolio necesario';
 $string['noclassbeforeformats'] = 'Debe configurar la clase callback antes de llamar a  set_formats en portfolio_button';
 $string['nocommonformats'] = 'No existen formatos comunes entre los plugins disponibles y el sitio que llama {$a->location} (formatos soportados  {$a->formats})';
 $string['noinstanceyet'] = 'No se ha seleccionado';
@@ -177,6 +179,7 @@ $string['save'] = 'Guardar';
 $string['selectedformat'] = 'Elegir el formato de exportación';
 $string['selectedwait'] = '¿Elegir esperar?';
 $string['selectplugin'] = 'Seleccione el destino';
+$string['showhide'] = 'Mostrar / ocultar';
 $string['singleinstancenomultiallowed'] = 'Solo está disponible una instancia del plugin de portafolio, no está soportado realizar múltiples exportaciones por sesión, y ahora mismo hay una exportación activa en la sesión usando este plugin';
 $string['somepluginsdisabled'] = 'Algunos plugins de portafolio han sido deshabilitados porque están mal configurados o tienen la siguientes dependencias mal configuradas:';
 $string['sure'] = '¿Confirma que desea eliminar "{$a} \'? Esta acción no se podrá deshacer.';

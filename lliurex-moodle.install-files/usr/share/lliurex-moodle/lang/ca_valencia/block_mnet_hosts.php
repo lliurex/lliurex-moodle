@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,17 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'block_mnet_hosts', language 'ca_valencia', version '3.9'.
  *
- * @package   block_mnet_hosts
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_mnet_hosts
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['error_authmnetneeded'] = 'El connector d\'autenticació MNet cal que estiga habilitat per veure la llista de servidors de xarxa de MNet.';
-$string['error_localusersonly'] = 'Els usuaris remots no poden saltar a altres servidors de xarxa MNet des d\'este servidor.';
+$string['error_authmnetneeded'] = 'Cal que el connector d\'autenticació MNet estiga habilitat per veure la llista de servidors de xarxa de MNet.';
+$string['error_localusersonly'] = 'Els usuaris remots no poden saltar a altres servidors de xarxa MNet des d\'aquest servidor.';
+$string['mnet_hosts:addinstance'] = 'Afig un bloc nou de servidors en xarxa';
+$string['mnet_hosts:myaddinstance'] = 'Afig un bloc nou de servidors en xarxa a la pàgina del Tauler';

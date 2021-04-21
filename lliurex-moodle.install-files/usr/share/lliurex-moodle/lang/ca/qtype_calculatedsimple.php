@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'ca', version '3.9'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingcalculatedsimple'] = 'S\'està afegint una pregunta calculada simple.';
 $string['atleastonewildcard'] = 'Hi ha d\'haver almenys un comodí <strong>{x..}</strong> a les fórmules de la resposta correcta';
-$string['calculatedsimple'] = 'Calculada simple';
-$string['calculatedsimple_help'] = 'Les preguntes calculades simples permeten crear preguntes numèriques individuals utilitzant comodins que es substitueixen per valors individuals durant la creació del qüestionari. Les preguntes calculades simples ofereixen les característiques més emprades de les preguntes calculades amb una interfície de creació més senzilla.';
-$string['calculatedsimplesummary'] = 'Una versió més senzilla de les preguntes calculades que són com preguntes numèriques però amb els nombres utilitzats triats aleatòriament d\'un conjunt durant la creació del qüestionari.';
 $string['converttocalculated'] = 'Desa com a pregunta calculada simple';
-$string['editingcalculatedsimple'] = 'S\'està editant una pregunta calculada simple';
 $string['findwildcards'] = 'Cerca els comodins {x..} a les fórmules de les respostes correctes';
 $string['generatenewitemsset'] = 'Genera';
-$string['mustbenumeric'] = 'Aquí heu d\'introduir un número.';
-$string['mustnotbenumeric'] = 'Això no pot ser un número.';
 $string['newsetwildcardvalues'] = 'conjunt(s) nou(s) valors de comodi(ns)';
+$string['pluginname'] = 'Calculada simple';
+$string['pluginname_help'] = 'Les preguntes de càlcul senzilles habiliten la creació de preguntes numèriques utilitzant targetes que són substituïdes amb valors individuals quan es comença el qüestionari. Les preguntes de càlcul senzilles ofereixen les característiques més utilitzades en preguntes de càlcul amb la creació d\'interfícies simples.';
+$string['pluginnameadding'] = 'S\'està afegint una pregunta calculada simple.';
+$string['pluginnameediting'] = 'S\'està editant una pregunta de càlcul senzilla';
+$string['pluginnamesummary'] = 'Una versió més simple de les preguntes de càlcul que tenen preguntes numèriques però en les quals els números s\'agafen de forma aleatòria d\'un conjunt del qüestionari.';
 $string['setno'] = 'Conjunt {$a}';
 $string['setwildcardvalues'] = 'conjunt de valors dels comodins';
 $string['showitems'] = 'Mostra';

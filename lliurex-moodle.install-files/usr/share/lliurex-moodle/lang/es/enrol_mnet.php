@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_mnet', language 'es', version '3.9'.
  *
- * @package   enrol_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['error_multiplehost'] = 'Algunos ejemplo de la extensión de matriculación MNet ya existen en  este equipo. Sólo está permitida una instancia por servidor y/o una instancia para  \'Todos los servidores\'.';
 $string['instancename'] = 'Nombre del método de matriculación';
 $string['instancename_help'] = 'Puede cambiar opcionalmente el nombre de esta instancia del método de matriculación MNet. Si deja este campo vacío se usará el nombre de la instancia por defecto, que contiene el nombre del servidor remoto y el rol asignado para sus usuarios.';
-$string['mnet_enrol_description'] = 'Publique este servicio para permitir a los administradores de {$a} matricular a sus estudiantes en los cursos que usted ha creado en su servidor.<br/><ul><li><em>Dependencia</em>: Usted debe asimismo <strong>publicar</strong> el servicio SSO (Proveedor de Servicios) en {$a}.</li><li><em>Dependencia</em>: Debe también <strong>subscribirse</strong> al servicio SSO (Proveedor de Identidad) en {$a}.</li></ul><br/>Subscríbase a este servicio para poder matricular a sus estudiantes en los cursos de {$a}.<br/><ul><li><em>Dependencia</em>: Debe también <strong>subscribirse</strong> al servicio SSO (Proveedor de Servicios) en {$a}.</li><li><em>Dependencia</em>: Debe también <strong>publicar</strong> el servicio SSO (Proveedor de Identidad) en {$a}.</li></ul><br/>';
+$string['mnet:config'] = 'Configurar instancias de matriculación de MNet';
+$string['mnet_enrol_description'] = 'Publique este servicio para permitir a los administradores de {$a} matricular a sus estudiantes en los cursos que usted ha creado en su servidor.<br/><ul><li><em>Dependencia</em>: Usted debe asimismo <strong>suscribirse</strong> al servicio SSO (Proveedor de Identidad) en {$a}.</li><li><em>Dependencia</em>: Debe también <strong>subscribirse</strong> al servicio SSO (Proveedor de Identidad) en {$a}.</li></ul><br/>Suscríbase a este servicio para poder matricular a sus estudiantes en los cursos de {$a}.<br/><ul><li><em>Dependencia</em>: Debe también <strong>publicar</strong> el servicio SSO (Proveedor de Identidad) en {$a}.</li><li><em>Dependencia</em>: Debe también <strong>suscribirse</strong> al servicio SSO (Proveedor de Identidad) en {$a}.</li></ul><br/>';
 $string['mnet_enrol_name'] = 'Servicio remoto de matriculación';
 $string['pluginname'] = 'Matriculaciones remotas MNet';
 $string['pluginname_desc'] = 'Permite servidor remoto MNet para matricular sus usuarios en nuestros cursos';

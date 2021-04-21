@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dbtransfer', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'dbtransfer', language 'ca', version '3.9'.
  *
- * @package   dbtransfer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     dbtransfer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,6 @@ $string['dbexport'] = 'Exportació de la base de dades';
 $string['dbtransfer'] = 'Transferència de la base de dades';
 $string['differenttableexception'] = 'L\'estructura de la taula {$a} no concorda.';
 $string['done'] = 'Fet';
-$string['exportdata'] = 'Exporta les dades';
 $string['exportschemaexception'] = 'L\'estructura d\'aquesta base de dades no concorda amb tots els fitxers install.xml. <br /> {$a}';
 $string['importschemaexception'] = 'L\'estructura d\'aquesta base de dades no concorda amb tots els fitxers install.xml. <br /> {$a}';
 $string['importversionmismatchexception'] = 'Aquesta versió
@@ -41,11 +40,5 @@ $string['importversionmismatchexception'] = 'Aquesta versió
 no concorda amb la versió exportada
 {$a->schemaver}.';
 $string['malformedxmlexception'] = 'S\'ha trobat un XML malmès, no es pot continuar.';
-$string['notargetconectexception'] = 'No es pot connectar amb la base de dades de destinació, ho sentim.';
-$string['transferdata'] = 'Transfereix dades';
-$string['transferdbintro'] = 'Aquest script transferirà tots els continguts d\'aquesta base de dades a un altre servidor de bases de dades.';
-$string['transferdbtoserver'] = 'Transfereix aquesta base de dades de Moodle a un altre servidor';
-$string['transferringdbto'] = 'S\'està transferint aquesta base de dades a la base de dades
-{$a->dbtype}
-{$a->dbname} a {$a->dbhost}';
+$string['tablex'] = 'Taula {$a}:';
 $string['unknowntableexception'] = 'S\'ha trobat una taula desconeguda {$a} al fitxer d\'exportació';

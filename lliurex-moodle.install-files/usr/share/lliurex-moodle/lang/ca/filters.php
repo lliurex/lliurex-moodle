@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'filters', language 'ca', version '3.9'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'Rol a la categoria';
 $string['contains'] = 'conté';
 $string['content'] = 'Contingut';
 $string['contentandheadings'] = 'Contingut i capçaleres';
+$string['coursecategory'] = 'Categoria del curs';
 $string['courserole'] = 'Rol al curs';
 $string['courserolelabel'] = '{$a->label} té el rol {$a->rolename} al curs {$a->coursename} de la categoria {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} - error: el curs {$a->coursename} no existeix';
+$string['coursevalue'] = 'valor del curs';
 $string['datelabelisafter'] = '{$a->label} després del {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} abans del {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} entre el {$a->after} i el {$a->before}';
@@ -49,10 +51,10 @@ $string['doesnotcontain'] = 'no conté';
 $string['endswith'] = 'acaba en';
 $string['filterallwarning'] = 'Aplicar els filtres tant a les capçaleres com al contingut pot incrementar la càrrega del servidor. Empreu el paràmetre «Aplicar a» amb moderació. L\'ús principal és conjuntament amb el filtre «multilang».';
 $string['filtersettings'] = 'Paràmetres del filtre';
-$string['filtersettingsforin'] = 'Configuració del filtre {$a->filter} a {$a->context}';
 $string['filtersettings_help'] = 'Aquesta pàgina us permet activar o desactivar els filtres en una part específica del lloc.
 
 Alguns filtres us permeten també establir una configuració local. En aquest cas hi haurà un enllaç de configuració al costat del seu nom.';
+$string['filtersettingsforin'] = 'Configuració del filtre {$a->filter} a {$a->context}';
 $string['filtersettingsin'] = 'Configuració del filtre a {$a}';
 $string['firstaccess'] = 'Primer accés';
 $string['globalrolelabel'] = '{$a->label} és {$a->value}';
@@ -65,6 +67,7 @@ $string['isempty'] = 'està buit';
 $string['isequalto'] = 'és igual a';
 $string['isnotdefined'] = 'no està definit';
 $string['isnotequalto'] = 'no és igual a';
+$string['limiterfor'] = 'limitador de camp {$a}';
 $string['neveraccessed'] = 'No s\'ha accedit mai';
 $string['nevermodified'] = 'No s\'ha modificat mai';
 $string['newfilter'] = 'Filtre nou';
@@ -72,6 +75,8 @@ $string['nofiltersenabled'] = 'No s\'ha activat cap connecto de filtre per aques
 $string['off'] = 'Inactiu';
 $string['offbutavailable'] = 'Inactiu, però disponible';
 $string['on'] = 'Actiu';
+$string['profilefilterfield'] = 'Nom del camp del perfil';
+$string['profilefilterlimiter'] = 'Perfil de l\'operador de camp';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Suprimeix tots els filtres';
@@ -81,3 +86,4 @@ $string['startswith'] = 'comença per';
 $string['tablenosave'] = 'Els canvis en la taula de dalt es desen automàticament.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = 'Valor per {$a}';

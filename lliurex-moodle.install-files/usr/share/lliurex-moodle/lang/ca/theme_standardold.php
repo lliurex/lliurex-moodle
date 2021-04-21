@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_standardold', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'theme_standardold', language 'ca', version '3.9'.
  *
- * @package   theme_standardold
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_standardold
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,6 +33,6 @@ Aquest tema està aquí per la gent que està atrapada amb IE6 com un tema útil
 Es diferencia del tema Standard sols en els dissenys, en el fet que en lloc usar la capa flotant div per posar el continguts utilitza una tabla com capa de forma semblant als temes de Moodle 1.9.
 
 Com que IE6 no és compatible amb Moodle HQ no es gastaran grans quantitats de temps en aconseguir que sigui 100% funcional. Si us plau, si vostè troba un error amb IE6 i aquest tema i trobeu una solució. Llavors, creeu un informe d\'error en el tracker.moodle.org i proporcionen un exemple detallat de com trobar i com reproduir l\'error, així com la solució que heu trobat. D\'aquesta manera podem seguir millorant el tema i el suport a IE6.';
-$string['pluginname'] = 'Estàndard (antic)';
+$string['pluginname'] = 'Estàndard (heretat)';
 $string['region-side-post'] = 'Dreta';
 $string['region-side-pre'] = 'Esquerra';

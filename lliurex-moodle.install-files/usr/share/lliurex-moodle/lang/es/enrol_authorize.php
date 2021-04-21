@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_authorize', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_authorize', language 'es', version '3.9'.
  *
- * @package   enrol_authorize
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_authorize
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['adminacceptccs'] = '¿Qué tarjetas de crédito se aceptan?';
 $string['adminaccepts'] = 'Seleccione los métodos de pago y sus tipos';
-$string['adminauthorizeccapture'] = 'Ajustes Revisar Orden y Auto-Capturar';
+$string['adminauthorizeccapture'] = 'Ajustes revisar orden y captura programada';
 $string['adminauthorizeemail'] = 'Ajustes Enviar Email';
 $string['adminauthorizesettings'] = 'Ajustes cuenta Authorize.net Merchant';
 $string['adminauthorizewide'] = 'Ajustes generales';
@@ -69,26 +69,29 @@ $string['anavsdesc'] = '';
 $string['ancaptureday'] = 'Día de captura';
 $string['ancapturedaydesc'] = '';
 $string['anemailexpired'] = 'Notificación de expiración';
+$string['anemailexpireddesc'] = 'Esto es útil para la \'captura-manual\'. A los administradores se les notifica el número de días especificados previo a la caducidad de las órdenes pendientes.';
 $string['anemailexpiredteacher'] = 'Notificación de expiración - Profesor';
 $string['anemailexpiredteacherdesc'] = '';
 $string['anlogin'] = 'Authorize.net: Usuario';
 $string['anpassword'] = 'Authorize.net: Contraseña';
 $string['anreferer'] = 'Escriba aquí la referencia URL en el caso de que usted la ajuste en su cuenta authorize.net, que enviará una cabecera "Referer: URL" en la petición web.';
+$string['anrefererdesc'] = 'Define al referente URL si lo configuró en su cuenta de comercio de Authorize.Net. Esto enviará una línea "Referer: URL"  incrustada en la solicitud web..';
 $string['anreview'] = 'Revisar';
 $string['anreviewdesc'] = 'Revise la orden antes de procesar la tarjeta de crédito.';
 $string['antestmode'] = 'Modo test';
+$string['antestmodedesc'] = 'Ejecutar las transacciones en modo de prueba (no se transferirá dinero alguno)';
 $string['antrankey'] = 'Authorize.net: Clave de transacción';
 $string['approvedreview'] = 'Revisión aprobada';
 $string['authcaptured'] = 'Autorizado / Capturado';
 $string['authcode'] = 'Código de autorización';
-$string['authorize:config'] = 'Configurar inscripciones desde Authorize.Net';
-$string['authorizedpendingcapture'] = 'Autorizado / Pendiente de Captura';
-$string['authorizeerror'] = 'Error Authorize.net: {$a}';
+$string['authorize:config'] = 'Configurar matriculaciones desde Authorize.Net';
 $string['authorize:manage'] = 'Gestionar usuarios matriculados';
 $string['authorize:managepayments'] = 'Gestionar pagos';
 $string['authorize:unenrol'] = 'Dar de baja usuarios del curso';
 $string['authorize:unenrolself'] = 'Darse de baja del curso';
 $string['authorize:uploadcsv'] = 'Subir archivo CSV';
+$string['authorizedpendingcapture'] = 'Autorizado / Pendiente de Captura';
+$string['authorizeerror'] = 'Error Authorize.net: {$a}';
 $string['avsa'] = 'La dirección (calle) es correcta, pero el código postal no';
 $string['avsb'] = 'Falta información sobre la dirección';
 $string['avse'] = 'Error del sistema de verificación de la dirección';
@@ -160,6 +163,7 @@ $string['logindesc'] = 'Puede seleccionar la opción <a href="{$a->url}">loginht
 <br /><br />
 Si la selecciona, Moodle usará una conexión https segura únicamente en la página de acceso y pago.';
 $string['logininfo'] = 'Debido a precauciones de seguridad, no se muestran el nombre de usuario, la contraseña ni la clave de transacción. No es preciso entrar de nuevo si usted ha configurado estos campos con anterioridad. Puede ver un texto en verde a la izquierda de la caja si algún campo está ya configurado. Si accede a estos campos por vez primera, es necesario el nombre de usuario (*) y usted deberá escribir <strong>o bien</strong> la clave de transacción (#1) <strong>o bien</strong> la contraseña (#2) en la casilla adecuada. Le recomendamos que escriba la clave de transacción debido a razones de seguridad. Si desea eliminar la contraseña actual, marque la casilla correspondiente.';
+$string['messageprovider:authorize_enrolment'] = 'Mensajes de inscripción Authorize.Net';
 $string['methodcc'] = 'Tarjeta de crédito';
 $string['methodccdesc'] = 'Seleccione más abajo la tarjeta de crédito y los tipos aceptados';
 $string['methodecheck'] = 'eCheque (ACH)';
@@ -177,10 +181,10 @@ $string['missingzip'] = 'Falta el código postal';
 $string['mypaymentsonly'] = 'Mostrar sólo mis pagos';
 $string['nameoncard'] = 'Nombre que figura en la tarjeta';
 $string['new'] = 'Nuevo';
-$string['nocost'] = 'No hay ningún sobrecoste asociado a la inscripción en este curso a través de Authorize.Net';
+$string['nocost'] = '¡No hay ningún coste asociado a la matriculación en este curso a través de Authorize.Net';
 $string['noreturns'] = '¡No devolución!';
 $string['notsettled'] = 'No liquidado';
-$string['orderdetails'] = 'Detalles de la orden';
+$string['orderdetails'] = 'Detalles del pedido';
 $string['orderid'] = 'Orden ID';
 $string['paymentmanagement'] = 'Gestión del pago';
 $string['paymentmethod'] = 'Método de pago';
@@ -213,7 +217,7 @@ Usted tiene que aceptar o rechazar los pagos manualmente debido a que el adminis
 
 {$a->url}';
 $string['pendingorderssubject'] = 'ATENCIÓN: {$a->course}, {$a->pending} orden(es) expirarán en {$a->days} día(s).';
-$string['pluginname'] = 'Autorizar';
+$string['pluginname'] = 'Authorize.Net';
 $string['reason11'] = 'Se ha enviado una transacción duplicada';
 $string['reason13'] = 'La ID del login del proveedor no es válida o la cuenta está inactiva.';
 $string['reason16'] = 'La transacción no se ha encontrado.';

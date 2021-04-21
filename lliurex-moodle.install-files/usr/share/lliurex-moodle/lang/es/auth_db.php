@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'auth_db', language 'es', version '3.9'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,19 +39,20 @@ $string['auth_dbfieldpass'] = 'Nombre del campo que contiene las contraseñas';
 $string['auth_dbfieldpass_key'] = 'Campo de contraseña';
 $string['auth_dbfielduser'] = 'Nombre del campo que contiene los nombres de usuario';
 $string['auth_dbfielduser_key'] = 'Campo de nombre de usuario';
-$string['auth_dbhost'] = 'El ordenador que hospeda el servidor de la base de datos.';
+$string['auth_dbhost'] = 'El ordenador que aloja el servidor de la base de datos. Utilice una entrada DSN del sistema si está utilizando ODBC.';
 $string['auth_dbhost_key'] = 'Host';
 $string['auth_dbinsertuser'] = 'Insertado el usuario {$a->name} id {$a->id}';
+$string['auth_dbinsertuserduplicate'] = 'Error al insertar el usuario {$a->username}  - El usuario con ese nombre ya fue creado mediante  la extensión \'{$a->auth}\'.';
 $string['auth_dbinsertusererror'] = 'Error al insertar al usuario {$a}';
-$string['auth_dbname'] = 'Nombre de la base de datos';
+$string['auth_dbname'] = 'Nombre de la base de datos. Dejar vacío si está utilizando un DSN ODBC.';
 $string['auth_dbname_key'] = 'Nombre de la Base de Datos';
 $string['auth_dbpass'] = 'Contraseña correspondiente al nombre de usuario anterior';
 $string['auth_dbpass_key'] = 'Contraseña';
-$string['auth_dbpasstype'] = 'Especifique el formato que usa el campo de contraseña. La encriptación MD5 es útil para conectar con otras aplicaciones web como PostNuke.
-Use "interno" si quiere que la base de datos externa gestione los nombres de usuario y las direcciones de correo electrónico, pero Moodle administre las contraseñas. Si utiliza "interno", debe proporcionar un campo con una  dirección de correo electrónico utilizada en la base de datos externa, y debe ejecutar regularmente tanto admin/cron.php como auth/db/cli/sync_users.php. Moodle enviará un correo electrónico a los nuevos usuarios con una contraseña temporal.';
+$string['auth_dbpasstype'] = '<p>Especifique el formato que usa el campo de contraseña. La encriptación MD5 es útil para conectar con otras aplicaciones web como PostNuke.</p> <p>Use "interno" si quiere que la base de datos externa gestione los nombres de usuario y las direcciones de correo electrónico, pero que Moodle administre las contraseñas. Si utiliza "interno", <i>debe</i> proporcionar un campo con una  dirección de correo electrónico utilizada en la base de datos externa, y debe ejecutar regularmente tanto admin/cron.php como auth/db/cli/sync_users.php. Moodle enviará un correo electrónico a los nuevos usuarios con una contraseña temporal.</p>';
 $string['auth_dbpasstype_key'] = 'Formato de contraseña';
 $string['auth_dbreviveduser'] = 'Recuperado el usuario {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Error al recuperar al usuario {$a}';
+$string['auth_dbsaltedcrypt'] = 'Cifrado de hash de cadena de una dirección';
 $string['auth_dbsetupsql'] = 'Comando de ajuste SQL';
 $string['auth_dbsetupsqlhelp'] = 'Comando SQL para la configuración especial de la base de datos, comúnmente se utiliza para la codificación de comunicación - ejemplo para MySQL y PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['auth_dbsuspenduser'] = 'Suspendido el usuario {$a->name} id {$a->id}';
@@ -60,12 +61,11 @@ $string['auth_dbsybasequoting'] = 'Utilizar citaciones (quotes) de sybase';
 $string['auth_dbsybasequotinghelp'] = 'Escapado de comilla simple al estilo Sybase - necesario para Oracle, MS SQL y algunas otras bases de datos. ¡No lo utilice para MySQL!';
 $string['auth_dbtable'] = 'Nombre de la tabla en la base de datos';
 $string['auth_dbtable_key'] = 'Tabla';
-$string['auth_dbtype'] = 'El tipo de base de datos (Vea la <a href=../lib/adodb/readme.htm#drivers>documentación de ADOdb</a> para obtener más detalles)';
+$string['auth_dbtype'] = 'El tipo de base de datos (Vea la <a href="http://phplens.com/adodb/supported.databases.html">documentación de ADOdb</a> para obtener más detalles)';
 $string['auth_dbtype_key'] = 'Base de datos';
 $string['auth_dbupdatinguser'] = 'Actualizando al usuario {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Nombre de usuario con acceso de lectura a la base de datos';
 $string['auth_dbuser_key'] = 'Usuario de la Base de Datos';
-$string['auth_dbusernotexist'] = 'No se puede actualizar un usuario no existente: {$a}';
 $string['auth_dbuserstoadd'] = 'Entradas de usuario a añadir: {$a}';
 $string['auth_dbuserstoremove'] = 'Entradas de usuario a eliminar: {$a}';
 $string['pluginname'] = 'Usar una base de datos externa';

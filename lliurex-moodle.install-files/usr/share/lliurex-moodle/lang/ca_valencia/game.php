@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'game', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'game', language 'ca_valencia', version '3.9'.
  *
- * @package   game
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     game
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['helphangman'] = 'Este joc obté les paraules des d\'un glossari o les p
 
 El professorat pot establir el nombre de paraules que cada joc conté, si es mostra la primera o l\'última lletra, o si mostrar la pregunta o la resposta al final.';
 $string['helpmillionaire'] = 'Es presenta una pregunta a l\'estudiant, que si es respon correctament continua fins al següent nombre en el joc fins que l\'usuari haja respost totes les preguntes. Si una pregunta es respon malament, el joc s\'acaba.';
-$string['helpsudoku'] = 'Este joc mostra un sudoku als estudiants amb casellesen blanc perquè puga procedir a resoldre\'l. Per cada resposta correcta de l\'estudiant, un buit del sudoku s\'ompli amb el nombre adequat, perquè siga més fàcil de resoldre.';
+$string['helpsudoku'] = 'Aquest joc mostra un sudoku als estudiants amb casellesen blanc perquè puga procedir a resoldre\'l. Per cada resposta correcta de l\'estudiant, un buit del sudoku s\'ompli amb el nombre adequat, perquè siga més fàcil de resoldre.';
 $string['hiddenpicture_height'] = 'Ajusta l\'alçària de la imatge a';
 $string['hiddenpicture_width'] = 'Dimensiona l\'amplària de la imatge a';
 $string['javame_maxpictureheight'] = 'Alçària màxima de la imatge:';

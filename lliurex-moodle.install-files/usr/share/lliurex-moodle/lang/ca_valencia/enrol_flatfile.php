@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ca_valencia', version '3.9'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['expiredaction_help'] = 'Seleccioneu l\'acció que es durà a terme quan vença la inscripció de l\'usuari. Teniu en compte que alguns paràmetres i dades d\'usuari es purguen del curs durant la cancel·lació de la inscripció.';
 $string['filelockedmail'] = 'El fitxer de text que esteu utilitzant per a les inscripcions basades en fitxer ({$a}) no pot ser esborrat pel procés cron. Això significa que no té permisos sobre aquest fitxer. Modifiqueu els permisos de forma que Moodle puga esborrar el fitxer; en cas contrari, es processarà de forma repetida.';
-$string['pluginname_desc'] = 'Este mètode comprovarà de forma periòdica i processarà un fitxer de text en la localització que heu especificat.
-El fitxer és un fitxer de text separades per comes que assumeix que teniu sis camps per línia:
+$string['pluginname_desc'] = 'Aquest mètode comprovarà de forma periòdica i processarà un fitxer de text en la localització que heu especificat.
+El fitxer és un fitxer de text separat per comes que assumeix que teniu sis camps per línia:
 <pre class="informationbox">
 * operació, rol, ID(usuari), ID(curs) [, data d\'inici , data caducitat]
  on:
@@ -38,7 +39,7 @@ El fitxer és un fitxer de text separades per comes que assumeix que teniu sis c
 * data d\'inici = data d\'inici de la inscripció (en segons des de l\'origen de l\'hora UNIX) - opcional
 * data caducitat = data de caducitat de la inscripció (en segons des de l\'origen de l\'hora UNIX) - opcional
 </pre>
-Tindrà un aspecte paregut a este:
+Tindrà un aspecte semblant a aquest:
 <pre class="informationbox">
 add, student, 5, CF101
 add, teacher, 6, CF101

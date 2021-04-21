@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'edufields', language 'ca', version '3.9'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,8 +50,8 @@ $string['field10109'] = 'Ciències biològiques';
 $string['field1010901'] = 'Bioquímica i biologia cel·lular';
 $string['field1010903'] = 'Botànica';
 $string['field1010905'] = 'Ecologia i evolució';
-$string['field1010907'] = 'Ciències del mar ';
-$string['field1010909'] = 'Genètica ';
+$string['field1010907'] = 'Ciències del mar';
+$string['field1010909'] = 'Genètica';
 $string['field1010911'] = 'Microbiologia';
 $string['field1010913'] = 'Biologia humana';
 $string['field1010915'] = 'Zoologia';
@@ -60,11 +60,11 @@ $string['field10199'] = 'Altres ciències físiques i naturals';
 $string['field1019901'] = 'Ciències mèdiques';
 $string['field1019903'] = 'Medicina legal i forense';
 $string['field1019905'] = 'Ciència i tecnologia dels aliments';
-$string['field1019907'] = 'Farmacologia ';
+$string['field1019907'] = 'Farmacologia';
 $string['field1019909'] = 'Tecnologia de laboratori';
 $string['field1019999'] = 'Ciències físiques i naturals (altres)';
 $string['field102'] = 'Tecnologia de la informació';
-$string['field10201'] = 'Ciència de la computació';
+$string['field10201'] = 'Ciències de la computació';
 $string['field1020101'] = 'Teoria del llenguatge formal';
 $string['field1020103'] = 'Programació';
 $string['field1020105'] = 'Teoria de la computació';
@@ -77,7 +77,7 @@ $string['field1020117'] = 'Sistemes operatius';
 $string['field1020119'] = 'Intel·ligència artificial';
 $string['field1020199'] = 'Ciència de la computació (altres)';
 $string['field10203'] = 'Sistemes d\'informació';
-$string['field1020301'] = 'Models conceptual';
+$string['field1020301'] = 'Modelatge conceptual';
 $string['field1020303'] = 'Administració de base de dades';
 $string['field1020305'] = 'Anàlisis i diseny de sistemes';
 $string['field1020307'] = 'Sistemes de suport a la presa de decisions';
@@ -109,7 +109,7 @@ $string['field1030503'] = 'Mecànica de vehicles';
 $string['field1030505'] = 'Electricitat i electrònica d\'automoció';
 $string['field1030507'] = 'Repintat de vehicles automòbils';
 $string['field1030509'] = 'Construcció de la carrosseria d\'automòbils';
-$string['field1030511'] = 'Planxisteria ';
+$string['field1030511'] = 'Planxisteria';
 $string['field1030513'] = 'Tapisseria del vehicle';
 $string['field1030515'] = 'Operacions de vehicles automòbils';
 $string['field1030599'] = 'Enginyeria i tecnologia d\'automoció (altres)';
@@ -202,7 +202,7 @@ $string['field1050303'] = 'Viticultura';
 $string['field10505'] = 'Estudis forestals';
 $string['field1050501'] = 'Estudis forestals';
 $string['field10507'] = 'Estudis de la pesca';
-$string['field1050701'] = 'Aqüicultura ';
+$string['field1050701'] = 'Aqüicultura';
 $string['field1050799'] = 'Estudis de pesca (altres)';
 $string['field10509'] = 'Estudis del medi ambient';
 $string['field1050901'] = 'Gestió de la terra, parcs i  de la vida salvatge';
@@ -254,10 +254,10 @@ $string['field1061303'] = 'Salut ambiental';
 $string['field1061305'] = 'Salut indígena';
 $string['field1061307'] = 'Promoció de la salut';
 $string['field1061309'] = 'Salut de la comunitat';
-$string['field1061311'] = 'Epidemiologia ';
+$string['field1061311'] = 'Epidemiologia';
 $string['field1061399'] = 'Salut pública (Un altre)';
-$string['field10615'] = 'Radiografia ';
-$string['field1061501'] = 'Radiografia ';
+$string['field10615'] = 'Radiografia';
+$string['field1061501'] = 'Radiografia';
 $string['field10617'] = 'Teràpies de rehabilitació';
 $string['field1061701'] = 'Fisioteràpia';
 $string['field1061703'] = 'Teràpia ocupacional';
@@ -269,7 +269,7 @@ $string['field1061713'] = 'Podologia';
 $string['field1061799'] = 'Teràpies de rehabilitació (altres)';
 $string['field10619'] = 'Teràpies complementàries';
 $string['field1061901'] = 'Naturopatia';
-$string['field1061903'] = 'Acupuntura ';
+$string['field1061903'] = 'Acupuntura';
 $string['field1061905'] = 'Medicina tradicional xinesa';
 $string['field1061999'] = 'Teràpies complementàries (altres)';
 $string['field10699'] = 'Salut (altres)';
@@ -323,7 +323,7 @@ $string['field10807'] = 'Turisme';
 $string['field1080701'] = 'Turisme';
 $string['field10809'] = 'Estudis d\'oficina';
 $string['field1080901'] = 'Secretariat i oficina';
-$string['field1080903'] = 'Mecanografia ';
+$string['field1080903'] = 'Mecanografia';
 $string['field1080905'] = 'Pràctiques d\'informàtica';
 $string['field1080999'] = 'Estudis d\'oficina (altres)';
 $string['field10811'] = 'Banca, finances i relacionats';
@@ -340,10 +340,10 @@ $string['field10901'] = 'Ciència política i estudis polítics';
 $string['field1090101'] = 'Ciència política';
 $string['field1090103'] = 'Estudis polítics';
 $string['field10903'] = 'Estudis en la societat humana';
-$string['field1090301'] = 'Sociologia ';
-$string['field1090303'] = 'Antropologia ';
+$string['field1090301'] = 'Sociologia';
+$string['field1090303'] = 'Antropologia';
 $string['field1090305'] = 'Historial';
-$string['field1090307'] = 'Arqueologia ';
+$string['field1090307'] = 'Arqueologia';
 $string['field1090309'] = 'Geografia humana';
 $string['field1090311'] = 'Estudis indígenes';
 $string['field1090313'] = 'Estudis de gènere específics';
@@ -359,7 +359,7 @@ $string['field1090513'] = 'Assessorament';
 $string['field1090515'] = 'Estudis de benestar social';
 $string['field1090599'] = 'Estudis de benestar social  i serveis (altres)';
 $string['field10907'] = 'Ciències del comportament';
-$string['field1090701'] = 'Psicologia ';
+$string['field1090701'] = 'Psicologia';
 $string['field1090799'] = 'Ciències del comportament (altres)';
 $string['field10909'] = 'Dret';
 $string['field1090901'] = 'Dret empresarial i comercial';
@@ -393,7 +393,7 @@ $string['field1091521'] = 'Lingüística';
 $string['field1091523'] = 'Literatura';
 $string['field1091599'] = 'Llengua i literatura (altres)';
 $string['field10917'] = 'Filosofia i estudis religiosos';
-$string['field1091701'] = 'Filosofia ';
+$string['field1091701'] = 'Filosofia';
 $string['field1091703'] = 'Estudis religiosos';
 $string['field10919'] = 'Economia i econometria';
 $string['field1091901'] = 'Economia';
@@ -404,21 +404,21 @@ $string['field1092103'] = 'Entrenament esportiu, arbitratge i instrucció';
 $string['field1092199'] = 'Esport i diversió (altres)';
 $string['field10999'] = 'Altres societat i cultura';
 $string['field1099901'] = 'Estudis del consumidor i la familia';
-$string['field1099903'] = 'Criminologia ';
+$string['field1099903'] = 'Criminologia';
 $string['field1099905'] = 'Serveis de seguretat';
 $string['field1099999'] = 'Societat i cultura (altres)';
 $string['field110'] = 'Arts creatives';
 $string['field11001'] = 'Arts escèniques';
 $string['field1100101'] = 'Música';
 $string['field1100103'] = 'Estudis teatrals i dramàtics';
-$string['field1100105'] = 'Dansa ';
+$string['field1100105'] = 'Dansa';
 $string['field1100199'] = 'Arts escèniques (altres)';
 $string['field11003'] = 'Arts visuals i artesanies';
 $string['field1100301'] = 'Belles arts';
-$string['field1100303'] = 'Fotografia ';
+$string['field1100303'] = 'Fotografia';
 $string['field1100305'] = 'Artesania';
 $string['field1100307'] = 'Confecció de joies';
-$string['field1100309'] = 'Floristeria ';
+$string['field1100309'] = 'Floristeria';
 $string['field1100399'] = 'Arts visuals i artesanies (altres)';
 $string['field11005'] = 'Estudis gràfics i disseny';
 $string['field1100501'] = 'Estudis gràfics i disseny';
@@ -427,7 +427,7 @@ $string['field1100505'] = 'Disseny de moda';
 $string['field1100599'] = 'Estudis gràfics i disseny (altres)';
 $string['field11007'] = 'Comunicació i estudi de mitjans';
 $string['field1100701'] = 'Estudis àudio-visuals';
-$string['field1100703'] = 'Periodisme ';
+$string['field1100703'] = 'Periodisme';
 $string['field1100705'] = 'Comunicació escrita';
 $string['field1100707'] = 'Comunicació verbal';
 $string['field1100799'] = 'Comunicació i mitjans de comunicació de masses (altres)';

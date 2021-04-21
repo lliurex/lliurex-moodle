@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'certificate', language 'ca_valencia', version '3.9'.
  *
- * @package   certificate
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     certificate
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,6 +37,7 @@ Els tipus «sense fonts incrustades» utilitzen les fonts Helvetica i Times. Si 
 
 Es poden afegir noves carpetes amb tipus a la carpeta certificate/type. El nom de la carpeta i les noves cadenes d\'idioma per al nou tipus s\'han d\'agregar a l\'arxiu d\'idioma del certificat.';
 $string['certify'] = 'Este document certifica que';
+$string['coursetimereq_help'] = 'Introduïu ací la quantitat mínima de temps, en minuts, que l\'estudiant ha d\'estar inscrit al curs abans que puga rebre el certificat.';
 $string['customtext_help'] = 'Si voleu que el certificat imprimisca diferents noms per al professor que els que tenen assignats en el rol de professor, no seleccioneu l\'opció «Imprimir Professor» ni cap imatge de signatura excepte l\'opció «línia».  Escriviu els noms dels professors en este quadre de text tal com voleu que apareguen.  Per defecte, este text es col·loca en la part inferior esquerra del certificat. Les següents etiquetes HTML estan disponibles: <br>, <p>, <b>, <i>, <u>, <img> (els paràmetres «src» i «width» (o «height») són obligatoris), <a> (href és obligatori), <font> (alguns possibles atributs són: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
 $string['datefmt_help'] = 'Trieu un format de data per imprimir la data en el certificat. O bé, seleccioneu l\'última opció per tindre la data impresa en el format de l\'idioma escollit per l\'usuari.';
 $string['delivery_help'] = 'Trieu ací com vos agradaria que els vostres estudiants obtingueren el seu certificat.
@@ -74,6 +75,8 @@ $string['printseal_help'] = 'Esta opció vos permet seleccionar un segell o logo
 $string['printsignature_help'] = 'Esta opció vos permet imprimir una imatge de la signatura de la carpeta certificate/pix/signatures.  Podeu imprimir una representació gràfica d\'una signatura, o imprimir una línia per a una signatura manuscrita. Per defecte, esta imatge es col·loca en la part inferior esquerra del certificat.';
 $string['printteacher_help'] = 'Per imprimir el nom del professor en el certificat, establiu el rol del professor en el nivell del mòdul. Feu això si, per exemple, teniu més d\'un professor per al curs o si teniu més d\'un certificat en el curs i voleu imprimir diferents noms de professors a cada certificat. Feu clic per editar el certificat, feu clic a la pestanya de rols assignats localment. A continuació, assigneu el rol del professor (professor editor) per al certificat (que NO CAL que siga professor del curs - es pot assignar esta funció a qualsevol). Estos noms s\'imprimiran en el certificat per al professor.';
 $string['reportcert_help'] = 'Si escolliu sí, aleshores la data de recepció d\'este certificat, número de codi, i el nom del curs apareixeran en els informes del certificat d\'usuari. Si decidiu imprimir una qualificació en este certificat, llavors esta qualificació també es mostrarà en l\'informe certificat';
+$string['requiredtimenotmet'] = 'Heu de passar almenys un mínim de {$a->requiredtime} minuts en el curs abans de poder accedir a este certificat';
 $string['savecert'] = 'Guarda els certificats';
 $string['savecert_help'] = 'Si trieu esta opció, aleshores es guardarà una còpia del fitxer pdf del certificat de cada usuari en l\'espai de fitxers del certificat. En l\'informe dels certificats es mostrarà un enllaç a cada certificat d\'usuari guardat.';
+$string['uploadimagedesc'] = 'Este botó vos portarà a una nova pantalla des d\'on podreu pujar imatges.';
 $string['viewed'] = 'Heu rebut este certificat el:';

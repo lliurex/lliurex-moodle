@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reader', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'reader', language 'es', version '3.9'.
  *
- * @package   reader
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     reader
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -91,11 +91,12 @@ $string['downloadsettings'] = 'Descargar ajustes';
 $string['duration'] = 'Duración';
 $string['edit'] = 'Editar';
 $string['editquiztoreader'] = 'Eliminar cuestionarios';
-$string['error'] = 'Error: {$a}';
-$string['errorsfound'] = 'Errores encontrados';
 $string['err_regex_float'] = 'Este valor debe ser un número decimal entre 0,0 y 10,0';
 $string['err_regex_integer'] = 'Este valor debe ser un número entero entre 0 y 100.000';
+$string['error'] = 'Error: {$a}';
+$string['errorsfound'] = 'Errores encontrados';
 $string['hidden'] = 'Oculto';
+$string['notavailable'] = 'Este cuestionario no está disponible actualmente';
 $string['nothavepermissioncreateinstance'] = 'Lo siento, no tiene permiso para realizar esta acción';
 $string['numberofextrapoints'] = 'Número de puntos extra';
 $string['onlybookswithmorethan'] = 'Solo libros con más de';
@@ -106,6 +107,7 @@ $string['pleaseclose'] = 'Su petición ha sido procesada. Puede cerrar ya esta v
 $string['pleasewait'] = 'Por favor espere';
 $string['points'] = 'Puntos';
 $string['popup'] = 'Usar ventana "segura"';
+$string['quiznotavailable'] = 'Lo sentimos, este cuestionario actualmente no está disponible para usted';
 $string['sectiontypehidden'] = 'Una sección oculta';
 $string['show'] = 'Mostrar';
 $string['showall'] = 'Mostrar Todo';

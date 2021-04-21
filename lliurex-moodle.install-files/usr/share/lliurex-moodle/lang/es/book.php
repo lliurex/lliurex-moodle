@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,87 +12,103 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'book', language 'es', version '3.9'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Añadir un nuevo Capítulo';
+$string['addafterchapter'] = 'Añadir un nuevo capítulo después de "{$a->title}"';
+$string['book:addinstance'] = 'Añadir un nuevo libro';
 $string['book:edit'] = 'Editar capítulos de libro';
-$string['book:exportimscp'] = 'Exportar libro como paquete de contenido IMS';
-$string['book:import'] = 'Importar capítulos';
-$string['book:print'] = 'Imprimir libro';
-$string['book:read'] = 'Leer libro';
+$string['book:read'] = 'Ver libro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos de libro oculto';
-$string['chapterscount'] = 'Cápitulos';
+$string['chapterandsubchaptersdeleted'] = 'El capítulo "{$a->title}" y sus {$a->subchapters} subcapítulos han sido borrados';
+$string['chapterdeleted'] = 'El capítulo "{$a->title}" ha sido borrado';
+$string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título del Capítulo';
 $string['confchapterdelete'] = '¿Realmente quiere eliminar este Capítulo?';
 $string['confchapterdeleteall'] = '¿Está seguro que quiere eliminar este capítulo y todos sus subcapítulos?';
 $string['content'] = 'Contenido';
 $string['customtitles'] = 'Títulos personalizados';
-$string['customtitles_help'] = 'Títulos de los capítulos se muestran automáticamente sólo en la tabla de contenido.';
-$string['doexport'] = 'Exportar';
-$string['doimport'] = 'Importar';
+$string['customtitles_help'] = 'Los títulos de los capítulos se muestran automáticamente sólo en la tabla de contenido y como una cabecera encima del contenido.
+
+Si se marca la opción "Títulos personalizados", el título del capítulo no se muestra como una cabecera encima del contenido. Se puede introducir un título diferente (puede que incluso más largo que el del capítulo) como parte del contenido.';
+$string['deletechapter'] = 'Borrar capítulo "{$a}"';
+$string['editchapter'] = 'Editar capítulo "{$a}"';
 $string['editingchapter'] = 'Edición de capítulo';
-$string['errorchapter'] = 'Error al leer el capítulo de libro.';
-$string['faq'] = 'Libro FAQ';
-$string['faq_help'] = '*¿Por qué sólo dos niveles?*
-
-Dos niveles son generalmente suficientes para todos los libros, tres niveles daría lugar a documentos pobremente estructurados. El módulo Libro está diseñado para la creación de varias páginas cortas del material de estudio. En general es mejor utilizar el formato PDF para documentos más largos. La forma más fácil de crear archivos PDF son con impresoras virtuales (ver
-<a href="http://sector7g.wurzel6.de/pdfcreator/index_en.htm" target="_blank">PDFCreator</a>, <a href="http://fineprint.com/products/pdffactory/index.html" target="_blank">PDFFactory</a>, <a href="http://www.adobe.com/products/acrobatstd/main.html" target="_blank">Adobe Acrobat</a>, etc.).
-
-* ¿Pueden los estudiantes editar libros? *
-
-Sólo los profesores pueden crear y editar libros. No hay planes para implementar la edición de libros por parte de los estudiantes, pero alguien puede crear algo similar para los estudiantes (Portfolio?). La razón principal es mantener el módulo Libro tan simple como sea posible.
-
-* ¿Cómo puedo buscar en los libros? *
-
-En la actualidad sólo hay una manera, usar la capacidad de búsqueda de los navegadores en la página de impresión. La búsqueda global es ahora posible solamente en los foros de Moodle.
-Sería bueno tener un buscador a nivel global de todos los recursos, incluyendo libros, algún voluntario?
-
-* Mis títulos no caben en una línea .*
-
-Trate de reformular con otras palabras su título o pregúntele al administrador del sitio para que cambie el ancho de la tabla de contenido (TOC). Se define a nivel global para todos los libros en la página de configuración del módulo.';
-$string['fileordir'] = 'Archivo o directorio';
-$string['generateimscp'] = 'Generar paquete de contenido IMS';
-$string['import'] = 'Importar';
-$string['import_help'] = 'Puede importar un solo archivo HTML o todos los archivos HTML en un directorio. Los enlaces de archivo relativos son convertidos a enlaces absolutos. Imágenes, Flash y Java son también relinkeados.';
-$string['importinfo'] = 'Importar seleccionado archivo HTML o directorio.<br />Los capítulos se ordenan alfabéticamente utilizando nombres de archivos.<br />Los archivos nombrados como \'sub_*.*\' son siempre importados como subcapítulos.';
-$string['importing'] = 'Importación';
-$string['importingchapters'] = 'Importación de capítulos en el libro';
-$string['maindirectory'] = 'Directorio Principal';
+$string['errorchapter'] = 'Error al leer el capítulo del libro.';
+$string['eventchaptercreated'] = 'Capítulo creado';
+$string['eventchapterdeleted'] = 'Capítulo eliminado';
+$string['eventchapterupdated'] = 'Capítulo actualizado';
+$string['eventchapterviewed'] = 'Capítulo visto';
+$string['hidechapter'] = 'Ocultar capítulo "{$a}"';
+$string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Libro.';
+$string['indicator:cognitivedepthdef'] = 'Libro cognitivo';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso cognitivo ofrecido por las actividades de Libro durante este intervalo de análisis (Niveles = Sin ver, Ver)';
+$string['indicator:socialbreadth'] = 'Libro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Libro.';
+$string['indicator:socialbreadthdef'] = 'Libro social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Libro durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
 $string['modulename'] = 'Libro';
-$string['modulename_help'] = 'El libro es un simple material de estudio de múltiples páginas.';
+$string['modulename_help'] = 'El módulo libro permite crear material de estudio de múltiples páginas en formato libro, con capítulos y subcapítulos. El libro puede incluir contenido multimedia así como texto y es útil para mostrar grandes volúmenes de información repartido en secciones.
+
+Un libro puede usarse
+
+* Para mostrar material de lectura de los módulos individuales de estudio
+* Como un manual para el personal del departamento
+* Como un portafolio de trabajos de los estudiantes';
 $string['modulenameplural'] = 'Libros';
+$string['movechapterdown'] = 'Mover capítulo "{$a}" para abajo';
+$string['movechapterup'] = 'Mover capítulo "{$a}" para arriba';
 $string['navexit'] = 'Salir del libro';
+$string['navimages'] = 'Imágenes';
 $string['navnext'] = 'Siguiente';
+$string['navnexttitle'] = 'Siguiente: {$a}';
+$string['navoptions'] = 'Opciones disponibles para links de navegación';
+$string['navoptions_desc'] = 'Opciones para mostrar la navegación en las páginas del libro';
 $string['navprev'] = 'Anterior';
-$string['numbering'] = 'Número del Cápitulo';
+$string['navprevtitle'] = 'Anterior: {$a}';
+$string['navstyle'] = 'Diseño de navegación';
+$string['navstyle_help'] = '*Imágenes- Los iconos se utilizan para la navegación
+*Texto- Los títulos de capítulos se usan para la navegación';
+$string['navtext'] = 'Texto';
+$string['navtoc'] = 'Solo tabla de contenidos';
+$string['nocontent'] = 'Aún no se ha añadido contenido a este libro.';
+$string['numbering'] = 'Numeración del capítulo';
 $string['numbering0'] = 'Nada';
 $string['numbering1'] = 'Númerica';
 $string['numbering2'] = 'Viñetas';
 $string['numbering3'] = 'Sangrado';
-$string['numbering_help'] = '* Ninguno - los títulos de capítulos y subcapítulos no tienen formato alguno, utilicelos si desea definir estilos especiales de numeración. Por ejemplo, letras: escriba en el título del capítulo "Un Primer Capítulo", "A.1 Algún Subcapítulo",...
+$string['numbering_help'] = '* Ninguno - los títulos de capítulos y subcapítulos no tienen formato
 * Números - los capítulos y subcapítulos son numerados (1, 1.1, 1.2, 2, ...)
 * Viñetas - los subcapítulos son indentados y son mostrados con viñetas
-* Sangría - los subcapítulos son indentados
-';
-$string['numberingoptions'] = 'Validar opciones de numeración';
-$string['numberingoptions_help'] = 'Seleccionar opciones de numeración que estaran disponibles al crear nuevos libros.';
+* Sangría - los subcapítulos son indentados';
+$string['numberingoptions'] = 'Opciones de formato de capítulos disponibles';
+$string['numberingoptions_desc'] = 'Seleccionar opciones de numeración que estaran disponibles al crear nuevos libros.';
+$string['page-mod-book-x'] = 'Cualquier página del módulo Libro';
 $string['pluginadministration'] = 'Administración del Libro';
 $string['pluginname'] = 'Libro';
-$string['printbook'] = 'Imprimir el Libro Completo';
-$string['printchapter'] = 'Imprimir este Cápitulo';
-$string['printdate'] = 'Día';
-$string['printedby'] = 'Imprimido por';
-$string['relinking'] = 'Volver a vincular';
+$string['previouschapter'] = 'Capítulo anterior';
+$string['privacy:metadata'] = 'El módulo de actividad Libro no guarda información personal.';
+$string['removeallbooktags'] = 'Eliminar todas las marcas del libro';
+$string['search:activity'] = 'Libro - Información del recurso';
+$string['search:chapter'] = 'Libro - capítulos';
+$string['showchapter'] = 'Mostrar capítulo "{$a}"';
 $string['subchapter'] = 'Subcapítulo';
+$string['subchapternotice'] = '(Disponible una vez que el primer capítulo se haya creado)';
+$string['subplugintype_booktool'] = 'Herramienta Libro';
+$string['subplugintype_booktool_plural'] = 'Herramientas Libro';
+$string['tagarea_book_chapters'] = 'Capítulos del libro';
+$string['tagsdeleted'] = 'Las marcas del libro han sido eliminadas';
 $string['toc'] = 'Tabla de contenidos';
 $string['top'] = 'arriba';

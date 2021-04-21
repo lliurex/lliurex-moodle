@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ca', version '3.9'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,9 +35,14 @@ $string['layouthorizontal'] = 'Fila horitzontal de botons d\'opció';
 $string['layoutselectinline'] = 'Menú desplegable en línia al text';
 $string['layoutundefined'] = 'Aspecte no definit';
 $string['layoutvertical'] = 'Columna vertical de botons d\'opció';
-$string['multianswersummary'] = 'Les preguntes d\'aquest tipus són molt flexibles, però només poden crear-se introduint text que contingui uns codis especials per a crear les preguntes incrustades de resposta múltiple, resposta breu i numèrica.';
 $string['nooptionsforsubquestion'] = 'No es poden obtenir les opcions per part de la pregunta # {$a->sub} (pregunta->id= {$a->id})';
 $string['noquestions'] = 'La pregunta de buits "<strong>{$a}</strong>" no conté cap buit';
+$string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
+$string['pluginname'] = 'Respostes incrustades (Cloze)';
+$string['pluginname_help'] = 'Una pregunta amb respostes incrustades (Cloze) consisteix en un text amb espais per a respostes d\'elecció múltiple o de resposta breu en el text.';
+$string['pluginnameadding'] = 'S\'està afegint una resposta incrustada (activitat de buits)';
+$string['pluginnameediting'] = 'S\'està editant una resposta incrustada (activitat de buits)';
+$string['pluginnamesummary'] = 'Les preguntes d\'aquest tipus són molt flexibles, però només es poden crear mitjançant l\'entrada de text amb codis especials que creen seleccions múltiples incrustades, respostes curtes i preguntes numèriques.';
 $string['qtypenotrecognized'] = 'Tipus de pregunta {$a} no reconegut';
 $string['questiondefinition'] = 'Definició de la pregunta';
 $string['questiondeleted'] = 'Pregunta esborrada';
@@ -46,8 +51,8 @@ $string['questioninquiz'] = '<ul>
  <li>canvia l\'ordre de les preguntes al text;</li>
  <li>canvia el tipus de la pregunta (numèrica, resposta breu, opció múltiple). </li>
 </ul>';
-$string['questionnadded'] = 'Pregunta afegida';
 $string['questionnotfound'] = 'No es pot trobar una pregunta o una seva part #{$a}';
+$string['questionsadded'] = 'Pregunta afegida';
 $string['questionsaveasedited'] = 'La pregunta es desarà com s\'ha editat';
 $string['questionsless'] = '{$a} preguntes menys que la versió de la pregunta desada a la base de dades';
 $string['questionsmissing'] = 'El text de la pregunta ha d\'incloure almenys una resposta incrustada.';
@@ -55,6 +60,8 @@ $string['questionsmore'] = '{$a} preguntes més que la versió de la pregunta de
 $string['questiontypechanged'] = 'Tipus de subpregunta canviat';
 $string['questiontypechangedcomment'] = 'Almenys un tipus de pregunta ha canviat. <br/>Heu afegit, esborrat o mogut una pregunta? <br/> Reviseu a dalt.';
 $string['questionusedinquiz'] = 'Aquesta pregunta s\'utilitza en {$a->nb_of_quiz} qüestionari(s), amb un total de {$a->nb_of_attempts} intent(s)';
+$string['storedqtype'] = 'Tipus de pregunta desat {$a}';
+$string['subqresponse'] = 'part {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipus de pregunta desconegut: {$a->type} a la subpregunta n. {$a->sub}';
 $string['warningquestionmodified'] = '<b>AVÍS</b>';
 $string['youshouldnot'] = '<b>NO HAURÍEU DE</b>';

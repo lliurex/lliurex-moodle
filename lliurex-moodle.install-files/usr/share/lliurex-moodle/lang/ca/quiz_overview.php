@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'quiz_overview', language 'ca', version '3.9'.
  *
- * @package   quiz_overview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_overview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['allattempts'] = 'Mostra tots els intents';
 $string['allattemptscontributetograde'] = 'Tots els intents compten per a la qualificació final de l\'usuari';
 $string['allstudents'] = 'Mostra tots els {$a}';
-$string['attemptprogress'] = 'Intent {$a->done} de: {$a->todo}';
 $string['attemptsonly'] = 'Mostra només {$a} amb intents';
 $string['attemptsprepage'] = 'Intents mostrats per pàgina';
 $string['deleteselected'] = 'Suprimeix els intents seleccionats';
@@ -45,18 +44,18 @@ $string['optallattempts'] = 'tots els intents';
 $string['optallstudents'] = 'tots els {$a} que han contestat o no el qüestionari';
 $string['optattemptsonly'] = '{$a} que han contestat el qüestionari';
 $string['optnoattemptsonly'] = '{$a} que no han contestat el qüestionari';
-$string['optonlygradedattempts'] = 'qualificats per a cada usuari ({$a})';
 $string['optonlyregradedattempts'] = 'tornats a qualificar / marcats per tornar a qualificar';
 $string['overview'] = 'Qualificacions';
 $string['overviewdownload'] = 'Baixa un resum';
+$string['overviewfilename'] = 'qualificacions';
 $string['overviewreport'] = 'Informe de qualificacions';
 $string['overviewreportgraph'] = 'Total d\'estudiants dins de cada interval de qualificacions';
 $string['overviewreportgraphgroup'] = 'Nombre d\'estudiants del grup «{$a}» dins de cada interval de qualificacions';
 $string['pagesize'] = 'Mida de pàgina';
+$string['pluginname'] = 'Qualificacions';
 $string['preferencespage'] = 'Preferències només per a aquesta pàgina';
 $string['preferencessave'] = 'Mostra l\'informe';
 $string['preferencesuser'] = 'Les vostres preferències per a aquest informe';
-$string['qprogress'] = 'Pregunta {$a->done} de: {$a->todo}';
 $string['regrade'] = 'Torna a qualificar';
 $string['regradeall'] = 'Torna a qualificar-los tots';
 $string['regradealldry'] = 'Fes un assaig de requalificació completa';
@@ -64,9 +63,10 @@ $string['regradealldrydo'] = 'Torna a qualificar els intents marcats per a torna
 $string['regradealldrydogroup'] = 'Torna a qualificar els intents ({$a->countregradeneeded}) del grup \'{$a->groupname}\' marcats per tornar a qualificar';
 $string['regradealldrygroup'] = 'Fes un assaig de requalificació completa pel grup «{$a->groupname}»';
 $string['regradeallgroup'] = 'Requalifica completament el grup «{$a->groupname}»';
+$string['regradecomplete'] = 'Requalificació completada amb èxit.';
 $string['regradeheader'] = 'S\'esta requalificant';
 $string['regradeselected'] = 'Torna a qualificar els intents seleccionats';
-$string['requiresgrading'] = 'Pendent de qualificació';
+$string['regradingattemptxofy'] = 'Requalificant l\'intent ({$a->done}/{$a->count})';
 $string['show'] = 'Mostra / baixa';
 $string['showattempts'] = 'Mostra / baixa només els intents';
 $string['showdetailedmarks'] = 'Puntuacions per a cada pregunta';

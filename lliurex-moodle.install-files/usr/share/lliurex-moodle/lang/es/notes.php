@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,43 +12,50 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'notes', language 'es', version '3.9'.
  *
- * @package   notes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     notes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addnewnote'] = 'Agregar una nueva nota';
-$string['addnewnoteselect'] = 'Seleccionar usuarios sobre los que escribir notas';
+$string['addnewnoteselect'] = 'Seleccionar usuarios sobre los cuales escribir anotaciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
-$string['cannotdeletepost'] = 'Ocurrió un error al eliminar el mensaje';
-$string['configenablenotes'] = 'Habilitar almacenamiento de notas sobre usuarios individuales.';
+$string['configenablenotes'] = 'Habilitar almacenamiento de anotaciones sobre usuarios individuales.';
 $string['content'] = 'Contenido';
 $string['course'] = 'curso';
-$string['coursenotes'] = 'Notas del curso';
+$string['coursenotes'] = 'Anotaciones del curso';
 $string['created'] = 'creado';
 $string['deleteconfirm'] = '¿Eliminar esta nota?';
-$string['deletenotes'] = 'Eliminar todas las notas';
+$string['deletenotes'] = 'Eliminar todas las anotaciones';
 $string['editnote'] = 'Editar nota';
-$string['enablenotes'] = 'Habilitar notas';
-$string['groupaddnewnote'] = 'Agregar nueva nota para todos';
+$string['enablenotes'] = 'Habilitar anotaciones';
+$string['eventnotecreated'] = 'Nota creada';
+$string['eventnotedeleted'] = 'Nota eliminada';
+$string['eventnotesviewed'] = 'Anotaciones vistas';
+$string['eventnoteupdated'] = 'Nota actualizada';
 $string['invalidid'] = 'Se ha especificado una ID de nota no válida';
+$string['invaliduserid'] = 'ID de usuario inválida: {$a}';
+$string['myprofileownnotes'] = 'Mis anotaciones';
 $string['nocontent'] = 'El contenido de la nota no puede estar vacío';
-$string['nonotes'] = 'Aún no hay notas de este tipo';
+$string['nonotes'] = 'Aún no hay anotaciones de este tipo';
 $string['nopermissiontodelete'] = 'No puede eliminar esta nota';
 $string['note'] = 'Nota';
-$string['notes'] = 'Notas';
-$string['notesdisabled'] = 'Lo sentimos, las notas están deshabilitadas.';
-$string['notesnotvisible'] = 'No está autorizado a ver las notas.';
+$string['notes'] = 'Anotaciones';
+$string['notesdisabled'] = 'Lo sentimos, las anotaciones están deshabilitadas.';
+$string['notesnotvisible'] = 'No está autorizado a ver las anotaciones.';
 $string['nouser'] = 'Debe seleccionar un usuario';
+$string['page-notes-index'] = 'Página principal de anotaciones';
+$string['page-notes-x'] = 'Cualquier página de anotaciones';
 $string['personal'] = 'personal';
-$string['personalnotes'] = 'Notas personales';
+$string['personalnotes'] = 'Anotaciones personales';
 $string['publishstate'] = 'Contexto';
 $string['publishstate_help'] = '<p>Hay tres posibles ajustes</p>
 <ul>
@@ -58,5 +64,5 @@ $string['publishstate_help'] = '<p>Hay tres posibles ajustes</p>
 <li><strong>Sitio</strong> - Todos los profesores de todos los cursos pueden ver la nota</li>
 </ul>';
 $string['site'] = 'sitio';
-$string['sitenotes'] = 'Notas del sitio';
+$string['sitenotes'] = 'Anotaciones del sitio';
 $string['unknown'] = 'desconocido';

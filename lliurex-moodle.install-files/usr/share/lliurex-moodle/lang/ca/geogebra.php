@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'geogebra', language 'ca', version '3.9'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,23 +51,23 @@ $string['extractedfromggb'] = 'fitxers extrets de ggb';
 $string['filename'] = 'Nom del fitxer';
 $string['filenotfound'] = 'El fitxer indicat no existeix';
 $string['filetype'] = 'Tipus';
-$string['filetypeexternal'] = 'URL extern';
 $string['filetype_help'] = 'Aquest paràmetre determina com s\'incorporarà l\'activitat GeoGebra al curs. Hi ha dues opcions:
 
 * Fitxer pujat - Permet escollir un fitxer .GGB vàlid mitjançant el selector d\'arxius.
 * URL extern - Permet especificar l\'URL d\'una activitat GeoGebra. Nota: L\'URL ha de començar amb http(s) o www i contenir un fitxer .GGB vàlid.';
+$string['filetypeexternal'] = 'URL extern';
 $string['filetypelocal'] = 'Fitxer pujat';
 $string['firstattempt'] = 'Primer intent';
 $string['for'] = 'per';
 $string['functionalityoptionsgrp'] = 'Funcionalitats';
 $string['geogebra:addinstance'] = 'Afegeix una activitat GeoGebra';
-$string['geogebrafile'] = 'Fitxer GeoGebra';
-$string['geogebrafile_help'] = 'El fitxer .GGB que conté l\'activitat GeoGebra.';
 $string['geogebra:grade'] = 'Avalua GeoGebra';
 $string['geogebra:submit'] = 'Envia GeoGebra';
-$string['geogebraurl'] = 'URL';
-$string['geogebraurl_help'] = 'Aquest paràmetre permet especificar l\'URL de l\'activitat GeoGebra en lloc de seleccionar-la mitjançant el selector de fitxers.';
 $string['geogebra:view'] = 'Visualitza GeoGebra';
+$string['geogebrafile'] = 'Fitxer GeoGebra';
+$string['geogebrafile_help'] = 'El fitxer .GGB que conté l\'activitat GeoGebra.';
+$string['geogebraurl'] = 'URL';
+$string['geogebraurl_help'] = 'Localitzeu la construcció a <a href="https://www.geogebra.org/" target="_blank">geogebra.org</a>, aneu a <strong>Detalls</strong>, feu clic amb el botó dret del ratolí al botó <strong>Descarrega</strong> i seleccioneu <strong>Copia l\'adreça de l\'enllaç</strong>. Finalment, situeu-vos al camp URL i enganxeu-hi l\'enllaç amb <strong>Ctrl+V</strong>.<br/>Per a un exemple pas a pas d\'aquesta operació, vegeu: <a href="https://youtu.be/qbp-RuM4NpU" target="_blank">https://youtu.be/qbp-RuM4NpU</a>.';
 $string['grade'] = 'Qualificació';
 $string['gradeit'] = 'Qualificació';
 $string['grademethod'] = 'Mètode de qualificació';
@@ -121,11 +121,12 @@ $string['settings'] = 'Paràmetres';
 $string['showAlgebraInput'] = 'Mostra la barra d\'introducció';
 $string['showMenuBar'] = 'Mostra la barra de menú';
 $string['showResetIcon'] = 'Mostra la icona de reiniciar la construcció';
-$string['showsubmit'] = 'Mostra el botó d\'entrega';
 $string['showToolBar'] = 'Mostra la barra d\'eines';
 $string['showToolBarHelp'] = 'Mostra l\'ajuda de la barra d\'eines';
+$string['showsubmit'] = 'Mostra el botó d\'entrega';
 $string['status'] = 'Estat';
 $string['submitandfinish'] = 'Entrega i acaba';
+$string['timing'] = 'Temporització';
 $string['total'] = 'Total';
 $string['unfinished'] = 'No finalitzat';
 $string['ungraded'] = 'Sense qualificar';

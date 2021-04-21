@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'turnitintool', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'turnitintool', language 'ca', version '3.9'.
  *
- * @package   turnitintool
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     turnitintool
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,8 +40,8 @@ $string['defaults_desc'] = 'Els valors següents seran els valors predeterminats
 $string['deleteconfirm'] = 'Confirmeu que voleu eliminar aquesta tramesa? Aquesta acció no es pot desfer.';
 $string['deletesubmission'] = 'Elimina la tramesa';
 $string['displaygradesas'] = 'Visualització de qualificacions';
-$string['displaygradesasfraction'] = 'Mostra les qualificacions com una fracció (p. ex.: 89/100)';
 $string['displaygradesas_help'] = 'Aquesta opció estableix el mode de visualització per a les qualificacions. Les opcions són: mostra com un percentatge o mostra com una fracció (p. ex: 45/60).';
+$string['displaygradesasfraction'] = 'Mostra les qualificacions com una fracció (p. ex.: 89/100)';
 $string['displaygradesaspercent'] = 'Mostra les qualificacions com un percentatge (p. ex.: 89%)';
 $string['downloadexport'] = 'Exporta';
 $string['downloadgradexls'] = 'Exportació de la qualificació (XLS)';
@@ -76,6 +76,7 @@ $string['fileupload'] = 'Càrrega de fitxers';
 $string['genduedate'] = 'Genera els informes en la data de venciment';
 $string['genimmediately1'] = 'Genera els informes immediatament; el primer informe és definitiu';
 $string['genimmediately2'] = 'Genera els informes immediatament; els informes es poden sobreescriure fins a la data de venciment';
+$string['genspeednote'] = 'Nota: La generació de l\'informe d\'originalitat per a les repeticions de les trameses està subjecta a un retard de vint-i-quatre hores.';
 $string['institutionalrepository'] = 'Repositori institucional (on sigui aplicable)';
 $string['internetcheck'] = 'Compara amb Internet';
 $string['journalcheck'] = 'Compara amb revistes,<br />diaris i publicacions';
@@ -110,7 +111,6 @@ $string['pseudofirstname'] = 'Pseudonom de l\'estudiant';
 $string['pseudofirstname_desc'] = '<b>[Opcional]</b><br />Nom de l\'estudiant que es mostrarà al visualitzador de documents de Turnitin';
 $string['pseudolastname'] = 'Pseudocognom de l\'estudiant';
 $string['pseudolastname_desc'] = 'El cognom de l\'estudiant que es mostrarà al visualitzador de documents de Turnitin';
-$string['psuedolastnamegen_desc'] = 'Si es configura en Sí i el pseudocognom s\'assigna a un camp de perfil d\'usuari, el camp s\'omplirà automàticament amb un identificador únic.';
 $string['relinkusers'] = 'Torna a enllaçar els usuaris';
 $string['replaceassigndata'] = 'Substitueix les dades de la tasca de Turnitin';
 $string['reportgenspeed_help'] = 'Hi ha tres opcions per configurar aquesta tasca: «Genera els informes immediatament (no es poden repetir les trameses)», «Genera els informes immediatament (es poden repetir les trameses fins a la data de venciment)» i «Genera els informes en la data de venciment (es poden repetir les trameses fins a la data de venciment)»<br /><br />L\'opció «Genera els informes immediatament (no es poden repetir les trameses)» genera l\'Informe de originalitat inmediatament quan un estudiant fa una tramesa. Amb aquesta opció seleccionada, els vostres estudiants no podran repetir la tramesa a la tasca.<br /><br />Per permetre repetir les trameses, seleccioneu l\'opció «Genera els informes immediatament (es poden repetir les trameses fins a la data de venciment)». Aquesta opció permet als estudiants repetir les trameses de treballs a la tasca fins a la data de venciment. El procés dels Informes d\'originalitat en aquest cas pot tardar fins a 24 hores.<br /><br />L\'opció «Genera els informes en la data de venciment (es poden repetir les trameses fins a la data de venciment)» només generarà un Informe d\'originalitat a la data de venciment de la tasca. Aquesta configuració farà que tots els treballs tramesos a la tasca es comparin els uns amb els altres quan es creïn els informes d\'originalitat.';
@@ -128,10 +128,10 @@ $string['sinfo'] = 'S’estan mostrant des de {$a->start} fins a {$a->end} de {$
 $string['spapercheck'] = 'Comprova amb els treballs emmagatzemats dels estudiants';
 $string['spapercheck_help'] = 'Aquest paràmetre permet a l\'instructor seleccionar amb quin repositori de Turnitin s\'han de comparar les trameses dels estudiants quan es processen els informes d\'originalitat dels treballs. És possible que el percentatge de l\'índex de semblança disminueixi si es desactiva aquesta opció.';
 $string['sprocessing'] = 'S\'està processant...';
-$string['studentdataprivacy'] = 'Configuració de privacitat de les dades de l\'estudiant';
-$string['studentnotallowed'] = '<b>Nota:</b> Els estudiants no poden visualitzar els informes d\'originalitat per a aquesta tasca.';
 $string['student_notread'] = 'L\'estudiant no ha visualitzat aquest treball.';
 $string['student_read'] = 'L\'estudiant ha visualitzat el treball a:';
+$string['studentdataprivacy'] = 'Configuració de privacitat de les dades de l\'estudiant';
+$string['studentnotallowed'] = '<b>Nota:</b> Els estudiants no poden visualitzar els informes d\'originalitat per a aquesta tasca.';
 $string['studentreports'] = 'Informes d\'originalitat de l\'estudiant';
 $string['studentreports_help'] = 'Permet mostrar els informes originals dels estudiants usuaris de Turnitin. Si està configurat en Sí, l\'informe original generat per Turnitin estarà disponible perquè l\'estudiant el visualitzi.';
 $string['studentstatus'] = 'Tramès {$a->modified} (Identificació del treball: {$a->objectid})';
@@ -171,9 +171,9 @@ $string['turnitinloading'] = 'S’estan sincronitzant les dades';
 $string['turnitinrefreshsubmissions'] = 'Actualitza les trameses';
 $string['turnitinsecretkey'] = 'Clau compartida de Turnitin';
 $string['turnitintutors'] = 'Tutors de Turnitin';
+$string['turnitintutors_desc'] = 'El tutors seleccionats a sota estan inscrits com a tutors en aquesta classe de Turnitin. Els tutors inscrits poden accedir a aquesta classe iniciant sessió a la pàgina web de Turnitin.';
 $string['turnitintutorsadd'] = 'Afegeix un tutor de Turnitin';
 $string['turnitintutorsallenrolled'] = 'Tots els tutors estan inscrits a Turnitin';
-$string['turnitintutors_desc'] = 'El tutors seleccionats a sota estan inscrits com a tutors en aquesta classe de Turnitin. Els tutors inscrits poden accedir a aquesta classe iniciant sessió a la pàgina web de Turnitin.';
 $string['turnitintutorsremove'] = 'Elimina tutors de Turnitin';
 $string['turnitinuseanon'] = 'Utilitza l\'avaluació anònima';
 $string['turnitinuseanon_desc'] = 'Trieu si permeteu avaluacions anònimes en qualificar les trameses.<br /><i>(Això només està disponible per a aquells que tenen configurada l\'avaluació anònima per al seu compte)</i>';

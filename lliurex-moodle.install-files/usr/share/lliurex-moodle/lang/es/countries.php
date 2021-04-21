@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'countries', language 'es', version '3.9'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,6 @@ $string['AG'] = 'Antigua y Barbuda';
 $string['AI'] = 'Anguila';
 $string['AL'] = 'Albania';
 $string['AM'] = 'Armenia';
-$string['AN'] = 'Antillas Holandesas';
 $string['AO'] = 'Angola';
 $string['AQ'] = 'Antártida';
 $string['AR'] = 'Argentina';
@@ -54,7 +53,8 @@ $string['BJ'] = 'Benin';
 $string['BL'] = 'Saint Barthélemy';
 $string['BM'] = 'Bermuda';
 $string['BN'] = 'Brunei Darussalam';
-$string['BO'] = 'Bolivia';
+$string['BO'] = 'Bolivia (Estado Plurinacional de)';
+$string['BQ'] = 'Bonaire, San Eustaquio y Saba';
 $string['BR'] = 'Brasil';
 $string['BS'] = 'Bahamas';
 $string['BT'] = 'Bután';
@@ -64,7 +64,7 @@ $string['BY'] = 'Bielorrusia';
 $string['BZ'] = 'Belice';
 $string['CA'] = 'Canadá';
 $string['CC'] = 'Islas Cocos';
-$string['CD'] = 'Congo, República Democrática del';
+$string['CD'] = 'Congo (República Democrática del)';
 $string['CF'] = 'República Centroafricana';
 $string['CG'] = 'Congo';
 $string['CH'] = 'Suiza';
@@ -77,6 +77,7 @@ $string['CO'] = 'Colombia';
 $string['CR'] = 'Costa Rica';
 $string['CU'] = 'Cuba';
 $string['CV'] = 'Cabo Verde';
+$string['CW'] = 'Curazao';
 $string['CX'] = 'Islas de Navidad';
 $string['CY'] = 'Chipre';
 $string['CZ'] = 'República Checa';
@@ -96,7 +97,7 @@ $string['ET'] = 'Etiopía';
 $string['FI'] = 'Finlandia';
 $string['FJ'] = 'Fiji';
 $string['FK'] = 'Islas Malvinas';
-$string['FM'] = 'Micronesia';
+$string['FM'] = 'Micronesia ( Estados Federados de)';
 $string['FO'] = 'Islas Faroe';
 $string['FR'] = 'Francia';
 $string['GA'] = 'Gabón';
@@ -113,13 +114,13 @@ $string['GN'] = 'Guinea';
 $string['GP'] = 'Guadalupe';
 $string['GQ'] = 'Guinea Ecuatorial';
 $string['GR'] = 'Grecia';
-$string['GS'] = 'Georgia del Sur e Islas Sandwich del Sur';
+$string['GS'] = 'Georgia del Sur y Las Islas Sandwich del Sur';
 $string['GT'] = 'Guatemala';
 $string['GU'] = 'Guam';
 $string['GW'] = 'Guinea-Bissau';
 $string['GY'] = 'Guyana';
 $string['HK'] = 'Hong Kong';
-$string['HM'] = 'Islas Heard y McDonald';
+$string['HM'] = 'Isla Heard e Islas  McDonald';
 $string['HN'] = 'Honduras';
 $string['HR'] = 'Croacia';
 $string['HT'] = 'Haití';
@@ -131,7 +132,7 @@ $string['IM'] = 'Isla de Man';
 $string['IN'] = 'India';
 $string['IO'] = 'Territorio Británico del Océano Índico';
 $string['IQ'] = 'Irak';
-$string['IR'] = 'Irán';
+$string['IR'] = 'Irán (República Islámica de)';
 $string['IS'] = 'Islandia';
 $string['IT'] = 'Italia';
 $string['JE'] = 'Jersey';
@@ -143,9 +144,9 @@ $string['KG'] = 'Kirguistán';
 $string['KH'] = 'Camboya';
 $string['KI'] = 'Kiribati';
 $string['KM'] = 'Comoras';
-$string['KN'] = 'San Cristóbal Nevis';
-$string['KP'] = 'Corea del Norte';
-$string['KR'] = 'Corea del Sur';
+$string['KN'] = 'San Cristóbal y Nevis';
+$string['KP'] = 'Corea (República Popular Democrática de)';
+$string['KR'] = 'Corea (República de)';
 $string['KW'] = 'Kuwait';
 $string['KY'] = 'Islas Caimán';
 $string['KZ'] = 'Kazajstán';
@@ -159,15 +160,15 @@ $string['LS'] = 'Lesotho';
 $string['LT'] = 'Lituania';
 $string['LU'] = 'Luxemburgo';
 $string['LV'] = 'Latvia';
-$string['LY'] = 'Jamahiriya Árabe Libia';
+$string['LY'] = 'Libia';
 $string['MA'] = 'Marruecos';
 $string['MC'] = 'Mónaco';
-$string['MD'] = 'Moldovia';
+$string['MD'] = 'Moldovia ( República de)';
 $string['ME'] = 'Montenegro';
-$string['MF'] = 'San Martín';
+$string['MF'] = 'San Martín (zona Francesa)';
 $string['MG'] = 'Madagascar';
 $string['MH'] = 'Islas Marshall';
-$string['MK'] = 'Macedonia';
+$string['MK'] = 'Macedonia del Norte';
 $string['ML'] = 'Mali';
 $string['MM'] = 'Myanmar';
 $string['MN'] = 'Mongolia';
@@ -206,7 +207,7 @@ $string['PL'] = 'Polonia';
 $string['PM'] = 'San Pedro y Miquelon';
 $string['PN'] = 'Pitcairn';
 $string['PR'] = 'Puerto Rico';
-$string['PS'] = 'Palestina';
+$string['PS'] = 'Palestina, Estado de';
 $string['PT'] = 'Portugal';
 $string['PW'] = 'Palau';
 $string['PY'] = 'Paraguay';
@@ -222,7 +223,7 @@ $string['SC'] = 'Seychelles';
 $string['SD'] = 'Sudán';
 $string['SE'] = 'Suecia';
 $string['SG'] = 'Singapur';
-$string['SH'] = 'Santa Helena';
+$string['SH'] = 'Santa Elena, Ascensión y Tristán de Acuña';
 $string['SI'] = 'Eslovenia';
 $string['SJ'] = 'Islas Svalbard y Jan Mayen';
 $string['SK'] = 'Eslovaquia';
@@ -231,8 +232,10 @@ $string['SM'] = 'San Marino';
 $string['SN'] = 'Senegal';
 $string['SO'] = 'Somalía';
 $string['SR'] = 'Surinam';
+$string['SS'] = 'Sudán del Sur';
 $string['ST'] = 'Santo Tomé y Príncipe';
 $string['SV'] = 'El Salvador';
+$string['SX'] = 'San Martín (Parte Holandesa)';
 $string['SY'] = 'Siria';
 $string['SZ'] = 'Swazilandia';
 $string['TC'] = 'Islas Turcas y Caicos';
@@ -250,7 +253,7 @@ $string['TR'] = 'Turquía';
 $string['TT'] = 'Trinidad y Tobago';
 $string['TV'] = 'Tuvalu';
 $string['TW'] = 'Taiwán';
-$string['TZ'] = 'Tanzania';
+$string['TZ'] = 'Tanzania, República Unida de';
 $string['UA'] = 'Ucrania';
 $string['UG'] = 'Uganda';
 $string['UM'] = 'United States Minor Outlying Islands';
@@ -259,7 +262,7 @@ $string['UY'] = 'Uruguay';
 $string['UZ'] = 'Uzbekistan';
 $string['VA'] = 'El Vaticano';
 $string['VC'] = 'San Vincente y Las Granadinas';
-$string['VE'] = 'Venezuela';
+$string['VE'] = 'Venezuela (República Bolivariana de)';
 $string['VG'] = 'Islas Vírgenes (Británícas)';
 $string['VI'] = 'Islas Vírgenes (Americanas)';
 $string['VN'] = 'Vietnam';

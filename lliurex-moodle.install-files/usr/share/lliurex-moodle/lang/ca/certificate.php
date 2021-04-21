@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'certificate', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'certificate', language 'ca', version '3.9'.
  *
- * @package   certificate
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     certificate
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,11 +42,14 @@ $string['borderlines'] = 'Línies';
 $string['borderstyle'] = 'Imatge de vora';
 $string['borderstyle_help'] = 'L\'opció d\'imatge de vora us permet triar una imatge de vora de la carpeta certificate/pix/borders. Seleccioneu la imatge de vora que voleu a les vores del certificat o seleccioneu sense vora.';
 $string['certificate'] = 'Verificació de codi de certificat:';
-$string['certificate:manage'] = 'Gestiona certificat';
+$string['certificate:addinstance'] = 'Afegir una instància de certificat';
+$string['certificate:manage'] = 'Gestiona una instància de certificat';
+$string['certificate:printteacher'] = 'Aparèixer com a professor en el certificat si l\'opció «imprimir professor» es troba activada';
+$string['certificate:student'] = 'Recupera un certificat';
+$string['certificate:view'] = 'Veure un certificat';
 $string['certificatename'] = 'Nom del certificat';
 $string['certificatereport'] = 'Informe de certificats';
 $string['certificatesfor'] = 'Certificats per';
-$string['certificate:student'] = 'Obté certificat';
 $string['certificatetype'] = 'Tipus de certificat';
 $string['certificatetype_help'] = 'Aquí és on es determina la disposició del certificat. La carpeta tipus de certificat inclou quatre certificats per defecte:
 «A4 Embedded» imprimeix en paper de mida A4 amb fonts incrustades.
@@ -57,13 +60,14 @@ A4 Non-Embedded» Imprimeix en paper de mida A4 sense fonts incrustades.
 Els tipus «sense fonts incrustades» utilitzen les fonts Helvetica i Times. Si creieu que els vostres usuaris no tindran aquestes fonts en el seu equip o si el seu vostre utilitza caràcters o símbols que no estan inclosos a les fonts Helvetica i Times, aleshores escolliu un tipus amb fonts incrustades. Aquests darrers utilitzen les fonts DejaVuSans i DejaVuSerif. Això farà que l\'arxiu pdf sigui bastant més gran; per aquest motiu no es recomana l\'ús d\'un tipus incrustat llevat que que sigui realment necessari.
 
 Es poden afegir noves carpetes amb tipus a la carpeta certificate/type. El nom de la carpeta i les noves cadenes d\'idioma per al nou tipus s\'han d\'agregar a l\'arxiu d\'idioma del certificat.';
-$string['certificate:view'] = 'Visualitza el certificat';
 $string['certify'] = 'Aquest document certifica que';
 $string['code'] = 'Codi';
 $string['completiondate'] = 'Compleció del curs';
 $string['course'] = 'Per';
 $string['coursegrade'] = 'Qualificació del curs';
 $string['coursename'] = 'Curs';
+$string['coursetimereq'] = 'Minuts obligatoris en el curs';
+$string['coursetimereq_help'] = 'Introduïu aquí la quantitat mínima de temps, en minuts, que l\'estudiant ha d\'estar inscrit al curs abans que pugui rebre el certificat.';
 $string['credithours'] = 'Hores de crèdit';
 $string['customtext'] = 'Text personalitzat';
 $string['customtext_help'] = 'Si voleu que el certificat imprimeixi diferents noms per al professor que els que tenen assignats en el rol de professor, no seleccioneu l\'opció «Imprimir Professor» ni cap imatge de signatura excepte l\'opció «línia».  Escriviu els noms dels professors en aquest quadre de text tal com voleu que apareguin.  Per defecte, aquest text es col·loca en la part inferior esquerra del certificat. Les següents etiquetes HTML estan disponibles: <br>, <p>, <b>, <i>, <u>, <img> (els paràmetres «src» i «width» (o «height») són obligatoris), <a> (href és obligatori), <font> (alguns possibles atributs són: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).';
@@ -80,6 +84,7 @@ Per correu electrònic: En triar aquesta opció s\'enviarà el certificat a l\'e
 Quan un usuari rep el certificat, si fan clic a l\'enllaç del certificat de la pàgina principal del curs, veurà la data en què va rebre el seu certificat i podrà revisar el certificat que ha rebut.';
 $string['designoptions'] = 'Opcions de disseny';
 $string['download'] = 'Força la descàrrega';
+$string['emailcertificate'] = 'Correu electrònic';
 $string['emailothers'] = 'Envia correu-e a tercers';
 $string['emailothers_help'] = 'Introduïu les adreces de correu electrònic aquí, separades per una coma, dels qui han de ser avisats amb un correu electrònic cada vegada que els estudiants reben un certificat.';
 $string['emailstudenttext'] = 'Trobareu adjunt el vostre certificat de {$a->course}.';
@@ -98,6 +103,10 @@ Podeu revisar-lo aquí:
 $string['emailteachers'] = 'Envia correu-e als professors';
 $string['emailteachers_help'] = 'Si està habilitat, llavors els professors són alertats amb un correu electrònic cada vegada que els estudiants reben un certificat.';
 $string['entercode'] = 'Introdueix el codi de certificat per verificar:';
+$string['fontsans'] = 'Família de tipus de lletra Sans-serif';
+$string['fontsans_desc'] = 'Família de tipus de lletra Sans-serif per als certificats amb fonts incrustades';
+$string['fontserif'] = 'Família de tipus de lletra Serif';
+$string['fontserif_desc'] = 'Família de tipus de lletra Serif per als certificats amb fonts incrustades';
 $string['getcertificate'] = 'Descarregueu el vostre certificat';
 $string['grade'] = 'Qualificació';
 $string['gradedate'] = 'Data de la qualificació';
@@ -110,6 +119,7 @@ Qualificació en text: Imprimeix el percentatge de la qualificació com una llet
 $string['gradeletter'] = 'Qualificació en text';
 $string['gradepercent'] = 'Qualificació en percentatge';
 $string['gradepoints'] = 'Qualificació en punts';
+$string['imagetype'] = 'Tipus d\'imatge';
 $string['incompletemessage'] = 'Per descarregar el vostre certificat, heu de completar primer totes les activitats requerides. Si us plau torneu al curs per completar les feines del curs.';
 $string['intro'] = 'Introducció';
 $string['issued'] = 'Emès';
@@ -125,6 +135,7 @@ $string['mycertificates'] = 'Els meus certificats';
 $string['nocertificates'] = 'No hi ha certificats';
 $string['nocertificatesissued'] = 'No hi ha certificats que s\'hagin emès';
 $string['nocertificatesreceived'] = 'no s\'ha rebut cap certificat del curs.';
+$string['nofileselected'] = 'Heu de triar un arxiu per carregar!';
 $string['nogrades'] = 'No hi ha qualificacions disponibles';
 $string['notapplicable'] = 'N/D';
 $string['notfound'] = 'El número del certificat podria no estar validat.';
@@ -166,11 +177,16 @@ $string['removecert'] = 'Certificats emesos eliminats';
 $string['report'] = 'Informe';
 $string['reportcert'] = 'Informa dels certificats';
 $string['reportcert_help'] = 'Si escolliu sí, aleshores la data de recepció d\'aquest certificat, número de codi, i el nom del curs apareixeran en els informes del certificat d\'usuari. Si decidiu imprimir una qualificació en aquest certificat, llavors aquesta qualificació també es mostrarà en l\'informe certificat';
+$string['requiredtimenotmet'] = 'Heu de passar almenys un mínim de {$a->requiredtime} minuts en el curs abans de poder accedir a aquest certificat';
+$string['requiredtimenotvalid'] = 'El temps que es requereix ha de ser un número vàlid més gran que 0';
 $string['reviewcertificate'] = 'Comproveu el vostre certificat';
 $string['savecert'] = 'Desa els certificats';
 $string['savecert_help'] = 'Si trieu aquesta opció, aleshores es guardarà una còpia del fitxer pdf del certificat de cada usuari en l\'espai de fitxers del certificat. En l\'informe dels certificats es mostrarà un enllaç a cada certificat d\'usuari guardat.';
+$string['seal'] = 'Segell';
 $string['sigline'] = 'línia';
+$string['signature'] = 'Signatura';
 $string['statement'] = 'ha completat el curs';
+$string['summaryofattempts'] = 'Resum dels certificats rebuts prèviament';
 $string['textoptions'] = 'Opcions de text';
 $string['title'] = 'CERTIFICAT D\'ASSOLIMENT';
 $string['to'] = 'Es concedeix a';
@@ -178,9 +194,13 @@ $string['typeA4_embedded'] = 'A4 incrustades';
 $string['typeA4_non_embedded'] = 'A4 No-incrustades';
 $string['typeletter_embedded'] = 'Carta incrustades';
 $string['typeletter_non_embedded'] = 'Carta No-incrustades';
+$string['unsupportedfiletype'] = 'El fitxer ha de ser un fitxer jpeg o png';
+$string['uploadimage'] = 'Puja una imatge';
+$string['uploadimagedesc'] = 'Aquest botó us portarà a una nova pantalla des d\'on podreu pujar imatges.';
 $string['userdateformat'] = 'Format de la data en l\'idioma de l\'usuari';
 $string['validate'] = 'Verifica';
 $string['verifycertificate'] = 'Verifica un certificat';
 $string['viewcertificateviews'] = 'Veure {$a} certificats emesos';
 $string['viewed'] = 'Heu rebut aquest certificat el:';
 $string['viewtranscript'] = 'Veure els certificats';
+$string['watermark'] = 'Marca d\'aigua';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,106 +12,152 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism_turnitin', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'plagiarism_turnitin', language 'ca', version '3.9'.
  *
- * @package   plagiarism_turnitin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plagiarism_turnitin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminlogin'] = 'Entreu a Turnitin com a administrador';
+$string['allownonor'] = 'Voleu permetre que es trameti qualsevol tipus de fitxer?';
+$string['allownonor_help'] = 'Aquest paràmetre permet trametre qualsevol tipus de fitxer. Si aquesta opció es configura com a «Sí», en la mesura que es pugui, es comprovarà l\'originalitat de les trameses; aquestes es podran descarregar, i es podrà disposar de les eines de comentaris GradeMark.';
+$string['anonblindmarkingnote'] = 'Nota: S\'ha suprimit el paràmetre de qualificació anònima propi de Turnitin. Turnitin emprarà el paràmetre de qualificació a cegues per determinar el paràmetre de qualificació anònima.';
+$string['attachrubric'] = 'Adjunta una rúbrica a aquesta tasca';
+$string['attachrubricnote'] = 'Nota: els estudiants podran visualitzar les rúbriques adjuntes i el seu contingut abans de trametre els seus treballs.';
+$string['because'] = 'El motiu d\'això va ser que un administrador va esborrar la tasca pendent de la cua de processament i va interrompre la tramesa a Turnitin.<br /><strong>El fitxer encara existeix a Moodle; contacteu amb el vostre instuctor.</strong><br />Per a qualssevol errors de codi, vegeu el següent:';
+$string['changerubricwarning'] = 'El fet de canviar o eliminar una rúbrica esborrarà totes les puntuacions de rúbrica existents dels treballs d\'aquesta tasca, incloses les puntuacions que ja s\'hagin anotat. Es conservaran les notes globals dels treballs que ja s\'havien qualificat.';
+$string['checkagainstnote'] = 'Nota: Si no seleccioneu «Sí» a almenys una de les opcions «Comprova amb...» que apareixen tot seguit, NO es generarà un informe d\'originalitat.';
+$string['closebutton'] = 'Tanca';
+$string['code'] = 'Codi';
 $string['compareinstitution'] = 'Compara els fitxers tramesos amb els treballs tramesos dins d\'aquesta institució';
-$string['compareinstitution_help'] = 'Aquesta opció només està disponible si heu instal·lat/comprat un node personalitzat. Si no n\'esteu segurs, deixeu "No".';
-$string['compareinternet'] = 'Compareu els arxius enviats amb Internet';
-$string['compareinternet_help'] = 'Aquesta opció permet comparar els enviaments amb el contingut d\'Internet que Turnitin té catalogat actualment';
-$string['comparejournals'] = 'Compareu els arxius enviats amb els diaris, revistes, publicacions';
-$string['comparejournals_help'] = 'Aquesta opció permet comparar els enviaments amb revistes, diaris i publicacions que Turnitin té catalogat actualment';
-$string['comparestudents'] = 'Compareu els arxius enviats amb els arxius d\'altres estudiants';
-$string['comparestudents_help'] = 'Aquesta opció permet comparar els enviaments amb arxius d\'altres estudiants';
-$string['configdefault'] = 'Es tracta d\'un valor predeterminat per a la pàgina de creació de l\'assignació. Només els usuaris amb els drets de plagiarism/ turnitin: enableturnitin poden canviar aquesta configuració per a una tramesa en particular';
-$string['configusetiimodule'] = 'Activeu l\'enviament de Turnitin.';
+$string['config'] = 'Configuració';
+$string['configupdated'] = 'S\'ha actualitzat la configuració';
+$string['course'] = 'Curs';
+$string['cronsubmittedsuccessfully'] = 'La tramesa: {$a->title} (TII ID: {$a->submissionid}) per a la tasca {$a->assignmentname} al curs {$a->coursename} s\'ha tramès correctament a Turnitin.';
+$string['defaults'] = 'Configuració per defecte';
 $string['defaultsdesc'] = 'Els paràmetres següents són els paràmetres predeterminats quan s\'habilita Turnitin dins d\'un mòdul d\'activitat';
 $string['defaultupdated'] = 'S\'han actualitzat els paràmetres predeterminats de Turnitin';
-$string['draftsubmit'] = 'Quan l\'arxiu s\'hagi d\'enviar a Turnitin';
-$string['excludebiblio'] = 'Excloeu bibliografia';
+$string['deleteconfirm'] = 'Confirmeu que voleu eliminar aquesta tramesa? Aquesta acció no es pot desfer.';
+$string['deleted'] = 'Suprimit';
+$string['deletesubmission'] = 'Elimina la tramesa';
+$string['digital_receipt_subject'] = 'Aquest és el vostre rebut digital de Turnitin';
+$string['digitalreceipt'] = 'Rebut digital';
+$string['draftsubmit'] = 'Quan s\'hauria de trametre el fitxer a Turnitin?';
+$string['erater'] = 'Activa la revisió ortogràfica d\'e-rater';
+$string['erater_categories'] = 'Categories d\'e-rater';
+$string['erater_dictionary'] = 'Diccionari d\'e-rater';
+$string['erater_dictionary_en'] = 'Diccionaris d\'anglès tant dels EUA com del Regne Unit';
+$string['erater_dictionary_engb'] = 'Diccionari d\'anglès del Regne Unit';
+$string['erater_dictionary_enus'] = 'Diccionari d\'anglès dels Estats Units';
+$string['erater_grammar'] = 'Gramàtica';
+$string['erater_handbook'] = 'Manual d\'ETS&copy';
+$string['erater_handbook_advanced'] = 'Avançat';
+$string['erater_handbook_elementary'] = 'Escola primària';
+$string['erater_handbook_highschool'] = 'Escola secundària';
+$string['erater_handbook_learners'] = 'Estudiants d\'anglès';
+$string['erater_handbook_middleschool'] = 'Escola intermèdia';
+$string['erater_mechanics'] = 'Mecànica';
+$string['erater_spelling'] = 'Ortografia';
+$string['erater_style'] = 'Estil';
+$string['erater_usage'] = 'Ús';
+$string['errorcode0'] = 'Aquest fitxer no s\'ha tramès a Turnitin. Consulteu el vostre administrador del sistema';
+$string['errorcode1'] = 'Aquest fitxer no s\'ha enviat a Turnitin, ja que no té prou contingut perquè Turnitin pugui produir un informe d\'originalitat.';
+$string['errorcode2'] = 'Aquest fitxer no es trametrà a Turnitin, ja que sobrepassa la mida màxima permesa de {$a}';
+$string['errorcode3'] = 'Aquest fitxer no s\'ha tramès a Turnitin perquè l\'usuari no ha acceptat el contracte de llicència per a l\'usuari final de Turnitin.';
+$string['errorcode4'] = 'Heu de penjar un tipus de fitxer acceptat per a aquesta tasca. Els tipus de fitxers acceptats són els següents: .doc, .docx, .ppt, .pptx, .pps, .ppsx, .pdf, .txt, .htm, .html, .hwp, .odt, .wpd, .ps i .rtf';
+$string['errorcode5'] = 'Aquest fitxer no s\'ha tramès a Turnitin perquè hi ha un problema, quan es crea el mòdul a Turnitin, que està bloquejant les trameses. Per a més informació, consulteu els vostres registres API.';
+$string['errorcode6'] = 'Aquest fitxer no s\'ha tramès a Turnitin perquè hi ha un problema, quan s\'editen els paràmetres del mòdul a Turnitin, que està bloquejant les trameses. Per a més informació, consulteu els vostres registres API.';
+$string['errorcode7'] = 'Aquest fitxer no s\'ha tramès a Turnitin perquè hi ha un problema, quan es crea l\'usuari a Turnitin, que està bloquejant les trameses. Per a més informació, consulteu els vostres registres API.';
+$string['errorcode8'] = 'Aquest fitxer no s\'ha tramès a Turnitin perquè hi ha un problema quan es crea el fitxer temporal. La causa més probable n\'és un nom de fitxer no vàlid. Torneu a anomenar el fitxer i torneu a penjar-lo emprant Edita la tramesa.';
+$string['errorcode9'] = 'No s\'ha pogut trametre el fitxer, ja que no hi ha contingut accessible a la pila de fitxers per enviar.';
+$string['excludebiblio'] = 'Exclou la bibliografia';
 $string['excludebiblio_help'] = 'El material bibliogràfic també es pot incloure i excloure en el moment de visualitzar l\'Informe d\'originalitat. Aquest paràmetre ja no es pot  modificar després de rebre la primera tramesa.';
-$string['excludematches'] = 'Excloeu partides petites';
-$string['excludematches_help'] = 'Podeu excloure les partides petites per percentatge o per quantitat de paraules - Seleccioneu el tipus que voleu utilitzar i introduïu el percentatge o el nombre de paraules en el quadre de sota.';
-$string['excludequoted'] = 'Excloeu el material esmentat';
+$string['excludepercent'] = 'Percentatge';
+$string['excludequoted'] = 'Exclou el material citat';
 $string['excludequoted_help'] = 'Els materials esmentats també es poden incloure i excloure en el moment de visualitzar l\'Informe d\'originalitat. Aquest paràmetre ja no es pot  modificar després de rebre la primera tramesa.';
-$string['file'] = 'Arxiu';
-$string['filedeleted'] = 'Arxiu esborrat de la cua';
-$string['fileresubmitted'] = 'Arxiu a l\'espera de ser tramès de nou';
+$string['excludevalue'] = 'Exclou les equivalències petites';
+$string['excludewords'] = 'Paraules';
+$string['faultcode'] = 'Codi d\'error';
+$string['filedoesnotexist'] = 'S\'ha eliminat el fitxer';
+$string['genduedate'] = 'Genera els informes en la data de venciment (es poden repetir les trameses fins a la data de venciment)';
+$string['genimmediately1'] = 'Genera els informes immediatament (no es poden repetir les trameses)';
+$string['genimmediately2'] = 'Genera els informes immediatament (els estudiants poden repetir les trameses fins a la data de venciment): Després de {$a->num_resubmissions} repeticions de les trameses, els informes es generen després de {$a->num_hours} hores';
+$string['id'] = 'Identificador';
+$string['institutionalrepository'] = 'Repositori institucional (on sigui aplicable)';
+$string['internetcheck'] = 'Compara amb Internet';
+$string['journalcheck'] = 'Compara amb revistes,<br />diaris i publicacions';
+$string['launchpeermarkmanager'] = 'Inicia el gestor Peermark';
+$string['launchpeermarkreviews'] = 'Inicia les revisions Peermark';
+$string['launchquickmarkmanager'] = 'Inicia el gestor Quickmark';
+$string['launchrubricmanager'] = 'Inicia el gestor de rúbriques';
+$string['launchrubricview'] = 'Mostra la rúbrica que s\'ha utilitzat per posar-hi les notes';
+$string['line'] = 'Línia';
+$string['loadingdv'] = 'S\'està carregant el visualitzador de documents de Turnitin...';
+$string['locked_message'] = 'Missatge bloquejat';
+$string['locked_message_default'] = 'Aquest paràmetre està bloquejat al nivell del lloc';
+$string['message'] = 'Missatge';
+$string['messageprovider:submission'] = 'Notificacions del rebut digital del connector de prevenció de plagi de Turnitin';
 $string['module'] = 'Mòdul';
-$string['name'] = 'Nom';
-$string['percentage'] = 'Percentatge';
+$string['norepository'] = 'Sense repositori';
+$string['norubric'] = 'Sense rúbrica';
+$string['noscriptula'] = '(Com que no teniu habilitat JavaScript, haureu d\'actualitzar aquesta pàgina manualment abans de poder fer una tramesa després d\'acceptar l\'acord d\'usuari de Turnitin)';
+$string['notavailableyet'] = 'No disponible';
+$string['notorcapable'] = 'No és possible produir un informe d\'originalitat per a aquest fitxer.';
+$string['otherrubric'] = 'Utilitza la rúbrica que pertany a un altre instructor';
+$string['pending'] = 'Pendent';
 $string['pluginname'] = 'Connector de plagi de Turnitin';
-$string['reportgen'] = 'Quan volgueu generar els informes d\'originalitat';
-$string['reportgenduedate'] = 'En la data de venciment';
-$string['reportgen_help'] = 'Aquesta opció us permet triar quan voleu que es generi l\'Informe d\'originalitat';
-$string['reportgenimmediate'] = 'Immediatament (el primer informe és definitiu)';
-$string['reportgenimmediateoverwrite'] = 'Immediatament (pot sobreescriure altres informes)';
-$string['resubmit'] = 'Torneu a enviar';
-$string['savedconfigfailure'] = 'No es pot connectar / autenticar Turnitin -potser la vostra clau secreta/Compte combinació d\'ID és incorrecta o bé el servidor no pot connectar-se a l\'API';
-$string['savedconfigsuccess'] = 'La configuració de Turnitin s\'ha guardat, i s\'ha creat el compte del professor';
-$string['showstudentsreport'] = 'Mostra l\'Informe de similitud a l\'estudiant';
-$string['showstudentsreport_help'] = 'L\'informe de similitud presenta un desglossament de quines parts de la tramesa són plagi i a quin lloc Turnitin ha detectat per primera vegada aquest contingut';
-$string['showstudentsscore'] = 'Mostra el percentatge de similitud als estudiants';
-$string['showstudentsscore_help'] = 'El percentatge de similitud és el percentatge de la tramesa que ha estat aparellat amb un altre contingut - un pecentatge alt és generalment negatiu.';
-$string['showwhenclosed'] = 'Quan l\'activitat està tancada';
+$string['pp_digital_receipt_message'] = '{$a->firstname} {$a->lastname},<br /><br />Heu tramès correctament el fitxer <strong>{$a->submission_title}</strong> a la tasca <strong>{$a->assignment_name}{$a->assignment_part}</strong> a la classe <strong>{$a->course_fullname}</strong> el <strong>{$a->submission_date}</strong>. L\'identificador de la vostra tramesa és <strong>{$a->submission_id}</strong>. Podeu visualitzar el vostre rebut digital complet i imprimir-lo amb el botó imprimeix/descarrega al visualitzador del document.<br /><br />Gràcies per emprar Turnitin,<br /><br />L\'equip de Turnitin';
+$string['pp_submission_error'] = 'Turnitin ha tornat un error amb la vostra tramesa:';
+$string['ppcronsubmissionlimitreached'] = 'No s\'enviarà cap altra tramesa a Turnitin a través d\'aquesta execució de cron, ja que només {$a} es processen per execució';
+$string['pperrorsdesc'] = 'Hi ha hagut un problema en intentar carregar els fitxers següents a Turnitin. Per repetir la tramesa, seleccioneu els fitxers que voleu tornar a trametre i feu clic al botó de tornar a trametre. Aquests es processaran la pròxima vegada que s\'executi cron.';
+$string['pperrorsfail'] = 'Hi va haver un problema amb alguns dels fitxers que vau seleccionar. No s\'ha pogut crear un esdeveniment cron nou per a aquests.';
+$string['pperrorssuccess'] = 'Els fitxers que heu seleccionat s\'han tornat a trametre i seran processats pel cron.';
+$string['ppeventsfailedconnection'] = 'No es processarà cap esdeveniment a través del connector de detecció de plagi de Turnitin mitjançant aquesta execució de cron, ja que no es pot establir una connexió amb Turnitin.';
+$string['ppqueuesize'] = 'Nombre d\'esdeveniments a la cua d\'esdeveniments del connector de detecció de plagi';
+$string['ppsubmissionerrorseelogs'] = 'Aquest fitxer no s\'ha tramès a Turnitin. Consulteu el vostre administrador del sistema';
+$string['reportgenspeed'] = 'Velocitat de la generació d\'informes';
+$string['resubmitselected'] = 'Torna a trametre els fitxers seleccionats';
+$string['resubmitting'] = 'S\'està tornant a trametre';
+$string['resubmittoturnitin'] = 'Torna a trametre a Turnitin';
+$string['saveusage'] = 'Desa la descàrrega de dades';
+$string['semptytable'] = 'No s\'ha trobat cap resultat.';
+$string['sharedrubric'] = 'Rúbrica compartida';
+$string['showusage'] = 'Mostra la descàrrega de dades';
 $string['similarity'] = 'Semblança';
-$string['status'] = 'Estat';
-$string['studentdisclosure'] = 'Revelació de l\'estudiant';
-$string['studentdisclosuredefault'] = 'Tots els fitxers enviats es presentaran al servei de detecció de plagi Turnitin.com';
-$string['studentdisclosure_help'] = 'Aquest text es mostrarà a tots els estudiants a la pàgina de càrrega d\'arxius.';
+$string['spapercheck'] = 'Comprova amb els treballs emmagatzemats dels estudiants';
+$string['standardrepository'] = 'Repositori estàndard';
+$string['student'] = 'Estudiant';
+$string['student_notread'] = 'L\'estudiant no ha visualitzat aquest treball.';
+$string['student_read'] = 'L\'estudiant ha visualitzat el treball a:';
+$string['studentdataprivacy'] = 'Configuració de privacitat de les dades de l\'estudiant';
+$string['studentreports'] = 'Mostra els informes d\'originalitat als estudiants';
+$string['studentreports_help'] = 'Permet mostrar els informes originals dels estudiants usuaris de Turnitin. Si està configurat en Sí, l\'informe original generat per Turnitin estarà disponible perquè l\'estudiant el visualitzi.';
 $string['submitondraft'] = 'Tramet el fitxer quan es carregui per primera vegada';
 $string['submitonfinal'] = 'Tramet el fitxer quan l\'estudiant l\'enviï per qualificar';
-$string['teacherlogin'] = 'Entreu a Turnitin com a professor';
-$string['tii'] = 'Turnitin';
-$string['tiiaccountid'] = 'Número de compte de Turnitin';
-$string['tiiaccountid_help'] = 'Aquest és el seu número de compte d\'acord amb el que disposa Turnitin.com';
-$string['tiiapi'] = 'API de Turnitin';
-$string['tiiapi_help'] = 'Aquesta és la direcció de l\'API  de Turnitin - generalment https://api.turnitin.com/api.asp';
-$string['tiiconfigerror'] = 'S\'ha produït un error de configuració del lloc quan s\'intentava enviar l\'arxiu a Turnitin';
-$string['tiiemailprefix'] = 'Prefix de correu electrònic de l\'estudiant';
-$string['tiiemailprefix_help'] = 'Heu d\'establir aquesta opció si no voleu que els alumnes puguin entrar a turnitin.com i veure els informes complets.';
-$string['tiienablegrademark'] = 'Activar GradeMark (Experimental)';
-$string['tiienablegrademark_help'] = 'GradeMark és una característica opcional de Turnitin - per poder utilitzar-la l\'heu d\'haver inclòs en la vostra subscripció a Turnitin. Si l\'activeu farà que la visualització de les pàgines enviades es carregui més lentament.';
-$string['tiierror'] = 'Error de TII :';
-$string['tiierror1007'] = 'Turnitin no ha pogut processar aquest fitxer, ja que és massa gran';
-$string['tiierror1008'] = 'S\'ha produït un error en intentar enviar l\'arxiu a Turnitin';
-$string['tiierror1009'] = 'Turnitin no ha pogut processar aquest fitxer - és un tipus de fitxer no compatible. El tipus de fitxers vàlids són MS Word, PDF Acrobat, PostScript, Text, HTML, WordPerfect i format de text enriquit';
-$string['tiierror1010'] = 'Turnitin no ha pogut processar aquest fitxer - ha de contenir més de 100 caràcters sense espai en blanc';
-$string['tiierror1011'] = 'Turnitin  no ha pogut processar aquest fitxer - té un format incorrecte i sembla que hi ha espais entre cada lletra.';
-$string['tiierror1012'] = 'Turnitin no ha pogut processar aquest fitxer - la seva longitud supera els límits de Turnitin';
-$string['tiierror1013'] = 'Turnitin no ha pogut processar aquest fitxer - ha de contenir més de 20 paraules';
-$string['tiierror1020'] = 'Turnitin no ha pogut processar aquest fitxer - conté caràcters d\'un conjunt de caràcters que no és compatible';
-$string['tiierror1023'] = 'Turnitin no ha pogut processar aquest pdf - assegureu-vos que no està protegit i que conté text seleccionable en comptes d\'imatges escanejades';
-$string['tiierror1024'] = 'Turnitin no ha pogut processar aquest fitxer -no compleix els criteris de Turnitin com a document legítim';
-$string['tiierrorpaperfail'] = 'Turnitin no ha pogut processar aquest fitxer';
-$string['tiierrorpending'] = 'Fitxer pendent de ser enviat a Turnitin';
-$string['tiiexplain'] = 'Turnitin és un producte comercial i heu de tenir una quota de subscripció per utilitzar aquest servei; si voleu més informació, visiteu <a href="http://docs.moodle.org/en/Turnitin_administration">http://docs.moodle.org/en/Turnitin_administration</a>';
-$string['tiiexplainerrors'] = 'Aquesta pàgina enumera tots els fitxers enviats a Turnitin que estan actualment en un estat d\'error.Trobareu un llistat dels codis d\'error Turnitin i la seva descripció a: <a href="http://docs.moodle.org/en/Turnitin_errors"> docs.moodle.org / ca / Turnitin_errors </ a> <br/>Quan els fitxers es restableixen, el cron intenta tornar a enviar el fitxer a Turnitin <br/>Quan s\'eliminen els fitxers d\'aquesta pàgina ja no es poden tornar a enviar a Turnitin i els errors ja no es tornen a mostrar als professors ni als alumnes';
-$string['tiisecretkey'] = 'Clau Secreta de Turnitin';
-$string['tiisecretkey_help'] = 'Per obenir-ho, entra a Turnitin.com com a administrador de la pàgina.';
-$string['tiisenduseremail'] = 'Envieu el correu electrònic de l\'usuari';
-$string['tiisenduseremail_help'] = 'Envieu el correu electrònic a cada estudiant en el sistema TII amb un enllaç que permet entrar a www.turnitin.com amb una contrasenya temporal';
+$string['submitpapersto'] = 'Emmagatzema els treballs dels estudiants';
+$string['submitpapersto_help'] = 'Aquest paràmetre permet als instructors seleccionar quins treballs s\'emmagatzemen al repositori de treballs d\'estudiants de Turnitin. L\'avantatge d\'enviar treballs al repositori de treballs d\'estudiants és que els treballs vinculats a la tasca es compararan amb les tasques d\'altres estudiants dins les classes actuals i anteriors. Si heu seleccionat «sense repositori», els treballs dels estudiants no s\'emmagatzemaran al repositori de treballs d\'estudiants.';
+$string['tii_submission_failure'] = 'Consulteu el vostre tutor o administrador de Moodle per a més detalls';
+$string['tiiexplain'] = 'Turnitin és un producte comercial, i per poder utilitzar-lo heu d\'haver pagat la subscripció al servei. Si voleu obtenir-ne més informació, consulteu <a href=http://docs.moodle.org/en/Turnitin_administration>http://docs.moodle.org/en/Turnitin_administration</a>';
+$string['tiisubmissionsgeterror'] = 'S\'ha produït un error en intentar obtenir les trameses per a aquesta tasca de Turnitin';
+$string['transmatch'] = 'Coincidències traduïdes';
 $string['turnitin'] = 'Turnitin';
-$string['turnitin_attemptcodes'] = 'Codis d\'error per tornar a enviar automàticament';
-$string['turnitin_attemptcodes_help'] = 'Els codis d\'error que Turnitin  generalment accepta en un segon intent (els canvis en aquest camp poden suposar una càrrega addicional al servidor)';
-$string['turnitin_attempts'] = 'Número de reintents';
-$string['turnitin_attempts_help'] = 'Número de vegades que els codis especificats es tornen a enviar a Turnitin, 1 intent vol dir que els  fitxers amb els codis d\'error que s\'especifiquen s\'enviaran dues vegades.';
-$string['turnitindefaults'] = 'Valors predeterminats de Turnitin';
 $string['turnitin:enable'] = 'Permet al professor activar / desactivar Turnitin dins d\'un mòdul';
-$string['turnitinerrors'] = 'Errors de Turnitin';
-$string['turnitin_institutionnode'] = 'Permetre el node de la institució';
-$string['turnitin_institutionnode_help'] = 'Si heu instal·lat/comprat un node de la institució amb el vostre compte, activeu aquesta opció perquè el node es seleccioni en crear les tasques. NOTA: si no teniu un node de la institució, si activeu aquesta opció farà que falli l\'enviament de treballs.';
 $string['turnitin:viewfullreport'] = 'Permet que el professor pugui veure l\'informe complet generat per Turnitin';
-$string['turnitin:viewsimilarityscore'] = 'Permet que el professor pugui veure el percentatge de similitud generat per Turnitin';
+$string['turnitinconfig'] = 'Configuració del complement de plagi de Turnitin';
+$string['turnitindefaults'] = 'Paràmetres predeterminats del complement de plagi de Turnitin';
+$string['turnitindeletionerror'] = 'L\'eliminació de trameses de Turnitin ha fallat. La còpia local de Moodle ha estat eliminada, però no ha estat possible eliminar la tramesa a Turnitin.';
+$string['turnitinid'] = 'Identificador de Turnitin';
+$string['turnitinpluginsettings'] = 'Paràmetres del complement de plagi de Turnitin';
+$string['turnitinppulapost'] = 'El vostre fitxer no s’ha tramès a Turnitin. Feu clic aquí per acceptar el nostre acord de llicència d’usuari final (<em>EULA</em>).';
+$string['turnitinppulapre'] = 'Per trametre un fitxer a Turnitin primer heu d’acceptar el nostre acord de llicència d’usuari final (<em>EULA</em>). Si escolliu no acceptar el nostre acord de llicència d’usuari final, el vostre fitxer només es trametrà a Moodle. Feu clic aquí per acceptar.';
+$string['turnitinrefreshingsubmissions'] = 'S\'estan actualitzant les trameses';
+$string['turnitinrefreshsubmissions'] = 'Actualitza les trameses';
+$string['turnitinstatus'] = 'Estat de Turnitin';
 $string['useturnitin'] = 'Habilita Turnitin';
-$string['wordcount'] = 'Recompte de paraules';
+$string['useturnitin_mod'] = 'Habilita Turnitin per {$a}';

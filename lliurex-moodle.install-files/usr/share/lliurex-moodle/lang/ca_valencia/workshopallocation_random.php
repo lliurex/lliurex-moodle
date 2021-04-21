@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'workshopallocation_random', language 'ca_valencia', version '3.9'.
  *
- * @package   workshopallocation_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshopallocation_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['addselfassessment'] = 'Afig autoavaluacions';
 $string['allocationaddeddetail'] = 'Nova tasca per avaluar: <strong>{$a->reviewername}</strong> revisarà la faena de <strong>{$a->authorname}</strong>';
 $string['assessmentdeleteddetail'] = 'S\'ha desassignat la tramesa: <strong>{$a->reviewername}</strong> ja no revisarà la faena de <strong>{$a->authorname}</strong>';
-$string['nogroupusers'] = '<p>Atenció: Si el taller és en els modes «grups visibles» o «grups separats», aleshores CAL que els usuaris pertanyin com a mínim a un grup per tal que esta eina els puga assignar avaluacions dels companys. Als usuaris que no pertanyen a cap grup se\'ls pot assignar encara auto-avaluacions o esborrar-ne les avaluacions existents.</p>
+$string['nogroupusers'] = '<p>Atenció: Si el taller és en els modes «grups visibles» o «grups separats», aleshores CAL que els usuaris pertanyin com a mínim a un grup per tal que aquesta eina els puga assignar avaluacions dels companys. Als usuaris que no pertanyen a cap grup se\'ls pot assignar encara auto-avaluacions o esborrar-ne les avaluacions existents.</p>
 <p>Actualment els següents usuaris no pertanyen a cap grup: {$a}</p>';
 $string['resultnomorepeersingroup'] = 'No hi ha disponibles més parells en este grup separat';

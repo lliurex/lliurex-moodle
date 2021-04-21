@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'blog', language 'es', version '3.9'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addnewentry'] = 'Agregar una nueva entrada';
+$string['addnewentry'] = 'Añadir una nueva entrada';
 $string['addnewexternalblog'] = 'Registrar un blog externo';
 $string['assocdescription'] = 'Si está escribiendo sobre un curso y/o módulos de actividad, selecciónelos aquí.';
 $string['associated'] = 'Asociado {$a}';
@@ -34,17 +34,16 @@ $string['associatewithmodule'] = 'Blog sobre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Asociación';
 $string['associations'] = 'Asociaciones';
 $string['associationunviewable'] = 'Esta entrada no puede ser vista por otros hasta que se asocie un curso con ella o se cambie el campo \'Publicar a\'';
-$string['autotags'] = 'Agregar estas marcas';
-$string['autotags_help'] = 'Ecriba una o más marcas locales (separadas por comas) que quiera agregar automáticamente a cada entrada de blog copiadas de un blog externo a su blog local.';
+$string['autotags'] = 'Añadir estas marcas';
+$string['autotags_help'] = 'Ecriba una o más marcas locales (separadas por comas) que quiera añadir automáticamente a cada entrada de blog copiadas de un blog externo a su blog local.';
 $string['backupblogshelp'] = 'Si se habilita esta opción, los blogs se incluirán en las copias automatizadas del SITIO';
 $string['blockexternalstitle'] = 'Blogs externos';
-$string['blocktitle'] = 'Título de bloque de marcas del blog';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog de este {$a->type}';
-$string['blogaboutthiscourse'] = 'Agregar una entrada en el blog de curso';
-$string['blogaboutthismodule'] = 'Agregar una entrada en este asunto {$a}';
+$string['blogaboutthiscourse'] = 'Añadir una entrada en el blog de curso';
+$string['blogaboutthismodule'] = 'Añadir una entrada en este asunto {$a}';
 $string['blogadministration'] = 'Administración del blog';
-$string['blogdeleteconfirm'] = '¿Eliminar este Blog?';
+$string['blogdeleteconfirm'] = '¿Eliminar esta entrada de Blog?';
 $string['blogdisable'] = 'El blog está deshabilitado';
 $string['blogentries'] = 'Entradas del blog';
 $string['blogentriesabout'] = 'Entradas del blog sobre {$a}';
@@ -55,6 +54,8 @@ $string['blogentriesbyuseraboutmodule'] = 'Entradas del blog sobre este {$a->mod
 $string['blogentrybyuser'] = 'Entrada del blog por {$a}';
 $string['blogpreferences'] = 'Preferencias del Blog';
 $string['blogs'] = 'Blogs';
+$string['blogscourse'] = 'Blogs de curso';
+$string['blogssite'] = 'Blogs del sitio';
 $string['blogtags'] = 'Etiquetas del Blog';
 $string['cannotviewcourseblog'] = 'No tiene permiso para ver los blogs de este curso';
 $string['cannotviewcourseorgroupblog'] = 'No tiene permiso para ver los blogs de este curso/grupo';
@@ -69,11 +70,11 @@ $string['courseblogdisable'] = 'Los blogs del curso están deshabilitados';
 $string['courseblogs'] = 'Los usuarios sólo pueden ver los blogs de las personas que comparten un curso';
 $string['deleteblogassociations'] = 'Eliminar asociaciones de blog';
 $string['deleteblogassociations_help'] = 'Si se selecciona esta opción, las entradas de blog quedarán desvinculadas de este curso o de las actividades o recursos del curso. Las entradas de blog no serán eliminadas.';
+$string['deleteentry'] = 'Eliminar entrada';
 $string['deleteexternalblog'] = 'Dar de baja este blog externo';
-$string['deleteotagswarn'] = '¿Está seguro de que quiere eliminar estas marcas de todos los mensajes de blog y quitarlo del sistema?';
+$string['deleteotagswarn'] = '¿Está seguro que quiere eliminar estas marcas de todos los mensajes de blog y quitarlo del sistema?';
 $string['description'] = 'Descripción';
 $string['description_help'] = 'Escriba una frase o dos resumiendo el contenido de su blog externo. (Si no se suministra ninguna descripción, se utilizará la descripción registrada en su blog externo).';
-$string['disableblogs'] = 'Deshabilitar por completo el sistema blog';
 $string['donothaveblog'] = 'Lo sentimos, usted no tiene su propio blog.';
 $string['editentry'] = 'Editar una entrada del blog';
 $string['editexternalblog'] = 'Editar este blog externo';
@@ -86,7 +87,16 @@ $string['entrybodyonlydesc'] = 'Escriba la descripción';
 $string['entryerrornotyours'] = 'Esta entrada no es suya';
 $string['entrysaved'] = 'Su entrada se ha guardado';
 $string['entrytitle'] = 'Título de la entrada';
-$string['entryupdated'] = 'Entrada del blog actualizada';
+$string['eventblogassociationadded'] = 'Asociación a blog creada';
+$string['eventblogassociationdeleted'] = 'Asociación de blog eliminada';
+$string['eventblogentriesviewed'] = 'Entradas de blog vistas';
+$string['eventblogexternaladded'] = 'Blog externo registrado';
+$string['eventblogexternalremoved'] = 'Blog externo no registrado';
+$string['eventblogexternalupdated'] = 'Blog externo actualizado';
+$string['evententryadded'] = 'Añadido entrada de blog';
+$string['evententrydeleted'] = 'Eliminada entrada de blog';
+$string['evententryupdated'] = 'Entrada del blog actualizada';
+$string['eventexternalblogsviewed'] = 'Blogs externos registrados visualizados';
 $string['externalblogcrontime'] = 'Programa de cron del blog externo';
 $string['externalblogdeleteconfirm'] = '¿Dar de baja este blog externo?';
 $string['externalblogdeleted'] = 'Blog externo no registrado';
@@ -106,7 +116,7 @@ $string['invalidgroupid'] = 'ID de grupo no válida';
 $string['invalidurl'] = 'No se puede acceder a la URL';
 $string['linktooriginalentry'] = 'Enlace a la entrada de blog original';
 $string['maxexternalblogsperuser'] = 'Número máximo de blogs externos por usuario';
-$string['mustassociatecourse'] = 'Si está publicando para el curso o los miembros del grupo, debe asociar un curso con esta entrada';
+$string['myprofileuserblogs'] = 'ver todas las entradas del blog';
 $string['name'] = 'Nombre';
 $string['name_help'] = 'Escriba un nombre descriptivo de su blog externo. (Si no se suministra ningún nombre, se utilizará el título de su blog externo).';
 $string['noentriesyet'] = 'Entradas no visibles aquí';
@@ -117,17 +127,37 @@ $string['nosuchentry'] = 'No existe esa entrada de blog';
 $string['notallowedtoedit'] = 'No está autorizado para editar esta entrada';
 $string['numberofentries'] = 'Entradas: {$a}';
 $string['numberoftags'] = 'Número de marcas a mostrar';
+$string['page-blog-edit'] = 'Páginas de edición de blogs';
+$string['page-blog-index'] = 'Páginas de listado de blog';
+$string['page-blog-x'] = 'Todas las páginas de blog';
 $string['pagesize'] = 'Número de entradas de blog por página';
 $string['permalink'] = 'Enlace  permanente';
 $string['personalblogs'] = 'Los usuarios sólo pueden ver su propio blog';
-$string['preferences'] = 'Preferencias';
+$string['preferences'] = 'Preferencias del blog';
+$string['privacy:metadata:core_comments'] = 'Comentarios asociados con entradas del blog';
+$string['privacy:metadata:core_files'] = 'Archivos anexos a entradas del blog';
+$string['privacy:metadata:core_tag'] = 'Etiquetas asociadas con entradas del blog';
+$string['privacy:metadata:external'] = 'Un enlace hacia un canal RSS externo';
+$string['privacy:metadata:external:description'] = 'La descripción del canal';
+$string['privacy:metadata:external:filtertags'] = 'La lista de etiquetas con las que filtrar las entradas';
+$string['privacy:metadata:external:name'] = 'El nombre del canal';
+$string['privacy:metadata:external:timefetched'] = 'El momento en que el canal fue buscado por última vez';
+$string['privacy:metadata:external:timemodified'] = 'El momento en el que la asociación fue modificada por última vez';
+$string['privacy:metadata:external:url'] = 'La URL del canal';
+$string['privacy:metadata:external:userid'] = 'El ID del usuario que añadió la entrada de blog externa';
+$string['privacy:metadata:post'] = 'La información relacionada con entradas del blog';
+$string['privacy:metadata:post:content'] = 'El contenido de una entrada de blog externa';
+$string['privacy:metadata:post:created'] = 'La fecha en la cual fue creada la entrada de blog';
+$string['privacy:metadata:post:lastmodified'] = 'La fecha en la cual fue modificada por última vez la entrada de blog';
+$string['privacy:metadata:post:publishstate'] = 'Si es que la entrada es visible o no para otros';
+$string['privacy:metadata:post:subject'] = 'El título de la entrada de blog';
+$string['privacy:metadata:post:summary'] = 'El texto de la entrada de blog';
+$string['privacy:metadata:post:uniquehash'] = 'Un identificador único para una entrada externa, típicamente una URL';
+$string['privacy:metadata:post:userid'] = 'El ID del usuario que añadió la entrada de blog';
+$string['privacy:metadata:post:usermodified'] = 'El usuario que modificó la entrada por última vez';
+$string['privacy:path:blogassociations'] = 'Publicaciones asociadas al blog';
+$string['privacy:unknown'] = 'Desconocido';
 $string['publishto'] = 'Publicar a';
-$string['publishtocourse'] = 'Usuarios que comparten curso con usted';
-$string['publishtocourseassoc'] = 'Miembros del curso asociado';
-$string['publishtocourseassocparam'] = 'Miembros de {$a}';
-$string['publishtogroup'] = 'Usuarios que comparten grupo con usted';
-$string['publishtogroupassoc'] = 'Sus miembros de grupo en el curso asociado';
-$string['publishtogroupassocparam'] = 'Miembros de su grupo en {$a}';
 $string['publishto_help'] = '<p>Hay tres posibilidades</p>
 
 <p><b>Usted (borrador)</b> - Solo usted y los administradores pueden ver esta entrada.</p>
@@ -135,6 +165,12 @@ $string['publishto_help'] = '<p>Hay tres posibilidades</p>
 <p><b>Todos en este sitio</b> - Cualquiera registrado en el sitio puede leer esta entrada.</p>
 
 <p><b>Todo el mundo</b> - Cualquiera (incluídos los invitados) puede leer esta entrada.</p>';
+$string['publishtocourse'] = 'Usuarios que comparten curso con usted';
+$string['publishtocourseassoc'] = 'Miembros del curso asociado';
+$string['publishtocourseassocparam'] = 'Miembros de {$a}';
+$string['publishtogroup'] = 'Usuarios que comparten grupo con usted';
+$string['publishtogroupassoc'] = 'Sus miembros de grupo en el curso asociado';
+$string['publishtogroupassocparam'] = 'Miembros de su grupo en {$a}';
 $string['publishtonoone'] = 'Usted (borrador)';
 $string['publishtosite'] = 'Todos en este sitio';
 $string['publishtoworld'] = 'Todo el mundo';
@@ -144,8 +180,8 @@ $string['retrievedfrom'] = 'Recuperado de';
 $string['rssfeed'] = 'Fuente RSS del Blog';
 $string['searchterm'] = 'Buscar: {$a}';
 $string['settingsupdatederror'] = 'Se ha producido un error: el ajuste de preferencias del blog no ha podido actualizarse';
-$string['siteblog'] = 'Blog del sitio: {$a}';
 $string['siteblogdisable'] = 'No está habilitado el blog del sitio';
+$string['siteblogheading'] = 'Blog del sitio';
 $string['siteblogs'] = 'Todos los usuarios pueden ver todas las entradas del blog';
 $string['tagdatelastused'] = 'Fecha última en que se usó la marca';
 $string['tagparam'] = 'Marca: {$a}';
@@ -155,7 +191,7 @@ $string['tagtext'] = 'Texto de marca';
 $string['timefetched'] = 'Hora de la última sincronización';
 $string['timewithin'] = 'Mostrar marcas usadas dentro de estos días';
 $string['updateentrywithid'] = 'Actualizando entrada';
-$string['url'] = 'URL';
+$string['url'] = 'RSS feed URL';
 $string['url_help'] = 'Escriba la URL del canal RSS de su blog externo';
 $string['useblogassociations'] = 'Habilitar asociaciones de blog';
 $string['useexternalblogs'] = 'Habilitar blogs externos';
@@ -179,4 +215,5 @@ $string['viewmyentriesaboutmodule'] = 'Ver mis entradas en este asunto {$a}';
 $string['viewsiteentries'] = 'Ver todas las entradas';
 $string['viewuserentries'] = 'Ver todas las entradas por {$a}';
 $string['worldblogs'] = 'Cualquiera puede ver las entradas definidas como accesibles a todos';
+$string['wrongexternalid'] = 'ID de blog externo incorrecto';
 $string['wrongpostid'] = 'ID de mensaje de blog erróneo';

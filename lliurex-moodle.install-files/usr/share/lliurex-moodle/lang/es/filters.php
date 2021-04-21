@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'filters', language 'es', version '3.9'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actfilterhdr'] = 'Filtros activos';
-$string['addfilter'] = 'Agregar filtro';
+$string['addfilter'] = 'Añadir filtro';
 $string['anycategory'] = 'cualquier categoría';
 $string['anycourse'] = 'cualquier curso';
 $string['anyfield'] = 'cualquier campo';
@@ -37,9 +37,11 @@ $string['categoryrole'] = 'Regla de categoría';
 $string['contains'] = 'contiene';
 $string['content'] = 'Contenido';
 $string['contentandheadings'] = 'Contenido y cabeceras';
+$string['coursecategory'] = 'categoría del curso';
 $string['courserole'] = 'Rol de curso';
 $string['courserolelabel'] = '{$a->label} es {$a->rolename} en {$a->coursename} de {$a->categoryname}';
 $string['courserolelabelerror'] = 'error {$a->label}: el curso {$a->coursename} no existe';
+$string['coursevalue'] = 'valor del curso';
 $string['datelabelisafter'] = '{$a->label} está después de {$a->after}';
 $string['datelabelisbefore'] = '{$a->label} está antes de {$a->before}';
 $string['datelabelisbetween'] = '{$a->label} está entre {$a->after} y {$a->before}';
@@ -49,23 +51,23 @@ $string['doesnotcontain'] = 'no contiene';
 $string['endswith'] = 'termina en';
 $string['filterallwarning'] = 'Aplicar filtros a las cabeceras y al contenido puede incrementar la sobrecarga del servidor. Por favor, use los ajustes \'Aplicar a\' con moderación. El uso principal es con el filtro multi-idioma.';
 $string['filtersettings'] = 'Ajustes de filtro';
-$string['filtersettingsforin'] = 'Ajustes de filtro para {$a->filter} in {$a->context}';
 $string['filtersettings_help'] = 'Esta página le permite activar y desactivar los filtros en una parte concreta del sitio.
 
 Algunos filtros permiten ajustes locales, en cuyo caso habrá un enlace a los ajustes al lado de su nombre.';
+$string['filtersettingsforin'] = 'Ajustes de filtro para {$a->filter} in {$a->context}';
 $string['filtersettingsin'] = 'Ajustes de filtro en {$a}';
 $string['firstaccess'] = 'Primer acceso';
 $string['globalrolelabel'] = '{$a->label} es {$a->value}';
-$string['includenever'] = 'Nunca incluido';
 $string['isactive'] = '¿Activo?';
-$string['isafter'] = 'es después de ';
-$string['isanyvalue'] = 'es cualquier valor';
-$string['isbefore'] = 'es antes de';
+$string['isafter'] = 'es posterior a';
+$string['isanyvalue'] = 'cualquier valor';
+$string['isbefore'] = 'es anterior a';
 $string['isdefined'] = 'está definido';
 $string['isempty'] = 'está vacío';
 $string['isequalto'] = 'es igual a';
 $string['isnotdefined'] = 'no está definido';
 $string['isnotequalto'] = 'no es igual a';
+$string['limiterfor'] = '{$a} campo limitador';
 $string['neveraccessed'] = 'Nunca se ha accedido';
 $string['nevermodified'] = 'Nunca se ha modificado';
 $string['newfilter'] = 'Nuevo filtro';
@@ -73,6 +75,8 @@ $string['nofiltersenabled'] = 'No se han habilitado conectores de flitros en est
 $string['off'] = 'Desconectado';
 $string['offbutavailable'] = 'Desconectado, pero disponible';
 $string['on'] = 'Conectado';
+$string['profilefilterfield'] = 'Nombre del campo Perfil';
+$string['profilefilterlimiter'] = 'Operador del campo Perfil';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Eliminar todos los filtros';
@@ -82,3 +86,4 @@ $string['startswith'] = 'comienza con';
 $string['tablenosave'] = 'Los cambios de la tabla superior se guardan automáticamente.';
 $string['textlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['textlabelnovalue'] = '{$a->label} {$a->operator}';
+$string['valuefor'] = '{$a} valor';

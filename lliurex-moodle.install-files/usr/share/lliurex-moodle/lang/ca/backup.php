@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'backup', language 'ca', version '3.9'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,6 +33,11 @@ $string['automatedbackupschedule'] = 'Planificació';
 $string['automatedbackupschedulehelp'] = 'Trieu els dies de la setmana en què cal realitzar les còpies de seguretat automàtiques.';
 $string['automatedbackupsinactive'] = 'Els administradors del lloc no han habilitat les còpies de seguretat programades';
 $string['automatedbackupstatus'] = 'Estat de la còpia de seguretat programada';
+$string['automateddeletedays'] = 'Suprimeix les còpies de seguretat més antigues de';
+$string['automatedmaxkept'] = 'Nombre màxim de còpies de seguretat a conservar';
+$string['automatedmaxkepthelp'] = 'Això especifica el nombre màxim de còpies de seguretat recents que s\'han de conservar en cada curs. Les còpies de seguretat més antigues s\'esborraran de manera automàtica.';
+$string['automatedminkept'] = 'Nombre mínim de còpies de seguretat a conservar';
+$string['automatedminkepthelp'] = 'Si les còpies de seguretat més antigues d\'un nombre específic de dies s\'esborren, pot succeir que un curs inactiu acabi sense cap còpia de seguretat. Per tal d\'evitar-ho, cal que especifiqueu el nombre mínim de còpies de seguretat que s\'han de conservar.';
 $string['automatedsettings'] = 'Paràmetres de la còpia de seguretat programada';
 $string['automatedsetup'] = 'Configuració de la còpia de seguretat programada';
 $string['automatedstorage'] = 'Emmagatematge de la còpia de seguretat programada';
@@ -44,11 +49,21 @@ $string['backupcoursesection'] = 'Secció: {$a}';
 $string['backupcoursesections'] = 'Seccions del curs';
 $string['backupdate'] = 'Data de realització';
 $string['backupdetails'] = 'Detalls de la còpia';
+$string['backupdetailsnonstandardinfo'] = 'El fitxer seleccionat no és un fitxer de còpia de seguretat estàndard de Moodle. El procés de restauració mirarà de convertir el vostre fitxer de còpia de seguretat al format estàndard i després restaurar-lo.';
 $string['backupformat'] = 'Format';
+$string['backupformatimscc1'] = 'IMS Common Cartridge 1.0';
+$string['backupformatimscc11'] = 'IMS Common Cartridge 1.1';
+$string['backupformatmoodle1'] = 'Moodle 1';
 $string['backupformatmoodle2'] = 'Moodle 2';
+$string['backupformatunknown'] = 'Format desconegut';
+$string['backuplog'] = 'Informació tècnica i avisos';
 $string['backupmode'] = 'Mode';
 $string['backupmode10'] = 'General';
+$string['backupmode20'] = 'Importeu';
 $string['backupmode30'] = 'Concentrador';
+$string['backupmode40'] = 'Mateix lloc';
+$string['backupmode50'] = 'Automatitzat';
+$string['backupmode60'] = 'Convertit';
 $string['backupsection'] = 'Secció de curs a copiar: {$a}';
 $string['backupsettings'] = 'Paràmetres de la còpia de seguretat';
 $string['backupsitedetails'] = 'Detalls del lloc';
@@ -60,31 +75,61 @@ $string['backupstage8action'] = 'Continua';
 $string['backuptype'] = 'Tipus';
 $string['backuptypeactivity'] = 'Activitat';
 $string['backuptypecourse'] = 'Curs';
+$string['backuptypesection'] = 'Secció';
 $string['backupversion'] = 'Versió de la còpia de seguretat';
 $string['cannotfindassignablerole'] = 'El rol {$a} del fitxer de còpia no es pot fer correspondre amb cap dels rols que us és permès d\'assignar.';
 $string['choosefilefromactivitybackup'] = 'Àrea de còpies de seguretat d\'activitats';
-$string['choosefilefromactivitybackup_help'] = 'Quan es fan còpies de seguretat d\'activitats utilitzant els paràmetres per omissió, els fitxers de còpia es desaran aquí';
+$string['choosefilefromactivitybackup_help'] = 'Les còpies de seguretat d\'activitats fetes utilitzant els paràmetres per defecte es desaran aquí.';
 $string['choosefilefromautomatedbackup'] = 'Còpies de seguretat automàtiques';
 $string['choosefilefromautomatedbackup_help'] = 'Conté còpies de seguretat generades automàticament.';
 $string['choosefilefromcoursebackup'] = 'Àrea de còpies de seguretat de cursos';
-$string['choosefilefromcoursebackup_help'] = 'Quan es fan còpies de seguretat de cursos utilitzant els paràmetres per omissió, els fitxers de còpia es desaran aquí';
+$string['choosefilefromcoursebackup_help'] = 'Les còpies de seguretat de cursos fetes utilitzant els paràmetres per defecte es desaran aquí.';
 $string['choosefilefromuserbackup'] = 'Àrea privada de còpies de seguretat de l\'usuari';
-$string['choosefilefromuserbackup_help'] = 'Quan es facin còpies de seguretat de cursos amb l\'opció "Anonimitza la informació de l\'usuari" marcada, els fitxers de còpia de seguretat es desaran aquí';
+$string['choosefilefromuserbackup_help'] = 'Els fitxers de còpies de seguretat amb informació d\'usuaris anonimitzada es desaran aquí.';
+$string['config_keep_groups_and_groupings'] = 'Per defecte mantén els grups i agrupaments actuals.';
+$string['config_keep_roles_and_enrolments'] = 'Per defecte mantén els rols i les inscripcions actuals.';
+$string['config_overwrite_conf'] = 'Permet a l\'usuari sobreescriure la configuració del curs actual';
+$string['config_overwrite_course_fullname'] = 'Per defecte sobreescriu el nom complet del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom complet del curs (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Per defecte sobreescriu el nom curt del curs amb el del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar el nom curt del curs (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Per defecte sobreescriu la data d\'inici del curs amb la del fitxer de la còpia de seguretat. Això requereix que «Sobreescriu la configuració dels curs» estigui marcat i que l\'usuari actual tingui la capacitat de canviar la dates del curs en la restauració (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Estableix el valor per defecte per incloure activitats en una còpia de seguretat.';
 $string['configgeneralanonymize'] = 'Si està habilitat, tota la informació pertanyent als usuaris serà anonimitzada per defecte.';
+$string['configgeneralbadges'] = 'Estableix el valor per defecte per incloure insígnies en una còpia de seguretat.';
 $string['configgeneralblocks'] = 'Estableix el valor per defecte per incloure blocs en una còpia de seguretat.';
+$string['configgeneralcalendarevents'] = 'Estableix el valor per defecte per a incloure esdeveniments d\'agenda en una còpia de seguretat.';
 $string['configgeneralcomments'] = 'Estableix el valor per defecte per incloure comentaris en una còpia de seguretat.';
+$string['configgeneralcompetencies'] = 'Estableix el valor per defecte per a incloure competències en una còpia de seguretat.';
 $string['configgeneralfilters'] = 'Estableix el valor per defecte per incloure filtres en una còpia de seguretat.';
+$string['configgeneralgroups'] = 'Estableix el valor per defecte per a la inclusió de grups i agrupacions en una còpia de seguretat.';
 $string['configgeneralhistories'] = 'Estableix el valor per defecte per incloure l\'historial de l\'usuari en una còpia de seguretat.';
 $string['configgenerallogs'] = 'Si està habilitat, s\'inclouran per defecte els registres dins de la còpia de seguretat.';
+$string['configgeneralquestionbank'] = 'Si s\'habilita, el banc de preguntes s\'inclourà en les còpies de seguretat per defecte.
+TINGUEU EN COMPTE que inhabilitar aquest paràmetre inhabilitarà la còpia de seguretat de les activitats que utilitzin el banc de preguntes, com ara el qüestionari.';
 $string['configgeneralroleassignments'] = 'Si està habilitat, s\'inclouran per defecte les assignacions de rols dins de la còpia de seguretat.';
 $string['configgeneralusers'] = 'Estableix el valor per defecte per incloure els usuaris en una còpia de seguretat.';
 $string['configgeneraluserscompletion'] = 'Si està habilitat, s\'inclourà per defecte la informació de progrés de l\'usuari dins de la còpia de seguretat.';
+$string['configloglifetime'] = 'Especifica el temps que es conservarà una còpia de seguretat de la informació del registre. La informació més antiga s\'esborrarà automàticament. Es recomana que aquest valor sigui petit, perquè la còpia de seguretat pot ser molt gran.';
+$string['configrestoreactivities'] = 'Estableix els paràmetres per defecte de la restauració de les activitats.';
+$string['configrestorebadges'] = 'Estableix els paràmetres per defecte de la restauració de les insígnies.';
+$string['configrestoreblocks'] = 'Estableix els paràmetres per defecte de la restauració dels blocs.';
+$string['configrestorecalendarevents'] = 'Estableix els paràmetres per defecte de la restauració dels esdeveniments del calendari.';
+$string['configrestorecomments'] = 'Estableix els paràmetres per defecte de la restauració dels comentaris.';
+$string['configrestorecompetencies'] = 'Estableix els paràmetres per defecte de la restauració des les competències.';
+$string['configrestoreenrolments'] = 'Estableix els paràmetres per defecte de la restauració dels mètodes d\'inscripció.';
+$string['configrestorefilters'] = 'Estableix els paràmetres per defecte de la restauració dels filtres.';
+$string['configrestoregroups'] = 'Estableix els paràmetres per defecte de la restauració dels grups i agrupaments si estan inclosos a la còpia de seguretat.';
+$string['configrestorehistories'] = 'Estableix els paràmetres per defecte de la restauració de l\'historial dels usuaris si està inclòs a la còpia de seguretat.';
+$string['configrestorelogs'] = 'Si està habilitat, els registres es restauraran per defecte si estan inclosos a la còpia de seguretat.';
+$string['configrestoreroleassignments'] = 'Si està habilitat, l\'assignació de rols es restaurarà per defecte si està inclosa a la còpia de seguretat.';
+$string['configrestoreusers'] = 'Estableix els paràmetres per defecte de la restauració dels usuaris si estan inclosos a la còpia de seguretat.';
+$string['configrestoreuserscompletion'] = 'Si està habilitat, la informació de compleció dels usuaris es restaurarà per defecte si està inclosa a la còpia de seguretat.';
 $string['confirmcancel'] = 'Cancel·la la còpia';
 $string['confirmcancelno'] = 'Roman';
 $string['confirmcancelquestion'] = 'Segur que voleu cancel·lar?
 Qualsevol informació que hàgiu introduït es perdrà.';
 $string['confirmcancelyes'] = 'Cancel·la';
+$string['confirmnewcoursecontinue'] = 'Nou advertiment de curs';
+$string['confirmnewcoursecontinuequestion'] = 'Durant el procés de restauració del curs, es crearà un curs temporal (amagat). Per cancel·lar el procés de restauració, feu clic a «Cancel·la». No tanqueu el navegador mentre es fa la restauració.';
 $string['coursecategory'] = 'Categoria en què es restaurarà el curs';
 $string['courseid'] = 'ID original';
 $string['coursesettings'] = 'Paràmetres del curs';
@@ -94,33 +139,49 @@ $string['currentstage16'] = 'Completat';
 $string['currentstage2'] = 'Paràmetres de l\'esquema';
 $string['currentstage4'] = 'Confirmació i revisió';
 $string['currentstage8'] = 'Fes la còpia';
-$string['dependenciesenforced'] = 'La vostra configuració s\'ha hagut d\'alterar a causa de dependències insatisfetes';
 $string['enterasearch'] = 'Introduïu una cerca';
+$string['error_block_for_module_not_found'] = 'S\'ha trobat una instància de bloc òrfena (id: {$a->bid}) per al curs (id: {$a->mid}). Aquest bloc no es copiarà a la còpia de seguretat.';
+$string['error_course_module_not_found'] = 'S\'ha trobat un mòdul de curs orfe (id: {$a}). Aquest mòdul no es copiarà a la còpia de seguretat.';
+$string['errorcopyingbackupfile'] = 'No s\'ha pogut copiar el fitxer de la còpia de seguretat a la carpeta temporal abans de restaurar.';
 $string['errorfilenamemustbezip'] = 'El nom de fitxer que introduïu ha d\'ésser un fitxer ZIP i ha de tenir l\'extensió .mbz';
 $string['errorfilenamerequired'] = 'Cal que introduïu un nom de fitxer vàlid per a aquesta còpia de seguretat';
-$string['errorinvalidformat'] = 'El format de còpia de seguretat no és vàlid.';
-$string['errorinvalidformatdesc'] = 'El fitxer pujat no és un fitxer de còpia de seguretat de Moodle vàlid, i no es pot restaurar.';
+$string['errorfilenametoolong'] = 'La longitud del nom de l\'arxiu que introduïu ha de ser inferior a 255 caràcters';
+$string['errorinvalidformat'] = 'Format de còpia de seguretat desconegut';
+$string['errorinvalidformatinfo'] = 'El fitxer seleccionat no és un fitxer de còpia de seguretat vàlid per a Moodle i no pot ser restaurat.';
 $string['errorminbackup20version'] = 'Aquest fitxer de còpia de seguretat s\'ha creat amb una versió de desenvolupament de Moodle ({$a->backup}). Com a mínim, cal la {$a->min}. No es pot restaurar.';
-$string['errormoodle1format'] = 'Restaurant còpies de seguretat de Moodle 1.9';
-$string['errormoodle1formatdesc'] = 'Aquest fitxer de còpia de seguretat fou creat amb un Moodle 1.x i no es pot restaurar al Moodle 2. Aquesta funcionalitat serà possible en futures actualitzacions.';
-$string['errormoodle1format_help'] = 'El Moodle 2 no suporta actualment la restauració de còpies de seguretat de Moodle 1.x.
-Una solució provisional a això passa per restaurar la vostra còpia de seguretat de Moodle 1.x en un lloc Moodle 1.9, i després actualitzar el lloc sencer a Moodle 2.
-Una vegada feta l\'actualització podreu fer còpies de seguretat noves que podran ser restaurades en altres llocs Moodle 2.0.';
-$string['errorrestorefrontpage'] = 'No es permet restaurar res sobre la pàgina principal.';
+$string['errorrestorefrontpagebackup'] = 'A la primera plana només es poden restaurar còpies de seguretat de la primera plana.';
 $string['executionsuccess'] = 'El fitxer de còpia de seguretat s\'ha creat amb èxit.';
+$string['filealiasesrestorefailures'] = 'La restauració dels àlies ha fallat';
+$string['filealiasesrestorefailures_help'] = 'Els àlies són enllaços simbòlics a altres fitxers, inclosos els emmagatzemats en repositoris externs. En alguns casos, Moodle no els pot restaurar —per exemple, en restaurar la còpia de seguretat en un altre lloc web o quan el fitxer a què es fa referència no existeix.
+
+Podeu trobar més detalls sobre això i el motiu real de l\'errada al fitxer de registre de restauració.';
+$string['filealiasesrestorefailuresinfo'] = 'Alguns àlies inclosos en el fitxer de còpia de seguretat no poden ser restaurats. La següent llista conté la seva ubicació prevista i el fitxer d\'origen on es referien en el lloc web original.';
 $string['filename'] = 'Nom del fitxer';
-$string['generalactivities'] = 'Inclou les activitats';
+$string['filereferencesincluded'] = 'Les referències de fitxer a continguts externs estan incloses al fitxer de còpia de seguretat. No funcionaran si la còpia es restaura en un lloc web diferent.';
+$string['filereferencesnotsamesite'] = 'La còpia de seguretat és d\'un altre lloc web i per tant les referències de fitxers no es poden restaurar.';
+$string['filereferencessamesite'] = 'La còpia de seguretat és d\'aquest mateix lloc web; les referències de fitxers es poden restaurar.';
+$string['generalactivities'] = 'Inclou les activitats i els recursos';
 $string['generalanonymize'] = 'Anonimitza la informació';
 $string['generalbackdefaults'] = 'Opcions per defecte genèriques de les còpies de seguretat';
+$string['generalbadges'] = 'Inclou insígnies';
 $string['generalblocks'] = 'Inclou els blocs';
+$string['generalcalendarevents'] = 'Inclou esdeveniments d\'agenda';
 $string['generalcomments'] = 'Inclou els comentaris';
+$string['generalcompetencies'] = 'Inclou competències';
+$string['generalenrolments'] = 'Inclou els mètodes d\'inscripció';
 $string['generalfilters'] = 'Inclou els filtres';
 $string['generalgradehistories'] = 'Inclou historial';
+$string['generalgroups'] = 'Inclou grups i agrupaments';
 $string['generalhistories'] = 'Inclou les històries';
 $string['generallogs'] = 'Inclou els registres';
+$string['generalquestionbank'] = 'Inclou el banc de preguntes';
+$string['generalrestoredefaults'] = 'Paràmetres generals per defecte de la restauració';
+$string['generalrestoresettings'] = 'Paràmetres generals de la restauració';
 $string['generalroleassignments'] = 'Inclou els assignaments de rols';
+$string['generalsettings'] = 'Paràmetres generals de còpia de seguretat';
 $string['generalusers'] = 'Inclou els usuaris';
 $string['generaluserscompletion'] = 'Inclou la informació de progrés de l\'usuari';
+$string['hidetypes'] = 'Amaga opcions del tipus';
 $string['importbackupstage16action'] = 'Continua';
 $string['importbackupstage1action'] = 'Següent';
 $string['importbackupstage2action'] = 'Següent';
@@ -133,30 +194,49 @@ $string['importcurrentstage2'] = 'Configuració de l\'esquema';
 $string['importcurrentstage4'] = 'Confirmació i revisió';
 $string['importcurrentstage8'] = 'Fes la importació';
 $string['importfile'] = 'Importa un fitxer de còpia de seguretat';
+$string['importgeneralduplicateadminallowed'] = 'Permet la resolució de conflictes d\'administració';
+$string['importgeneralduplicateadminallowed_desc'] = 'Si el lloc té un compte amb nom d\'usuari "admin", si s\'intenta restaurar un fitxer de còpia de seguretat que conté un compte amb nom d\'usuari "admin" es pot provocar un conflicte. Si s\'habilita aquesta configuració, el conflicte es resol canviant el nom d\'usuari en el fitxer de còpia de seguretat per a «admin_xyz».';
+$string['importgeneralmaxresults'] = 'Nombre màxim de cursos enumerats per importar';
+$string['importgeneralmaxresults_desc'] = 'Això controla el nombre de cursos que es llisten durant el primer pas del procés d\'importació';
+$string['importgeneralsettings'] = 'Paràmetres genèrics per defecte de la importació';
+$string['importsettings'] = 'Configuració d\'importació general';
 $string['importsuccess'] = 'S\'ha completat la importació. Cliqueu a continua per tornar al curs.';
 $string['includeactivities'] = 'Inclou:';
-$string['includeditems'] = 'Ítems inclosos:';
+$string['includeditems'] = 'Elements inclosos:';
+$string['includefilereferences'] = 'Referències de fitxer a continguts externs';
 $string['includesection'] = 'Secció {$a}';
 $string['includeuserinfo'] = 'Dades d\'usuari';
+$string['jumptofinalstep'] = 'Salta al pas final';
+$string['keep'] = 'Mantén';
 $string['locked'] = 'Blocat';
 $string['lockedbyconfig'] = 'Aquest paràmetre ha estat blocat en la configuració per defecte de les còpies de seguretat';
 $string['lockedbyhierarchy'] = 'Blocat per dependències';
 $string['lockedbypermission'] = 'No teniu permisos suficients per canviar aquest paràmetre';
+$string['loglifetime'] = 'Mantingues els registres de';
 $string['managefiles'] = 'Gestiona els fitxers de còpia de seguretat';
+$string['mergerestoredefaults'] = 'Paràmetres per defecte de la restauració quan es fusioni dins d\'un altre curs';
+$string['missingfilesinpool'] = 'Alguns fitxers no s\'han pogut desar mentre es feia la còpia de seguretat i per tant no serà possible restaurar-los.';
+$string['module'] = 'Mòdul';
 $string['moodleversion'] = 'Versió de Moodle';
+$string['morecoursesearchresults'] = 'S\'han trobat més de {$a} cursos. Es mostraran els primers {$a} resultats.';
 $string['moreresults'] = 'Hi ha massa resultats. Introduïu una cerca més específica.';
 $string['nomatchingcourses'] = 'No hi ha cursos a mostrar';
 $string['norestoreoptions'] = 'No hi ha categories o cursos existents on pugueu restaurar';
 $string['originalwwwroot'] = 'URL de la còpia de seguretat';
+$string['overwrite'] = 'Sobreescriu';
+$string['preparingdata'] = 'S\'estan preparant les dades';
+$string['preparingui'] = 'S\'està preparant per mostrar la pàgina';
 $string['previousstage'] = 'Previ';
 $string['qcategory2coursefallback'] = 'La categoria de preguntes "{$a->name}", originàriament al context sistema/categoria de cursos en el fitxer de còpia de seguretat, es crearà en el context de curs per la restauració';
 $string['qcategorycannotberestored'] = 'El procés de restauració no pot crear la categoria de preguntes "{$a->name}"';
 $string['question2coursefallback'] = 'La categoria de preguntes "{$a->name}", originàriament al context sistema/categoria de cursos en el fitxer de còpia de seguretat, es crearà en el context de curs per la restauració';
 $string['questionegorycannotberestored'] = 'Les qüestions "{$a->name}"  no es poden crear per a restaurar';
+$string['replacerestoredefaults'] = 'Paràmetres per defecte de la restauració quan es restauri dins d\'un altre curs suprimint els continguts';
 $string['restoreactivity'] = 'Restaura una activitat';
 $string['restorecourse'] = 'Restaura un curs';
 $string['restorecoursesettings'] = 'Configuració del curs';
 $string['restoreexecutionsuccess'] = 'El curs s\'ha restaurat satisfactòriament. Si cliqueu el botó Continua del dessota veureu el curs restaurat.';
+$string['restorefileweremissing'] = 'Alguns fitxers no s\'han pogut restaurar perquè no es troben en la còpia de seguretat.';
 $string['restorenewcoursefullname'] = 'Nom del nou curs';
 $string['restorenewcourseshortname'] = 'Nom curt del nou curs';
 $string['restorenewcoursestartdate'] = 'Data inicial nova';
@@ -188,13 +268,25 @@ $string['restoretoexistingcoursedeleting'] = 'Esborra els continguts del curs ex
 $string['restoretonewcourse'] = 'Restaura com un nou curs';
 $string['restoringcourse'] = 'S\'està restaurant el curs';
 $string['restoringcourseshortname'] = 's\'està restaurant';
-$string['rootsettingactivities'] = 'Inclou les activitats';
+$string['rootenrolmanual'] = 'Restaura com a inscripcions manuals';
+$string['rootsettingactivities'] = 'Inclou les activitats i els recursos';
 $string['rootsettinganonymize'] = 'Anonimitza la informació de l\'usuari';
+$string['rootsettingbadges'] = 'Inclou insígnies';
 $string['rootsettingblocks'] = 'Inclou els blocs';
+$string['rootsettingcalendarevents'] = 'Inclou els esdeveniments de calendari';
 $string['rootsettingcomments'] = 'Inclou els comentaris';
+$string['rootsettingcompetencies'] = 'Inclou les competències';
+$string['rootsettingenrolments'] = 'Inclou mètodes d\'inscripció';
+$string['rootsettingenrolments_always'] = 'Sí, sempre';
+$string['rootsettingenrolments_never'] = 'No, restaura els usuaris com inscripcions manuals';
+$string['rootsettingenrolments_withusers'] = 'Sí, però sols si els usuaris estan inclosos';
 $string['rootsettingfilters'] = 'Inclou els filtres';
 $string['rootsettinggradehistories'] = 'Inclou l\'historial de qualificacions';
+$string['rootsettinggroups'] = 'Inclou grups i agrupacions';
+$string['rootsettingimscc1'] = 'Converteix a IMS Common Cartridge 1.0';
+$string['rootsettingimscc11'] = 'Converteix a IMS Common Cartridge 1.1';
 $string['rootsettinglogs'] = 'Inclou els registres del curs';
+$string['rootsettingquestionbank'] = 'Inclou el banc de preguntes';
 $string['rootsettingroleassignments'] = 'Inclou les assignacions de rols de l\'usuari';
 $string['rootsettings'] = 'Configuració de les còpies de seguretat';
 $string['rootsettingusers'] = 'Inclou els usuaris registrats';
@@ -207,9 +299,26 @@ $string['selectacourse'] = 'Escolliu un curs';
 $string['setting_course_fullname'] = 'Nom del curs';
 $string['setting_course_shortname'] = 'Nom curt del curs';
 $string['setting_course_startdate'] = 'Data d\'inici del curs';
-$string['setting_overwriteconf'] = 'Sobreescriu la configuració del curs';
+$string['setting_keep_groups_and_groupings'] = 'Desa el grups actuals i els agrupaments.';
+$string['setting_keep_roles_and_enrolments'] = 'Desa els rols actuals i les inscripcions.';
+$string['setting_overwrite_conf'] = 'Sobreescriu la configuració dels curs';
+$string['setting_overwrite_course_fullname'] = 'Sobreescriu el nom complet del curs';
+$string['setting_overwrite_course_shortname'] = 'Sobreescriu el nom curt del curs';
+$string['setting_overwrite_course_startdate'] = 'Sobreescriu la data d\'inici del curs';
+$string['showtypes'] = 'Mostra les opcions del tipus';
+$string['sitecourseformatwarning'] = 'Aquesta és una copia de seguretat de la primera plana, fixeu-vos que sols es pot restaurar a la primera plana.';
+$string['skiphidden'] = 'Omet els cursos ocults';
+$string['skiphiddenhelp'] = 'Trieu si voleu o no voleu ometre els cursos ocults';
+$string['skipmodifdays'] = 'Omet els cursos no modificats des de';
+$string['skipmodifdayshelp'] = 'Trieu ometre els cursos que no s\'hagin modificat des d\'un nombre de dies';
+$string['skipmodifprev'] = 'Omet cursos no modificats des de la còpia de seguretat anterior';
+$string['skipmodifprevhelp'] = 'Trieu ometre o no els cursos que no s\'hagin modificat des de la còpia de seguretat anterior. Cal que els registres estiguin habilitats per tal que funcioni.';
 $string['storagecourseandexternal'] = 'Àrea de còpies de seguretat del curs i del directori especificat';
 $string['storagecourseonly'] = 'Àrea de còpies de seguretat del curs';
 $string['storageexternalonly'] = 'Directori de còpies de seguretat automàtiques especificat';
+$string['timetaken'] = 'Temps emprat';
+$string['title'] = 'Títol';
 $string['totalcategorysearchresults'] = 'Total de categories: {$a}';
 $string['totalcoursesearchresults'] = 'Total de cursos: {$a}';
+$string['unnamedsection'] = 'Secció sense nom';
+$string['userinfo'] = 'Informació d\'usuari';

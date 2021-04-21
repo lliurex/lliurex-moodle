@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'rating', language 'ca', version '3.9'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,4 +55,5 @@ $string['ratinginvalid'] = 'La puntuació és invàlida';
 $string['ratings'] = 'Puntuacions';
 $string['ratingtime'] = 'Restringeix la qualificació a les entrades fetes entre aquestes dates:';
 $string['rolewarning'] = 'Rols amb permís per qualificar';
-$string['rolewarning_help'] = 'Per enviar qualificacions als usuaris els cal al moodle/rating: capacitat de qualificar i totes les capacitats especifiques del mòdul. Els usuaris que tinguin assignats els següents rols tindran capacitat per puntuar activitats. La llista de rols pot ser modificada mitjançant els permisos seguint l\'enllaç al bloc de configuracions.';
+$string['rolewarning_help'] = 'Per trametre qualificacions els usuaris necessiten la capacitat moodle/rating:rate i totes les capacitats específiques del mòdul. Els usuaris que tinguin assignats els rols següents tindran capacitat per puntuar activitats. La llista de rols pot ser modificada mitjançant els permisos seguint l\'enllaç al bloc de configuracions.';
+$string['scaleselectionrequired'] = 'Quan es selecciona un tipus d\'agregació de valoracions, heu de seleccionar una escala o establir una puntuació màxima.';

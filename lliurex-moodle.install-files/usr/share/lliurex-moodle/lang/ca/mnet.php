@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'mnet', language 'ca', version '3.9'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-signat)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signat)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP sense xifrar';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-signat)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (signat)';
 $string['aboutyourhost'] = 'El vostre servidor';
 $string['accesslevel'] = 'Nivell d\'accés';
 $string['addhost'] = 'Afegeix un servidor';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'No s\'ha trobat un certificat a <br />{$a}. <br />
 $string['couldnotmatchcert'] = 'Això no coincideix amb el certificat publicat actualment pel servidor web.';
 $string['courses'] = 'cursos';
 $string['courseson'] = 'cursos sobre';
-$string['currentkey'] = 'Clau pública actual';
 $string['current_transport'] = 'Transport actual';
+$string['currentkey'] = 'Clau pública actual';
 $string['databaseerror'] = 'No es poden escriure els detalls en la base de dades.';
 $string['deleteaserver'] = 'S\'està suprimint el servidor';
 $string['deletedhostinfo'] = 'Aquest servidor s\'ha suprimit. Si voleu recuperar-lo, canvieu l\'estat d\'eliminat de nou a \'No\'.';
@@ -67,6 +72,8 @@ $string['error7023'] = 'El lloc remot ha intentat desxifrar el missatge amb tote
 $string['error7024'] = 'Heu enviat un missatge no xifrat al lloc remot, però el lloc remot no ha acceptat la comunicació no xifrada del vostre lloc. Això és molt inesperat, probablement hauríeu de presentar un informe d\'error si això passa (donant tanta informació com sigui possible sobre les versions de l\'aplicació en qüestió, etc.)';
 $string['error7026'] = 'La clau amb què el vostre missatge ha estat signat es diferencia de la clau que el servidor remot té en els seus arxius per al vostre servidor. A més, la màquina remota ha intentat recuperar la seva clau actual i no ho ha aconseguit. Reconnecteu-vos manualment amb el servidor remot i torneu a intentar-ho.';
 $string['error709'] = 'El lloc remot ha fallat en obtenir una clau SSL de vós.';
+$string['eventaccesscontrolcreated'] = 'Control d\'accés creat';
+$string['eventaccesscontrolupdated'] = 'Control d\'accés actualitzat';
 $string['expired'] = 'Aquesta clau ha caducat';
 $string['expires'] = 'Vàlida fins';
 $string['expireyourkey'] = 'Suprimeix aquesta clau';
@@ -90,17 +97,17 @@ $string['hostnamehelp'] = 'El nom del domini complet del servidor remot, exemple
 $string['hostnotconfiguredforsso'] = 'El servidor no està configurat per iniciar sessions remotament.';
 $string['hostsettings'] = 'Paràmetres del servidor';
 $string['http_self_signed_help'] = 'Permet connexions utilitzant un certificat DIY SSL auto signat al servidor remot.';
+$string['http_verified_help'] = 'Permet connexions utilitzant un certificat SSL verificat al servidor remot en PHP, però sobre http (no https).';
 $string['https_self_signed_help'] = 'Permet connexions utilitzant un certificat DIY SSL auto signat  al servidor remot en PHP.';
 $string['https_verified_help'] = 'Permet connexions utilitzant un certificat SSL  verificat al servidor remot.';
-$string['http_verified_help'] = 'Permet connexions utilitzant un certificat SSL verificat al servidor remot en PHP, però sobre http (no https).';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Aquest valor s\'assigna de forma automàtica i no es pot canviar';
 $string['importfields'] = 'Camps a importar';
 $string['inspect'] = 'Inspecciona';
 $string['installnosuchfunction'] = 'Error de codificació! Algú està intentant instal·lar una funció xmlrpc  mnet ({$a->method}) des de el fitxer ({$a->file}) i no es pot trobar!';
 $string['installnosuchmethod'] = 'Error de codificació! Algú està intentant instal·lar una funció xmlrpc mnet ({$a->method}) en la classe ({$a->class}) i no es pot trobar!';
-$string['installreflectionclasserror'] = 'Error de codificació! La inspecció MNet ha fallat per al mètode \'{$a->method} en la classe \'{$a->class}. El missatge d\'error original, en cas que ajuda, és: \'{$a->error}\'';
-$string['installreflectionfunctionerror'] = 'Error de codificació! La inspecció MNet ha fallat per la funció \'{$a->method} al fitxer \'{$a->file}. El missatge d\'error original, en cas que ajuda, és: \'{$a->error}\'';
+$string['installreflectionclasserror'] = 'Error de codificació! La inspecció MNet ha fallat per al mètode \'{$a->method} en la classe \'{$a->class}. El missatge d\'error original, en cas que ajuda, és: \'{$a->error}';
+$string['installreflectionfunctionerror'] = 'Error de codificació! La inspecció MNet ha fallat per la funció \'{$a->method} al fitxer \'{$a->file}. El missatge d\'error original, en cas que ajuda, és: \'{$a->error}';
 $string['invalidaccessparam'] = 'Paràmetre d\'accés no vàlid.';
 $string['invalidactionparam'] = 'Paràmetre d\'acció no vàlid.';
 $string['invalidhost'] = 'Cal que proporcioneu un identificador vàlid per al servidor';
@@ -127,15 +134,14 @@ $string['methodsavailableonhostinservice'] = 'Mètode disponible per {$a->servic
 $string['methodsignature'] = 'Mètode de signatura per {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Concatena (fins a ) 3 cadenes i retorna el resultat';
+$string['mnet_session_prohibited'] = 'Als usuaris del seu servidor no se\'ls permet actualment anar a  {$a}.';
 $string['mnetdisabled'] = 'MNet està <strong>inhabilitat</strong>';
 $string['mnetidprovider'] = 'Proporcionador d\'identificació per MNet';
 $string['mnetidproviderdesc'] = 'Podeu utilitzar aquesta funció per obtenir un enllaç que permeta connectar-vos, si podeu proporcionar l\'adreça de correu electrònic correcta perquè coincideixi amb el nom d\'usuari que ja ha intentat iniciar la sessió.';
 $string['mnetidprovidermsg'] = 'Hauríeu de poder iniciar la sessió al vostre proveïdor {$a}.';
 $string['mnetidprovidernotfound'] = 'No s\' ha trobat cap informació addicional.';
-$string['mnetlog'] = 'Registres';
 $string['mnetpeers'] = 'Iguals';
 $string['mnetservices'] = 'Serveis';
-$string['mnet_session_prohibited'] = 'Als usuaris del seu servidor no se\'ls permet actualment anar a  {$a}.';
 $string['mnetsettings'] = 'Paràmetres de MNet';
 $string['moodle_home_help'] = 'El camí a la pàgina principal de l\'aplicació MNet al servidor remot, ex. /moodle/.';
 $string['name'] = 'Nom';
@@ -158,13 +164,13 @@ $string['nosuchpublickey'] = 'No es pot obtenir la clau pública per verificar l
 $string['nosuchservice'] = 'El servei RPC no funciona en aquesta màquina.';
 $string['nosuchtransport'] = 'No existeix cap transport amb aquesta ID.';
 $string['notBASE64'] = 'Aquesta cadena no està codificada en format base64. No pot ser una clau vàlida.';
-$string['notenoughidpinfo'] = 'El vostre proveïdor d\'identitat no ens està donant la informació suficient per crear o actualitzar el vostre compte a nivell local.';
+$string['notPEM'] = 'Aquesta clau no té format PEM. No funcionarà.';
 $string['not_in_range'] = 'L\'adreça IP <code> {$a} </ code> no representa un servidor vàlid de confiança.';
+$string['notenoughidpinfo'] = 'El vostre proveïdor d\'identitat no ens està donant la informació suficient per crear o actualitzar el vostre compte a nivell local.';
 $string['notinxmlrpcserver'] = 'Intent d\'accés al client remot Mnet, no durant l\'execució del servidor XMLRPC';
 $string['notmoodleapplication'] = 'ADVERTIMENT: Aquesta no és una aplicació de Moodle, de manera que és possible que alguns dels mètodes d\'inspecció no funcionin correctament.';
-$string['notPEM'] = 'Aquesta clau no té format PEM. No funcionarà.';
 $string['notpermittedtojump'] = 'No teniu permís per iniciar una sessió remota en aquest servidor Moodle.';
-$string['notpermittedtojumpas'] = 'No podeu iniciar una sessió remota mentre esteu identificat com un altre usuari.';
+$string['notpermittedtojumpas'] = 'No podeu començar una sessió remota mentre tingueu iniciada la sessió com un altre usuari.';
 $string['notpermittedtoland'] = 'No teniu permís per iniciar una sessió remota.';
 $string['off'] = 'Desactiva';
 $string['on'] = 'Activa';
@@ -181,29 +187,26 @@ $string['profileimportfields'] = 'Camps a importar';
 $string['promiscuous'] = 'Promiscu';
 $string['publickey'] = 'Clau pública';
 $string['publickey_help'] = 'La clau pública s\'obté de forma automàtica al servidor remot';
+$string['publickeyrequired'] = 'Heu de proporcionar una clau pública.';
 $string['publish'] = 'Publica';
 $string['reallydeleteserver'] = 'Esteu segurs de voler suprimir el servidor ?';
 $string['receivedwarnings'] = 'S\'han rebut els següents avisos';
 $string['recordnoexists'] = 'No existeix el registre.';
 $string['reenableserver'] = 'No - Seleccioneu aquesta opció per tornar a habilitar aquest servidor.';
 $string['registerallhosts'] = 'Registra tots els servidors (mode promiscu)';
-$string['registerallhostsexplain'] = 'Podeu optar per registrar tots els servidors que intenten connectar-se-vos de forma automàtica. Això significa que apareixerà un registre a la vostra llista de servidors per a qualsevol lloc web MNet que se us connecti i sol·liciti la vostra clau pública. <br /> Teniu l\'opció de sota per configurar els serveis per a \'Tots els servidors\' i, habilitant alguns dels serveis allí, podreu proporcionar serveis a qualsevol servidor remot de manera indiscriminada.';
+$string['registerallhostsexplain'] = 'Podeu optar per registrar tots els servidors que intenten connectar-se amb vós de forma automàtica. Això significa que apareixerà un registre a la vostra llista de servidors per a qualsevol lloc web MNet que es connecti amb vós i sol·liciti la vostra clau pública. <br /> Teniu l\'opció de sota per configurar els serveis per a «Tots els servidors» i, habilitant alguns dels serveis allà, podreu proporcionar serveis a qualsevol servidor remot de manera indiscriminada.';
 $string['registerhostsoff'] = 'El registre de tots els servidors està actualment <b>inhabilitat</b>';
 $string['registerhostson'] = 'Registrar tots els servidor és actualment <b>habilitat</b>';
 $string['remotecourses'] = 'Cursos remots';
 $string['remotehost'] = 'Servidor remot';
 $string['remotehosts'] = 'Servidors remots';
-$string['remoteuserinfo'] = 'Usuari remot {$a->remotetype}  - perfil obstés de <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuser'] = 'Usuari remot {$a->remotetype}';
+$string['remoteuserinfo'] = 'Perfil obtingut de <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'Us cal l\'extensió OpenSSL per treballar amb la xarxa.';
 $string['restore'] = 'Restaura';
 $string['returnvalue'] = 'Valor de retorn';
 $string['reviewhostdetails'] = 'Reviseu els detalls del servidor';
 $string['reviewhostservices'] = 'Reviseu els serveis del servidor';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP sense xifrar';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-signat)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-signat)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signat)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (signat)';
 $string['selectaccesslevel'] = 'Seleccioneu un nivell d\'accés de la llista.';
 $string['selectahost'] = 'Seleccioneu un servidor remot.';
 $string['service'] = 'Nom del servei';
@@ -216,6 +219,12 @@ $string['showlocal'] = 'Mostra usuaris locals';
 $string['showremote'] = 'Mostra usuaris remots';
 $string['ssl_acl_allow'] = 'SSO ACL: Permet a l\'usuari {$a-> user} de {$a-> host}';
 $string['ssl_acl_deny'] = 'SSO ACL: Denega a l\'usuari {$a-> user} de {$a-> host}';
+$string['sslverification'] = 'Verificació SSL';
+$string['sslverification_help'] = 'Aquesta opció us permet configurar el nivell de seguretat quan us connecteu a un igual usant HTTPS.
+
+* Cap: cap nivell de seguretat
+* Verifica sols el servidor: valida el domini del certificat SSL
+* Verifica l\'igual i el servidor (recomanat): valida el domini i l\'emissor del certificat SSL';
 $string['ssoaccesscontrol'] = 'Control d\'accés SSO';
 $string['ssoacldescr'] = 'Utilitzeu aquesta pàgina per atorgar/denegar l\'accés a determinats usuaris des del servidor remot MNet. Això és funcional quan s\'estan oferint serveis SSO a usuaris remots. Per controlar la capacitat dels usuaris <em>locals</em> de migrar a altres servidors Moodle en xarxa (MNet), utilitzeu el sistema de permisos per atorgar-los la capacitat <em>mnetlogintoremote</em>.';
 $string['ssoaclneeds'] = 'Per tal que aquesta funcionalitat estigui habilitada, us cal activar el treball en xarxa, i el connector d\'autenticació per Moodle en xarxa.';
@@ -229,7 +238,7 @@ $string['theypublish'] = 'Facin pública';
 $string['theysubscribe'] = 'Subscriguin';
 $string['transport_help'] = 'Aquestes opcions són reciproques, de forma que sols podeu forçar un servidor remot a utilitzar SSL certificat si el vostre servidor  es un servidor SSL certificat.';
 $string['trustedhosts'] = 'Servidors XML-RPC';
-$string['trustedhostsexplain'] = '<p> El mecanisme de servidors de confiança permet a les màquines específiques executar crides a través de XML-RPC a qualsevol part de l\'API de Moodle. Això està disponible per als scripts a fi de controlar el comportament de Moodle i pot ser una opció molt perillosa d\'habilitar. En cas de dubte, manteniu-la desconnectada. </p><p> <strong>No és necessària per a cap característica Mnet estàndard!</strong> Activeu-la només si sabeu el que esteu fent. </p><p> Per activar-la, escriviu una llista d\'adreces IP o xarxes, una a cada línia. Alguns exemples: </p> El vostre servidor local: <br /> 127.0.0.1 <br /> El vostre servidor local (amb un bloc de xarxa): <br /> 127.0.0.1/32 <br /> Només el servidor amb adreces IP 192.168.0.7: <br /> 192.168.0.7/32 <br /> Qualsevol servidor amb una adreça IP entre 192.168.0.1 i 192.168.0.255: <br /> 192.168.0.0/24 <br /> Qualsevol servidor que sigui: <br /> 192.168.0.0/0 <br /> Òbviament, l\'últim exemple <strong>no</strong> és una configuració recomanada.';
+$string['trustedhostsexplain'] = '<p> El mecanisme de servidors de confiança permet a les màquines específiques executar crides a través de XML-RPC a qualsevol part de l\'API de Moodle. Això està disponible per als scripts a fi de controlar el comportament de Moodle, i pot ser una opció molt perillosa d\'habilitar. En cas de dubte, manteniu-la desconnectada. </p><p> <strong>No és necessària per a cap característica Mnet estàndard!</strong> Activeu-la només si sabeu el que esteu fent. </p><p> Per activar-la, escriviu una llista d\'adreces IP o xarxes, una a cada línia. Alguns exemples: </p> El vostre servidor local: <br /> 127.0.0.1 <br /> El vostre servidor local (amb un bloc de xarxa): <br /> 127.0.0.1/32 <br /> Només el servidor amb adreces IP 192.168.0.7: <br /> 192.168.0.7/32 <br /> Qualsevol servidor amb una adreça IP entre 192.168.0.1 i 192.168.0.255: <br /> 192.168.0.0/24 <br /> Qualsevol servidor que sigui: <br /> 192.168.0.0/0 <br /> Òbviament, l\'últim exemple <strong>no</strong> és una configuració recomanada.';
 $string['turnitoff'] = 'Atura';
 $string['turniton'] = 'Engega';
 $string['type'] = 'Tipus';
@@ -237,9 +246,11 @@ $string['unknown'] = 'Desconegut';
 $string['unknownerror'] = 'Ha succeït un error durant la negociació';
 $string['usercannotchangepassword'] = 'No podeu canviar la contrasenya aquí doncs esteu a un servidor remot.';
 $string['userchangepasswordlink'] = '<br /> Podeu habilitar el canvi de la contrasenya al  vostre<a href="{$a->wwwroot}/login/change_password.php">{$a->description}</a> subministrador.';
-$string['usernotfullysetup'] = 'El vostre compte d\'usuari està incomplet. Us cal tornar <a href="{$a}">al vostre subministrador</a> i comprovar que el vostre perfil s\'ha completat allí. Pot ser us calgui sortir i tornar a entrar per assegurar-vos que els canvis tenen efecte.';
+$string['usernotfullysetup'] = 'El vostre compte d\'usuari està incomplet. Us cal tornar <a href="{$a}">al vostre subministrador</a> i comprovar que el vostre perfil s\'ha completat allà. Potser us calgui finalitzar la sessió i tornar a iniciar-la per assegurar-vos que els canvis tenen efecte.';
 $string['usersareonline'] = 'AVÍS: {$a} usuaris d\'aquest servidor han entrat al vostre lloc.';
 $string['validated_by'] = 'Això està validat per la xarxa: <code>{$a}</code>';
+$string['verifyhostandpeer'] = 'Verifica el servidor i l\'igual';
+$string['verifyhostonly'] = 'Verifica sols el servidor';
 $string['verifysignature-error'] = 'La verificació de la signatura a fallat. Ha succeït un error.';
 $string['verifysignature-invalid'] = 'La verificació de la signatura ha fallat. Sembla que vós no vau signar aquest bloc d\'informació.';
 $string['version'] = 'Versió';

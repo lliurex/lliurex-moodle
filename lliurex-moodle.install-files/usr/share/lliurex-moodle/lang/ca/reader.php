@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reader', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'reader', language 'ca', version '3.9'.
  *
- * @package   reader
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     reader
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,9 +34,12 @@ $string['import'] = 'Importa';
 $string['level'] = 'Nivell';
 $string['maxgrade'] = 'Qualificació màxima';
 $string['publisher'] = 'Editor';
+$string['reportquiztoreader'] = 'Informe de resum per estudiant';
 $string['search'] = 'Cerca';
 $string['sectionname'] = 'Nom de la secció';
 $string['sendmessage'] = 'Envia el missatge als alumnes seleccionats';
 $string['showall'] = 'Mostra-ho tot';
+$string['summaryreportbybooktitle'] = 'Informe de resum per títol de llibre';
+$string['summaryreportbyclassgroup'] = 'Informe de resum per grup classe';
 $string['type'] = 'Tipus';
 $string['upgradestalefilesinfo'] = '';

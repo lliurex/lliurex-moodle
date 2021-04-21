@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'filters', language 'ca_valencia', version '3.9'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addfilter'] = 'Afig filtre';
 $string['filterallwarning'] = 'Aplicar els filtres tant a les capçaleres com al contingut pot incrementar la càrrega del servidor. Per favor empreu el paràmetre «Aplicar a» amb moderació. L\'ús principal és conjuntament amb el filtre «multilang».';
-$string['filtersettings_help'] = 'Esta pàgina vos permet activar o desactivar els filtres en una part específica del lloc.
+$string['filtersettings_help'] = 'Aquesta pàgina vos permet activar o desactivar els filtres en una part específica del lloc.
 
-Alguns filtres vos permeten també establir una configuració local. En este cas hi haurà un enllaç de configuració al costat del seu nom.';
-$string['nofiltersenabled'] = 'No s\'ha activat cap connector de filtre per este lloc.';
+Alguns filtres vos permeten també establir una configuració local. En aquest cas hi haurà un enllaç de configuració al costat del seu nom.';
+$string['nofiltersenabled'] = 'No s\'ha activat cap connecto de filtre per este lloc.';
 $string['tablenosave'] = 'Els canvis en la taula de dalt es guarden automàticament.';

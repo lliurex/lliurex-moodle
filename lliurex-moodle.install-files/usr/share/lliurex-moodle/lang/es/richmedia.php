@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'richmedia', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'richmedia', language 'es', version '3.9'.
  *
- * @package   richmedia
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     richmedia
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,6 +69,15 @@ $string['generalinformation'] = 'Información general';
 $string['gettime'] = 'Obtener el tiempo del video';
 $string['height'] = 'Altura (en píxeles)';
 $string['html5'] = 'Reproductor de HTML5 (nueva pestaña)';
+$string['html5_help'] = 'El reproductor de HTML5 es una versión simplificada del reproductor de medios enriquecidos compatible con todos los navegadores.
+
+Formatos de video admitidos:
+
+MP4: Safari,Chrome, IE9
+
+OGG: Chrome, Firefox, Opera
+
+WebM: Chrome, Firefox, Opera';
 $string['html5player'] = 'Reproductor de HTML5 (nueva pestaña)';
 $string['import'] = 'Importar';
 $string['importdone'] = 'Importación lista';
@@ -94,6 +103,7 @@ $string['pluginadministration'] = 'Administración de medio enriquecido';
 $string['pluginname'] = 'Medio enriquecido';
 $string['police'] = 'Fuente';
 $string['presentation'] = 'Presentación';
+$string['presentationmedium'] = 'Medio de presentación (audio o video)';
 $string['presenterbio'] = 'Biografía del moderador';
 $string['presentername'] = 'Nombre del moderador';
 $string['presentertitle'] = 'Título del moderador';
@@ -103,8 +113,9 @@ $string['report'] = 'Informe';
 $string['return'] = 'Volver';
 $string['richmedia'] = 'Medio enriquecido';
 $string['richmedia:addinstance'] = 'Añadir instancia';
-$string['richmediaarchive'] = 'Archivo del medio enriquecido';
+$string['richmedia:view'] = 'Ver medio enriquecido';
 $string['richmedia:viewreport'] = 'Ver informes';
+$string['richmediaarchive'] = 'Archivo del medio enriquecido';
 $string['save'] = 'Guardar';
 $string['saveandreturn'] = 'Guardar y volver a los parámetros';
 $string['savedone'] = 'Guardar finalizado';
@@ -120,6 +131,7 @@ $string['started'] = 'Se inició el';
 $string['success'] = 'Correcto';
 $string['summary'] = 'Resumen';
 $string['synchronization'] = 'Sincronización';
+$string['test'] = 'Guardar y probar';
 $string['theme'] = 'Tema';
 $string['themeedition'] = 'Edición del tema';
 $string['themeimport'] = 'Importar un tema';

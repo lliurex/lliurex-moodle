@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'ca_valencia', version '3.9'.
  *
- * @package   portfolio_boxnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_boxnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['err_noapikey_help'] = 'No hi ha una clau API configurada per a este connector. Podeu obtindre\'n una en la pàgina de desenvolupament d\'OpenBox.';
-$string['noauthtoken'] = 'No s\'ha pogut recuperar un testimoni d\'autenticació per a utilitzar-lo en esta sessió';
-$string['setupinfodetails'] = 'Per a obtindre una clau API, entreu en Box.net i visiteu la <a href="{$a->servicesurl}">pàgina de desenvolupament OpenBox</a>. A \'Developer Tools\', accediu a \'Create new application\' i creeu una nova aplicació per al vostre lloc Moodle. La clau API es mostra a la secció \'Backend parameters\' al formulari d\'edició de l\'aplicació. En este formulari, empleneu el camp \'Redirect URL\' amb:<br /><code>{$a->callbackurl}</code><br />Si ho desitgeu, també podeu donar-hi més informació sobre el vostre lloc Moodle. Estos valors es poden modificar més tard a la pàgina \'View my applications\'.';
+$string['missingoauthkeys_help'] = 'No estan configurats al connector la ID del client ni la contrasenya secreta. Podeu obtindre\'n una des la pàgina de desenvolupament de Box.';
+$string['noauthtoken'] = 'No s\'ha pogut recuperar un testimoni d\'autenticació per utilitzar-lo en esta sessió';
+$string['setupinfodetails'] = 'Per obtindre un ID de client API, inicieu sessió a Box i visiteu la <a href="{$a->servicesurl}">pàgina de desenvolupament Box</a>. Seguiu «Create new application» i creeu una nova aplicació per al vostre lloc Moodle. L\'ID del client i la contrasenya secreta es mostren a la secció «OAuth2 parameters» del formulari d\'edició de l\'aplicació. Podeu proporcionar de forma opcional  informació sobre el vostre lloc web Moodle.';
 $string['sharefile'] = 'Voleu compartir este fitxer?';
 $string['sharefolder'] = 'Voleu compartir esta nova carpeta?';
+$string['username'] = 'El vostre nom d\'usuari a Box (no es guardarà)';
+$string['warninghttps'] = 'Cal que el vostre lloc web utilitze HTTPS per tal que el dossier funcione.';

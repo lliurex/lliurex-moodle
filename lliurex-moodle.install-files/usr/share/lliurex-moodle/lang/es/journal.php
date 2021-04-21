@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'es', branch 'MOODLE_20_STABLE'
+ * Strings for component 'journal', language 'es', version '3.9'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,11 +39,12 @@ $string['journalname'] = 'Nombre del Diario';
 $string['journalquestion'] = 'Pregunta del Diario';
 $string['mailsubject'] = 'Retroalimentación del Diario';
 $string['modulename'] = 'Diario';
+$string['modulename_help'] = 'La actividad de revista (journal) les permite a los profesores obtener retroalimentación de estudiantes sobre un tema específico';
 $string['modulenameplural'] = 'Diarios';
 $string['newjournalentries'] = 'Nuevas entradas en el Diario';
 $string['noentriesmanagers'] = 'No hay profesores';
 $string['noentry'] = 'No hay entrada';
-$string['notopenuntil'] = 'Este Diario no estará abierto hasta';
+$string['notopenuntil'] = 'Este diario no estará disponible hasta';
 $string['notstarted'] = 'Usted no ha iniciado todavía este Diario';
 $string['pluginadministration'] = 'Administración de la extensión Diario';
 $string['pluginname'] = 'Diario';

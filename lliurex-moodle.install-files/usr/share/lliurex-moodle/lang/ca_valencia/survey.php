@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,29 +12,30 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca_valencia', branch 'MOODLE_20_STABLE'
+ * Strings for component 'survey', language 'ca_valencia', version '3.9'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allquestions'] = 'Tots els temes en orde, tots els estudiants';
-$string['alreadysubmitted'] = 'Ja heu tramés esta informació';
+$string['alreadysubmitted'] = 'Ja heu tramés aquesta informació';
 $string['answers'] = 'Respostes';
 $string['attls10'] = 'Per a mi es important mantindre-me el més objectiu posible quan analitze alguna cosa.';
 $string['attls16'] = 'Algú podria anomenar a la meua manera d’analitzar les coses \'posar-les a prova\' per que jo tinc en compte totes les evidències amb molta cura.';
-$string['attls18'] = 'Puc arribar a entendre les opinions que difereixen de la meua a través de la empatia';
+$string['attls18'] = 'Puc arribar a entendre les opinions que difereixen de la meua a través de l\'empatia';
 $string['attls18short'] = 'Enteniment des de l\'empatia';
-$string['attls19'] = 'Quan trobo a gent amb opinions que em pareixen estranyes, faig un esforç deliberat per a \'arribar\' al interior d’esta persona, per a intentar veure com poden tindre estes opinions.';
-$string['attls20'] = 'Dedico temps a comprendre què està \'equivocat\' en les coses. Per exemple, en una interpretació literària busco quelcom que no estiga suficientement ben argumentat.';
+$string['attls19'] = 'Quan trobe a gent amb opinions que em semblen estranyes, faig un esforç deliberat per a \'arribar\' al interior d’aquesta persona, per a intentar veure com poden tindre aquestes opinions.';
+$string['attls20'] = 'Dedique temps a comprendre què està \'equivocat\' en les coses. Per exemple, en una interpretació literària busque alguna cosa que no estiga suficientment ben argumentat.';
 $string['attls4'] = 'La part més important de la meua educació ha estat aprendre a entendre a la gent que és diferent a mi';
-$string['attls5'] = 'Sento que la millor manera d’aconseguir la meua pròpia identitat es interactuar amb gent diferent.';
+$string['attls5'] = 'Sent que la millor manera d’aconseguir la meua pròpia identitat és interactuar amb gent diferent.';
 $string['attls6'] = 'M’encanta escoltar les opinions de gent que ve d\'entorns diferents al meu, m’ajuda a entendre com coses iguals poden ser vistes de maneres diferents.';
 $string['attls7'] = 'Veig que puc enfortir la meua pròpia posició discutint amb gent que discrepa amb mi.';
 $string['attls9'] = 'Sovint em trobe a mi mateix discutint amb els autors dels llibres que llegeixo, intentant entendre per què estan equivocats.';
@@ -71,21 +71,30 @@ Cada una de les 24 declaracions següents t’interroga sobre la teva experiènc
 No hi ha respostes \'correctes\' o \'equivocades\', estem interessats sols en la teva opinió. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
 Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar esta unitat en el futur.
 Moltes gràcies.';
-$string['collesapintro'] = 'El propòsit d’esta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’esta unitat et va facilitar l’aprenentatge.
-Cada una de les declaracions següents et demanaran que comparis la teva experiència <b>favorita</b> (ideal) i la teva experiència <b>real</b> en esta unitat. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
-Les teves respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar esta unitat en el futur.
-Moltes gràcies per la teva col·laboració.';
+$string['collesapintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre fins a quin punt la presentació en línia d’aquesta unitat vos va facilitar l’aprenentatge.
+
+Cada una de les parelles de declaracions següents vos demanarà que compareu la vostra experiència <b>favorita</b> (ideal) i la vostra experiència <b>real</b> en aquesta unitat.
+
+No hi ha respostes «correctes» o «incorrectes»; ens interessa sols la vostra opinió. Les vostres respostes es tractaran amb un grau de confidencialitat alt, i no afectaran la vostra avaluació.
+
+Les vostres respostes, pensades amb cura, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
+
+Moltes gràcies per la vostra col·laboració.';
 $string['collesmintro'] = 'En esta unitat en línia...';
-$string['collespintro'] = 'El propòsit d’esta enquesta es ajudar-nos a entendre el que tu valores en una experiència d’aprenentatge en línia.
+$string['collespintro'] = 'El propòsit d’esta enquesta és ajudar-nos a entendre el que tu valores en una experiència d’aprenentatge en línia.
 Cada una de les 24 declaracions següents l’interroguen sobre la teva experiència <b>favorita</b> (ideal) en esta unitat.
-No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la teva opinió. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
+No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la teva opinió. Les teves respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
 Les teves respostes, pensades cuidadosament, ens ajudaran a millorar la manera de presentar esta unitat en el futur.
 Moltes gràcies per la teva col·laboració.';
-$string['downloadinfo'] = 'Podeu baixar les dades crues d\'esta enquesta en un format que puga analitzar-se amb un programa de fulls de càlcul, SPSS o un altre.';
+$string['downloadinfo'] = 'Podeu baixar les dades crues d\'aquesta enquesta en un format que puga analitzar-se amb un programa de fulls de càlcul, SPSS o un altre.';
 $string['howlong'] = '¿Quant de temps t’ha portat completar este questionari?';
-$string['modulename_help'] = 'El mòdul d\'exàmens proporciona tres tipus d\'instruments per determinar i estimular l\'aprenentatge en ambients en línia. El professor pot utilitzar-los per recopilar dades que poden ajudar-lo a aprendre sobre les seues classes i mostren el procés d\'aprenentatge.';
+$string['modulename_help'] = 'El mòdul d\'enquestes proporciona uns tipus d\'instruments d\'enquestes verificats que s\'han considerat útils per determinar i estimular l\'aprenentatge en entorns en línia. El professor pot utilitzar-los per recopilar dades dels estudiants que poden ajudar-lo a aprendre sobre les seues classes i reflexionar sobre la tasca docent.
+
+Noteu que aquestes eines d\'enquesta tenen les preguntes preestablertes. Els professors que vulguen crear la seua pròpia enquesta han d\'utilitzar l\'activitat de «Retroacció».';
 $string['nobodyyet'] = 'Ningú ha completat esta enquesta encara';
 $string['peoplecompleted'] = '{$a} persones han completat esta enquesta';
 $string['savednotes'] = 'S’han guardat les vostres notes';
 $string['seemoredetail'] = 'Feu clic ací per veure més detalls';
+$string['survey:addinstance'] = 'Afig una enquesta nova';
+$string['surveycompletednograph'] = 'Heu completat esta enquesta.';
 $string['surveysaved'] = 'S\'ha guardat l\'enquesta';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_magazine', language 'ca', branch 'MOODLE_20_STABLE'
+ * Strings for component 'theme_magazine', language 'ca', version '3.9'.
  *
- * @package   theme_magazine
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_magazine
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['logo'] = 'logotip';
 $string['logodesc'] = 'Canvieu el logotip del tema introduint l\'URL del nou (p. ex.: http://www.algunlloc/qualsevolimatge.png). Com a referència, el logotip per defecte fa 300px d\'amplària per 80px d\'alçària. Una imatge transparent .png funciona molt bé.';
 $string['maincolor'] = 'color principal';
 $string['maincoloraccent'] = 'maincoloraccent';
-$string['maincoloraccentdesc'] = 'Accentua el color de les vores de la barra lateral i la capcelera. Hauria de ser un color lleugerament més fosc al principal.';
-$string['maincolordesc'] = 'Defineix el color en notació hexadecimal per a la capcelera, la barra lateral i altres àrees. Triar un color fosc o saturat millora la visualització.';
+$string['maincoloraccentdesc'] = 'Accentua el color de les vores de la barra lateral i la capçalera. Hauria de ser un color lleugerament més fosc que el principal.';
+$string['maincolordesc'] = 'Defineix el color en notació hexadecimal per a la capçalera, la barra lateral i altres àrees. Triar un color fosc o saturat millora la visualització.';
 $string['pluginname'] = 'Magazine';
 $string['region-side-post'] = 'Dret';
 $string['region-side-pre'] = 'Esquerra';
