@@ -1,0 +1,14 @@
+Source: lliurex-moodle
+Section: web
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Build-Depends: debhelper (>= 10), po-debconf
+Standards-Version: 4.1.2
+
+Package: lliurex-moodle
+Architecture: all
+Depends: lliurex-sgbd, php-cli, php-xmlrpc, unzip, zip, aspell, php-ldap, python3-mysqldb, python3-bcrypt, moodle, python3, ${misc:Depends}
+Conflicts: lliurex-moodle2
+Description: LliureX moodle configurator
+ This package configures moodle 
+ to integrate it on LliureX environment

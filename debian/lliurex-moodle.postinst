@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e 
+
+echo " * [ lliurex-moodle ] : Notice: This postinstall script not configures Moodle anymore, see Zero Center Helper"
+
+# Settings for PMB UPLOAD MAX Size
+
+		mkdir -p /etc/lliurex-tokens/
+
+		if [ ! -e /etc/lliurex-tokens/moodle_rev_phpsize ]; then
+			
+			# Setting the lliurex-token for pmb
+			echo " [ MOODLE ] : PHP Upload size fixed to 800MB "
+			echo "PHP Size fixed to 800MB " > /etc/lliurex-tokens/moodle_rev_phpsize
+			date >> /etc/lliurex-tokens/moodle_rev_phpsize
+			
+			# Calling utility
+			bash /usr/share/lliurex-moodle/phpiniconf.sh --moodle || true
+
+		else
+
+			echo " [ MOODLE ] : PHP Upload has been already set...nothing to do "
+
+		fi
+
+#DEBHELPER#
+
+exit 0
+
+
