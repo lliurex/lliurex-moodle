@@ -1,3 +1,9 @@
+lliurex-moodle (0.58.2) focal; urgency=medium
+
+  * Initial release for focal
+   
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 21 Apr 2021 14:48:59 +0200
+
 lliurex-moodle (0.48.2) bionic; urgency=medium
 
   * Increased default user quota to 512Mb
