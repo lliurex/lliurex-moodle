@@ -12,3 +12,6 @@
 %:
 	dh $@ 
 
+override_dh_fixperms:
+	dh_fixperms
+	chown www-data:www-data debian/lliurex-moodle/etc/moodle/config.php
