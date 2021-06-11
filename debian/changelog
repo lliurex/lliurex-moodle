@@ -1,3 +1,9 @@
+lliurex-moodle (0.58.4) focal; urgency=medium
+
+  * Fixed script to sync LDAP groups in Moodle
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 11 Jun 2021 11:38:50 +0200
+
 lliurex-moodle (0.58.3) focal; urgency=medium
 
   * Fixed rules and prerm scripts
