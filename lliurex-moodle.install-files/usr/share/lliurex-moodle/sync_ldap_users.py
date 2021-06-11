@@ -9,12 +9,12 @@ try:
 	magickey = open('/etc/n4d/key').readlines()[0].strip()
 	returncode = 1
 except Exception as e:
-	print(e)
+	print("Error open reading magic key: "+str(e))
 	pass
 
 if returncode == 1:
 	try:
-		groupstosync = c.get_available_groups(magickey,'Golem')
+		groupstosync = c.get_available_groups(magickey,'Golem').get('return',None)
 
 		environment = {'NEVERLAND_VAR':'add_user','ARGV':{}}
 		#execfile('/usr/share/n4d/hooks/golem/51_moodle_create-cohorte.py',environment)
@@ -41,5 +41,5 @@ if returncode == 1:
 
 
 	except Exception as e:
-		print(e)
+		print("Error sync groups: "+str(e))
 		pass
